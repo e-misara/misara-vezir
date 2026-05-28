@@ -245,15 +245,25 @@
 <script>
 const J = {};
 
+// 3 kanal fallback — biri 404 verirse diğerini dene (Vaka 44)
+const FALLBACK_CHANNELS = [
+  '',  // Relative — aynı path (en hızlı, page kendi origin'inden)
+  'https://raw.githubusercontent.com/e-misara/misara-vezir/main/vezir/',
+  'https://cdn.jsdelivr.net/gh/e-misara/misara-vezir@main/vezir/'
+];
+
 async function fetchJSON(name) {
-  try {
-    const r = await fetch(`${name}.json?v=${Date.now()}`);
-    if (!r.ok) throw new Error(`${name}: ${r.status}`);
-    return await r.json();
-  } catch (e) {
-    console.error(`Fetch hatası ${name}:`, e);
-    return null;
+  for (const base of FALLBACK_CHANNELS) {
+    try {
+      const url = base ? `${base}${name}.json` : `${name}.json?v=${Date.now()}`;
+      const r = await fetch(url);
+      if (r.ok) return await r.json();
+    } catch (e) {
+      console.warn(`Kanal başarısız ${base}${name}:`, e);
+    }
   }
+  console.error(`Tüm kanallar başarısız: ${name}`);
+  return null;
 }
 
 function el(tag, attrs = {}, ...children) {

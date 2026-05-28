@@ -1,7 +1,12 @@
 {
-  "schema_version": "1.1",
-  "guncelleme": "2026-05-29T16:00:00+03:00",
+  "schema_version": "1.2",
+  "guncelleme": "2026-05-29T17:30:00+03:00",
+  "tek_dogru_kaynak_disiplini": "Bu dosya tüm sayısal veri için KANONİK kaynaktır (K8 + Vaka 3 dersi). Diğer JSON'lar (status, surec_takip, _nerede, vaka_havuzu) sayıları referansla anar veya tutarsa BURASIYLA aynı olmalı. Çelişki bulunursa BURADA olan kazanır, diğeri güncellenir.",
   "uyari": "Sadece RAKAM ve KAMUYA AÇIK BİLGİ. Müşteri isim/email/telefon/adres YOK (KVKK).",
+  "kanonik_kaynak_kaydi": {
+    "tutarsizlik_engelleme": "_nerede.json (eski 125.843) ↔ status/surec/vaka (yeni 145.994) çelişkisi 29 May tespit edildi, kanonik referansa bağlandı. K8 + Vaka 3.",
+    "yenileme_disiplini": "Hafıza S3+ paketinden gelen yeni master/havuz/kapsama sayıları önce buraya yazılır, sonra diğer JSON'lar referans veya değer kopyası alır."
+  },
   "tradia": {
     "marka_kimligi": {
       "ana_marka": "Tradia",

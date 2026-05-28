@@ -60,13 +60,15 @@
     },
     "sahibinden_master": {
       "yol": "landgold-agents/data/sahibinden/",
-      "icerik": "125.843 ilan + OCR pipeline + master JSONL",
+      "kanonik_sayi_referansi": "ozet.json:tradia.veri_panosu_29_may.sahibinden_master_ilan",
+      "icerik": "OCR pipeline + master JSONL (sayı için ozet.json'a bakın — Tek Doğru Kaynak)",
       "public": false,
-      "not": "İlan içeriği telefon/adres riski. Sadece toplam sayı public."
+      "not": "İlan içeriği telefon/adres riski. Sadece toplam sayı public (ozet.json)."
     },
     "tradia_haber_havuzu": {
       "yol": "landgold-agents/data/havuz/ilce_haber_havuzu.jsonl",
-      "icerik": "8.803 haber kaydı (CC-Tic)",
+      "kanonik_sayi_referansi": "ozet.json:tradia.veri_panosu_29_may.tradia_haber_havuzu",
+      "icerik": "CC-Tic toplama (sayı için ozet.json — Tek Doğru Kaynak)",
       "public": "kısmen — sayı OK, içerik private"
     },
     "maps_geojson": {
