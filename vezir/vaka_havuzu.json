@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0",
+  "guncelleme": "2026-05-29T14:42:00+03:00",
+  "kaynak": "~/tradia_konusmalar/04_DURUST_NEGATIF_VAKA/ + GENİŞ paket Bölüm 4",
+  "felsefe": "Tradia kurum kültürü dürüst negatif vakalarla yaşar. Yetersiz veriyle yorum yapmayız, hata yapınca açıkça yazarız.",
+  "senkron_notu": "3 CC ayrı sayıyordu (Basın 11 / Tic 38 / Sosyal 30). Burada kronolojik tek havuz. Vaka 09 boş (gelecek için ayrıldı).",
+  "vakalar": [
+    {
+      "no": 1,
+      "tarih": "2026-05-19",
+      "sprint": "pre-sprint pilot",
+      "cc_kaynak": "Pilot Bülten v5",
+      "baslik": "Bayrak Emoji Yanlışı",
+      "ozet": "PDF v5'te İzlanda + var olmayan iki bayrak Türk illeri için kullanıldı.",
+      "ders": "Türkiye illeri için emoji bayrak yok. Görsel zenginleştirme uyduran yasak. Tradia emoji-light.",
+      "durum": "kapalı"
+    },
+    {
+      "no": 2,
+      "tarih": "2026-05-22",
+      "sprint": "pre-sprint",
+      "cc_kaynak": "CC-Basın Bursa",
+      "baslik": "Osmangazi Paradoksu (3 Haberden Yanlış Yorum Riski)",
+      "ozet": "Sabah Osmangazi 'görünmez bölge' sanıldı (3 haber). Yol B mapping sonrası 407 haber → POZİTİF çıktı. Bülten yayınlansaydı yanlış cümle gidecekti.",
+      "ders": "3 haberden yorum yapma. Görünmez bölge yok, yeterince veri çekmedik var. Tradia kalıcı tezi bu vakadan doğdu.",
+      "durum": "kapalı"
+    },
+    {
+      "no": 3,
+      "tarih": "2026-05-22",
+      "sprint": "pre-sprint gece",
+      "cc_kaynak": "CC-Basın × CC-Site",
+      "baslik": "Üçlü Hizalama 26 vs 30 vs 27 Proje",
+      "ozet": "Mega proje sayısı 3 yerde 3 farklı: CC-Basın 26, CC-Site galeri 30, mega_projects_map.json 27. Claude (chat) script okurken yakaladı.",
+      "ders": "Çoklu kopya = çelişki kaynağı. Master kaynak prensibi: bir gerçek, tek dosya. Cross-CC entegrasyonda sayım kontrolü zorunlu.",
+      "durum": "kapalı"
+    },
+    {
+      "no": 4,
+      "tarih": "2026-05-23",
+      "sprint": "pre-sprint Sayı 4",
+      "cc_kaynak": "CC-Analiz",
+      "baslik": "K.Maraş 2.3 Milyon Birim Manşet Çürütmesi (766× abartı)",
+      "ozet": "Sayı 4 Deprem raporunda K.Maraş için '2.3 milyon birim' haber kaynaklı geldi. Web doğrulama → gerçek 3.006 birim.",
+      "ders": "Tek haber = tek kaynak, manşete koyma. Türk medyada rakam abartma yaygın. Tradia diferansiyatörü: rakipler haberi kopyalar, Tradia doğrular.",
+      "durum": "kapalı"
+    },
+    {
+      "no": 5,
+      "tarih": "2026-05-23",
+      "sprint": "pre-sprint Sayı 4",
+      "cc_kaynak": "CC-Analiz",
+      "baslik": "Adıyaman 500 Bin Sosyal Konut (75× abartı)",
+      "ozet": "Sayı 4 raporunda '500 bin sosyal konut.' Web doğrulama → gerçek 6.620 konut.",
+      "ders": "Binler → milyonlar abartma kalıbı (siyasi vaat haberleri). Manşet rakam ≥2 kaynak teyit zorunlu (Tradia standardı).",
+      "durum": "kapalı"
+    },
+    {
+      "no": 6,
+      "tarih": "2026-05-26",
+      "sprint": "CC-Analiz Sprint 12-13",
+      "cc_kaynak": "CC-Analiz",
+      "baslik": "USD/TL Kuru 34 Yerine 45.78 (%35 hata)",
+      "ozet": "Yabancı Alıcı Lokasyon DB hesaplamalarında USD/TL 34 kullanıldı (AI eğitim verisi eski). Ahmet uyardı, gerçek 45.78.",
+      "ders": "Eski tarih bilgisi (AI eğitim) gerçek zamanlı teyit zorunlu. Master kaynak prensibi (kur tek noktada). Sprint 30+ TCMB EVDS API disiplini.",
+      "durum": "kapalı"
+    },
+    {
+      "no": 7,
+      "tarih": "2026-05-27",
+      "sprint": "CC-Sosyal Sprint 40",
+      "cc_kaynak": "CC-Sosyal Haiku doğrulama",
+      "baslik": "DIA İsim Telaffuz Kontrolü Yok (5/9 isim revize)",
+      "ozet": "Claude DIA 8 pazar için 9 isim önerdi, telaffuz/anlam kontrolü yapılmadı. 5 isim sorunlu (Dead-ia çağrışım, Suudi kadın adı çakışması, fonoloji vs).",
+      "ders": "Marka isim çok kültürlü çakışmalara karşı kör olamaz. AI üretimi sonrası AI doğrulama (Haiku 4 dil) etkili.",
+      "durum": "kapalı"
+    },
+    {
+      "no": 8,
+      "tarih": "2026-05-27",
+      "sprint": "DIA karakter tasarım",
+      "cc_kaynak": "Ahmet manuel müdahale",
+      "baslik": "Dia Karakter Sabit Görünüm → Anonim Pivot",
+      "ozet": "Claude DIA için sabit görünüm önerdi (her video aynı yüz = marka tanınırlığı). Ahmet düzeltti: 'yüzü görünmez, kıyafet değişir, gözler görünür.'",
+      "ders": "Marka tanınırlığı = sabit görünüm sezgisi yanlış. İstihbaratçı konseptiyle ünlü kişi konsepti çelişir. Kişi değil, kıymetli bilgi.",
+      "durum": "kapalı"
+    },
+    {
+      "no": 9,
+      "tarih": null,
+      "sprint": null,
+      "cc_kaynak": null,
+      "baslik": "(Boş — gelecek vaka için ayrılmış)",
+      "ozet": null,
+      "ders": null,
+      "durum": "ayrildi"
+    },
+    {
+      "no": 10,
+      "tarih": "2026-05-27",
+      "sprint": "CC-Basın Sprint 26",
+      "cc_kaynak": "CC-Basın",
+      "baslik": "Top 20 Osmangazi Örneklem Sapması",
+      "ozet": "Bursa Top 20 v2 fuzzy match sonrası tamamen Osmangazi'ye kaydı. Sahibinden ilan dağılımı asimetrik (Bursa 3960, Osmangazi 1647 — %42).",
+      "ders": "Fiyat verisi sahibinden'e bağlı, sahibinden ilan dağılımı asimetrik. Eşik uygulayınca veri kayıp = altta veri asimetrisi.",
+      "durum": "kapalı"
+    },
+    {
+      "no": 11,
+      "tarih": "2026-05-27",
+      "sprint": "CC-Tic Sprint 29 (Sprint 21B reparse)",
+      "cc_kaynak": "CC-Tic",
+      "baslik": "Sprint 21'in Gizli Hatası 8 Ay Sonra Yakalandı",
+      "ozet": "Sprint 21B TÜİK 2025 bültenlerinden 'en fazla satan iller' verisini YABANCI olarak kategorize etti. Gerçek: TOPLAM. Ardahan 727 yabancı sandık → 2025 yıllık toplam (en az satan il).",
+      "ders": "Periyodik gözden geçirme (her 5 sprintte 1). Format değişikliği regex'leri kırar. 8 ay önceki hata hâlâ etkili. Sayı 1/2/3 outreach BEKLET.",
+      "durum": "açık_kontrol_bekliyor"
+    },
+    {
+      "no": 12,
+      "tarih": "2026-05-27",
+      "sprint": "CC-Tic Sprint 29",
+      "cc_kaynak": "CC-Tic",
+      "baslik": "Türkçe \\b Regex Tuzağı (Kabinesi yakalanmadı)",
+      "ozet": "CB Standalone pattern '\\bkabine\\b' Kabinesi'ni eşleştiremedi (word boundary aglutinatif Türkçeyi kırıyor).",
+      "ders": "Türkçe NLP disiplini: kelime başı \\b OK, kelime sonu \\b YASAK. Tüm scraper'larda audit borç.",
+      "durum": "açık_audit_bekliyor"
+    },
+    {
+      "no": 13,
+      "tarih": "2026-05-27",
+      "sprint": "CC-Analiz Sprint 19",
+      "cc_kaynak": "CC-Analiz",
+      "baslik": "Bursa POC 0 Tetik (veri yetersizliği)",
+      "ozet": "Cross-Hat Kural 13 Bursa Top 20'de 0 mahalle tetikledi. Beklenen min 5-10. Sprint 25 10 altın mahallenin %70'i None (POI eksik).",
+      "ders": "Manuel = doğru varsayımı yanlış (formal test). 0 tetik dürüst sonuç, pattern gevşetme yanlış. Türkiye Top 18 başka şehirlerde çalıştı (Kadıköy/Bornova ✓) → formül doğru, Bursa veri sorunu.",
+      "durum": "açık_sprint20_düzeltme"
+    },
+    {
+      "no": 14,
+      "tarih": "2026-05-29",
+      "sprint": "Vezir Aşama 1",
+      "cc_kaynak": "CC-Vezir (kurulum)",
+      "baslik": "Tüketici Testi Atlandı — curl 200 = Claude okur Varsayımı",
+      "ozet": "Vezir statik pano kuruldu, 5 URL curl ile 200 doğrulandı. ADIM 8 'doğrulama' bu kadarla tamam sayıldı. Ancak gerçek tüketici (Claude web_fetch) Cloudflare bot detection ile blok yedi: 'Site blocked the request'. Pano fiilen işlevsiz kaldı, Aşama 1B düzeltme gerekti.",
+      "ders": "Kontrolün muhatabını ihmal etme. 'curl 200' altyapı testi; ürün testi tüketicinin gerçek istek pattern'iyle yapılır. UA + sertifika + JS challenge gibi farklılıklar curl'ün görmediği katmanlar. Vezir Sprint 2: 'gerçek tüketici testi tamamlanmadan kurulum tamam değildir'.",
+      "durum": "açık_pages_aktivasyon_bekliyor"
+    }
+  ],
+  "ozet_metrik": {
+    "toplam_vaka": 14,
+    "kapali": 10,
+    "acik": 4,
+    "tarihsel_birikim_iddiası": 33,
+    "not": "33 negatif vaka birikimi CC-Tic state.md'de geçiyor. Bu pano sadece tam dökümlü vakaları tutuyor. Vaka 14 Vezir'in kendi kurulum vakası — Aşama 1B düzeltme."
+  }
+}

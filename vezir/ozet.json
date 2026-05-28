@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0",
+  "guncelleme": "2026-05-29T14:42:00+03:00",
+  "uyari": "Sadece RAKAM ve KAMUYA AÇIK BİLGİ. Müşteri isim/email/telefon/adres YOK (KVKK).",
+  "tradia": {
+    "marka_kimligi": {
+      "ana_marka": "Tradia",
+      "domain": "tradiaturkey.com",
+      "tanimlama": "Türkiye Yatırım İstihbarat Platformu",
+      "karakter": "Dia (anonim istihbaratçı — yüzü görünmez, gözler görünür)",
+      "konum": [
+        "Endeksa konut DEĞERLEME, Tradia ÇEVRE İSTİHBARATI",
+        "Arsa altın, bina gümüş — Tradia arsa istihbaratı yapar",
+        "Veri kalitesi > veri hacmi",
+        "Tradia kural depolayan değil, kural uygulayıcı"
+      ],
+      "diller_aktif": ["TR", "EN", "AR", "RU"],
+      "diller_faz_2_4": ["DE", "FA", "ZH"]
+    },
+    "veri_panosu": {
+      "sahibinden_master_ilan": 125843,
+      "osm_poi": 139989,
+      "mahalle_toplam": 7076,
+      "buyuksehir_mahalle_polygon": 3797,
+      "bursa_yerlesim": 1112,
+      "bursa_poi": 2814,
+      "tradia_haber_havuzu": 8803,
+      "hepsiemlak_kayit": 595,
+      "bbb_meclis_imar_karar": 107,
+      "yabanci_alim_hukuk_db_bolum": 12,
+      "musteri_havuzu_birikim": 156,
+      "musteri_havuzu_lansman_hedef": 1000,
+      "youtube_transcripts": 3001,
+      "youtube_kelime_milyon": 7.26,
+      "mega_proje_cc_site": 30,
+      "tuik_2025_reparse_ay": 12,
+      "tuik_2026_ay": 4,
+      "i18n_anahtar_cevirilmis": 525,
+      "i18n_dil_sayisi": 7
+    },
+    "il_kapsama": {
+      "8_buyuksehir_polygon_sağlam": 5,
+      "8_buyuksehir_polygon_eksik": 4,
+      "buyuksehir_polygon_eksik_liste": ["Adana", "Gaziantep", "Kocaeli", "Konya"],
+      "turkiye_top_18_tetik_mahalle": 18,
+      "top18_il_dagilimi": {"İstanbul": 8, "Ankara": 5, "İzmir": 4, "Antalya": 1, "Bursa": 1}
+    },
+    "magazin_yayini": {
+      "canli_sayilar": ["Sayı 1", "Sayı 2", "Sayı 3", "Sayı 6"],
+      "hazirlik": ["Sayı 6 Bursa magazin (CC-Basın S27)", "Sayı 7 İstanbul Kadıköy magazin adayı"],
+      "diller_canli": ["TR", "EN", "RU"]
+    },
+    "uretim_olcek": {
+      "ai_video_stack_aylik_usd": 51,
+      "cevirmen_aylik_usd_min": 100,
+      "cevirmen_aylik_usd_max": 200,
+      "reklam_aylik_usd": 400,
+      "lansman_aylik_toplam_usd_min": 551,
+      "lansman_aylik_toplam_usd_max": 651,
+      "su_an_aylik_usd": 0,
+      "felsefe": "Şimdilik parasız, lansman tarihinde paraya abanırız"
+    },
+    "8_pazar_dia": {
+      "TR": "TR-A DIA",
+      "EN": "TRADIA Global",
+      "RU": "RUSADIA",
+      "AR_GULF": "KHALIJDIA (Suudi/BAE/Kuveyt/Katar/Bahreyn/Umman)",
+      "DE": "GERDIA (Almanya/Avusturya/İsviçre)",
+      "FA": "IRADIA (İran)",
+      "ZH": "ZHONGDIA (Çin + diaspora)",
+      "AR_MAJEDIA": "MAJEDIA (Mağrip + Suriye/Lübnan/Mısır)"
+    },
+    "8_sinyal_kanali": [
+      "Kafe yoğunluğu",
+      "Market açılışı",
+      "1+0 dönüşüm",
+      "Ticaret Sicili (asıl IP)",
+      "Belediye meclis",
+      "Hashtag sosyal",
+      "Sahibinden marj",
+      "Restoran/POI"
+    ],
+    "13_veri_kanali": {
+      "hukumet_9": ["CSB", "TKGM", "HMB", "GİB", "Sanayi/Tarım (SKIP)", "TÜİK", "TCMB", "Resmi Gazete", "Cumhurbaşkanlığı"],
+      "piyasa_4": ["Sahibinden (OCR)", "Hepsiemlak", "Hürriyet Emlak (yok)", "Capital/Ekonomim/Dünya"]
+    }
+  },
+  "vezir_proje": {
+    "repo": "gacbusiness",
+    "domain": "dashboard.misaragroup.com",
+    "hosting": "Cloudflare Pages",
+    "ai_cagrisi": "YOK (statik pano — asla susmaz)",
+    "aktif_workflow_sayisi": 4,
+    "arsiv_workflow_sayisi": 3,
+    "aylik_tasarruf_usd": 1.58
+  },
+  "kazanc_modeli": {
+    "premium_uyelik_aylik_usd": [29, 49, 79, 199],
+    "kurumsal_yillik_usd_min": 5000,
+    "kurumsal_yillik_usd_max": 100000,
+    "lead_funnel": "Günde 1 ücretsiz analiz + Tradia Basın magazin (ücretsiz katman besler)"
+  },
+  "vatandaşlık_segment": {
+    "tutar_usd": 400000,
+    "not": "26 May 2026 itibarıyla 250K → 400K çıkıldı"
+  }
+}

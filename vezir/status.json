@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "guncelleme": "2026-05-29T14:42:00+03:00",
+  "kaynak": "manuel (Aşama 1) — Aşama 2'de cc-vezir-sync.yml otomatik",
+  "proje_sayisi": 4,
+  "vezir_durum": "statik_pano_aktif",
+  "tradia_cc": [
+    {
+      "cc": "CC-Sosyal",
+      "sprint": 50,
+      "ust_sozlesme": ["Altın v1.0", "İstihbarat v1.1"],
+      "son_konu": "TR+EN+RU müşteri havuzu + 5 pilot istihbarat dosyası",
+      "p0_sorun": [
+        "Sprint 47 hedef ULAŞILAMADI (-135 müşteri)",
+        "classifier.py cap bug — $1.09 fazla yazdı (Faz 2 fix)"
+      ],
+      "sonraki": "Sprint 51 KHALIJDIA + ZHONGDIA derinleşme",
+      "maliyet_sprint": "$0",
+      "durum": "🟢 Aktif"
+    },
+    {
+      "cc": "CC-Basın",
+      "sprint": 29,
+      "ust_sozlesme": [],
+      "son_konu": "Bursa Top 20 v2 (15 altın + 10 uyarı) + Sayı 6 magazin hazırlık",
+      "p0_sorun": [
+        "Sahibinden %64 boş mahalle (Hepsiemlak/Zingat çapraz teyit gerekli)",
+        "BBB meclis 107 PDF mahalle çıkarma borç"
+      ],
+      "sonraki": "Sayı 6 Bursa magazin + Sayı 7 İstanbul Kadıköy",
+      "maliyet_sprint": "Haiku doğrulama bütçeli",
+      "durum": "🟢 Aktif"
+    },
+    {
+      "cc": "CC-Tic",
+      "sprint": 32,
+      "ust_sozlesme": [],
+      "son_konu": "Almanya 655 + Apex 5/5 + RU 3.649 + 5 email outreach taslak",
+      "p0_sorun": [
+        "Almanya 655 doğrulanamadı (3 sprint üst üste)",
+        "TÜİK 2025 yabancı il sıralaması Sayı 1/2/3'te YANLIŞ olabilir (Sprint 21 vakası)"
+      ],
+      "sonraki": "Sayı 1/2/3 outreach kontrol + 5 email gönderim takip",
+      "maliyet_sprint": "$0 (Sprint 29 sonrası disiplin)",
+      "durum": "🟢 Aktif"
+    },
+    {
+      "cc": "CC-Analiz",
+      "sprint": "21 (+SS)",
+      "ust_sozlesme": ["Mekan v1.0 TASLAK"],
+      "son_konu": "Cross-Hat Kural 13 + Türkiye Top 18 + Sprint 20 Mekan Doktrini FINAL hazırlık",
+      "p0_sorun": [
+        "Cross-Hat ana correlator KAYIP (CC-Tic'ten al veya yeniden inşa)",
+        "4 büyükşehir polygon eksik (Adana/Gaziantep/Kocaeli/Konya — Overpass)"
+      ],
+      "sonraki": "5 pilot mekan dosyası + Mekan Doktrini v1.1 FINAL",
+      "maliyet_sprint": "$0",
+      "durum": "🟢 Aktif"
+    },
+    {
+      "cc": "CC-Site",
+      "sprint": "7 (+Downloads)",
+      "ust_sozlesme": [],
+      "son_konu": "v2 GeoJSON swap + Bursa 1112 + KVKK 4 dil (commit c16c48a, 13/13 URL canlı)",
+      "p0_sorun": [
+        "⚠️ Wrangler deploy bekliyor (Ahmet manuel — /api/health 200 önkoşul)",
+        "Hukuk müşaviri /privacy + /kvkk revize lansman önkoşulu"
+      ],
+      "sonraki": "Sprint 8 Backend canlı + Mekan Doktrini 5 pilot entegrasyon",
+      "maliyet_sprint": "$0",
+      "durum": "🟢 Aktif (Wrangler beklemede)"
+    },
+    {
+      "cc": "CC-Hafıza",
+      "sprint": 2,
+      "ust_sozlesme": [],
+      "son_konu": "6 büyük arşiv sindirimi + 27 May konuşması + state.md disiplini (30× token tasarruf)",
+      "p0_sorun": [],
+      "sonraki": "Sprint 3 — yeni günlük konuşmaları sindirme + _INDEX güncelleme",
+      "maliyet_sprint": "$0 (kütüphaneci, içerik üretmez)",
+      "durum": "🟢 Aktif"
+    }
+  ],
+  "vezir_metrik": {
+    "ai_brief_workflow_arsivlendi": ["daily-ceo-brief", "weekly-vezir-brief", "manual-ceo-test"],
+    "aktif_workflow": ["alert-collector", "watch-tradia", "deploy-pages", "test-notification"],
+    "asla_susmaz_garanti": true,
+    "son_ai_cagrisi": "2026-05-28 (arşivlendi sonrası API çağrısı YOK)",
+    "aylik_tasarruf_usd": 1.58
+  },
+  "lansman_dalga_1": {
+    "durum": "BEKLET",
+    "onkosul": [
+      "TÜİK 2025 yabancı il kontrolü (CC-Tic Sprint 33)",
+      "Wrangler deploy (CC-Site Sprint 8)",
+      "/privacy + /kvkk hukuk müşaviri (Ahmet manuel)",
+      "Müşteri havuzu 1.000+ (CC-Sosyal Sprint 51-53)"
+    ],
+    "hedef_email_5": ["Property Turkey", "TEKCE", "Turkey Homes", "Henley & Partners", "Apex"],
+    "hedef_portal_3_ahmet": ["Tranio", "Astons", "CS Global Partners"]
+  }
+}

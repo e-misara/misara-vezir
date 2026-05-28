@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "guncelleme": "2026-05-29T14:42:00+03:00",
+  "amac": "Vezir hassas veri tutmaz. Detayın hangi private klasörde olduğunu işaret eder.",
+  "kullanim": "Vezir'e bir CC sorusu sorulduğunda, Vezir önce bu indeks'e bakar, sonra ilgili klasörü açıklar (içeriği değil, lokasyonu).",
+  "indeks": {
+    "kurum_hafizasi": {
+      "yol": "~/tradia_konusmalar/",
+      "icerik": "Tradia'nın merkez beyni — ham yazışmalar + kararlar + vakalar + sözleşmeler",
+      "public": false,
+      "sahip": "CC-Hafıza"
+    },
+    "sozlesmeler": {
+      "yol": "~/tradia_konusmalar/00_KURUM_HAFIZASI/",
+      "dosyalar": ["altin_sozlesme_v1.0.md", "istihbarat_doktrini_v1.1.md", "mekan_doktrini_v1.0.md"],
+      "public": false,
+      "not": "Sözleşme adları + statüler public (ozet.json'da), tam metin private"
+    },
+    "kararlar": {
+      "yol": "~/tradia_konusmalar/01_KARARLAR/",
+      "icerik": "17 karar kartı (2026-05-19 → 2026-05-27)",
+      "public": false,
+      "not": "Karar başlıkları public OK; sebep/sonraki etki detayları private"
+    },
+    "cc_state": {
+      "yol": "~/tradia_konusmalar/02_CC_STATE/",
+      "icerik": "5 CC state.md + _yeni_konusma_hazirlik_GENIS.md (71 KB)",
+      "public": false,
+      "alias": "tradia_context  (cat _INDEX + cc_*.md | pbcopy)"
+    },
+    "konusma_gunlukleri": {
+      "yol": "~/tradia_konusmalar/03_KONUSMA_GUNLUKLERI/",
+      "icerik": "Tam tutanaklar (her tarih için bir MD)",
+      "public": false,
+      "not": "Birebir konuşma ham veridir, ASLA public"
+    },
+    "negatif_vakalar": {
+      "yol": "~/tradia_konusmalar/04_DURUST_NEGATIF_VAKA/",
+      "icerik": "13 vaka dosyası (01-13, vaka 09 boş)",
+      "public": "kısmen — vaka_havuzu.json public özet, tam dosya private"
+    },
+    "musteri_havuzu": {
+      "yol": "landgold-agents/data/musteri/",
+      "dosyalar": [
+        "turkiye_emlak_sirketleri.csv",
+        "turkiye_yatirimci_gruplar.csv",
+        "en_global_b2b_v2.csv",
+        "twitter_instagram_tr_anchor_followers.csv",
+        "_index.json"
+      ],
+      "public": false,
+      "kvkk_riski": "YÜKSEK — isim/şirket/profil URL'leri tutar",
+      "not": "Sadece RAKAM (toplam 387) public. İsim/email/telefon ASLA."
+    },
+    "musteri_istihbarat_pilot": {
+      "yol": "landgold-agents/data/musteri/dosyalar/",
+      "icerik": "7 katman istihbarat dosyaları (Tranio, Knight Frank TR, Endeksa, Henley, Bayram Tekçe)",
+      "public": false,
+      "not": "Şimşek istisnası: kamuya açık yorumcu adları (Mahfi/Atilla) ozet'te referans OK"
+    },
+    "sahibinden_master": {
+      "yol": "landgold-agents/data/sahibinden/",
+      "icerik": "125.843 ilan + OCR pipeline + master JSONL",
+      "public": false,
+      "not": "İlan içeriği telefon/adres riski. Sadece toplam sayı public."
+    },
+    "tradia_haber_havuzu": {
+      "yol": "landgold-agents/data/havuz/ilce_haber_havuzu.jsonl",
+      "icerik": "8.803 haber kaydı (CC-Tic)",
+      "public": "kısmen — sayı OK, içerik private"
+    },
+    "maps_geojson": {
+      "yol": "landgold-agents/data/maps/",
+      "icerik": "iller (445 KB) + ilçeler (2.9 MB) + mahalleler (4.3 MB) v2 GeoJSON",
+      "public": "kısmen — özet rakamlar ozet.json'da; tam GeoJSON tradiaturkey.com/map/ üzerinden public",
+      "not": "tradiaturkey.com canlı sitede zaten public — Vezir referans verir"
+    },
+    "magazinler": {
+      "yol": "landgold-intelligence/docs/bultenler/",
+      "url": "tradiaturkey.com/bultenler/",
+      "public": true,
+      "not": "Sayı 1+2+3+6 TR/EN/RU canlı yayında"
+    },
+    "tuik_konut_satis": {
+      "yol": "landgold-agents/data/tuik/konut_satis_aylik.jsonl",
+      "icerik": "16 ay tarihsel (12 ay 2025 reparse + 4 ay 2026)",
+      "public": "kaynak TÜİK kamuya açık, parse edilmiş hali Vezir tarafından özet"
+    },
+    "tradia_ihale_modulu": {
+      "yol": "~/Desktop/tradia/tradia_ihale/",
+      "icerik": "RG ihale kural-bazlı sinyal (Sprint 1 tamam, 30 günde 148 ihale, 37 il, 20 sinyal, $0)",
+      "public": false
+    },
+    "cc_site_backend": {
+      "yol": "landgold-intelligence/workers/",
+      "icerik": "Wrangler Cloudflare Workers (lead-handler, admin-handler, notify-webhook)",
+      "public": false,
+      "deploy_durum": "BEKLEMEDE — Ahmet manuel deploy lazım"
+    },
+    "youtube_transkript": {
+      "yol": "~/Desktop/cc_sosyal/youtube/",
+      "icerik": "3.001 .txt, 7.26M kelime, 58 MB; sonuclar.jsonl 1.478 analiz; havuz.jsonl 663 alakali",
+      "public": false,
+      "not": "Public YouTube'dan çekilmiş ama derleme hali Tradia IP'si"
+    },
+    "vezir_repo_kendisi": {
+      "yol": "~/gacbusiness/",
+      "url": "github.com/e-misara/gacbusiness (private)",
+      "public": "kısmen — sadece dashboard/ klasörü Cloudflare Pages üzerinden public",
+      "icerik": "Bu repo + workflow disabled/ arşivi + reports/ tarihsel"
+    },
+    "diger_projeler": {
+      "aracden": "~/aracden, ~/aracden-design, ~/aracdenbasin",
+      "cybertrader": "~/cybertrader (Binance Spot bot — Ahmet kararı)",
+      "emisafir": "~/Downloads/emisafir (durum belirsiz)",
+      "public": false,
+      "not": "Vezir bu projelerin Tradia gibi state'ini henüz tutmuyor. Aşama 2'de eklenecek."
+    }
+  },
+  "kvkk_uyari": {
+    "kural": "Müşteri isim/email/telefon/adres ASLA public klasörlerde yer almaz.",
+    "simsek_istisnasi": "Kamuya açık rol/yorumcu (Mehmet Şimşek, DEİK başkanı, basın yorumcuları) public referansta OK.",
+    "uydurma_yasak": "Doğrulanmamış URL veya kişi adı ASLA raporlanmaz (İstihbarat Doktrini Madde 10)."
+  }
+}
