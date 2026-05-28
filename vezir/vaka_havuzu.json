@@ -17,9 +17,9 @@
     "vakalar": [13, 12, 22, 28, 29, 39, 40]
   },
   "ozet_metrik": {
-    "toplam_vaka": 45,
-    "pattern_yuzey_teshis": 10,
-    "vezir_kendi_vakalari": 5
+    "toplam_vaka": 46,
+    "pattern_yuzey_teshis": 11,
+    "vezir_kendi_vakalari": 6
   },
   "vakalar": [
     {"havuz_no": 1, "tarih": "2026-05-19", "kaynak_cc": "pre-sprint", "baslik": "Bayrak Emoji Yanlışı (Pilot Bülten v5)", "ders": "Türkiye illeri için emoji bayrak yok. Uydurma yasak.", "durum": "kapalı"},
@@ -66,6 +66,7 @@
     {"havuz_no": 42, "tarih": "2026-05-28", "kaynak_cc": "CC-Analiz", "baslik": "Excel Kapsama 67/81 İl SIFIR (%83 Boş)", "ders": "Manuel SS ~8.040 = 40-80 saat. Hepsiemlak (595 ilan, 15 il) S22 entegrasyon.", "durum": "açık_s22_planli"},
     {"havuz_no": 43, "tarih": "2026-05-29", "kaynak_cc": "CC-Vezir", "baslik": "GitHub Pages Jekyll Underscore Convention (_nerede.json 404)", "ders": "Pages varsayılan Jekyll modda `_` ile başlayan dosyaları yok sayar. Kökde `.nojekyll` dosyası eklemek gerek. Statik JSON aynası kurarken Jekyll'ı kapat. Pages = Static ≠ Pages = Jekyll varsayımı yanlış.", "pattern_yuzey_teshis": true, "durum": "kapalı_nojekyll_eklendi"},
     {"havuz_no": 44, "tarih": "2026-05-29", "kaynak_cc": "CC-Vezir", "baslik": "Tek Kanal Yetmedi — Claude 404 Nüksü (Vaka 39 Tekrarı)", "ders": "Curl 200 ama Claude web_fetch hâlâ 404. Server temiz (her UA + .nojekyll + content OK), sorun Claude tarafı cache/edge/region. Tek kanal yetmez — redundancy şart. 3 kanal kuruldu: Pages (primary) + raw.githubusercontent (fallback 1) + jsDelivr (fallback 2). Vaka 39'un dersi 'tüketici testi' olmuştu; bu kez 'tüketici N kez deneyebilir → N kanal sun' eklendi.", "pattern_yuzey_teshis": true, "durum": "kapalı_3_kanal_redundancy"},
-    {"havuz_no": 45, "tarih": "2026-05-29", "kaynak_cc": "CC-Vezir", "baslik": "Kanonik Sayı Çelişkisi — _nerede.json 125.843 (eski) vs ozet 145.994", "ders": "Vaka 3 nüksü (üçlü hizalama). Bir JSON güncellendi (ozet/status/surec/vaka), diğeri (_nerede.json) güncel kalmadı. ÇÖZÜM: ozet.json TEK KANONİK KAYNAK olarak ilan edildi, diğer JSON'lar referans verir veya kopyalanmış değer ozet ile aynı olur. K8 + Vaka 3 → ozet.json kanonik.", "pattern_yuzey_teshis": true, "durum": "kapalı_kanonik_sabitlendi"}
+    {"havuz_no": 45, "tarih": "2026-05-29", "kaynak_cc": "CC-Vezir", "baslik": "Kanonik Sayı Çelişkisi — _nerede.json 125.843 (eski) vs ozet 145.994", "ders": "Vaka 3 nüksü (üçlü hizalama). Bir JSON güncellendi (ozet/status/surec/vaka), diğeri (_nerede.json) güncel kalmadı. ÇÖZÜM: ozet.json TEK KANONİK KAYNAK olarak ilan edildi, diğer JSON'lar referans verir veya kopyalanmış değer ozet ile aynı olur. K8 + Vaka 3 → ozet.json kanonik.", "pattern_yuzey_teshis": true, "durum": "kapalı_kanonik_sabitlendi"},
+    {"havuz_no": 46, "tarih": "2026-05-29", "kaynak_cc": "CC-Vezir", "baslik": "jsDelivr 7-Günlük Cache TTL Eski İçerik Tutuyor (Vaka 39+44 Üçüncü Tezahür)", "ders": "Pages + Raw yeni 26.4 KB serve ederken jsDelivr CDN max-age=604800 (7 gün) ile eski 5.2 KB tutuyordu (age=4147sn). Üst-akıl Claude muhtemelen Pages 404'den jsDelivr fallback'a düşüp eski snapshot aldı. ÇÖZÜMLER: (1) https://purge.jsdelivr.net/gh/... ile manuel purge — anlık etki. (2) Versioned URL stratejisi (ozet-w22.json) — yeni cache anahtarı = sıfır eski içerik riski. K19 5. disiplin: 'kurulum tamam = tüketici test eksik' Vaka 14+15+39+44'ün dördüncü kez tekrarlaması. Pages/Raw'a güven, jsDelivr CDN cache propagation süresine GÜVEN(ME).", "pattern_yuzey_teshis": true, "durum": "kapalı_versioned_url_+_jsdelivr_purge"}
   ]
 }
