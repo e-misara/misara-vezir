@@ -143,14 +143,24 @@
       "baslik": "Tüketici Testi Atlandı — curl 200 = Claude okur Varsayımı",
       "ozet": "Vezir statik pano kuruldu, 5 URL curl ile 200 doğrulandı. ADIM 8 'doğrulama' bu kadarla tamam sayıldı. Ancak gerçek tüketici (Claude web_fetch) Cloudflare bot detection ile blok yedi: 'Site blocked the request'. Pano fiilen işlevsiz kaldı, Aşama 1B düzeltme gerekti.",
       "ders": "Kontrolün muhatabını ihmal etme. 'curl 200' altyapı testi; ürün testi tüketicinin gerçek istek pattern'iyle yapılır. UA + sertifika + JS challenge gibi farklılıklar curl'ün görmediği katmanlar. Vezir Sprint 2: 'gerçek tüketici testi tamamlanmadan kurulum tamam değildir'.",
-      "durum": "açık_pages_aktivasyon_bekliyor"
+      "durum": "kapalı_asama_1c_cozumu"
+    },
+    {
+      "no": 15,
+      "tarih": "2026-05-29",
+      "sprint": "Vezir Aşama 1B",
+      "cc_kaynak": "CC-Vezir (kurulum)",
+      "baslik": "Plan/Tier Kısıtı Atlandı — 'Workflow Var = Çalışır' Varsayımı",
+      "ozet": "Aşama 1B'de 'deploy-pages.yml var = GitHub Pages çalışır' varsayıldı. Gerçek engel: private repo'da Pages ücretli plan (GitHub Pro/Team) gerektiriyor; ücretsiz tier'da 'Upgrade or make repository public' diyor. Workflow varlığı plan iznine eşit değil.",
+      "ders": "Bir özelliğin varlığı (yml/config/script) onun çalışacağını garantilemez. Plan, kota, paket, billing katmanları AYRI kontrol edilmeli. Vezir Sprint 3: 'kurulumdan önce plan/tier kontrol et' — özellikle GitHub Free, Cloudflare Free, Vercel Hobby gibi ücretsiz tier'lar için. Çözüm: Aşama 1C — ayrı public repo (misara-vezir), iç repo private kalır.",
+      "durum": "kapalı_asama_1c_cozumu"
     }
   ],
   "ozet_metrik": {
-    "toplam_vaka": 14,
-    "kapali": 10,
-    "acik": 4,
+    "toplam_vaka": 15,
+    "kapali": 12,
+    "acik": 3,
     "tarihsel_birikim_iddiası": 33,
-    "not": "33 negatif vaka birikimi CC-Tic state.md'de geçiyor. Bu pano sadece tam dökümlü vakaları tutuyor. Vaka 14 Vezir'in kendi kurulum vakası — Aşama 1B düzeltme."
+    "not": "33 negatif vaka birikimi CC-Tic state.md'de geçiyor. Bu pano sadece tam dökümlü vakaları tutuyor. Vaka 14+15 Vezir'in kendi kurulum vakaları — Aşama 1B→1C öğrenmeleri."
   }
 }
