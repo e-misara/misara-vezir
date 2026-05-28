@@ -17,9 +17,9 @@
     "vakalar": [13, 12, 22, 28, 29, 39, 40]
   },
   "ozet_metrik": {
-    "toplam_vaka": 42,
-    "pattern_yuzey_teshis": 7,
-    "vezir_kendi_vakalari": 2
+    "toplam_vaka": 43,
+    "pattern_yuzey_teshis": 8,
+    "vezir_kendi_vakalari": 3
   },
   "vakalar": [
     {"havuz_no": 1, "tarih": "2026-05-19", "kaynak_cc": "pre-sprint", "baslik": "Bayrak Emoji Yanlışı (Pilot Bülten v5)", "ders": "Türkiye illeri için emoji bayrak yok. Uydurma yasak.", "durum": "kapalı"},
@@ -63,6 +63,7 @@
     {"havuz_no": 39, "tarih": "2026-05-29", "kaynak_cc": "CC-Vezir", "baslik": "'curl 200 = Claude Okur' Varsayımı (Cloudflare Bot)", "ders": "Tüketici (Claude) ile test edilmeli, kurucu (curl) değil. K19 5. disiplin: tüketici testi.", "pattern_yuzey_teshis": true, "durum": "kapalı_asama_1c"},
     {"havuz_no": 40, "tarih": "2026-05-29", "kaynak_cc": "CC-Vezir", "baslik": "'Workflow Var = Çalışır' Varsayımı (Plan/Tier)", "ders": "Workflow varlığı ≠ çalışır. Plan/tier kısıtları kontrol edilmeli. K19 5. disiplin.", "pattern_yuzey_teshis": true, "durum": "kapalı_asama_1c"},
     {"havuz_no": 41, "tarih": "2026-05-07 → 2026-05-20", "kaynak_cc": "CC-Vezir (eski sistem)", "baslik": "Vezir 14 Gün Suskunluk (AI Brief Kredi Bitti)", "ders": "'Asla susmaz' = statik JSON pano (K18). AI workflow'lar kredi yiyince susar.", "durum": "kapalı_statik_pano"},
-    {"havuz_no": 42, "tarih": "2026-05-28", "kaynak_cc": "CC-Analiz", "baslik": "Excel Kapsama 67/81 İl SIFIR (%83 Boş)", "ders": "Manuel SS ~8.040 = 40-80 saat. Hepsiemlak (595 ilan, 15 il) S22 entegrasyon.", "durum": "açık_s22_planli"}
+    {"havuz_no": 42, "tarih": "2026-05-28", "kaynak_cc": "CC-Analiz", "baslik": "Excel Kapsama 67/81 İl SIFIR (%83 Boş)", "ders": "Manuel SS ~8.040 = 40-80 saat. Hepsiemlak (595 ilan, 15 il) S22 entegrasyon.", "durum": "açık_s22_planli"},
+    {"havuz_no": 43, "tarih": "2026-05-29", "kaynak_cc": "CC-Vezir", "baslik": "GitHub Pages Jekyll Underscore Convention (_nerede.json 404)", "ders": "Pages varsayılan Jekyll modda `_` ile başlayan dosyaları yok sayar. Kökde `.nojekyll` dosyası eklemek gerek. Statik JSON aynası kurarken Jekyll'ı kapat. Pages = Static ≠ Pages = Jekyll varsayımı yanlış.", "pattern_yuzey_teshis": true, "durum": "kapalı_nojekyll_eklendi"}
   ]
 }
