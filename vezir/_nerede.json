@@ -1,4 +1,8 @@
 {
+  "_DEPRECATED_BIRINCIL_OLARAK_OZET_KULLAN": true,
+  "_yonlendirme": "Claude için kanonik birincil kaynak: ozet.json (detay_nerede_indeks sub-key). Bu dosya geriye uyumluluk için kalıyor.",
+  "_kanonik_url_pages": "https://e-misara.github.io/misara-vezir/vezir/ozet.json",
+  "_kanonik_url_raw": "https://raw.githubusercontent.com/e-misara/misara-vezir/main/vezir/ozet.json",
   "schema_version": "1.0",
   "guncelleme": "2026-05-29T14:42:00+03:00",
   "amac": "Vezir hassas veri tutmaz. Detayın hangi private klasörde olduğunu işaret eder.",
@@ -12,7 +16,11 @@
     },
     "sozlesmeler": {
       "yol": "~/tradia_konusmalar/00_KURUM_HAFIZASI/",
-      "dosyalar": ["altin_sozlesme_v1.0.md", "istihbarat_doktrini_v1.1.md", "mekan_doktrini_v1.0.md"],
+      "dosyalar": [
+        "altin_sozlesme_v1.0.md",
+        "istihbarat_doktrini_v1.1.md",
+        "mekan_doktrini_v1.0.md"
+      ],
       "public": false,
       "not": "Sözleşme adları + statüler public (ozet.json'da), tam metin private"
     },

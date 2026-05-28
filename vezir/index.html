@@ -6,181 +6,122 @@
   <title>Misara Vezir — Panel</title>
   <style>
     :root {
-      --bg: #f5f5f7;
-      --fg: #1a1a1a;
-      --muted: #666;
-      --card: #fff;
-      --border: #e5e5e7;
-      --accent: #0066cc;
-      --green: #34c759;
-      --yellow: #ff9500;
-      --red: #ff3b30;
-      --blue: #007aff;
+      --bg: #f5f5f7; --fg: #1a1a1a; --muted: #666;
+      --card: #fff; --border: #e5e5e7; --accent: #0066cc;
+      --green: #34c759; --yellow: #ff9500; --red: #ff3b30; --blue: #007aff;
     }
     @media (prefers-color-scheme: dark) {
       :root {
-        --bg: #0a0a0a;
-        --fg: #f5f5f7;
-        --muted: #888;
-        --card: #1c1c1e;
-        --border: #2c2c2e;
+        --bg: #0a0a0a; --fg: #f5f5f7; --muted: #888;
+        --card: #1c1c1e; --border: #2c2c2e;
       }
     }
     * { box-sizing: border-box; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      margin: 0;
-      padding: 1.5rem;
-      max-width: 1100px;
-      margin: 0 auto;
-      background: var(--bg);
-      color: var(--fg);
-      line-height: 1.5;
+      margin: 0 auto; padding: 1.5rem; max-width: 1200px;
+      background: var(--bg); color: var(--fg); line-height: 1.5;
     }
     header {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 1.5rem;
+      display: flex; flex-wrap: wrap; justify-content: space-between;
+      align-items: center; gap: 1rem; margin-bottom: 1.5rem;
     }
     h1 { font-size: 1.4rem; margin: 0; }
+    h2 {
+      font-size: 1.05rem; margin: 0 0 1rem;
+      display: flex; justify-content: space-between; align-items: center;
+    }
     .badge {
-      display: inline-block;
-      padding: 0.25rem 0.7rem;
-      border-radius: 999px;
-      font-size: 0.78rem;
-      font-weight: 600;
+      display: inline-block; padding: 0.25rem 0.7rem;
+      border-radius: 999px; font-size: 0.78rem; font-weight: 600;
     }
     .badge-green { background: #d1fae5; color: #047857; }
     .badge-yellow { background: #fef3c7; color: #92400e; }
     .badge-blue { background: #dbeafe; color: #1d4ed8; }
+    .badge-red { background: #fee2e2; color: #b91c1c; }
     @media (prefers-color-scheme: dark) {
       .badge-green { background: #064e3b; color: #6ee7b7; }
       .badge-yellow { background: #78350f; color: #fcd34d; }
       .badge-blue { background: #1e3a8a; color: #93c5fd; }
+      .badge-red { background: #7f1d1d; color: #fca5a5; }
     }
-    .meta {
-      color: var(--muted);
-      font-size: 0.85rem;
-    }
+    .meta { color: var(--muted); font-size: 0.85rem; }
     section {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1.25rem;
-      margin-bottom: 1.25rem;
-    }
-    h2 {
-      font-size: 1.05rem;
-      margin: 0 0 1rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 12px; padding: 1.25rem; margin-bottom: 1.25rem;
     }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 0.85rem;
     }
+    .grid-wide { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
     .card {
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 0.9rem;
-      background: var(--bg);
+      border: 1px solid var(--border); border-radius: 8px;
+      padding: 0.9rem; background: var(--bg);
     }
     .card-title {
-      font-weight: 600;
-      font-size: 0.95rem;
-      margin-bottom: 0.25rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      font-weight: 600; font-size: 0.95rem; margin-bottom: 0.25rem;
+      display: flex; justify-content: space-between; align-items: center;
     }
-    .card-sub {
-      color: var(--muted);
-      font-size: 0.82rem;
-      margin-bottom: 0.5rem;
-    }
-    .card-detail {
-      font-size: 0.85rem;
-      line-height: 1.4;
-    }
+    .card-sub { color: var(--muted); font-size: 0.82rem; margin-bottom: 0.5rem; }
+    .card-detail { font-size: 0.85rem; line-height: 1.4; }
     .p0 {
-      margin-top: 0.5rem;
-      padding: 0.4rem 0.6rem;
+      margin-top: 0.5rem; padding: 0.4rem 0.6rem;
       background: rgba(255, 59, 48, 0.08);
       border-left: 3px solid var(--red);
-      font-size: 0.8rem;
-      border-radius: 4px;
+      font-size: 0.8rem; border-radius: 4px;
     }
     .p0-item { display: block; margin: 0.1rem 0; }
-    table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
-    th, td {
-      text-align: left;
-      padding: 0.45rem 0.5rem;
-      border-bottom: 1px solid var(--border);
-    }
-    th { font-weight: 600; color: var(--muted); font-size: 0.78rem; text-transform: uppercase; }
     .checklist { list-style: none; padding: 0; margin: 0; }
     .checklist li {
-      padding: 0.45rem 0;
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 0.88rem;
+      padding: 0.45rem 0; border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; gap: 0.5rem; font-size: 0.88rem;
     }
     .checklist li:last-child { border: none; }
-    .vaka-row {
-      padding: 0.6rem 0;
-      border-bottom: 1px solid var(--border);
-      font-size: 0.85rem;
-    }
+    .vaka-row { padding: 0.6rem 0; border-bottom: 1px solid var(--border); font-size: 0.85rem; }
     .vaka-row:last-child { border: none; }
     .vaka-no {
-      display: inline-block;
-      background: var(--border);
-      padding: 0.1rem 0.45rem;
-      border-radius: 4px;
-      font-size: 0.75rem;
-      margin-right: 0.4rem;
-      font-weight: 600;
+      display: inline-block; background: var(--border);
+      padding: 0.1rem 0.45rem; border-radius: 4px;
+      font-size: 0.75rem; margin-right: 0.4rem; font-weight: 600;
     }
     .pattern-flag {
-      background: #fef3c7;
-      color: #92400e;
-      padding: 0.05rem 0.35rem;
-      border-radius: 3px;
-      font-size: 0.7rem;
-      margin-left: 0.3rem;
+      background: #fef3c7; color: #92400e;
+      padding: 0.05rem 0.35rem; border-radius: 3px;
+      font-size: 0.7rem; margin-left: 0.3rem;
     }
     .filter-input {
-      width: 100%;
-      padding: 0.5rem;
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      background: var(--bg);
-      color: var(--fg);
-      font-size: 0.88rem;
-      margin-bottom: 0.75rem;
+      width: 100%; padding: 0.5rem;
+      border: 1px solid var(--border); border-radius: 6px;
+      background: var(--bg); color: var(--fg);
+      font-size: 0.88rem; margin-bottom: 0.75rem;
     }
-    .loading, .error {
-      padding: 1rem;
-      text-align: center;
-      color: var(--muted);
+    .progress-bar {
+      width: 100%; height: 6px; background: var(--border);
+      border-radius: 3px; overflow: hidden; margin: 0.3rem 0;
     }
-    .error { color: var(--red); }
+    .progress-fill { height: 100%; background: var(--green); transition: width 0.3s; }
+    .progress-fill.mid { background: var(--yellow); }
+    .progress-fill.low { background: var(--red); }
+    .channel-status {
+      font-family: ui-monospace, monospace; font-size: 0.78rem;
+      color: var(--muted); margin-left: 0.5rem;
+    }
+    .kanal-ok { color: var(--green); }
+    .kanal-fail { color: var(--red); }
+    .loading, .error { padding: 1rem; text-align: center; color: var(--muted); }
     footer {
-      margin-top: 2rem;
-      padding-top: 1rem;
+      margin-top: 2rem; padding-top: 1rem;
       border-top: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 0.78rem;
+      color: var(--muted); font-size: 0.78rem;
     }
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
+    .sehir-cell { padding: 0.45rem 0.5rem; border-bottom: 1px solid var(--border); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+    th { text-align: left; font-weight: 600; color: var(--muted); font-size: 0.78rem; text-transform: uppercase; padding: 0.5rem; }
+    td { padding: 0.5rem; border-bottom: 1px solid var(--border); }
   </style>
 </head>
 <body>
@@ -192,6 +133,7 @@
   </div>
   <div>
     <span class="badge badge-green" id="susmazRozet" title="AI çağrısı YOK, statik JSON pano">🟢 ASLA SUSMAZ</span>
+    <span class="channel-status" id="kanalGoster"></span>
   </div>
 </header>
 
@@ -202,7 +144,21 @@
 
 <section>
   <h2>Tradia — 6 CC Durumu</h2>
-  <div class="grid" id="ccGrid"></div>
+  <div class="grid grid-wide" id="ccGrid"></div>
+</section>
+
+<section>
+  <h2>9 Büyükşehir Veri İlerleme <span class="meta" id="sehirOzet"></span></h2>
+  <table id="sehirTablo">
+    <thead><tr><th>Şehir</th><th>İlan</th><th>Mahalle %</th><th>Öncelik</th><th>Fix Sprint</th></tr></thead>
+    <tbody></tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Kurum Mülk Envanteri (CC-Tic S35 Planı)</h2>
+  <div class="meta" id="kurumNot" style="margin-bottom: 0.75rem;"></div>
+  <div class="grid" id="kurumGrid"></div>
 </section>
 
 <section>
@@ -215,14 +171,9 @@
 </section>
 
 <section>
-  <h2>
-    <span>Vaka Havuzu</span>
-    <span class="badge badge-blue" id="vakaToplam">—</span>
-  </h2>
+  <h2>Vaka Havuzu <span class="badge badge-blue" id="vakaToplam">—</span></h2>
   <input type="text" class="filter-input" id="vakaFilter" placeholder="Filtrele… (cc, başlık, ders)">
-  <div id="vakaList">
-    <div class="loading">Vakalar yükleniyor…</div>
-  </div>
+  <div id="vakaList"><div class="loading">Yükleniyor…</div></div>
 </section>
 
 <section>
@@ -231,38 +182,41 @@
 </section>
 
 <footer>
-  <p><strong>JSON kaynakları:</strong>
-    <a href="status.json">status.json</a> ·
-    <a href="ozet.json">ozet.json</a> ·
-    <a href="vaka_havuzu.json">vaka_havuzu.json</a> ·
-    <a href="surec_takip.json">surec_takip.json</a> ·
-    <a href="_nerede.json">_nerede.json</a>
+  <p><strong>Tek dosya kaynak:</strong>
+    <a href="ozet.json">ozet.json</a> (kapsayıcı — 9 şehir + kurum mülk + durum + nerede dahil)
   </p>
+  <p><strong>Ek vaka geçmişi:</strong> <a href="vaka_havuzu.json">vaka_havuzu.json</a></p>
   <p><strong>Claude erişimi:</strong> <a href="_CLAUDE_ERISIM.md">_CLAUDE_ERISIM.md</a></p>
   <p>Statik pano · AI çağrısı YOK · "Asla susmaz" garantisi · Public-safe (KVKK uyumlu)</p>
 </footer>
 
 <script>
-const J = {};
-
-// 3 kanal fallback — biri 404 verirse diğerini dene (Vaka 44)
-const FALLBACK_CHANNELS = [
-  '',  // Relative — aynı path (en hızlı, page kendi origin'inden)
+// 3 kanal fallback — biri olmazsa diğeri (Vaka 44 dersi)
+const CHANNELS = [
+  '',  // Relative (page kendi origin)
   'https://raw.githubusercontent.com/e-misara/misara-vezir/main/vezir/',
   'https://cdn.jsdelivr.net/gh/e-misara/misara-vezir@main/vezir/'
 ];
+const CHANNEL_NAMES = ['pages', 'raw', 'jsdelivr'];
+
+let dataOzet = null;
+let dataVaka = null;
+let activeChannel = null;
 
 async function fetchJSON(name) {
-  for (const base of FALLBACK_CHANNELS) {
+  for (let i = 0; i < CHANNELS.length; i++) {
+    const base = CHANNELS[i];
     try {
       const url = base ? `${base}${name}.json` : `${name}.json?v=${Date.now()}`;
       const r = await fetch(url);
-      if (r.ok) return await r.json();
+      if (r.ok) {
+        if (!activeChannel) activeChannel = CHANNEL_NAMES[i];
+        return await r.json();
+      }
     } catch (e) {
-      console.warn(`Kanal başarısız ${base}${name}:`, e);
+      console.warn(`Kanal ${CHANNEL_NAMES[i]} başarısız ${name}:`, e);
     }
   }
-  console.error(`Tüm kanallar başarısız: ${name}`);
   return null;
 }
 
@@ -281,62 +235,110 @@ function el(tag, attrs = {}, ...children) {
 }
 
 function renderMeta() {
-  const s = J.status;
-  if (!s) return;
-  const d = new Date(s.guncelleme);
-  const fmt = d.toLocaleString('tr-TR', { dateStyle: 'medium', timeStyle: 'short' });
+  const d = new Date(dataOzet.guncelleme);
   document.getElementById('meta').textContent =
-    `Son güncelleme: ${fmt} · ${s.vezir_durum || ''}`;
+    `Son güncelleme: ${d.toLocaleString('tr-TR', {dateStyle:'medium', timeStyle:'short'})}`;
+  document.getElementById('kanalGoster').innerHTML =
+    `kanal: <span class="kanal-ok">${activeChannel}</span>`;
 }
 
 function renderProjeler() {
-  const s = J.status;
-  if (!s) return;
   const root = document.getElementById('projeler');
   const projeler = [
-    {ad: 'Tradia', durum: '🟢 Aktif', not: '6 CC paralel · 4 dil'},
+    {ad: 'Tradia', durum: '🟢 Aktif', not: '6 CC paralel · 4 dil · 145.994 ilan'},
     {ad: 'AraçDen', durum: '🟡 Hazırlık', not: 'Lansman öncesi'},
-    {ad: '3. Proje', durum: '⚫ Belirsiz', not: 'cybertrader veya emisafir? Ahmet teyit'},
-    {ad: 'Vezir', durum: '🟢 Aktif', not: 'Statik pano · Asla susmaz'}
+    {ad: '3. Proje', durum: '⚫ Belirsiz', not: 'cybertrader vs emisafir? Ahmet teyit'},
+    {ad: 'Vezir', durum: '🟢 Aktif', not: 'Statik pano · Asla susmaz · Tek dosya konsolidasyon'}
   ];
   for (const p of projeler) {
-    root.appendChild(el('div', {class: 'card'},
-      el('div', {class: 'card-title'}, p.ad, el('span', {class: 'meta'}, p.durum)),
-      el('div', {class: 'card-detail'}, p.not)
+    root.appendChild(el('div', {class:'card'},
+      el('div', {class:'card-title'}, p.ad, el('span', {class:'meta'}, p.durum)),
+      el('div', {class:'card-detail'}, p.not)
     ));
   }
 }
 
 function renderCC() {
-  const ccArr = J.status?.tradia_cc || [];
+  const ccArr = dataOzet?.vezir_durum_panosu?.tradia_cc || [];
   const root = document.getElementById('ccGrid');
   for (const cc of ccArr) {
-    const card = el('div', {class: 'card'});
-    card.appendChild(el('div', {class: 'card-title'},
+    const card = el('div', {class:'card'});
+    card.appendChild(el('div', {class:'card-title'},
       cc.cc,
-      el('span', {class: 'badge badge-blue'}, `S${cc.sprint_aktif}`)
+      el('span', {class:'badge badge-blue'}, `S${cc.sprint_aktif}`)
     ));
-    card.appendChild(el('div', {class: 'card-sub'},
+    card.appendChild(el('div', {class:'card-sub'},
       `${cc.durum_isareti || '🟢'} ${cc.sprint_durum || ''}`
     ));
-    card.appendChild(el('div', {class: 'card-detail'}, cc.son_sprint_konu || ''));
+    card.appendChild(el('div', {class:'card-detail'}, cc.son_sprint_konu || ''));
     if (cc.havuz_birikim) {
-      card.appendChild(el('div', {class: 'card-sub', html: `📊 Havuz: <strong>${cc.havuz_birikim.toLocaleString('tr-TR')}</strong>${cc.hedef ? ` / ${cc.hedef.toLocaleString('tr-TR')} (${cc.yuzde_tamamlanma || cc.yuzde || ''}%)` : ''}`}));
+      card.appendChild(el('div', {class:'card-sub', html:
+        `📊 Havuz: <strong>${cc.havuz_birikim.toLocaleString('tr-TR')}</strong>` +
+        (cc.hedef ? ` / ${cc.hedef.toLocaleString('tr-TR')} (${cc.yuzde_tamamlanma || cc.yuzde || ''}%)` : '')
+      }));
     }
-    if (cc.p0_sorun && cc.p0_sorun.length) {
-      const p0 = el('div', {class: 'p0'});
+    if (cc.p0_sorun?.length) {
+      const p0 = el('div', {class:'p0'});
       p0.appendChild(el('strong', {}, '⚠️ P0:'));
-      for (const s of cc.p0_sorun) {
-        p0.appendChild(el('span', {class: 'p0-item'}, '• ' + s));
-      }
+      for (const s of cc.p0_sorun) p0.appendChild(el('span', {class:'p0-item'}, '• ' + s));
       card.appendChild(p0);
     }
     root.appendChild(card);
   }
 }
 
+function renderSehirler() {
+  const data = dataOzet?.tradia?.['9_buyuksehir_veri_ilerleme'];
+  if (!data) return;
+  const tbody = document.querySelector('#sehirTablo tbody');
+  const ozetMetrik = data.ozet_metrik;
+  document.getElementById('sehirOzet').textContent =
+    `${ozetMetrik.veri_tamam_sehir} tamam · ${ozetMetrik.veri_kismi_sehir} kısmi · ${ozetMetrik.veri_arastiriliyor_sehir} araştırılıyor`;
+
+  for (const [key, sehir] of Object.entries(data)) {
+    if (key.startsWith('_') || key === 'ozet_metrik') continue;
+    const tr = el('tr');
+    tr.appendChild(el('td', {}, key.charAt(0).toUpperCase() + key.slice(1) + (sehir.tam_kapsama ? ' ⭐' : '')));
+    tr.appendChild(el('td', {}, typeof sehir.ilan === 'number' ? sehir.ilan.toLocaleString('tr-TR') : sehir.ilan));
+    // Mahalle %
+    const mahalleTd = el('td');
+    if (typeof sehir.mahalle_dolu_pct === 'number') {
+      const pct = sehir.mahalle_dolu_pct;
+      const fillCls = pct >= 70 ? '' : pct >= 40 ? 'mid' : 'low';
+      mahalleTd.innerHTML = `<div>%${pct}</div><div class="progress-bar"><div class="progress-fill ${fillCls}" style="width: ${pct}%"></div></div>`;
+    } else {
+      mahalleTd.textContent = sehir.mahalle_dolu_pct;
+    }
+    tr.appendChild(mahalleTd);
+    // Öncelik badge
+    const oncelikTd = el('td');
+    const oncelik = (sehir.tradia_oncelik || '').split(' ')[0];
+    const cls = oncelik === 'P0' ? 'badge-red' : oncelik === 'P1' ? 'badge-yellow' : oncelik === 'P2' ? 'badge-blue' : 'badge-green';
+    oncelikTd.appendChild(el('span', {class: 'badge ' + cls}, sehir.tradia_oncelik || ''));
+    tr.appendChild(oncelikTd);
+    tr.appendChild(el('td', {class:'meta'}, sehir.fix_sprint || '—'));
+    tbody.appendChild(tr);
+  }
+}
+
+function renderKurum() {
+  const data = dataOzet?.tradia?.kurum_mulk_envanteri;
+  if (!data) return;
+  document.getElementById('kurumNot').textContent = data._durum + ' · ' + (data.tradia_kullanim_amaci || '');
+  const root = document.getElementById('kurumGrid');
+  for (const [key, k] of Object.entries(data.kapsam || {})) {
+    const card = el('div', {class:'card'});
+    card.appendChild(el('div', {class:'card-title'},
+      key.charAt(0).toUpperCase() + key.slice(1).replace(/_/g, ' '),
+      el('span', {class:'badge ' + (k.durum === 'izleniyor' ? 'badge-blue' : 'badge-yellow')}, k.durum)
+    ));
+    card.appendChild(el('div', {class:'card-detail'}, k.not));
+    root.appendChild(card);
+  }
+}
+
 function renderLansman() {
-  const l = J.status?.lansman_dalga_1;
+  const l = dataOzet?.vezir_durum_panosu?.lansman_dalga_1;
   if (!l) return;
   const root = document.getElementById('lansmanList');
   for (const ok of (l.onkosul || [])) {
@@ -346,7 +348,7 @@ function renderLansman() {
     root.appendChild(el('li', {},
       el('span', {}, done ? '✅' : '⬜'),
       el('span', {}, `${ok.madde} `),
-      el('span', {class: 'meta'}, `— ${ok.sorumlu || ''} (${ok.durum || ''})`)
+      el('span', {class:'meta'}, `— ${ok.sorumlu || ''} (${ok.durum || ''})`)
     ));
   }
   document.getElementById('emailListesi').textContent = (l['5_en_email_hazir'] || []).join(' · ');
@@ -354,88 +356,75 @@ function renderLansman() {
 }
 
 function renderVakalar(filter = '') {
-  const v = J.vaka_havuzu;
-  if (!v) return;
+  if (!dataVaka) return;
   const root = document.getElementById('vakaList');
   root.innerHTML = '';
-  document.getElementById('vakaToplam').textContent = `${v.ozet_metrik.toplam_vaka} vaka · ${v.ozet_metrik.pattern_yuzey_teshis} pattern`;
+  document.getElementById('vakaToplam').textContent =
+    `${dataVaka.ozet_metrik.toplam_vaka} vaka · ${dataVaka.ozet_metrik.pattern_yuzey_teshis} pattern`;
 
   const f = filter.toLowerCase().trim();
-  const filtered = v.vakalar
-    .filter(va => !f ||
-      (va.baslik || '').toLowerCase().includes(f) ||
-      (va.kaynak_cc || '').toLowerCase().includes(f) ||
-      (va.ders || '').toLowerCase().includes(f)
+  const filtered = dataVaka.vakalar
+    .filter(v => !f ||
+      (v.baslik || '').toLowerCase().includes(f) ||
+      (v.kaynak_cc || '').toLowerCase().includes(f) ||
+      (v.ders || '').toLowerCase().includes(f)
     )
-    .slice()
-    .reverse()  // En son vakalar üstte
-    .slice(0, 15);  // İlk 15 göster
+    .slice().reverse().slice(0, 15);
 
   if (filtered.length === 0) {
-    root.appendChild(el('div', {class: 'loading'}, 'Eşleşen vaka yok'));
+    root.appendChild(el('div', {class:'loading'}, 'Eşleşen vaka yok'));
     return;
   }
 
-  for (const va of filtered) {
-    const row = el('div', {class: 'vaka-row'});
+  for (const v of filtered) {
+    const row = el('div', {class:'vaka-row'});
     const title = el('div', {},
-      el('span', {class: 'vaka-no'}, `#${va.havuz_no}`),
-      el('strong', {}, va.baslik)
+      el('span', {class:'vaka-no'}, `#${v.havuz_no}`),
+      el('strong', {}, v.baslik)
     );
-    if (va.pattern_yuzey_teshis) {
-      title.appendChild(el('span', {class: 'pattern-flag'}, 'YÜZEY-TEŞHİS'));
+    if (v.pattern_yuzey_teshis) {
+      title.appendChild(el('span', {class:'pattern-flag'}, 'YÜZEY-TEŞHİS'));
     }
     row.appendChild(title);
-    row.appendChild(el('div', {class: 'meta'},
-      `${va.tarih || '?'} · ${va.kaynak_cc || '?'} · ${va.durum || '?'}`
+    row.appendChild(el('div', {class:'meta'},
+      `${v.tarih || '?'} · ${v.kaynak_cc || '?'} · ${v.durum || '?'}`
     ));
-    if (va.ders) {
-      row.appendChild(el('div', {class: 'card-detail'}, va.ders));
-    }
+    if (v.ders) row.appendChild(el('div', {class:'card-detail'}, v.ders));
     root.appendChild(row);
-  }
-  if (!f && v.vakalar.length > 15) {
-    root.appendChild(el('div', {class: 'meta', style: 'text-align:center; padding: 0.5rem;'},
-      `Son 15 vaka gösteriliyor. Filtrele veya `,
-      el('a', {href: 'vaka_havuzu.json'}, 'JSON'),
-      ` aç.`
-    ));
   }
 }
 
 function renderAhmet() {
-  const arr = J.status?.ahmet_bekleyen_manuel_isler || [];
+  const arr = dataOzet?.vezir_durum_panosu?.ahmet_bekleyen_manuel_isler || [];
   const root = document.getElementById('ahmetList');
   for (const it of arr) {
     const done = (it.durum || '').includes('✅');
     root.appendChild(el('li', {},
       el('span', {}, done ? '✅' : '⬜'),
       el('span', {}, it.madde),
-      el('span', {class: 'meta', style: 'margin-left:auto;'}, it.durum)
+      el('span', {class:'meta', style:'margin-left:auto;'}, it.durum)
     ));
   }
 }
 
 async function main() {
-  const [status, ozet, vaka, surec] = await Promise.all([
-    fetchJSON('status'),
-    fetchJSON('ozet'),
-    fetchJSON('vaka_havuzu'),
-    fetchJSON('surec_takip')
-  ]);
-  J.status = status;
-  J.ozet = ozet;
-  J.vaka_havuzu = vaka;
-  J.surec_takip = surec;
+  // Tek istek: ozet.json (her şey içinde)
+  dataOzet = await fetchJSON('ozet');
+  // İkinci istek: vaka_havuzu (büyük, ayrı tutulduğu için)
+  dataVaka = await fetchJSON('vaka_havuzu');
 
-  if (!status) {
-    document.getElementById('meta').textContent = 'JSON dosyaları yüklenemedi';
+  if (!dataOzet) {
+    document.getElementById('meta').textContent = '❌ ozet.json yüklenemedi (3 kanal denendi)';
+    document.getElementById('susmazRozet').className = 'badge badge-red';
+    document.getElementById('susmazRozet').textContent = '🔴 ERİŞİM SORUNU';
     return;
   }
 
   renderMeta();
   renderProjeler();
   renderCC();
+  renderSehirler();
+  renderKurum();
   renderLansman();
   renderVakalar();
   renderAhmet();

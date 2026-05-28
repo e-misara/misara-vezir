@@ -1,9 +1,18 @@
 {
+  "_DEPRECATED_BIRINCIL_OLARAK_OZET_KULLAN": true,
+  "_yonlendirme": "Claude için kanonik birincil kaynak: ozet.json (vezir_durum_panosu sub-key). Bu dosya geriye uyumluluk için kalıyor ama Claude 404 nüksü engellemek için ozet.json'a düşmeli.",
+  "_kanonik_url_pages": "https://e-misara.github.io/misara-vezir/vezir/ozet.json",
+  "_kanonik_url_raw": "https://raw.githubusercontent.com/e-misara/misara-vezir/main/vezir/ozet.json",
   "schema_version": "1.1",
   "guncelleme": "2026-05-29T16:00:00+03:00",
   "kaynak": "CC-Hafıza Sprint 3 paketi (~/tradia_konusmalar/data/vezir_guncel_durum_2026-05-29.json) — CC-Vezir manuel çekti",
   "proje_sayisi": 4,
-  "projeler": ["Tradia", "AraçDen", "3. proje (BELİRSİZ — cybertrader/emisafir)", "Vezir"],
+  "projeler": [
+    "Tradia",
+    "AraçDen",
+    "3. proje (BELİRSİZ — cybertrader/emisafir)",
+    "Vezir"
+  ],
   "vezir_durum": "statik_pano_aktif",
   "tradia_cc": [
     {
@@ -23,7 +32,11 @@
         "DEİK Türk-Alman 'çelişki' yanlış teşhis — paralel pozisyon (Vaka 33)",
         "Maximos ≠ Property Turkey ayrımı (Vaka 34)"
       ],
-      "sonraki": ["Sprint 52+ yorumcu/medya anchor 10 dosya", "Dalga 2 hazırlık", "Tier1 magazin entegrasyon"],
+      "sonraki": [
+        "Sprint 52+ yorumcu/medya anchor 10 dosya",
+        "Dalga 2 hazırlık",
+        "Tier1 magazin entegrasyon"
+      ],
       "maliyet_sprint": "$0",
       "durum_isareti": "🟢"
     },
@@ -44,7 +57,11 @@
         "Sahibinden %32.2 mahalle BOŞ (47.058 ilan) — OCR parse denenecek",
         "Sayı 8 hammadde paralel"
       ],
-      "sonraki": ["Sayı 7 yazımı ~4 saat", "Sayı 8 hammadde", "Vezir bildirim bloğu"],
+      "sonraki": [
+        "Sayı 7 yazımı ~4 saat",
+        "Sayı 8 hammadde",
+        "Vezir bildirim bloğu"
+      ],
       "maliyet_sprint": "Haiku doğrulama bütçeli",
       "durum_isareti": "🟢"
     },
@@ -64,7 +81,12 @@
         "Almanya 655 doğrulanamadı (3 sprint borç, Vaka 16)",
         "11 Türkçe \\b regex fix borç (services/_TURKCE_NLP_KURALLARI.md IP)"
       ],
-      "sonraki": ["Almanya 655 4. deneme", "5 email takip (outreach_log.md)", "İkinci el 12 ay reparse", "Yabancı ülke çapraz teyit"],
+      "sonraki": [
+        "Almanya 655 4. deneme",
+        "5 email takip (outreach_log.md)",
+        "İkinci el 12 ay reparse",
+        "Yabancı ülke çapraz teyit"
+      ],
       "maliyet_sprint": "$0 (Sprint 29 sonrası disiplin)",
       "durum_isareti": "🟢"
     },
@@ -90,7 +112,12 @@
         "Osmangazi Akpınar (uyarı)",
         "Mustafakemalpaşa Şeyhmüftü 46.3"
       ],
-      "sonraki": ["Retro mahalle fuzzy match", "Kural 14 TADE", "Mekan Doktrini v1.1 FINAL", "Hepsiemlak entegrasyon planı"],
+      "sonraki": [
+        "Retro mahalle fuzzy match",
+        "Kural 14 TADE",
+        "Mekan Doktrini v1.1 FINAL",
+        "Hepsiemlak entegrasyon planı"
+      ],
       "maliyet_sprint": "$0",
       "durum_isareti": "🟢"
     },
@@ -141,18 +168,53 @@
   },
   "lansman_dalga_1": {
     "durum": "BEKLET",
-    "5_en_email_hazir": ["Property Turkey", "Turkey Homes", "TEKCE", "Henley", "Apex"],
-    "3_portal_ahmet_browser": ["Tranio", "Astons", "CS Global"],
+    "5_en_email_hazir": [
+      "Property Turkey",
+      "Turkey Homes",
+      "TEKCE",
+      "Henley",
+      "Apex"
+    ],
+    "3_portal_ahmet_browser": [
+      "Tranio",
+      "Astons",
+      "CS Global"
+    ],
     "onkosul": [
-      {"madde": "TÜİK 2025 kontrol", "sorumlu": "CC-Tic S33", "durum": "devam"},
-      {"madde": "Wrangler deploy", "sorumlu": "CC-Site S8 + Ahmet", "durum": "bekliyor"},
-      {"madde": "Hukuk müşaviri /privacy + /kvkk revize", "sorumlu": "Ahmet manuel", "durum": "bekliyor"},
-      {"madde": "Müşteri havuzu 1000+", "sorumlu": "CC-Sosyal S48-52", "durum": "38.7% (387/1000)"}
+      {
+        "madde": "TÜİK 2025 kontrol",
+        "sorumlu": "CC-Tic S33",
+        "durum": "devam"
+      },
+      {
+        "madde": "Wrangler deploy",
+        "sorumlu": "CC-Site S8 + Ahmet",
+        "durum": "bekliyor"
+      },
+      {
+        "madde": "Hukuk müşaviri /privacy + /kvkk revize",
+        "sorumlu": "Ahmet manuel",
+        "durum": "bekliyor"
+      },
+      {
+        "madde": "Müşteri havuzu 1000+",
+        "sorumlu": "CC-Sosyal S48-52",
+        "durum": "38.7% (387/1000)"
+      }
     ]
   },
   "vezir_metrik": {
-    "ai_brief_workflow_arsivlendi": ["daily-ceo-brief", "weekly-vezir-brief", "manual-ceo-test"],
-    "aktif_workflow": ["alert-collector", "watch-tradia", "deploy-pages", "test-notification"],
+    "ai_brief_workflow_arsivlendi": [
+      "daily-ceo-brief",
+      "weekly-vezir-brief",
+      "manual-ceo-test"
+    ],
+    "aktif_workflow": [
+      "alert-collector",
+      "watch-tradia",
+      "deploy-pages",
+      "test-notification"
+    ],
     "asla_susmaz_garanti": true,
     "son_ai_cagrisi": "2026-05-28 (sonrasi YOK)",
     "aylik_tasarruf_usd": 1.58,
@@ -167,12 +229,33 @@
     ]
   },
   "ahmet_bekleyen_manuel_isler": [
-    {"madde": "CB LaunchAgent", "durum": "✅ tamam (29 May)"},
-    {"madde": "misara-vezir repo + Pages", "durum": "✅ tamam (29 May)"},
-    {"madde": "3 portal browser ziyareti (Tranio + Astons + CS Global)", "durum": "⬜ Cloudflare 403"},
-    {"madde": "PPTX inceleme (Sayı 1/2/3'te Rusya 3.737 var mı)", "durum": "⬜"},
-    {"madde": "5 EN email gönderim (25 dk)", "durum": "⬜ önkoşul bekliyor"},
-    {"madde": "Hukuk müşaviri /privacy + /kvkk revize", "durum": "⬜"},
-    {"madde": "Atilla Yeşilada 491K follower tarama", "durum": "⬜ acil değil"}
+    {
+      "madde": "CB LaunchAgent",
+      "durum": "✅ tamam (29 May)"
+    },
+    {
+      "madde": "misara-vezir repo + Pages",
+      "durum": "✅ tamam (29 May)"
+    },
+    {
+      "madde": "3 portal browser ziyareti (Tranio + Astons + CS Global)",
+      "durum": "⬜ Cloudflare 403"
+    },
+    {
+      "madde": "PPTX inceleme (Sayı 1/2/3'te Rusya 3.737 var mı)",
+      "durum": "⬜"
+    },
+    {
+      "madde": "5 EN email gönderim (25 dk)",
+      "durum": "⬜ önkoşul bekliyor"
+    },
+    {
+      "madde": "Hukuk müşaviri /privacy + /kvkk revize",
+      "durum": "⬜"
+    },
+    {
+      "madde": "Atilla Yeşilada 491K follower tarama",
+      "durum": "⬜ acil değil"
+    }
   ]
 }
