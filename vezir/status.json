@@ -1,102 +1,178 @@
 {
-  "schema_version": "1.0",
-  "guncelleme": "2026-05-29T14:42:00+03:00",
-  "kaynak": "manuel (Aşama 1) — Aşama 2'de cc-vezir-sync.yml otomatik",
+  "schema_version": "1.1",
+  "guncelleme": "2026-05-29T16:00:00+03:00",
+  "kaynak": "CC-Hafıza Sprint 3 paketi (~/tradia_konusmalar/data/vezir_guncel_durum_2026-05-29.json) — CC-Vezir manuel çekti",
   "proje_sayisi": 4,
+  "projeler": ["Tradia", "AraçDen", "3. proje (BELİRSİZ — cybertrader/emisafir)", "Vezir"],
   "vezir_durum": "statik_pano_aktif",
   "tradia_cc": [
     {
       "cc": "CC-Sosyal",
-      "sprint": 50,
-      "ust_sozlesme": ["Altın v1.0", "İstihbarat v1.1"],
-      "son_konu": "TR+EN+RU müşteri havuzu + 5 pilot istihbarat dosyası",
+      "sprint_aktif": 51,
+      "sprint_durum": "devam_ediyor",
+      "son_sprint_konu": "Fuar sprint (MIPIM + Cityscape Dubai + Expo Turkey + INREV) + 15 pilot 8.5+ + Dalga 2 hazırlık",
+      "tamamlanan_sprint_50": "8 pazar DIA döngüsü TAM, 32 pilot dosya, güvenirlik 7.0→8.0, KF Türkiye fiziksel ofis YOK bulgusu",
+      "havuz_birikim": 387,
+      "hedef": 1000,
+      "yuzde_tamamlanma": 38.7,
       "p0_sorun": [
-        "Sprint 47 hedef ULAŞILAMADI (-135 müşteri)",
-        "classifier.py cap bug — $1.09 fazla yazdı (Faz 2 fix)"
+        "S47 hedef -135 açık (manuel iş Ahmet)",
+        "classifier.py cap bug ($1.09 fazla)"
       ],
-      "sonraki": "Sprint 51 KHALIJDIA + ZHONGDIA derinleşme",
+      "yeni_bulgular": [
+        "DEİK Türk-Alman 'çelişki' yanlış teşhis — paralel pozisyon (Vaka 33)",
+        "Maximos ≠ Property Turkey ayrımı (Vaka 34)"
+      ],
+      "sonraki": ["Sprint 52+ yorumcu/medya anchor 10 dosya", "Dalga 2 hazırlık", "Tier1 magazin entegrasyon"],
       "maliyet_sprint": "$0",
-      "durum": "🟢 Aktif"
+      "durum_isareti": "🟢"
     },
     {
       "cc": "CC-Basın",
-      "sprint": 29,
-      "ust_sozlesme": [],
-      "son_konu": "Bursa Top 20 v2 (15 altın + 10 uyarı) + Sayı 6 magazin hazırlık",
-      "p0_sorun": [
-        "Sahibinden %64 boş mahalle (Hepsiemlak/Zingat çapraz teyit gerekli)",
-        "BBB meclis 107 PDF mahalle çıkarma borç"
+      "sprint_aktif": 30,
+      "sprint_durum": "devam_ediyor",
+      "son_sprint_konu": "Sayı 7 İstanbul Kadıköy magazin TAM YAZIM (TR+EN+RU+PDF)",
+      "tamamlanan_sprint_29": "Sayı 6 Bursa CANLI (22 sayfa + .pdf 497KB + EN/RU)",
+      "havuz_iliskili": "BBB 107/107 PDF parse (Nilüfer 28 karar)",
+      "manset_disiplini_s30": [
+        "2025 yabancı il KULLANMA",
+        "Almanya 655 KULLANMA (Vaka 16 — doğrulanmadı)",
+        "Rusya 3.649 kullan (3.737 değil — Vaka 17)"
       ],
-      "sonraki": "Sayı 6 Bursa magazin + Sayı 7 İstanbul Kadıköy",
+      "p0_sorun": [
+        "OCR pipeline teşhis hatası DÜZELTİLDİ (Vaka 13/34)",
+        "Sahibinden %32.2 mahalle BOŞ (47.058 ilan) — OCR parse denenecek",
+        "Sayı 8 hammadde paralel"
+      ],
+      "sonraki": ["Sayı 7 yazımı ~4 saat", "Sayı 8 hammadde", "Vezir bildirim bloğu"],
       "maliyet_sprint": "Haiku doğrulama bütçeli",
-      "durum": "🟢 Aktif"
+      "durum_isareti": "🟢"
     },
     {
       "cc": "CC-Tic",
-      "sprint": 32,
-      "ust_sozlesme": [],
-      "son_konu": "Almanya 655 + Apex 5/5 + RU 3.649 + 5 email outreach taslak",
+      "sprint_aktif": 33,
+      "sprint_durum": "devam_ediyor",
+      "son_sprint_konu": "Almanya 655 4. son deneme + 5 email gönderim takip + ikinci el 12 ay reparse",
+      "tamamlanan_sprint_32": "11 ay TÜİK reparse, Rusya 3.737 → 3.649, Cross-Hat 3 dosya bulundu, Apex bulundu",
+      "havuz_birikim": 8803,
+      "tuik_2025_yabanci_top3": {
+        "Istanbul": 7989,
+        "Antalya": 7118,
+        "Mersin": 1800
+      },
       "p0_sorun": [
-        "Almanya 655 doğrulanamadı (3 sprint üst üste)",
-        "TÜİK 2025 yabancı il sıralaması Sayı 1/2/3'te YANLIŞ olabilir (Sprint 21 vakası)"
+        "Almanya 655 doğrulanamadı (3 sprint borç, Vaka 16)",
+        "11 Türkçe \\b regex fix borç (services/_TURKCE_NLP_KURALLARI.md IP)"
       ],
-      "sonraki": "Sayı 1/2/3 outreach kontrol + 5 email gönderim takip",
+      "sonraki": ["Almanya 655 4. deneme", "5 email takip (outreach_log.md)", "İkinci el 12 ay reparse", "Yabancı ülke çapraz teyit"],
       "maliyet_sprint": "$0 (Sprint 29 sonrası disiplin)",
-      "durum": "🟢 Aktif"
+      "durum_isareti": "🟢"
     },
     {
       "cc": "CC-Analiz",
-      "sprint": "21 (+SS)",
-      "ust_sozlesme": ["Mekan v1.0 TASLAK"],
-      "son_konu": "Cross-Hat Kural 13 + Türkiye Top 18 + Sprint 20 Mekan Doktrini FINAL hazırlık",
+      "sprint_aktif": 22,
+      "sprint_durum": "devam_ediyor",
+      "son_sprint_konu": "Retro mahalle fuzzy match + Kural 14 TADE + Mekan Doktrini v1.1 FINAL + Hepsiemlak entegrasyon planı",
+      "tamamlanan_sprint_21": "11.583 SS tarandı, master 145.994 ilan, 192/192 Trash doğrulandı",
       "p0_sorun": [
-        "Cross-Hat ana correlator KAYIP (CC-Tic'ten al veya yeniden inşa)",
-        "4 büyükşehir polygon eksik (Adana/Gaziantep/Kocaeli/Konya — Overpass)"
+        "%32.2 mahalle BOŞ (47.058) — Vaka 13/34 ile bağlantılı",
+        "KULLANICI DİREKTİFİ: SİLME YOK, güven<75 boş kalır",
+        ".bak_2026-05-29_s22 yedek alınacak"
       ],
-      "sonraki": "5 pilot mekan dosyası + Mekan Doktrini v1.1 FINAL",
+      "cozulen": [
+        "Cross-Hat correlator 3 dosya bulundu (Vaka 22 KAPATILDI)"
+      ],
+      "mekan_doktrini_durum": "v1.1 FINAL Sprint 22'de — Kural 14 TADE formülü kesinleşecek",
+      "5_pilot_mekan": [
+        "Mudanya Ömerbey 49.5",
+        "Osmangazi Elmasbahçeler 56.7",
+        "Nilüfer Dumlupınar 74.3",
+        "Osmangazi Akpınar (uyarı)",
+        "Mustafakemalpaşa Şeyhmüftü 46.3"
+      ],
+      "sonraki": ["Retro mahalle fuzzy match", "Kural 14 TADE", "Mekan Doktrini v1.1 FINAL", "Hepsiemlak entegrasyon planı"],
       "maliyet_sprint": "$0",
-      "durum": "🟢 Aktif"
+      "durum_isareti": "🟢"
     },
     {
       "cc": "CC-Site",
-      "sprint": "7 (+Downloads)",
-      "ust_sozlesme": [],
-      "son_konu": "v2 GeoJSON swap + Bursa 1112 + KVKK 4 dil (commit c16c48a, 13/13 URL canlı)",
+      "sprint_aktif": 7,
+      "sprint_durum": "Downloads_islem_devam",
+      "son_sprint_konu": "v2 GeoJSON + Bursa 1112 + KVKK/Privacy 4 Dil + Cookie Banner + Downloads görsel taşıma",
+      "son_commit": "c16c48a",
+      "canli_url_durum": "13/13 URL canlı",
+      "downloads_islem": "90 görsel → 59 Tradia klasör (47 İstanbul + 8 Bursa + 3 Yalova)",
+      "kadikoy_gorseli": "docs/images/sehir/istanbul/kadikoy/Designer-24.png hazır",
       "p0_sorun": [
-        "⚠️ Wrangler deploy bekliyor (Ahmet manuel — /api/health 200 önkoşul)",
-        "Hukuk müşaviri /privacy + /kvkk revize lansman önkoşulu"
+        "Wrangler deploy bekliyor (Ahmet manuel)",
+        "/privacy + /kvkk hukuk müşaviri revize bekliyor (Ahmet)"
       ],
-      "sonraki": "Sprint 8 Backend canlı + Mekan Doktrini 5 pilot entegrasyon",
+      "next_sprint_8_hedef": [
+        "Wrangler deploy + /api/health 200",
+        "Sprint 26 v2 fuzzy → /map/bursa.html",
+        "Sayı 7 yayını sonrası /bultenler/sayi-7-istanbul-kadikoy.html"
+      ],
       "maliyet_sprint": "$0",
-      "durum": "🟢 Aktif (Wrangler beklemede)"
+      "durum_isareti": "🟡 (Wrangler beklemede)"
     },
     {
       "cc": "CC-Hafıza",
-      "sprint": 2,
-      "ust_sozlesme": [],
-      "son_konu": "6 büyük arşiv sindirimi + 27 May konuşması + state.md disiplini (30× token tasarruf)",
-      "p0_sorun": [],
-      "sonraki": "Sprint 3 — yeni günlük konuşmaları sindirme + _INDEX güncelleme",
-      "maliyet_sprint": "$0 (kütüphaneci, içerik üretmez)",
-      "durum": "🟢 Aktif"
+      "sprint_aktif": 3,
+      "sprint_durum": "tamam",
+      "son_sprint_konu": "8. kısım sindirim + K18/K19/K20 + vaka birleşik havuz (42) + Vezir güncel durum paketi",
+      "tamamlanan_sprint_2": "GENİŞ paket + 6 büyük arşiv sindirim + 13 vaka + 17 karar",
+      "vezir_iliskisi": "Vezir'e DOĞRUDAN YAZMAZ — paket hazırlar (data/vezir_*.json), CC-Vezir çeker",
+      "ciktilar_sprint_3": [
+        "_BIRLESIK_HAVUZ.json (42 vaka)",
+        "vezir_guncel_durum_2026-05-29.json"
+      ],
+      "sonraki": "Sprint 4 — 9. kısım sindirim + GENİŞ paket güncellemesi",
+      "maliyet_sprint": "$0 (kütüphaneci)",
+      "durum_isareti": "🟢"
     }
   ],
+  "tradia_kararlar_kumulatif": {
+    "toplam_karar": 20,
+    "son_3_karar_29_may": [
+      "K18 — Vezir 4. Proje + Statik Pano",
+      "K19 — İkinci Kontrol Mekanizması (5. Disiplin)",
+      "K20 — Public/Private + KVKK Ayrım"
+    ]
+  },
+  "lansman_dalga_1": {
+    "durum": "BEKLET",
+    "5_en_email_hazir": ["Property Turkey", "Turkey Homes", "TEKCE", "Henley", "Apex"],
+    "3_portal_ahmet_browser": ["Tranio", "Astons", "CS Global"],
+    "onkosul": [
+      {"madde": "TÜİK 2025 kontrol", "sorumlu": "CC-Tic S33", "durum": "devam"},
+      {"madde": "Wrangler deploy", "sorumlu": "CC-Site S8 + Ahmet", "durum": "bekliyor"},
+      {"madde": "Hukuk müşaviri /privacy + /kvkk revize", "sorumlu": "Ahmet manuel", "durum": "bekliyor"},
+      {"madde": "Müşteri havuzu 1000+", "sorumlu": "CC-Sosyal S48-52", "durum": "38.7% (387/1000)"}
+    ]
+  },
   "vezir_metrik": {
     "ai_brief_workflow_arsivlendi": ["daily-ceo-brief", "weekly-vezir-brief", "manual-ceo-test"],
     "aktif_workflow": ["alert-collector", "watch-tradia", "deploy-pages", "test-notification"],
     "asla_susmaz_garanti": true,
-    "son_ai_cagrisi": "2026-05-28 (arşivlendi sonrası API çağrısı YOK)",
-    "aylik_tasarruf_usd": 1.58
+    "son_ai_cagrisi": "2026-05-28 (sonrasi YOK)",
+    "aylik_tasarruf_usd": 1.58,
+    "vezir_url_pages": "e-misara.github.io/misara-vezir/",
+    "vezir_url_cloudflare": "dashboard.misaragroup.com/vezir/",
+    "vezir_json_endpoints": [
+      "vezir/status.json",
+      "vezir/ozet.json",
+      "vezir/vaka_havuzu.json",
+      "vezir/surec_takip.json",
+      "vezir/_nerede.json"
+    ]
   },
-  "lansman_dalga_1": {
-    "durum": "BEKLET",
-    "onkosul": [
-      "TÜİK 2025 yabancı il kontrolü (CC-Tic Sprint 33)",
-      "Wrangler deploy (CC-Site Sprint 8)",
-      "/privacy + /kvkk hukuk müşaviri (Ahmet manuel)",
-      "Müşteri havuzu 1.000+ (CC-Sosyal Sprint 51-53)"
-    ],
-    "hedef_email_5": ["Property Turkey", "TEKCE", "Turkey Homes", "Henley & Partners", "Apex"],
-    "hedef_portal_3_ahmet": ["Tranio", "Astons", "CS Global Partners"]
-  }
+  "ahmet_bekleyen_manuel_isler": [
+    {"madde": "CB LaunchAgent", "durum": "✅ tamam (29 May)"},
+    {"madde": "misara-vezir repo + Pages", "durum": "✅ tamam (29 May)"},
+    {"madde": "3 portal browser ziyareti (Tranio + Astons + CS Global)", "durum": "⬜ Cloudflare 403"},
+    {"madde": "PPTX inceleme (Sayı 1/2/3'te Rusya 3.737 var mı)", "durum": "⬜"},
+    {"madde": "5 EN email gönderim (25 dk)", "durum": "⬜ önkoşul bekliyor"},
+    {"madde": "Hukuk müşaviri /privacy + /kvkk revize", "durum": "⬜"},
+    {"madde": "Atilla Yeşilada 491K follower tarama", "durum": "⬜ acil değil"}
+  ]
 }

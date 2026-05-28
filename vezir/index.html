@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Misara Vezir — Panel</title>
+  <style>
+    :root {
+      --bg: #f5f5f7;
+      --fg: #1a1a1a;
+      --muted: #666;
+      --card: #fff;
+      --border: #e5e5e7;
+      --accent: #0066cc;
+      --green: #34c759;
+      --yellow: #ff9500;
+      --red: #ff3b30;
+      --blue: #007aff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0a0a0a;
+        --fg: #f5f5f7;
+        --muted: #888;
+        --card: #1c1c1e;
+        --border: #2c2c2e;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      padding: 1.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.5;
+    }
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    h1 { font-size: 1.4rem; margin: 0; }
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+    .badge-green { background: #d1fae5; color: #047857; }
+    .badge-yellow { background: #fef3c7; color: #92400e; }
+    .badge-blue { background: #dbeafe; color: #1d4ed8; }
+    @media (prefers-color-scheme: dark) {
+      .badge-green { background: #064e3b; color: #6ee7b7; }
+      .badge-yellow { background: #78350f; color: #fcd34d; }
+      .badge-blue { background: #1e3a8a; color: #93c5fd; }
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+    h2 {
+      font-size: 1.05rem;
+      margin: 0 0 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 0.85rem;
+    }
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.9rem;
+      background: var(--bg);
+    }
+    .card-title {
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 0.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .card-sub {
+      color: var(--muted);
+      font-size: 0.82rem;
+      margin-bottom: 0.5rem;
+    }
+    .card-detail {
+      font-size: 0.85rem;
+      line-height: 1.4;
+    }
+    .p0 {
+      margin-top: 0.5rem;
+      padding: 0.4rem 0.6rem;
+      background: rgba(255, 59, 48, 0.08);
+      border-left: 3px solid var(--red);
+      font-size: 0.8rem;
+      border-radius: 4px;
+    }
+    .p0-item { display: block; margin: 0.1rem 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+    th, td {
+      text-align: left;
+      padding: 0.45rem 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    th { font-weight: 600; color: var(--muted); font-size: 0.78rem; text-transform: uppercase; }
+    .checklist { list-style: none; padding: 0; margin: 0; }
+    .checklist li {
+      padding: 0.45rem 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.88rem;
+    }
+    .checklist li:last-child { border: none; }
+    .vaka-row {
+      padding: 0.6rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.85rem;
+    }
+    .vaka-row:last-child { border: none; }
+    .vaka-no {
+      display: inline-block;
+      background: var(--border);
+      padding: 0.1rem 0.45rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      margin-right: 0.4rem;
+      font-weight: 600;
+    }
+    .pattern-flag {
+      background: #fef3c7;
+      color: #92400e;
+      padding: 0.05rem 0.35rem;
+      border-radius: 3px;
+      font-size: 0.7rem;
+      margin-left: 0.3rem;
+    }
+    .filter-input {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--bg);
+      color: var(--fg);
+      font-size: 0.88rem;
+      margin-bottom: 0.75rem;
+    }
+    .loading, .error {
+      padding: 1rem;
+      text-align: center;
+      color: var(--muted);
+    }
+    .error { color: var(--red); }
+    footer {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Misara Vezir Panel</h1>
+    <div class="meta" id="meta">Yükleniyor…</div>
+  </div>
+  <div>
+    <span class="badge badge-green" id="susmazRozet" title="AI çağrısı YOK, statik JSON pano">🟢 ASLA SUSMAZ</span>
+  </div>
+</header>
+
+<section>
+  <h2>4 Proje</h2>
+  <div class="grid" id="projeler"></div>
+</section>
+
+<section>
+  <h2>Tradia — 6 CC Durumu</h2>
+  <div class="grid" id="ccGrid"></div>
+</section>
+
+<section>
+  <h2>Lansman Dalga 1 — Önkoşul Checklist</h2>
+  <ul class="checklist" id="lansmanList"></ul>
+  <div class="meta" style="margin-top: 0.6rem;">
+    <strong>5 EN email hazır:</strong> <span id="emailListesi"></span><br>
+    <strong>3 portal Ahmet browser:</strong> <span id="portalListesi"></span>
+  </div>
+</section>
+
+<section>
+  <h2>
+    <span>Vaka Havuzu</span>
+    <span class="badge badge-blue" id="vakaToplam">—</span>
+  </h2>
+  <input type="text" class="filter-input" id="vakaFilter" placeholder="Filtrele… (cc, başlık, ders)">
+  <div id="vakaList">
+    <div class="loading">Vakalar yükleniyor…</div>
+  </div>
+</section>
+
+<section>
+  <h2>Ahmet — Manuel Takvim</h2>
+  <ul class="checklist" id="ahmetList"></ul>
+</section>
+
+<footer>
+  <p><strong>JSON kaynakları:</strong>
+    <a href="status.json">status.json</a> ·
+    <a href="ozet.json">ozet.json</a> ·
+    <a href="vaka_havuzu.json">vaka_havuzu.json</a> ·
+    <a href="surec_takip.json">surec_takip.json</a> ·
+    <a href="_nerede.json">_nerede.json</a>
+  </p>
+  <p><strong>Claude erişimi:</strong> <a href="_CLAUDE_ERISIM.md">_CLAUDE_ERISIM.md</a></p>
+  <p>Statik pano · AI çağrısı YOK · "Asla susmaz" garantisi · Public-safe (KVKK uyumlu)</p>
+</footer>
+
+<script>
+const J = {};
+
+async function fetchJSON(name) {
+  try {
+    const r = await fetch(`${name}.json?v=${Date.now()}`);
+    if (!r.ok) throw new Error(`${name}: ${r.status}`);
+    return await r.json();
+  } catch (e) {
+    console.error(`Fetch hatası ${name}:`, e);
+    return null;
+  }
+}
+
+function el(tag, attrs = {}, ...children) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === 'class') e.className = v;
+    else if (k === 'html') e.innerHTML = v;
+    else e.setAttribute(k, v);
+  }
+  for (const c of children) {
+    if (typeof c === 'string') e.appendChild(document.createTextNode(c));
+    else if (c) e.appendChild(c);
+  }
+  return e;
+}
+
+function renderMeta() {
+  const s = J.status;
+  if (!s) return;
+  const d = new Date(s.guncelleme);
+  const fmt = d.toLocaleString('tr-TR', { dateStyle: 'medium', timeStyle: 'short' });
+  document.getElementById('meta').textContent =
+    `Son güncelleme: ${fmt} · ${s.vezir_durum || ''}`;
+}
+
+function renderProjeler() {
+  const s = J.status;
+  if (!s) return;
+  const root = document.getElementById('projeler');
+  const projeler = [
+    {ad: 'Tradia', durum: '🟢 Aktif', not: '6 CC paralel · 4 dil'},
+    {ad: 'AraçDen', durum: '🟡 Hazırlık', not: 'Lansman öncesi'},
+    {ad: '3. Proje', durum: '⚫ Belirsiz', not: 'cybertrader veya emisafir? Ahmet teyit'},
+    {ad: 'Vezir', durum: '🟢 Aktif', not: 'Statik pano · Asla susmaz'}
+  ];
+  for (const p of projeler) {
+    root.appendChild(el('div', {class: 'card'},
+      el('div', {class: 'card-title'}, p.ad, el('span', {class: 'meta'}, p.durum)),
+      el('div', {class: 'card-detail'}, p.not)
+    ));
+  }
+}
+
+function renderCC() {
+  const ccArr = J.status?.tradia_cc || [];
+  const root = document.getElementById('ccGrid');
+  for (const cc of ccArr) {
+    const card = el('div', {class: 'card'});
+    card.appendChild(el('div', {class: 'card-title'},
+      cc.cc,
+      el('span', {class: 'badge badge-blue'}, `S${cc.sprint_aktif}`)
+    ));
+    card.appendChild(el('div', {class: 'card-sub'},
+      `${cc.durum_isareti || '🟢'} ${cc.sprint_durum || ''}`
+    ));
+    card.appendChild(el('div', {class: 'card-detail'}, cc.son_sprint_konu || ''));
+    if (cc.havuz_birikim) {
+      card.appendChild(el('div', {class: 'card-sub', html: `📊 Havuz: <strong>${cc.havuz_birikim.toLocaleString('tr-TR')}</strong>${cc.hedef ? ` / ${cc.hedef.toLocaleString('tr-TR')} (${cc.yuzde_tamamlanma || cc.yuzde || ''}%)` : ''}`}));
+    }
+    if (cc.p0_sorun && cc.p0_sorun.length) {
+      const p0 = el('div', {class: 'p0'});
+      p0.appendChild(el('strong', {}, '⚠️ P0:'));
+      for (const s of cc.p0_sorun) {
+        p0.appendChild(el('span', {class: 'p0-item'}, '• ' + s));
+      }
+      card.appendChild(p0);
+    }
+    root.appendChild(card);
+  }
+}
+
+function renderLansman() {
+  const l = J.status?.lansman_dalga_1;
+  if (!l) return;
+  const root = document.getElementById('lansmanList');
+  for (const ok of (l.onkosul || [])) {
+    const done = (ok.durum || '').includes('%') ?
+      (parseInt(ok.durum) || 0) >= 100 :
+      (ok.durum === 'tamam' || ok.durum === '✅');
+    root.appendChild(el('li', {},
+      el('span', {}, done ? '✅' : '⬜'),
+      el('span', {}, `${ok.madde} `),
+      el('span', {class: 'meta'}, `— ${ok.sorumlu || ''} (${ok.durum || ''})`)
+    ));
+  }
+  document.getElementById('emailListesi').textContent = (l['5_en_email_hazir'] || []).join(' · ');
+  document.getElementById('portalListesi').textContent = (l['3_portal_ahmet_browser'] || []).join(' · ');
+}
+
+function renderVakalar(filter = '') {
+  const v = J.vaka_havuzu;
+  if (!v) return;
+  const root = document.getElementById('vakaList');
+  root.innerHTML = '';
+  document.getElementById('vakaToplam').textContent = `${v.ozet_metrik.toplam_vaka} vaka · ${v.ozet_metrik.pattern_yuzey_teshis} pattern`;
+
+  const f = filter.toLowerCase().trim();
+  const filtered = v.vakalar
+    .filter(va => !f ||
+      (va.baslik || '').toLowerCase().includes(f) ||
+      (va.kaynak_cc || '').toLowerCase().includes(f) ||
+      (va.ders || '').toLowerCase().includes(f)
+    )
+    .slice()
+    .reverse()  // En son vakalar üstte
+    .slice(0, 15);  // İlk 15 göster
+
+  if (filtered.length === 0) {
+    root.appendChild(el('div', {class: 'loading'}, 'Eşleşen vaka yok'));
+    return;
+  }
+
+  for (const va of filtered) {
+    const row = el('div', {class: 'vaka-row'});
+    const title = el('div', {},
+      el('span', {class: 'vaka-no'}, `#${va.havuz_no}`),
+      el('strong', {}, va.baslik)
+    );
+    if (va.pattern_yuzey_teshis) {
+      title.appendChild(el('span', {class: 'pattern-flag'}, 'YÜZEY-TEŞHİS'));
+    }
+    row.appendChild(title);
+    row.appendChild(el('div', {class: 'meta'},
+      `${va.tarih || '?'} · ${va.kaynak_cc || '?'} · ${va.durum || '?'}`
+    ));
+    if (va.ders) {
+      row.appendChild(el('div', {class: 'card-detail'}, va.ders));
+    }
+    root.appendChild(row);
+  }
+  if (!f && v.vakalar.length > 15) {
+    root.appendChild(el('div', {class: 'meta', style: 'text-align:center; padding: 0.5rem;'},
+      `Son 15 vaka gösteriliyor. Filtrele veya `,
+      el('a', {href: 'vaka_havuzu.json'}, 'JSON'),
+      ` aç.`
+    ));
+  }
+}
+
+function renderAhmet() {
+  const arr = J.status?.ahmet_bekleyen_manuel_isler || [];
+  const root = document.getElementById('ahmetList');
+  for (const it of arr) {
+    const done = (it.durum || '').includes('✅');
+    root.appendChild(el('li', {},
+      el('span', {}, done ? '✅' : '⬜'),
+      el('span', {}, it.madde),
+      el('span', {class: 'meta', style: 'margin-left:auto;'}, it.durum)
+    ));
+  }
+}
+
+async function main() {
+  const [status, ozet, vaka, surec] = await Promise.all([
+    fetchJSON('status'),
+    fetchJSON('ozet'),
+    fetchJSON('vaka_havuzu'),
+    fetchJSON('surec_takip')
+  ]);
+  J.status = status;
+  J.ozet = ozet;
+  J.vaka_havuzu = vaka;
+  J.surec_takip = surec;
+
+  if (!status) {
+    document.getElementById('meta').textContent = 'JSON dosyaları yüklenemedi';
+    return;
+  }
+
+  renderMeta();
+  renderProjeler();
+  renderCC();
+  renderLansman();
+  renderVakalar();
+  renderAhmet();
+
+  document.getElementById('vakaFilter').addEventListener('input', e => {
+    renderVakalar(e.target.value);
+  });
+}
+
+main();
+</script>
+
+</body>
+</html>

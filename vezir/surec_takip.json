@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "guncelleme": "2026-05-29T16:00:00+03:00",
+  "kapsam": "Aktif süreç takibi — paralel iş yapan 6 CC'nin sprint'ler arası geçişi + Ahmet manuel iş takvimi",
+  "tamamlanan_sprintler_29_may": [
+    {"cc": "CC-Sosyal", "sprint": 50, "ne": "8 pazar DIA tam, 32 pilot, güvenirlik 8.0, KF Türkiye ofis YOK"},
+    {"cc": "CC-Basın", "sprint": 29, "ne": "Sayı 6 Bursa CANLI (22 sayfa + PDF + EN/RU)"},
+    {"cc": "CC-Tic", "sprint": 32, "ne": "11 ay TÜİK reparse, Rusya 3.649, Cross-Hat 3 dosya, Apex"},
+    {"cc": "CC-Analiz", "sprint": 21, "ne": "11.583 SS, master 145.994, 192/192 Trash"},
+    {"cc": "CC-Hafıza", "sprint": 3, "ne": "8.kısım sindirim, K18/K19/K20, 42 vaka, Vezir paketi"},
+    {"cc": "CC-Vezir", "sprint": "Aşama 1+1B+1C", "ne": "Statik pano + misara-vezir public repo + Pages aktif"}
+  ],
+  "devam_eden_sprintler": [
+    {
+      "cc": "CC-Sosyal",
+      "sprint": 51,
+      "konu": "Fuar sprint + Dalga 2 hazırlık",
+      "ilerleme_yuzde": null,
+      "engel": "S47 -135 manuel borç (Ahmet)",
+      "tahmini_bitis": "5 sprint sonu (havuz 1000+ hedef Sprint 52-53)"
+    },
+    {
+      "cc": "CC-Basın",
+      "sprint": 30,
+      "konu": "Sayı 7 İstanbul Kadıköy magazin TAM YAZIM",
+      "ilerleme_yuzde": null,
+      "tahmini_sure_saat": 4,
+      "format": "TR + EN + RU + PDF"
+    },
+    {
+      "cc": "CC-Tic",
+      "sprint": 33,
+      "konu": "Almanya 655 4. deneme + 5 email takip + ikinci el 12 ay reparse",
+      "engel": "Almanya 655 3 sprintte doğrulanamadı (Vaka 16)"
+    },
+    {
+      "cc": "CC-Analiz",
+      "sprint": 22,
+      "konu": "Retro mahalle fuzzy + Kural 14 TADE + Mekan Doktrini v1.1 FINAL + Hepsiemlak entegrasyon",
+      "kritik": "KULLANICI DİREKTİFİ: SİLME YOK, güven<75 boş"
+    }
+  ],
+  "ahmet_manuel_takvim": [
+    {"madde": "CB LaunchAgent aktive", "durum": "✅", "yapildi_29_may": true},
+    {"madde": "misara-vezir public repo + Pages", "durum": "✅", "yapildi_29_may": true},
+    {"madde": "3 portal browser ziyareti (Tranio + Astons + CS Global)", "durum": "⬜", "engel": "Cloudflare 403", "tahmini_sure_dk": "15-30"},
+    {"madde": "PPTX inceleme (Sayı 1/2/3'te Rusya 3.737 var mı)", "durum": "⬜", "tahmini_sure_dk": 20, "iliskili_vaka": 17},
+    {"madde": "5 EN email gönderim (lansman dalga 1)", "durum": "⬜", "tahmini_sure_dk": 25, "onkosul": "TÜİK kontrol + Wrangler + hukuk"},
+    {"madde": "Hukuk müşaviri /privacy + /kvkk revize", "durum": "⬜", "kritik": true, "lansman_onkosul": true},
+    {"madde": "Atilla Yeşilada 491K follower tarama", "durum": "⬜", "aciliyet": "düşük"}
+  ],
+  "lansman_dalga_1_onkosul_durum": [
+    {"madde": "TÜİK 2025 kontrol", "ilerleme": "Sprint 33 devam", "engel_iliskili_vaka": [10, 11, 16, 17]},
+    {"madde": "Wrangler deploy", "ilerleme": "Sprint 8 hazır, Ahmet manuel deploy"},
+    {"madde": "Hukuk müşaviri", "ilerleme": "0% — başlamadı"},
+    {"madde": "Müşteri havuzu 1000+", "ilerleme": "38.7% (387/1000)", "tahmini": "Sprint 52-53"}
+  ],
+  "vezir_bildirim_paketleri": {
+    "tanim": "4 CC sprint sonunda Vezir'e bildirim paketi yazar (data/vezir_bildirim_*.json)",
+    "bekleyen_paketler": [
+      "vezir_bildirim_ccbasin_s30.json",
+      "vezir_bildirim_cctic_s33.json",
+      "vezir_bildirim_ccanaliz_s22.json"
+    ]
+  },
+  "vezir_kendi_takvim": {
+    "asama_1_kuruldu": "2026-05-29 (Aşama 1 + 1B + 1C aynı gün)",
+    "asama_2_otomatik_sync": "Henüz yok — Aşama 2'de cc-vezir-sync.yml",
+    "guncel_sync_yontemi": "Manuel: bash ~/gacbusiness/scripts/sync_to_public.sh"
+  }
+}

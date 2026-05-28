@@ -1,6 +1,6 @@
 {
-  "schema_version": "1.0",
-  "guncelleme": "2026-05-29T14:42:00+03:00",
+  "schema_version": "1.1",
+  "guncelleme": "2026-05-29T16:00:00+03:00",
   "uyari": "Sadece RAKAM ve KAMUYA AÇIK BİLGİ. Müşteri isim/email/telefon/adres YOK (KVKK).",
   "tradia": {
     "marka_kimligi": {
@@ -17,8 +17,11 @@
       "diller_aktif": ["TR", "EN", "AR", "RU"],
       "diller_faz_2_4": ["DE", "FA", "ZH"]
     },
-    "veri_panosu": {
-      "sahibinden_master_ilan": 125843,
+    "veri_panosu_29_may": {
+      "sahibinden_master_ilan": 145994,
+      "sahibinden_master_artis_27_may_29_may": 20151,
+      "sahibinden_mahalle_BOS_yuzde": 32.2,
+      "sahibinden_mahalle_BOS_ilan": 47058,
       "osm_poi": 139989,
       "mahalle_toplam": 7076,
       "buyuksehir_mahalle_polygon": 3797,
@@ -27,27 +30,40 @@
       "tradia_haber_havuzu": 8803,
       "hepsiemlak_kayit": 595,
       "bbb_meclis_imar_karar": 107,
+      "bbb_pdf_parse_tamam": "107/107",
+      "nilufer_28_karar_lider": true,
       "yabanci_alim_hukuk_db_bolum": 12,
-      "musteri_havuzu_birikim": 156,
+      "musteri_havuzu_birikim": 387,
       "musteri_havuzu_lansman_hedef": 1000,
+      "musteri_havuzu_yuzde": 38.7,
+      "musteri_pilot_dosya": 32,
+      "musteri_pilot_guvenirlik_ort": 8.0,
       "youtube_transcripts": 3001,
       "youtube_kelime_milyon": 7.26,
       "mega_proje_cc_site": 30,
       "tuik_2025_reparse_ay": 12,
       "tuik_2026_ay": 4,
       "i18n_anahtar_cevirilmis": 525,
-      "i18n_dil_sayisi": 7
+      "i18n_dil_sayisi": 7,
+      "tradia_il_kapsama_yuzde": 17.3,
+      "tradia_il_kapsama_il": 14,
+      "tradia_il_sifir_il_sayisi": 67,
+      "tradia_il_tam_kapsama_il": "Gaziantep (12/12)",
+      "tradia_manuel_ss_tahmin_saat_min": 40,
+      "tradia_manuel_ss_tahmin_saat_max": 80
     },
-    "il_kapsama": {
-      "8_buyuksehir_polygon_sağlam": 5,
-      "8_buyuksehir_polygon_eksik": 4,
-      "buyuksehir_polygon_eksik_liste": ["Adana", "Gaziantep", "Kocaeli", "Konya"],
-      "turkiye_top_18_tetik_mahalle": 18,
-      "top18_il_dagilimi": {"İstanbul": 8, "Ankara": 5, "İzmir": 4, "Antalya": 1, "Bursa": 1}
+    "tuik_2025_yabanci_il_top3": {
+      "Istanbul": 7989,
+      "Antalya": 7118,
+      "Mersin": 1800,
+      "not": "Sayı 1/2/3'te kullanılan veri yanlış olabilir (Vaka 10/11) — outreach BEKLET"
     },
     "magazin_yayini": {
       "canli_sayilar": ["Sayı 1", "Sayı 2", "Sayı 3", "Sayı 6"],
-      "hazirlik": ["Sayı 6 Bursa magazin (CC-Basın S27)", "Sayı 7 İstanbul Kadıköy magazin adayı"],
+      "hazirlik": [
+        "Sayı 6 Bursa CANLI (22 sayfa + .pdf 497KB + EN/RU)",
+        "Sayı 7 İstanbul Kadıköy — TAM YAZIM Sprint 30 (TR+EN+RU+PDF)"
+      ],
       "diller_canli": ["TR", "EN", "RU"]
     },
     "uretim_olcek": {
@@ -64,35 +80,44 @@
       "TR": "TR-A DIA",
       "EN": "TRADIA Global",
       "RU": "RUSADIA",
-      "AR_GULF": "KHALIJDIA (Suudi/BAE/Kuveyt/Katar/Bahreyn/Umman)",
-      "DE": "GERDIA (Almanya/Avusturya/İsviçre)",
-      "FA": "IRADIA (İran)",
-      "ZH": "ZHONGDIA (Çin + diaspora)",
-      "AR_MAJEDIA": "MAJEDIA (Mağrip + Suriye/Lübnan/Mısır)"
+      "AR_GULF": "KHALIJDIA",
+      "DE": "GERDIA",
+      "FA": "IRADIA",
+      "ZH": "ZHONGDIA",
+      "AR_MAJEDIA": "MAJEDIA"
     },
-    "8_sinyal_kanali": [
-      "Kafe yoğunluğu",
-      "Market açılışı",
-      "1+0 dönüşüm",
-      "Ticaret Sicili (asıl IP)",
-      "Belediye meclis",
-      "Hashtag sosyal",
-      "Sahibinden marj",
-      "Restoran/POI"
-    ],
+    "tier1_emlak_konsolidasyon": {
+      "fiziksel_ofis_var": ["JLL", "Colliers", "CBRE", "CW"],
+      "fiziksel_ofis_yok_desk_var": ["Knight Frank", "Savills"],
+      "not": "Sayı 7 magazin için kritik ayrım (Vaka 30)"
+    },
+    "negatif_vaka_birikimi": {
+      "tradia_tam_kapsama_havuz": 42,
+      "ortak_pattern_yuzey_teshis": 7,
+      "kapali_durum_iliskili_birim_yaklasim": "K19 (İkinci Kontrol Mekanizması)"
+    },
     "13_veri_kanali": {
       "hukumet_9": ["CSB", "TKGM", "HMB", "GİB", "Sanayi/Tarım (SKIP)", "TÜİK", "TCMB", "Resmi Gazete", "Cumhurbaşkanlığı"],
       "piyasa_4": ["Sahibinden (OCR)", "Hepsiemlak", "Hürriyet Emlak (yok)", "Capital/Ekonomim/Dünya"]
     }
   },
   "vezir_proje": {
-    "repo": "gacbusiness",
-    "domain": "dashboard.misaragroup.com",
-    "hosting": "Cloudflare Pages",
+    "repo_private": "gacbusiness (iç repo)",
+    "repo_public_mirror": "misara-vezir (Pages aktif 29 May)",
+    "domain_cloudflare": "dashboard.misaragroup.com (eski)",
+    "domain_pages": "e-misara.github.io/misara-vezir/ (yeni — Claude için)",
     "ai_cagrisi": "YOK (statik pano — asla susmaz)",
     "aktif_workflow_sayisi": 4,
     "arsiv_workflow_sayisi": 3,
     "aylik_tasarruf_usd": 1.58
+  },
+  "kararlar_kumulatif": {
+    "toplam": 20,
+    "son_3_karar_29_may": [
+      {"id": "K18", "ad": "Vezir 4. Proje + Statik Pano", "ozet": "Vezir orkestratör 4. proje; statik JSON pano AI çağrısız."},
+      {"id": "K19", "ad": "İkinci Kontrol Mekanizması (5. Disiplin)", "ozet": "İlk bulgudan sonra DUR + ikinci kontrol. 7+ yüzey-teşhis vakası sonrası formüle."},
+      {"id": "K20", "ad": "Public/Private + KVKK Ayrım", "ozet": "Hassas veri public'e koyma. Şimşek istisnası kamuya açık rol için."}
+    ]
   },
   "kazanc_modeli": {
     "premium_uyelik_aylik_usd": [29, 49, 79, 199],

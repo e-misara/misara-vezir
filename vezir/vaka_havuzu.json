@@ -1,166 +1,68 @@
 {
-  "schema_version": "1.0",
-  "guncelleme": "2026-05-29T14:42:00+03:00",
-  "kaynak": "~/tradia_konusmalar/04_DURUST_NEGATIF_VAKA/ + GENİŞ paket Bölüm 4",
+  "schema_version": "1.1",
+  "guncelleme": "2026-05-29T16:00:00+03:00",
+  "kaynak": "CC-Hafıza Sprint 3 → ~/tradia_konusmalar/04_DURUST_NEGATIF_VAKA/_BIRLESIK_HAVUZ.json",
+  "kapsam": "3 CC ayrı sayıyordu (Basın 11 / Tic 38 / Sosyal 30) → CC-Hafıza tek havuza senkronladı",
   "felsefe": "Tradia kurum kültürü dürüst negatif vakalarla yaşar. Yetersiz veriyle yorum yapmayız, hata yapınca açıkça yazarız.",
-  "senkron_notu": "3 CC ayrı sayıyordu (Basın 11 / Tic 38 / Sosyal 30). Burada kronolojik tek havuz. Vaka 09 boş (gelecek için ayrıldı).",
-  "vakalar": [
-    {
-      "no": 1,
-      "tarih": "2026-05-19",
-      "sprint": "pre-sprint pilot",
-      "cc_kaynak": "Pilot Bülten v5",
-      "baslik": "Bayrak Emoji Yanlışı",
-      "ozet": "PDF v5'te İzlanda + var olmayan iki bayrak Türk illeri için kullanıldı.",
-      "ders": "Türkiye illeri için emoji bayrak yok. Görsel zenginleştirme uyduran yasak. Tradia emoji-light.",
-      "durum": "kapalı"
-    },
-    {
-      "no": 2,
-      "tarih": "2026-05-22",
-      "sprint": "pre-sprint",
-      "cc_kaynak": "CC-Basın Bursa",
-      "baslik": "Osmangazi Paradoksu (3 Haberden Yanlış Yorum Riski)",
-      "ozet": "Sabah Osmangazi 'görünmez bölge' sanıldı (3 haber). Yol B mapping sonrası 407 haber → POZİTİF çıktı. Bülten yayınlansaydı yanlış cümle gidecekti.",
-      "ders": "3 haberden yorum yapma. Görünmez bölge yok, yeterince veri çekmedik var. Tradia kalıcı tezi bu vakadan doğdu.",
-      "durum": "kapalı"
-    },
-    {
-      "no": 3,
-      "tarih": "2026-05-22",
-      "sprint": "pre-sprint gece",
-      "cc_kaynak": "CC-Basın × CC-Site",
-      "baslik": "Üçlü Hizalama 26 vs 30 vs 27 Proje",
-      "ozet": "Mega proje sayısı 3 yerde 3 farklı: CC-Basın 26, CC-Site galeri 30, mega_projects_map.json 27. Claude (chat) script okurken yakaladı.",
-      "ders": "Çoklu kopya = çelişki kaynağı. Master kaynak prensibi: bir gerçek, tek dosya. Cross-CC entegrasyonda sayım kontrolü zorunlu.",
-      "durum": "kapalı"
-    },
-    {
-      "no": 4,
-      "tarih": "2026-05-23",
-      "sprint": "pre-sprint Sayı 4",
-      "cc_kaynak": "CC-Analiz",
-      "baslik": "K.Maraş 2.3 Milyon Birim Manşet Çürütmesi (766× abartı)",
-      "ozet": "Sayı 4 Deprem raporunda K.Maraş için '2.3 milyon birim' haber kaynaklı geldi. Web doğrulama → gerçek 3.006 birim.",
-      "ders": "Tek haber = tek kaynak, manşete koyma. Türk medyada rakam abartma yaygın. Tradia diferansiyatörü: rakipler haberi kopyalar, Tradia doğrular.",
-      "durum": "kapalı"
-    },
-    {
-      "no": 5,
-      "tarih": "2026-05-23",
-      "sprint": "pre-sprint Sayı 4",
-      "cc_kaynak": "CC-Analiz",
-      "baslik": "Adıyaman 500 Bin Sosyal Konut (75× abartı)",
-      "ozet": "Sayı 4 raporunda '500 bin sosyal konut.' Web doğrulama → gerçek 6.620 konut.",
-      "ders": "Binler → milyonlar abartma kalıbı (siyasi vaat haberleri). Manşet rakam ≥2 kaynak teyit zorunlu (Tradia standardı).",
-      "durum": "kapalı"
-    },
-    {
-      "no": 6,
-      "tarih": "2026-05-26",
-      "sprint": "CC-Analiz Sprint 12-13",
-      "cc_kaynak": "CC-Analiz",
-      "baslik": "USD/TL Kuru 34 Yerine 45.78 (%35 hata)",
-      "ozet": "Yabancı Alıcı Lokasyon DB hesaplamalarında USD/TL 34 kullanıldı (AI eğitim verisi eski). Ahmet uyardı, gerçek 45.78.",
-      "ders": "Eski tarih bilgisi (AI eğitim) gerçek zamanlı teyit zorunlu. Master kaynak prensibi (kur tek noktada). Sprint 30+ TCMB EVDS API disiplini.",
-      "durum": "kapalı"
-    },
-    {
-      "no": 7,
-      "tarih": "2026-05-27",
-      "sprint": "CC-Sosyal Sprint 40",
-      "cc_kaynak": "CC-Sosyal Haiku doğrulama",
-      "baslik": "DIA İsim Telaffuz Kontrolü Yok (5/9 isim revize)",
-      "ozet": "Claude DIA 8 pazar için 9 isim önerdi, telaffuz/anlam kontrolü yapılmadı. 5 isim sorunlu (Dead-ia çağrışım, Suudi kadın adı çakışması, fonoloji vs).",
-      "ders": "Marka isim çok kültürlü çakışmalara karşı kör olamaz. AI üretimi sonrası AI doğrulama (Haiku 4 dil) etkili.",
-      "durum": "kapalı"
-    },
-    {
-      "no": 8,
-      "tarih": "2026-05-27",
-      "sprint": "DIA karakter tasarım",
-      "cc_kaynak": "Ahmet manuel müdahale",
-      "baslik": "Dia Karakter Sabit Görünüm → Anonim Pivot",
-      "ozet": "Claude DIA için sabit görünüm önerdi (her video aynı yüz = marka tanınırlığı). Ahmet düzeltti: 'yüzü görünmez, kıyafet değişir, gözler görünür.'",
-      "ders": "Marka tanınırlığı = sabit görünüm sezgisi yanlış. İstihbaratçı konseptiyle ünlü kişi konsepti çelişir. Kişi değil, kıymetli bilgi.",
-      "durum": "kapalı"
-    },
-    {
-      "no": 9,
-      "tarih": null,
-      "sprint": null,
-      "cc_kaynak": null,
-      "baslik": "(Boş — gelecek vaka için ayrılmış)",
-      "ozet": null,
-      "ders": null,
-      "durum": "ayrildi"
-    },
-    {
-      "no": 10,
-      "tarih": "2026-05-27",
-      "sprint": "CC-Basın Sprint 26",
-      "cc_kaynak": "CC-Basın",
-      "baslik": "Top 20 Osmangazi Örneklem Sapması",
-      "ozet": "Bursa Top 20 v2 fuzzy match sonrası tamamen Osmangazi'ye kaydı. Sahibinden ilan dağılımı asimetrik (Bursa 3960, Osmangazi 1647 — %42).",
-      "ders": "Fiyat verisi sahibinden'e bağlı, sahibinden ilan dağılımı asimetrik. Eşik uygulayınca veri kayıp = altta veri asimetrisi.",
-      "durum": "kapalı"
-    },
-    {
-      "no": 11,
-      "tarih": "2026-05-27",
-      "sprint": "CC-Tic Sprint 29 (Sprint 21B reparse)",
-      "cc_kaynak": "CC-Tic",
-      "baslik": "Sprint 21'in Gizli Hatası 8 Ay Sonra Yakalandı",
-      "ozet": "Sprint 21B TÜİK 2025 bültenlerinden 'en fazla satan iller' verisini YABANCI olarak kategorize etti. Gerçek: TOPLAM. Ardahan 727 yabancı sandık → 2025 yıllık toplam (en az satan il).",
-      "ders": "Periyodik gözden geçirme (her 5 sprintte 1). Format değişikliği regex'leri kırar. 8 ay önceki hata hâlâ etkili. Sayı 1/2/3 outreach BEKLET.",
-      "durum": "açık_kontrol_bekliyor"
-    },
-    {
-      "no": 12,
-      "tarih": "2026-05-27",
-      "sprint": "CC-Tic Sprint 29",
-      "cc_kaynak": "CC-Tic",
-      "baslik": "Türkçe \\b Regex Tuzağı (Kabinesi yakalanmadı)",
-      "ozet": "CB Standalone pattern '\\bkabine\\b' Kabinesi'ni eşleştiremedi (word boundary aglutinatif Türkçeyi kırıyor).",
-      "ders": "Türkçe NLP disiplini: kelime başı \\b OK, kelime sonu \\b YASAK. Tüm scraper'larda audit borç.",
-      "durum": "açık_audit_bekliyor"
-    },
-    {
-      "no": 13,
-      "tarih": "2026-05-27",
-      "sprint": "CC-Analiz Sprint 19",
-      "cc_kaynak": "CC-Analiz",
-      "baslik": "Bursa POC 0 Tetik (veri yetersizliği)",
-      "ozet": "Cross-Hat Kural 13 Bursa Top 20'de 0 mahalle tetikledi. Beklenen min 5-10. Sprint 25 10 altın mahallenin %70'i None (POI eksik).",
-      "ders": "Manuel = doğru varsayımı yanlış (formal test). 0 tetik dürüst sonuç, pattern gevşetme yanlış. Türkiye Top 18 başka şehirlerde çalıştı (Kadıköy/Bornova ✓) → formül doğru, Bursa veri sorunu.",
-      "durum": "açık_sprint20_düzeltme"
-    },
-    {
-      "no": 14,
-      "tarih": "2026-05-29",
-      "sprint": "Vezir Aşama 1",
-      "cc_kaynak": "CC-Vezir (kurulum)",
-      "baslik": "Tüketici Testi Atlandı — curl 200 = Claude okur Varsayımı",
-      "ozet": "Vezir statik pano kuruldu, 5 URL curl ile 200 doğrulandı. ADIM 8 'doğrulama' bu kadarla tamam sayıldı. Ancak gerçek tüketici (Claude web_fetch) Cloudflare bot detection ile blok yedi: 'Site blocked the request'. Pano fiilen işlevsiz kaldı, Aşama 1B düzeltme gerekti.",
-      "ders": "Kontrolün muhatabını ihmal etme. 'curl 200' altyapı testi; ürün testi tüketicinin gerçek istek pattern'iyle yapılır. UA + sertifika + JS challenge gibi farklılıklar curl'ün görmediği katmanlar. Vezir Sprint 2: 'gerçek tüketici testi tamamlanmadan kurulum tamam değildir'.",
-      "durum": "kapalı_asama_1c_cozumu"
-    },
-    {
-      "no": 15,
-      "tarih": "2026-05-29",
-      "sprint": "Vezir Aşama 1B",
-      "cc_kaynak": "CC-Vezir (kurulum)",
-      "baslik": "Plan/Tier Kısıtı Atlandı — 'Workflow Var = Çalışır' Varsayımı",
-      "ozet": "Aşama 1B'de 'deploy-pages.yml var = GitHub Pages çalışır' varsayıldı. Gerçek engel: private repo'da Pages ücretli plan (GitHub Pro/Team) gerektiriyor; ücretsiz tier'da 'Upgrade or make repository public' diyor. Workflow varlığı plan iznine eşit değil.",
-      "ders": "Bir özelliğin varlığı (yml/config/script) onun çalışacağını garantilemez. Plan, kota, paket, billing katmanları AYRI kontrol edilmeli. Vezir Sprint 3: 'kurulumdan önce plan/tier kontrol et' — özellikle GitHub Free, Cloudflare Free, Vercel Hobby gibi ücretsiz tier'lar için. Çözüm: Aşama 1C — ayrı public repo (misara-vezir), iç repo private kalır.",
-      "durum": "kapalı_asama_1c_cozumu"
-    }
-  ],
+  "kapsama_dagilimi": {
+    "pre_sprint_donem": 13,
+    "cc_tic_birikim": "~26",
+    "cc_basin_birikim": "~5",
+    "cc_sosyal_birikim": "~7",
+    "cc_vezir": 2,
+    "cc_analiz": 1
+  },
+  "ortak_pattern_yuzey_teshis": {
+    "tanim": "İlk bulgudan sonra DUR + ikinci kontrol mekanizması K19 (5. disiplin) bu pattern'in 7+ kez tekrarlanması sonrası formüle edildi.",
+    "vakalar": [13, 12, 22, 28, 29, 39, 40]
+  },
   "ozet_metrik": {
-    "toplam_vaka": 15,
-    "kapali": 12,
-    "acik": 3,
-    "tarihsel_birikim_iddiası": 33,
-    "not": "33 negatif vaka birikimi CC-Tic state.md'de geçiyor. Bu pano sadece tam dökümlü vakaları tutuyor. Vaka 14+15 Vezir'in kendi kurulum vakaları — Aşama 1B→1C öğrenmeleri."
-  }
+    "toplam_vaka": 42,
+    "pattern_yuzey_teshis": 7,
+    "vezir_kendi_vakalari": 2
+  },
+  "vakalar": [
+    {"havuz_no": 1, "tarih": "2026-05-19", "kaynak_cc": "pre-sprint", "baslik": "Bayrak Emoji Yanlışı (Pilot Bülten v5)", "ders": "Türkiye illeri için emoji bayrak yok. Uydurma yasak.", "durum": "kapalı"},
+    {"havuz_no": 2, "tarih": "2026-05-22", "kaynak_cc": "CC-Basın doğum", "baslik": "Osmangazi Paradoksu (3 Haberden Yanlış Yorum)", "ders": "'Görünmez bölge' yok, 'yeterince veri çekmedik' var. Tradia kalıcı tezinin (K5) atası.", "durum": "kapalı"},
+    {"havuz_no": 3, "tarih": "2026-05-22", "kaynak_cc": "CC-Basın × CC-Site", "baslik": "Üçlü Hizalama 26 vs 30 Proje", "ders": "Master kaynak prensibi: bir gerçek, tek dosya (K8).", "durum": "kapalı"},
+    {"havuz_no": 4, "tarih": "2026-05-23", "kaynak_cc": "CC-Analiz", "baslik": "K.Maraş 2.3M Birim Manşet Çürütmesi (766× abartı)", "ders": "Web doğrulama Tradia metodolojik IP. Tek haber manşete koyma.", "durum": "kapalı"},
+    {"havuz_no": 5, "tarih": "2026-05-23", "kaynak_cc": "CC-Analiz", "baslik": "Adıyaman 500K Konut (75× abartı)", "ders": "Manşet rakam ≥2 kaynak teyit zorunlu.", "durum": "kapalı"},
+    {"havuz_no": 6, "tarih": "2026-05-26", "kaynak_cc": "CC-Analiz", "baslik": "USD/TL 34 → 45.78 (%35 hata)", "ders": "Kur değerleri her sprint web teyit. Eski AI eğitim verisi güvenilmez.", "durum": "kapalı"},
+    {"havuz_no": 7, "tarih": "2026-05-27", "kaynak_cc": "CC-Sosyal", "baslik": "DIA İsim Telaffuz Kontrolü Yok (5/9 Revize)", "ders": "Marka isim öncesi Haiku 4 dil doğrulama. AI üretimi → AI doğrulama.", "durum": "kapalı"},
+    {"havuz_no": 8, "tarih": "2026-05-27", "kaynak_cc": "CC-Sosyal (Ahmet düzeltti)", "baslik": "Dia Karakter Sabit Görünüm → Anonim", "ders": "İstihbaratçı ≠ ünlü kişi. Önemli olan kimlik değil, KIYMETLİ BİLGİ.", "durum": "kapalı"},
+    {"havuz_no": 9, "tarih": "2026-05-27", "kaynak_cc": "CC-Basın", "baslik": "Top 20 Osmangazi Örneklem Sapması", "ders": "Veri tabanı asimetrisi (bug değil). Magazinde iki kaynak birleşik.", "durum": "kapalı"},
+    {"havuz_no": 10, "tarih": "2026-05-27", "kaynak_cc": "CC-Tic", "baslik": "Sprint 21 Gizli Hatası 8 Ay Sonra Yakalandı", "ders": "Periyodik gözden geçirme (5 sprintte 1). Format değişikliği regex'leri kırar.", "durum": "açık_outreach_bekliyor"},
+    {"havuz_no": 11, "tarih": "2026-05-27", "kaynak_cc": "CC-Tic", "baslik": "Türkçe \\b Regex Tuzağı (Kabinesi)", "ders": "Türkçe aglutinatif yapı \\b'yi kırar. Kelime sonu \\b YASAK.", "durum": "açık_audit_bekliyor"},
+    {"havuz_no": 12, "tarih": "2026-05-27", "kaynak_cc": "CC-Analiz", "baslik": "Bursa POC 0 Tetik (Veri Yetersizliği)", "ders": "'Manuel = doğru' varsayımı yanlış (formal test). 0 tetik dürüst sonuç.", "durum": "kapalı"},
+    {"havuz_no": 13, "tarih": "2026-05-28", "kaynak_cc": "CC-Basın", "baslik": "OCR Pipeline Teşhis (Mahalle:None)", "ders": "Kaynak field dağılımı önce sayılmalı (csv vs ocr). K19 5. disiplin alanı a.", "pattern_yuzey_teshis": true, "durum": "kapalı"},
+    {"havuz_no": 14, "tarih": "2026-05-27 öncesi", "kaynak_cc": "CC-Tic", "baslik": "TÜİK 2025 Aralık 4 Değer None", "ders": "Yıllık özet aylık pattern'ı kırıyor. Sprint 30 ikinci el regex borç.", "durum": "açık"},
+    {"havuz_no": 15, "tarih": "2026-05-22 → 2026-05-27", "kaynak_cc": "CC-Tic", "baslik": "CB Modül Hang (Self-Contained Çözüm)", "ders": "Self-contained tek dosya mimari (S30+ standart).", "durum": "kapalı"},
+    {"havuz_no": 16, "tarih": "2026-05-28", "kaynak_cc": "CC-Tic", "baslik": "Almanya 655 Doğrulanamadı (3 Sprint Borç)", "ders": "Magazinde KULLANMA disclaimerı. CC-Basın S30 Sayı 7 uyarı.", "durum": "açık_S33_4_deneme"},
+    {"havuz_no": 17, "tarih": "2026-05-28", "kaynak_cc": "CC-Tic", "baslik": "Rusya 3.737 → 3.649 (Sayı 1/2/3 Borç)", "ders": "11 ay reparse sonrası doğru. CC-Basın S30 Sayı 7'de 3.649 kullan.", "durum": "açık_pptx_inceleme"},
+    {"havuz_no": 18, "tarih": "2026-05-28", "kaynak_cc": "CC-Tic", "baslik": "Ahmet 0 İş Vakası (CC Yanlış Yönlendirme)", "ders": "Manuel iş talimatları net adım + tahmini süre + beklenen çıktı içermeli.", "durum": "kapalı"},
+    {"havuz_no": 19, "tarih": "2026-05-28", "kaynak_cc": "CC-Tic", "baslik": "CC-Tic 35-38 Metodoloji Birikim Vakaları", "ders": "Periyodik gözden geçirme S30/35/40 disiplini sürdürülür.", "durum": "izleme"},
+    {"havuz_no": 20, "tarih": "öncesi", "kaynak_cc": "CC-Tic", "baslik": "S17 YKKE Terminoloji Düzeltme", "ders": "Resmi terminoloji TCMB'den ham al.", "durum": "kapalı"},
+    {"havuz_no": 21, "tarih": "öncesi", "kaynak_cc": "CC-Tic", "baslik": "S18 TCMB NUTS2 YKFE Yok Sanıldı", "ders": "TCMB EVDS endpoint geniş tarama.", "durum": "kapalı"},
+    {"havuz_no": 22, "tarih": "2026-05-27", "kaynak_cc": "CC-Analiz", "baslik": "Cross-Hat 'KAYIP' Eksik Araştırma", "ders": "Dosya arama tek klasör değil tüm sistem (find ~/ recursive). K19 5. disiplin alanı b.", "pattern_yuzey_teshis": true, "durum": "kapalı"},
+    {"havuz_no": 23, "tarih": "Sprint 46→47", "kaynak_cc": "CC-Sosyal", "baslik": "Atilla Yeşilada 54.6K vs 491.7K (Takipçi vs Post)", "ders": "Sosyal medya rakamı: takipçi vs post vs etkileşim net.", "durum": "kapalı"},
+    {"havuz_no": 24, "tarih": "Sprint 47", "kaynak_cc": "CC-Sosyal", "baslik": "classifier.py Cap Bug ($1.09 Fazla)", "ders": "Cap kontrolü geçmiş run maliyetini görmüyor — Faz 2 fix.", "durum": "açık_faz2"},
+    {"havuz_no": 25, "tarih": "Sprint 45", "kaynak_cc": "CC-Sosyal", "baslik": "V3 Politik Moderasyon Başarısız (Haiku Arapça)", "ders": "Arapça moderasyon için daha güçlü model veya manuel review.", "durum": "borç_planlandı"},
+    {"havuz_no": 26, "tarih": "2026-05-27", "kaynak_cc": "CC-Sosyal", "baslik": "Sprint 47 Hedef -135 Açık", "ders": "WebSearch %25-30 etkili — kalanı manuel. Hedef otomatik+manuel ayır.", "durum": "açık_manuel_ahmet"},
+    {"havuz_no": 27, "tarih": "2026-05-28", "kaynak_cc": "CC-Sosyal", "baslik": "Sprint 47 Müşteri Havuzu Ayrımı (5 Yeni)", "ders": "8 pazar döngüsünde her sprintte 1-2 yeni vaka birikiyor.", "durum": "izleme"},
+    {"havuz_no": 28, "tarih": "2026-05-28", "kaynak_cc": "CC-Sosyal", "baslik": "DEİK Türk-Alman 'Çelişki' Yanlış Teşhis", "ders": "Organizasyon hiyerarşisi araştırılmadan 'çelişki' damga yanlış. K19 5. disiplin alanı c.", "pattern_yuzey_teshis": true, "durum": "kapalı"},
+    {"havuz_no": 29, "tarih": "2026-05-28", "kaynak_cc": "CC-Sosyal", "baslik": "Maximos = Property Turkey Yanlış Birleştirme", "ders": "Kurucu/CEO + kuruluş yılı + adres (3+ alan) teyit. K19 5. disiplin alanı d.", "pattern_yuzey_teshis": true, "durum": "kapalı"},
+    {"havuz_no": 30, "tarih": "2026-05-28", "kaynak_cc": "CC-Sosyal", "baslik": "Knight Frank Türkiye Fiziksel Ofis YOK Bulgusu", "ders": "Tier1 tabloda KF+Savills ofis yok / JLL+Colliers+CBRE+CW var — magazin için kritik.", "durum": "kapalı_dusurus_ip"},
+    {"havuz_no": 31, "tarih": "2026-05-28", "kaynak_cc": "CC-Sosyal", "baslik": "Hedef 1000 Müşteri Yol Haritası Yenileme", "ders": "Sprint hedefleri 'otomatik etkililik %25-30' bilinerek koyulur.", "durum": "kapalı"},
+    {"havuz_no": 32, "tarih": "2026-05-28", "kaynak_cc": "CC-Sosyal", "baslik": "İstihbarat Doktrini 32 Pilot Hedef (5→32)", "ders": "Pilot dosyalar genişledikçe güvenirlik 7.0→8.0 yükseldi.", "durum": "kapalı"},
+    {"havuz_no": 33, "tarih": "2026-05-27", "kaynak_cc": "CC-Basın", "baslik": "S26 v2 Top 20 Çelişme — Bug Değil Asimetri", "ders": "Veri tabanı asimetrisi (Havuz#9 ile aynı vaka, farklı çerçeve).", "durum": "kapalı"},
+    {"havuz_no": 34, "tarih": "öncesi", "kaynak_cc": "CC-Basın", "baslik": "S17 OCR Pipeline Mahalle Parse (%32.2 BOŞ)", "ders": "Master 145.994 ilan %32.2 BOŞ mahalle. SİLME YOK, OCR parse denenecek.", "durum": "açık_s22_devir"},
+    {"havuz_no": 35, "tarih": "öncesi", "kaynak_cc": "CC-Basın", "baslik": "S21B Aralık 2025 İl/Uyruk Parse Karışıklığı", "ders": "TÜİK format kontrolü yıllık değil aylık gerek (Havuz#10 yapısal kuzeni).", "durum": "kapalı"},
+    {"havuz_no": 36, "tarih": "öncesi", "kaynak_cc": "CC-Basın", "baslik": "S23 OSM Mahalle Granülerlik 7/62", "ders": "OSM admin_level seçimi kritik (8=ilçe, 10=mahalle).", "durum": "kapalı"},
+    {"havuz_no": 37, "tarih": "2026-05-26+", "kaynak_cc": "CC-Tic", "baslik": "Outreach Cloudflare 403 (3 Portal Ahmet'e)", "ders": "Bot tespiti yiyince çıkar. 15-30 dk Ahmet insan emeği.", "durum": "açık_ahmet"},
+    {"havuz_no": 38, "tarih": "2026-05-24", "kaynak_cc": "CC-Analiz", "baslik": "Sahibinden Anti-Bot 24h Ban Pivot", "ders": "Manuel SS + macOS Vision OCR + watchdog. Pipeline DOKUNULMAZ kuralı.", "durum": "kapalı_pivot"},
+    {"havuz_no": 39, "tarih": "2026-05-29", "kaynak_cc": "CC-Vezir", "baslik": "'curl 200 = Claude Okur' Varsayımı (Cloudflare Bot)", "ders": "Tüketici (Claude) ile test edilmeli, kurucu (curl) değil. K19 5. disiplin: tüketici testi.", "pattern_yuzey_teshis": true, "durum": "kapalı_asama_1c"},
+    {"havuz_no": 40, "tarih": "2026-05-29", "kaynak_cc": "CC-Vezir", "baslik": "'Workflow Var = Çalışır' Varsayımı (Plan/Tier)", "ders": "Workflow varlığı ≠ çalışır. Plan/tier kısıtları kontrol edilmeli. K19 5. disiplin.", "pattern_yuzey_teshis": true, "durum": "kapalı_asama_1c"},
+    {"havuz_no": 41, "tarih": "2026-05-07 → 2026-05-20", "kaynak_cc": "CC-Vezir (eski sistem)", "baslik": "Vezir 14 Gün Suskunluk (AI Brief Kredi Bitti)", "ders": "'Asla susmaz' = statik JSON pano (K18). AI workflow'lar kredi yiyince susar.", "durum": "kapalı_statik_pano"},
+    {"havuz_no": 42, "tarih": "2026-05-28", "kaynak_cc": "CC-Analiz", "baslik": "Excel Kapsama 67/81 İl SIFIR (%83 Boş)", "ders": "Manuel SS ~8.040 = 40-80 saat. Hepsiemlak (595 ilan, 15 il) S22 entegrasyon.", "durum": "açık_s22_planli"}
+  ]
 }
