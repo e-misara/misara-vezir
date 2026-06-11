@@ -1,6 +1,6 @@
 {
   "schema_version": "1.5",
-  "guncelleme": "2026-06-05T01:30:00+03:00",
+  "guncelleme": "2026-06-11T23:15:00+03:00",
   "version_url": "ozet-w24.json",
   "onceki_version": "arsiv/ozet-w23.json",
   "kaynak": "11. kısım açılış delta (Patron 5 Haz) + CC-Hafıza S22 + TT-AI TT17 + CC-Sosyal S75 bildirimleri",
@@ -11,7 +11,8 @@
     "launch_darbogaz": "✅ KAPANDI (V36 Boyut C %66 +22pt aşıldı)",
     "cekirdek_urun": "✅ KANITLANDI (Kural 13 İstanbul 10/10 Altın mahalle İBB imar TEYİT)",
     "yeni_cc": "TT-AI (önceden panoda yoktu, şimdi 6→7 CC)",
-    "sprint_prefix_degisimi": "Tic T- prefix, Basın B-, TT-AI TTA- (sprint sayım sistemi yenilendi)"
+    "sprint_prefix_degisimi": "Tic T- prefix, Basın B-, TT-AI TTA- (sprint sayım sistemi yenilendi)",
+    "arsiv_durumu": "Tam arşiv 11_tradia_kisim_tam.md + tam_tutanak/ 8 dosya yüklendi (27/27 kanal 200)"
   },
   "tradia": {
     "marka_kimligi": {
@@ -591,9 +592,66 @@
     "aylik_tasarruf_usd": 1.58,
     "konusma_briefleri_canli": [
       "https://e-misara.github.io/misara-vezir/konusmalar/09_kapanis_brief.md",
-      "https://e-misara.github.io/misara-vezir/konusmalar/10_acilis_brief.md"
+      "https://e-misara.github.io/misara-vezir/konusmalar/10_acilis_brief.md",
+      "https://e-misara.github.io/misara-vezir/konusmalar/11_tradia_kisim_tam.md"
     ],
-    "11_kisim_brief_bekleyen": "Hafıza S22 sonu K11 brief'i bekleniyor"
+    "11_kisim_brief_bekleyen": "Hafıza S22 sonu K11 brief'i bekleniyor",
+    "konusma_tam_tutanak_arsivi": {
+      "_aciklama": "Tradia 1-10 kısım tarih bazlı tam tutanaklar (3.7 MB toplam, KVKK YOK, sadece sistem okur)",
+      "_yukleme_tarihi": "2026-06-11",
+      "dosyalar": [
+        {
+          "tarih": "2026-05-19",
+          "konuşma": "1-2. kısım",
+          "url": "https://e-misara.github.io/misara-vezir/konusmalar/tam_tutanak/2026-05-19_tradia_tum.md",
+          "boyut_kb": 354
+        },
+        {
+          "tarih": "2026-05-22",
+          "konuşma": "3-4. kısım",
+          "url": "https://e-misara.github.io/misara-vezir/konusmalar/tam_tutanak/2026-05-22_tradia_konusma.md",
+          "boyut_kb": 231
+        },
+        {
+          "tarih": "2026-05-23",
+          "konuşma": "5. kısım",
+          "url": "https://e-misara.github.io/misara-vezir/konusmalar/tam_tutanak/2026-05-23_tradia_konusma.md",
+          "boyut_kb": 94
+        },
+        {
+          "tarih": "2026-05-24_27",
+          "konuşma": "6-7. kısım (4 gün birleşik)",
+          "url": "https://e-misara.github.io/misara-vezir/konusmalar/tam_tutanak/2026-05-24_27_tradia_tum.md",
+          "boyut_kb": 3056
+        },
+        {
+          "tarih": "2026-05-27",
+          "konuşma": "7. kısım birebir",
+          "url": "https://e-misara.github.io/misara-vezir/konusmalar/tam_tutanak/2026-05-27_birebir.md",
+          "boyut_kb": 46
+        },
+        {
+          "tarih": "2026-05-29",
+          "konuşma": "8. kısım Vezir kurulum",
+          "url": "https://e-misara.github.io/misara-vezir/konusmalar/tam_tutanak/2026-05-29_8kisim.md",
+          "boyut_kb": 15
+        },
+        {
+          "tarih": "2026-06-02",
+          "konuşma": "9. kısım kapanış",
+          "url": "https://e-misara.github.io/misara-vezir/konusmalar/tam_tutanak/2026-06-02_9kisim_kapanis.md",
+          "boyut_kb": 6
+        },
+        {
+          "tarih": "2026-06-03",
+          "konuşma": "10. kısım açılış",
+          "url": "https://e-misara.github.io/misara-vezir/konusmalar/tam_tutanak/2026-06-03_10kisim_acilis.md",
+          "boyut_kb": 6
+        }
+      ],
+      "toplam_mb": 3.8,
+      "11_kisim_lokasyon": "konusmalar/11_tradia_kisim_tam.md (klasör dışında, ayrı dosya)"
+    }
   },
   "v46_celiski_durum": "AÇIK (Patron Sprint 9+ çözer)",
   "detay_nerede_indeks": {
