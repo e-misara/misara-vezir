@@ -107,19 +107,7 @@
 **Etki:** Macbook kapalıyken günlük tarama devam · Tam Mac → cloud geçiş Patron operatif onayı bekliyor
 
 ═══════════════════════════════════════════════════════════════
-## 7. Ortaklık Anlaşması
-═══════════════════════════════════════════════════════════════
-
-**Kurucu ortaklar (3):**
-- **Patron** (Ahmet Çolak) — kurucu, lider
-- **Enes** — %25
-- **Musa** — %25
-- *Toplam dağılım kayıtlı; geri kalan pay Patron'a ait (V16 not: dağılım anlaşma içeriğinde tam tanımlı)*
-
-**Tüzel referans:** Kurucu ortaklar yapısı kayıtta · Cross-Hat dokunulmaz · iç-istihbarat detay Hafıza'da · public-safe özet
-
-═══════════════════════════════════════════════════════════════
-## 8. CC Durum 8
+## 7. CC Durum 8 (8 CC)
 ═══════════════════════════════════════════════════════════════
 
 | # | CC | Son | Statü |
