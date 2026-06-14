@@ -139,4 +139,4 @@
 
 **Disiplin:** $0 maliyet · V37 sabit (250.193) · V55 READ-ONLY · V53 ≥2 · V11 dil katı · V48 izole · KVKK SERT · K24a köprü · Cross-Hat dokunulmaz · sentez-gecidi 6 geçit · GRANÜLER KORELASYON
 
-*Pano K24a kanalında güncel. Kişi-veri YOK (kurucu ortak yapısı tüzel referans).*
+*Pano K24a kanalında güncel. Kişi-veri YOK.*
