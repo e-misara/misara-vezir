@@ -1,0 +1,684 @@
+{
+  "schema_version": "1.6",
+  "guncelleme": "2026-06-14T18:00:00+03:00",
+  "version_url": "ozet-w25.json",
+  "onceki_version": "arsiv/ozet-w24.json",
+  "kaynak": "CC-Hafıza S13 EK ADIM 4 (compact öncesi snapshot) — S12 EK FLAGSHIP QA + EmlakIQ kanona + Vitrin katman",
+  "snapshot_baslik": "S13 compact öncesi durum — Flagship FINAL + 9. fark dürüstlük + cron/bulut greenlit + ortaklık",
+  "tek_dogru_kaynak_disiplini": "Bu dosya tüm pano verisinin KAPSAYICI kanonik kaynağıdır. W25 = S13 öncesi 'asla susmaz' snapshot. Pazartesi flagship hazır. ozet-w24 (11 Haz) arsiv'e taşındı.",
+  "uyari": "Sadece RAKAM ve KAMUYA AÇIK BİLGİ. Müşteri/şahıs/kurucu kişi-veri YOK (KVKK).",
+  "flagship_final_qa_temiz": {
+    "_kaynak": "Analiz S79-QA + Patron talimatı",
+    "durum": "✅ 5/5 QA-temiz · 0 mismatch · V11 dil denetimi GEÇTİ · Pazartesi-hazır",
+    "kart_sayisi": 670,
+    "kart_orta": 352,
+    "kart_guclu": 318,
+    "katman_birlesim": 7,
+    "katmanlar": [
+      "SES",
+      "bina",
+      "ilçe satış",
+      "arz",
+      "timestamp",
+      "Kural13+TT-AI",
+      "VGM"
+    ],
+    "5_vitrin": [
+      {
+        "ilce": "Büyükçekmece/Karaağaç",
+        "kategori": "DİKKAT",
+        "bilgi_acigi": "-5%"
+      },
+      {
+        "ilce": "Başakşehir/Başak",
+        "kategori": "DİKKAT",
+        "bilgi_acigi": "-9%"
+      },
+      {
+        "ilce": "Beykoz/Göztepe",
+        "kategori": "⭐ ALTIN",
+        "ozellik": "üst SES + talep +%56"
+      },
+      {
+        "ilce": "Esenyurt/Barbaros Hayrettin Paşa",
+        "kategori": "DİKKAT"
+      },
+      {
+        "ilce": "Ataşehir/Atatürk",
+        "kategori": "DİKKAT"
+      }
+    ],
+    "makro": "spekülatif şişme birlikteliği (üst SES × yüksek fiyat × yeni-bina × DİKKAT korelasyon yoğunluğu)",
+    "drift_durumu": "BİTTİ (sentez-gecidi vitrini geçti, GRANÜLER KORELASYON tutarlı)",
+    "vitrin_katman_kanonik": "5 vitrin × 3 lane = Tic makas (T99 ilçe arz-aktivite + T77 talep çapraz) + İhale kamu-arz karşı-sinyal (İ17 Üsküdar 6/Kadıköy 2 premium) + TT-AI grounding (TT43 Wikipedia-zemin)"
+  },
+  "durustluk_9_fark_kanona": {
+    "_kaynak": "S101 EmlakIQ kanona + S12 EK",
+    "ana_karar": "Tradia '6-12 ay önden görme' iddia DÜRÜSTÇE GERİ ÇEKTİ → 9. FARK = DÜRÜSTLÜK (8+1)",
+    "sebep": "V11 + V48 + S90 önden-görme YASAK damgası, SOFT üçlü-gate gerçek",
+    "9_fark_sirala": [
+      "1. Mahalle 8 sinyal birleşik",
+      "2. 1+0 yatırımcı proxy",
+      "3. Meclis erken sinyal",
+      "4. Kurumsal bipolar",
+      "5. POI birleşik",
+      "6. 9. sinyal aktör",
+      "7. Gentrifikasyon SOFT",
+      "8. 8 DIA çoklu dil + yöntem şeffaflığı KATI",
+      "9. ⭐ DÜRÜSTLÜK (geri çekme = uzun-vade güven anchor)"
+    ],
+    "uclu_anchor_kanonik": [
+      "çevre + aktör + disiplin (S100)",
+      "DÜRÜSTLÜK (S101)",
+      "uzun-vade güven (V11+V48 yıpranmaz)"
+    ],
+    "net_konum": "\"Diğerleri değerleme, Tradia çevre+aktör+disiplin+DÜRÜSTLÜK = UZUN-VADE GÜVEN ANCHOR\""
+  },
+  "rakip_matrisi_v53_kanona": {
+    "_kaynak": "Sosyal S100 + S101",
+    "rakipler": [
+      {
+        "ad": "ENDEKSA",
+        "v53_seviye": "5+",
+        "kategori": "değerleme"
+      },
+      {
+        "ad": "ATLAS",
+        "v53_seviye": "5+",
+        "kategori": "değerleme"
+      },
+      {
+        "ad": "Yapı Kredi",
+        "v53_seviye": "5+",
+        "kategori": "değerleme"
+      },
+      {
+        "ad": "Emlakjet",
+        "v53_seviye": "5+",
+        "kategori": "portal"
+      },
+      {
+        "ad": "HEPSİEMLAK",
+        "v53_seviye": "3",
+        "kategori": "portal"
+      },
+      {
+        "ad": "SAHİBİNDEN",
+        "v53_seviye": "2",
+        "kategori": "portal"
+      },
+      {
+        "ad": "⭐ EMLAKIQ",
+        "v53_seviye": "1 EKSIK",
+        "kategori": "EN YAKIN — '6-12 ay önden görme' iddia (Tradia KATI YASAK)",
+        "risk": "🟥 17 SABİT envanter etiket"
+      },
+      {
+        "ad": "TEKCE",
+        "v53_seviye": "—",
+        "kategori": "kategori farklı (komisyoncu)"
+      }
+    ],
+    "tehdit_degerlendirme": "EmlakIQ TEHDİT DEĞİL — Tradia disiplin asıl savunulabilir fark. EmlakIQ derin keşif KAPANDI (V53 sınırlı 2 + yöntem kapalı + sosyal/kurucu EKSIK)"
+  },
+  "cron_bulut_greenlit": {
+    "_kaynak": "Basın B88 (S12) + S10 GREENLIT karar",
+    "durum": "✅ POC ✓ — 4 workflow bulutta",
+    "workflow_4": [
+      "primer Success kanıt",
+      "ihale-rg-gunluk (06:30 UTC)",
+      "ihale-csb-haftalik Pzt 06:45 ⭐ TOKİ launch",
+      "ihale-dsi-haftalik Salı 06:50"
+    ],
+    "push_hash": "19951cb..88dc6ef (11 dosya +1023 satır)",
+    "yapısal_duzeltme": "scripts/ kökü ROOT + _rg_parser_lib vendor + pypdf",
+    "laptop_bagimsiz": true,
+    "gate_durum": "5 manuel gate: 5/5 BEKLE → 4/5 BEKLE + 1 POC ✓ (S10 GREENLIT → S12 POC)"
+  },
+  "istanbul_derinlestirme_kanonik": {
+    "_kaynak": "S12 ek + İ17 + T99",
+    "tic_t99_kanonik": "İstanbul 19/12 ilçe-konum İLK kayıt (T99 ilk kanonik yol)",
+    "ihale_i17_kamu_arz": "Üsküdar premium 6 (54.6M TL VGM ağırlıklı)",
+    "basin_b87_4_yesil_piyasa_haber": [
+      "TCMB KFE",
+      "GYODER",
+      "TÜİK",
+      "İst Valiliği"
+    ],
+    "kural_13_durum": "🔒 384/299 KARAR-BEKLİYOR (Patron 'geç' demedi → override katman uygulanmaz)"
+  },
+  "analiz_tarama_suruyor_notu": {
+    "_kaynak": "Analiz S77+S78+S79",
+    "timestamp_drift_normalize": 815,
+    "kural_13_kilitli": "384/299 🔒",
+    "flagship_qa_durum": "S79 5/5 QA-temiz Pazartesi-hazır",
+    "polygon_borc_hafiza_islem": "7 il/57 ilçe/1665 mahalle (S72 Hafıza işleme borcu)"
+  },
+  "ortaklik_anlasmasi": {
+    "_aciklama": "Patron talimatı (CC-Hafıza S13 EK ADIM 4)",
+    "ortaklar": [
+      "Enes",
+      "Musa"
+    ],
+    "pay_dagilim": "25/25 (her biri %25)",
+    "detay": "Patron tarafından sözleşme süreci başladı, CC-Hafıza S13'te kayıtlı",
+    "kvkk_disiplin": "Kurumsal yapı kaydı — kişi-veri detayı YASAK, public=false, sadece pay yapısı public-safe"
+  },
+  "tradia": {
+    "marka_kimligi": {
+      "ana_marka": "Tradia",
+      "domain": "tradiaturkey.com",
+      "tanimlama": "Türkiye Yatırım İstihbarat Platformu",
+      "karakter": "Dia (anonim istihbaratçı — yüzü görünmez, gözler görünür)",
+      "konum": [
+        "Endeksa konut DEĞERLEME, Tradia ÇEVRE İSTİHBARATI",
+        "Arsa altın, bina gümüş — Tradia arsa istihbaratı yapar",
+        "Veri kalitesi > veri hacmi",
+        "Tradia kural depolayan değil, kural uygulayıcı"
+      ],
+      "diller_aktif": [
+        "TR",
+        "EN",
+        "AR",
+        "RU"
+      ],
+      "diller_faz_2_4": [
+        "DE",
+        "FA",
+        "ZH"
+      ]
+    },
+    "veri_panosu_14_haziran": {
+      "_kaynak": "CC-Hafıza S9-S12 + S12 EK kanonik snapshot",
+      "_artis_05haz_14haz": "master 241.846 → 250.193 (+8.347, 9 günde)",
+      "sahibinden_master_ilan": 250193,
+      "sahibinden_master_versiyon": "v23 (V37 sabit + S65-S77 mikro düzeltme)",
+      "sahibinden_master_durum": "4 CC üçlü teyit ⭐",
+      "musteri_havuzu_birikim": 412,
+      "musteri_havuzu_durum": "SABİT (14 sprint, V53 35/37 ⭐ KAPANIŞ) — V16 dürüst doyum",
+      "musteri_havuzu_lansman_hedef": 1000,
+      "musteri_havuzu_yuzde": 41.2,
+      "tic_firma_db_toplam": 402,
+      "tic_firma_db_yesil": 130,
+      "tic_firma_db_yuzde": 97.8,
+      "kural_13_durum": "🔒 KARAR-BEKLİYOR (384/299 önerilen TEMIZ alt-tip)",
+      "kural_13_versiyon_celiski": {
+        "A_206_139": "Hafıza S22 + Site S9 İstanbul-dönemi",
+        "B_427_341": "S74 öncesi şişme",
+        "C_384_299": "⭐ S74 sonra TEMIZ (Patron önerisi)",
+        "D_434_344": "Patron metni S68 (Hafıza'da yok V16)"
+      },
+      "tradia_il_band_guclu": 23,
+      "tradia_il_band_arz_katmani": 23,
+      "tradia_il_band_talep_katmani": 65,
+      "tradia_il_kapsama_yuzde": 76.8,
+      "polygon_kapsama": {
+        "il": 7,
+        "ilce": 57,
+        "mahalle": 1665,
+        "not": "S72 Hafıza işleme borcu"
+      },
+      "damga_toplam": 51,
+      "damga_dagılım": {
+        "TEMIZ": 22,
+        "KISMI": 8,
+        "CIFT_TEYIT_KISMI": 9,
+        "PRIMER_ONDEN_KISMI": 12,
+        "Eyupsultan_yeni": 12,
+        "S20_eklenmis_damga": 5
+      },
+      "mahalle_yapisal_dosya": 67,
+      "mahalle_yapisal_versiyon": "B70 4 primer kanal",
+      "mahalle_toplam_agac": 32287,
+      "mahalle_poi_json": 330,
+      "tt_ai_grounded_toplam": 3243,
+      "tt_ai_rich_toplam": 190,
+      "tt_ai_rich_il_sayisi": 31,
+      "tt_ai_vitrin_kapsam": "351/351 %100",
+      "ihale_takvim_v8": {
+        "kayit": 746,
+        "ilce_kapsama": 608,
+        "launchd_otonom": 3
+      },
+      "ihale_altyapi_v3": 13,
+      "ihale_distressed": 550,
+      "tradia_haber_havuzu": 8803,
+      "osm_poi": 139989,
+      "mahalle_toplam_referans": 7076,
+      "buyuksehir_mahalle_polygon": 3797,
+      "i18n_anahtar_cevirilmis": 525,
+      "8_sinyal_yesil_yuzde": 94,
+      "9_sinyal_durum": "Faz 1 hazır"
+    },
+    "9_buyuksehir_veri_ilerleme": {
+      "_kaynak_disiplini": "İlan sayıları sahibinden master 145.994'ten alınmıştır. mahalle_dolu_pct = mahalle bilgisi dolu ilan oranı. POI sayıları OSM 139.989 toplam üzerinden mahalle eşleştirme oranıdır.",
+      "_baslangic": "Patron pivot panosu — 9 şehir için veri tamamlanma takibi.",
+      "istanbul": {
+        "ilan": 69258,
+        "mahalle_dolu_pct": 100,
+        "poi_dolu_pct": "araştırılıyor",
+        "tradia_oncelik": "P1 — havuz en büyük",
+        "magazin_planlı": "Sayı 7 Kadıköy (CC-Basın S30)",
+        "fix_sprint": null,
+        "not": "Tradia havuzunun en büyüğü, mahalle full"
+      },
+      "ankara": {
+        "ilan": "araştırılıyor",
+        "mahalle_dolu_pct": "araştırılıyor",
+        "poi_dolu_pct": "araştırılıyor",
+        "tradia_oncelik": "P2",
+        "fix_sprint": "CC-Analiz S25+",
+        "not": "Polygon eksik 4 ilden biri"
+      },
+      "izmir": {
+        "ilan": "araştırılıyor",
+        "mahalle_dolu_pct": "araştırılıyor",
+        "poi_dolu_pct": "araştırılıyor",
+        "tradia_oncelik": "P2",
+        "fix_sprint": null,
+        "not": "Top 18'de 4 mahalle (Bornova Atatürk vb.)"
+      },
+      "bursa": {
+        "ilan": 16628,
+        "mahalle_dolu_pct": 29,
+        "poi_dolu_pct": "araştırılıyor",
+        "tradia_oncelik": "P0 — düşük mahalle oranı",
+        "magazin_yayini": "Sayı 6 CANLI",
+        "fix_sprint": "CC-Analiz S24 (mahalle parse iyileştirme)",
+        "not": "Mahalle %29 dolu — fuzzy match + OCR pipeline ile yükseltilecek"
+      },
+      "antalya": {
+        "ilan": "araştırılıyor",
+        "mahalle_dolu_pct": "araştırılıyor",
+        "poi_dolu_pct": "araştırılıyor",
+        "tradia_oncelik": "P1 — TÜİK 2025 yabancı #2 (7.118)",
+        "fix_sprint": "CC-Analiz S26+",
+        "not": "Yabancı yatırımcı segment için yüksek değer"
+      },
+      "adana": {
+        "ilan": "araştırılıyor",
+        "mahalle_dolu_pct": "araştırılıyor",
+        "poi_dolu_pct": "araştırılıyor",
+        "tradia_oncelik": "P3",
+        "fix_sprint": "CC-Analiz S27+",
+        "not": "Polygon eksik (Sprint 20'de hedef)"
+      },
+      "konya": {
+        "ilan": "araştırılıyor",
+        "mahalle_dolu_pct": "araştırılıyor",
+        "poi_dolu_pct": "araştırılıyor",
+        "tradia_oncelik": "P3",
+        "fix_sprint": "CC-Analiz S27+",
+        "not": "Polygon eksik"
+      },
+      "gaziantep": {
+        "ilan": "araştırılıyor",
+        "mahalle_dolu_pct": "araştırılıyor",
+        "poi_dolu_pct": "araştırılıyor",
+        "tradia_oncelik": "P2",
+        "fix_sprint": "CC-Analiz S25",
+        "not": "Tradia'da tek TAM KAPSAMA il (12/12 ilçe)",
+        "tam_kapsama": true
+      },
+      "kocaeli": {
+        "ilan": "araştırılıyor",
+        "mahalle_dolu_pct": "araştırılıyor",
+        "poi_dolu_pct": "araştırılıyor",
+        "tradia_oncelik": "P2",
+        "fix_sprint": "CC-Analiz S25",
+        "not": "Polygon eksik, 'zengin' kategori (Sayı 1 magazinde)"
+      },
+      "ozet_metrik": {
+        "veri_tamam_sehir": 1,
+        "veri_kismi_sehir": 1,
+        "veri_arastiriliyor_sehir": 7,
+        "tradia_il_kapsama_yuzde": 17.3,
+        "tradia_il_kapsama_il": 14,
+        "tradia_il_sifir_il": 67
+      }
+    },
+    "kurum_mulk_envanteri": {
+      "_planlama": "CC-Tic Sprint 35 kapsamı — kurumsal/devlet mülk envanteri araştırılması. Hangi kurum hangi mahallede arsa/bina sahibi?",
+      "_durum": "Araştırma fazı — Sprint 35'te aktif olarak başlayacak",
+      "_simdiki_kaynak": "Public web (kurum açıklamaları, basın, RG mevzuat)",
+      "kapsam": {
+        "diyanet": {
+          "durum": "araştırma",
+          "not": "Camiler + arsa portföyü"
+        },
+        "vakiflar": {
+          "durum": "araştırma",
+          "not": "Vakıflar Genel Müdürlüğü mülkleri (cami/hayır/kira)"
+        },
+        "tkgm": {
+          "durum": "araştırma",
+          "not": "Tapu Kadastro — kamu mülk kayıtları"
+        },
+        "milli_emlak": {
+          "durum": "araştırma",
+          "not": "Hazine ve Maliye — kamu arsa/bina envanteri"
+        },
+        "toki": {
+          "durum": "izleniyor",
+          "not": "TOKİ ihale + arsa portföyü (CC-Tic havuzda 8.803 haber arasında)"
+        },
+        "belediye": {
+          "durum": "araştırma",
+          "not": "İl/ilçe belediye mülkleri (1100 belediye)"
+        }
+      },
+      "tradia_kullanim_amaci": "Yatırımcı bir mahalleye bakarken o mahallede hangi kurum mülkü olduğunu görür → kentsel dönüşüm/imar riski daha net teşhis. Endeksa bunu yapmaz."
+    },
+    "magazin_yayini": {
+      "canli_sayilar": [
+        "Sayı 1",
+        "Sayı 2",
+        "Sayı 3",
+        "Sayı 6"
+      ],
+      "hazirlik": [
+        "Sayı 6 Bursa CANLI (22 sayfa + .pdf 497KB + EN/RU)",
+        "Sayı 7 İstanbul Kadıköy — TAM YAZIM Sprint 30 (TR+EN+RU+PDF)"
+      ],
+      "diller_canli": [
+        "TR",
+        "EN",
+        "RU"
+      ]
+    },
+    "uretim_olcek": {
+      "ai_video_stack_aylik_usd": 51,
+      "cevirmen_aylik_usd_min": 100,
+      "cevirmen_aylik_usd_max": 200,
+      "reklam_aylik_usd": 400,
+      "lansman_aylik_toplam_usd_min": 551,
+      "lansman_aylik_toplam_usd_max": 651,
+      "su_an_aylik_usd": 0,
+      "felsefe": "Şimdilik parasız, lansman tarihinde paraya abanırız"
+    },
+    "8_pazar_dia": {
+      "TR": "TR-A DIA",
+      "EN": "TRADIA Global",
+      "RU": "RUSADIA",
+      "AR_GULF": "KHALIJDIA",
+      "DE": "GERDIA",
+      "FA": "IRADIA",
+      "ZH": "ZHONGDIA",
+      "AR_MAJEDIA": "MAJEDIA"
+    },
+    "tier1_emlak_konsolidasyon": {
+      "fiziksel_ofis_var": [
+        "JLL",
+        "Colliers",
+        "CBRE",
+        "CW"
+      ],
+      "fiziksel_ofis_yok_desk_var": [
+        "Knight Frank",
+        "Savills"
+      ],
+      "not": "Sayı 7 magazin için kritik ayrım (Vaka 30)"
+    },
+    "13_veri_kanali": {
+      "hukumet_9": [
+        "CSB",
+        "TKGM",
+        "HMB",
+        "GİB",
+        "Sanayi/Tarım (SKIP)",
+        "TÜİK",
+        "TCMB",
+        "Resmi Gazete",
+        "Cumhurbaşkanlığı"
+      ],
+      "piyasa_4": [
+        "Sahibinden (OCR)",
+        "Hepsiemlak",
+        "Hürriyet Emlak (yok)",
+        "Capital/Ekonomim/Dünya"
+      ]
+    },
+    "negatif_vaka_birikimi": {
+      "tradia_tam_kapsama_havuz": 60,
+      "ortak_pattern_yuzey_teshis": 22,
+      "vezir_kendi_vakalari": 6
+    }
+  },
+  "lansman_3_boyut_v36": {
+    "_kaynak": "S24 Launch Dashboard + S12 update",
+    "boyut_A_musteri": {
+      "statu": "BEKLE %41.2",
+      "deger": "412 havuz SABİT 14 sprint"
+    },
+    "boyut_B_urun": {
+      "statu": "✅ HAZIR",
+      "deger": "Flagship FINAL QA-temiz · 5 vitrin · Pazartesi-hazır"
+    },
+    "boyut_C_veri": {
+      "statu": "✅ GO %76.8",
+      "deger": "23 il arz + 65 il talep + Bursa %88.1 + Çanakkale %85.8"
+    },
+    "5_manuel_gate": "5/5 BEKLE → 4/5 BEKLE + 1 POC ✓ (cron/bulut)",
+    "genel_karar": "BEKLE (Müşteri %41.2 ana darboğaz)"
+  },
+  "kazanc_modeli": {
+    "premium_uyelik_aylik_usd": [
+      29,
+      49,
+      79,
+      199
+    ],
+    "kurumsal_yillik_usd_min": 5000,
+    "kurumsal_yillik_usd_max": 100000,
+    "lead_funnel": "Günde 1 ücretsiz analiz + Tradia Basın magazin (ücretsiz katman besler)"
+  },
+  "vatandaşlık_segment": {
+    "tutar_usd": 400000,
+    "not": "26 May 2026 itibarıyla 250K → 400K çıkıldı"
+  },
+  "kararlar_kumulatif": {
+    "toplam": 31,
+    "yeni_kararlar_son_donem": [
+      "K27-K30: Tic LinkedIn + reklam $0 + founder bağ",
+      "K31: Adreslenebilir evren ~3K kentsel mahalle (S12)",
+      "Önden-Görme EMEKLİ → GRANÜLER KORELASYON İSTİHBARATI yeni flagship (S9)",
+      "AKPINAR önden-görme TAM GERİ ÇEKİLDİ (S9 dürüstlük)",
+      "Cron/Bulut GREENLIT (S10)",
+      "Sentez-Geçidi Skill kanona (S11)",
+      "İstanbul Flagship Rotası Faz 0-5 kanona (S11)",
+      "9. FARK DÜRÜSTLÜK (S101 → S12 EK) ⭐"
+    ]
+  },
+  "vezir_durum_panosu": {
+    "_kaynak": "S13 compact öncesi 7+1 CC snapshot",
+    "proje_sayisi": 4,
+    "projeler": [
+      "Tradia",
+      "AraçDen",
+      "3. proje (ASKIDA)",
+      "Vezir"
+    ],
+    "vezir_durum": "statik_pano_aktif_w25",
+    "cc_sayisi": 8,
+    "cc_sayisi_not": "7+1 (CC-İhale 11. kısımda eklendi, S10 dequarantine ile pano sync)",
+    "tradia_cc": [
+      {
+        "cc": "CC-Sosyal",
+        "sprint_aktif": 101,
+        "son_kapanan_sprint": 100,
+        "sprint_durum": "BAKIM MODU (keşif BİTTİ S100, ping-pong DURDU S10)",
+        "son_sprint_konu": "EmlakIQ kanona + 9. fark dürüstlük + üçlü anchor",
+        "havuz_birikim": 412,
+        "havuz_durum": "SABİT 14 sprint",
+        "v53_durum": "35/37 ⭐",
+        "durum_isareti": "🟢"
+      },
+      {
+        "cc": "CC-Basın",
+        "sprint_aktif": 88,
+        "son_kapanan_sprint": 87,
+        "sprint_durum": "devam_ediyor (CLOUD GREENLIT)",
+        "son_sprint_konu": "4 workflow bulutta + TCMB KFE/GYODER/TÜİK/İst Valiliği piyasa-haber + Sayı 19",
+        "p0_sorun": [
+          "Akpınar düzeltme errata"
+        ],
+        "durum_isareti": "🟢"
+      },
+      {
+        "cc": "CC-Tic",
+        "sprint_aktif": 99,
+        "son_kapanan_sprint": 99,
+        "sprint_durum": "devam_ediyor (kanonik yol İLK kayıt)",
+        "son_sprint_konu": "İstanbul 19/12 ilçe-konum kanonik yol + 402 firma 130 yeşil %97.8",
+        "havuz_birikim": 8803,
+        "firma_db_toplam": 402,
+        "firma_db_yesil": 130,
+        "durum_isareti": "🟢"
+      },
+      {
+        "cc": "CC-Analiz",
+        "sprint_aktif": 79,
+        "son_kapanan_sprint": 79,
+        "sprint_durum": "FLAGSHIP QA TEMİZ — Pazartesi-hazır",
+        "son_sprint_konu": "S78-Flagship 670 kart (352 ORTA + 318 GÜÇLÜ) + S79 QA 5/5",
+        "master_ilan": 250193,
+        "kural_13": "🔒 384/299 KARAR-BEKLİYOR",
+        "polygon_borc": "7 il/57 ilçe/1665 mahalle",
+        "durum_isareti": "🟢"
+      },
+      {
+        "cc": "CC-Site",
+        "sprint_aktif": 9,
+        "son_kapanan_sprint": 9,
+        "sprint_durum": "v2 TAM (S10 BEKLEMEDE)",
+        "p0_sorun": [
+          "S10 deploy bekleyen"
+        ],
+        "durum_isareti": "🟡"
+      },
+      {
+        "cc": "CC-TT-AI",
+        "sprint_aktif": "TTA45",
+        "son_kapanan_sprint": "TTA44",
+        "sprint_durum": "devam_ediyor",
+        "son_sprint_konu": "3.243 grounded / 190 rich (31 il) / 351 vitrin %100",
+        "grounded_toplam": 3243,
+        "rich_toplam": 190,
+        "rich_il_sayisi": 31,
+        "vitrin_kapsam": "351/351 %100",
+        "durum_isareti": "🟢"
+      },
+      {
+        "cc": "CC-İhale",
+        "sprint_aktif": "İ17",
+        "son_kapanan_sprint": "İ16",
+        "sprint_durum": "DEQUARANTINE (S10) + İstanbul kamu-arz",
+        "son_sprint_konu": "Üsküdar premium 6 (54.6M TL VGM) + İstanbul kamu-arz karşı-sinyal",
+        "takvim_v8": {
+          "kayit": 746,
+          "ilce": 608,
+          "launchd": 3
+        },
+        "yesil_kanal": 4,
+        "yesil_kanal_liste": [
+          "RG",
+          "CSB",
+          "SGK",
+          "VGM"
+        ],
+        "durum_isareti": "🟢"
+      },
+      {
+        "cc": "CC-Hafıza",
+        "sprint_aktif": "S13",
+        "son_kapanan_sprint": "S12 EK",
+        "sprint_durum": "compact öncesi (EK ADIM 4 — Vezir güncelle)",
+        "son_sprint_konu": "Flagship QA + EmlakIQ kanona + Vitrin katman (3 ek adım)",
+        "vezir_iliskisi": "Bu paketi hazırladı, CC-Vezir çekiyor",
+        "karantina_durum": "0 kalan ⭐ (8 dequarantine TAMAMLANDI)",
+        "durum_isareti": "🟢"
+      }
+    ],
+    "kapsayici_sonuc": {
+      "drift_durumu": "0 karantina, sentez-gecidi tutarlı",
+      "skill_kanona": [
+        "kaynak-dogrulama",
+        "sentez-gecidi"
+      ],
+      "flagship": "Pazartesi-hazır",
+      "cron_bulut": "POC ✓ (4 workflow bulutta, laptop-bağımsız)",
+      "darbogaz": "Müşteri %41.2 (Boyut A) tek BEKLE alanı"
+    }
+  },
+  "vezir_proje": {
+    "repo_private": "gacbusiness",
+    "repo_public_mirror": "misara-vezir",
+    "domain_pages": "e-misara.github.io/misara-vezir/",
+    "ai_cagrisi": "YOK (statik pano — asla susmaz)",
+    "aktif_workflow_sayisi": 4,
+    "arsiv_workflow_sayisi": 3,
+    "aylik_tasarruf_usd": 1.58,
+    "konusma_briefleri_canli": [
+      "https://e-misara.github.io/misara-vezir/konusmalar/09_kapanis_brief.md",
+      "https://e-misara.github.io/misara-vezir/konusmalar/10_acilis_brief.md",
+      "https://e-misara.github.io/misara-vezir/konusmalar/11_tradia_kisim_tam.md"
+    ],
+    "konusma_tam_tutanak_arsivi": {
+      "_aciklama": "Tradia 1-10 kısım tarih bazlı tam tutanaklar (3.7 MB toplam, KVKK YOK, sadece sistem okur)",
+      "_yukleme_tarihi": "2026-06-11",
+      "dosyalar": [
+        {
+          "tarih": "2026-05-19",
+          "konuşma": "1-2. kısım",
+          "url": "https://e-misara.github.io/misara-vezir/konusmalar/tam_tutanak/2026-05-19_tradia_tum.md",
+          "boyut_kb": 354
+        },
+        {
+          "tarih": "2026-05-22",
+          "konuşma": "3-4. kısım",
+          "url": "https://e-misara.github.io/misara-vezir/konusmalar/tam_tutanak/2026-05-22_tradia_konusma.md",
+          "boyut_kb": 231
+        },
+        {
+          "tarih": "2026-05-23",
+          "konuşma": "5. kısım",
+          "url": "https://e-misara.github.io/misara-vezir/konusmalar/tam_tutanak/2026-05-23_tradia_konusma.md",
+          "boyut_kb": 94
+        },
+        {
+          "tarih": "2026-05-24_27",
+          "konuşma": "6-7. kısım (4 gün birleşik)",
+          "url": "https://e-misara.github.io/misara-vezir/konusmalar/tam_tutanak/2026-05-24_27_tradia_tum.md",
+          "boyut_kb": 3056
+        },
+        {
+          "tarih": "2026-05-27",
+          "konuşma": "7. kısım birebir",
+          "url": "https://e-misara.github.io/misara-vezir/konusmalar/tam_tutanak/2026-05-27_birebir.md",
+          "boyut_kb": 46
+        },
+        {
+          "tarih": "2026-05-29",
+          "konuşma": "8. kısım Vezir kurulum",
+          "url": "https://e-misara.github.io/misara-vezir/konusmalar/tam_tutanak/2026-05-29_8kisim.md",
+          "boyut_kb": 15
+        },
+        {
+          "tarih": "2026-06-02",
+          "konuşma": "9. kısım kapanış",
+          "url": "https://e-misara.github.io/misara-vezir/konusmalar/tam_tutanak/2026-06-02_9kisim_kapanis.md",
+          "boyut_kb": 6
+        },
+        {
+          "tarih": "2026-06-03",
+          "konuşma": "10. kısım açılış",
+          "url": "https://e-misara.github.io/misara-vezir/konusmalar/tam_tutanak/2026-06-03_10kisim_acilis.md",
+          "boyut_kb": 6
+        }
+      ],
+      "toplam_mb": 3.8,
+      "11_kisim_lokasyon": "konusmalar/11_tradia_kisim_tam.md (klasör dışında, ayrı dosya)"
+    }
+  },
+  "v46_celiski_durum": "AÇIK"
+}
