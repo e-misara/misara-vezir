@@ -1,6 +1,6 @@
 {
   "schema_version": "1.6",
-  "guncelleme": "2026-06-14T18:00:00+03:00",
+  "guncelleme": "2026-06-17T14:56:00+03:00",
   "version_url": "ozet-w25.json",
   "onceki_version": "arsiv/ozet-w24.json",
   "kaynak": "CC-Hafıza S13 EK ADIM 4 (compact öncesi snapshot) — S12 EK FLAGSHIP QA + EmlakIQ kanona + Vitrin katman",
@@ -621,7 +621,8 @@
     "konusma_briefleri_canli": [
       "https://e-misara.github.io/misara-vezir/konusmalar/09_kapanis_brief.md",
       "https://e-misara.github.io/misara-vezir/konusmalar/10_acilis_brief.md",
-      "https://e-misara.github.io/misara-vezir/konusmalar/11_tradia_kisim_tam.md"
+      "https://e-misara.github.io/misara-vezir/konusmalar/11_tradia_kisim_tam.md",
+      "https://e-misara.github.io/misara-vezir/konusmalar/12_genis_ozet.md"
     ],
     "konusma_tam_tutanak_arsivi": {
       "_aciklama": "Tradia 1-10 kısım tarih bazlı tam tutanaklar (3.7 MB toplam, KVKK YOK, sadece sistem okur)",
@@ -680,5 +681,23 @@
       "11_kisim_lokasyon": "konusmalar/11_tradia_kisim_tam.md (klasör dışında, ayrı dosya)"
     }
   },
-  "v46_celiski_durum": "AÇIK"
+  "v46_celiski_durum": "AÇIK",
+  "12_kisim_durumu": {
+    "_baslik": "12. Kısım Arşivi (CC-Vezir + Patron koordinasyon)",
+    "_tarih": "2026-06-17",
+    "genis_ozet_canli": "https://e-misara.github.io/misara-vezir/konusmalar/12_genis_ozet.md",
+    "icerik_kapsam": [
+      "CİMER / 4982 Bilgi-Edinme framework (50 Soruda)",
+      "National kapsam düzeltmesi (Antalya→Türkiye)",
+      "Doğru kurum routing (VGM 14/15 + Milli Emlak 1/15)",
+      "CİMER başvuru takvimi (national, 10) + Hafıza S18→S19 takip",
+      "35 veri kalemi · 8 kategori · 24 harita-katman",
+      "Public-kaynak genişleme (12→30+)",
+      "İnsan-eli parser deseni",
+      "EKAP-Bülten kırılması"
+    ],
+    "verbatim_durum": "Dosya 1 (Pages tam kopya, 1.1 MB / 12.735 satır) PUBLIC'E YÜKLENMEDİ — S14 standing kural + KVKK SERT korundu. Ham kopya iç memory'de (Hafıza data/).",
+    "kvkk_islem": "Tek 'Anastasiya' referansı → '[2. başvuru sahibi]' maskelendi (CİMER 2. başvuru sahibi bağlamı).",
+    "kanal_test": "Pages + Raw + jsDelivr — 3/3 200 (8029 bytes)"
+  }
 }
