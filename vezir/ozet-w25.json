@@ -1,6 +1,6 @@
 {
   "schema_version": "1.6",
-  "guncelleme": "2026-06-17T14:56:00+03:00",
+  "guncelleme": "2026-06-17T15:30:00+03:00",
   "version_url": "ozet-w25.json",
   "onceki_version": "arsiv/ozet-w24.json",
   "kaynak": "CC-Hafıza S13 EK ADIM 4 (compact öncesi snapshot) — S12 EK FLAGSHIP QA + EmlakIQ kanona + Vitrin katman",
@@ -622,7 +622,8 @@
       "https://e-misara.github.io/misara-vezir/konusmalar/09_kapanis_brief.md",
       "https://e-misara.github.io/misara-vezir/konusmalar/10_acilis_brief.md",
       "https://e-misara.github.io/misara-vezir/konusmalar/11_tradia_kisim_tam.md",
-      "https://e-misara.github.io/misara-vezir/konusmalar/12_genis_ozet.md"
+      "https://e-misara.github.io/misara-vezir/konusmalar/12_genis_ozet.md",
+      "https://e-misara.github.io/misara-vezir/konusmalar/14_acilis_brief.md"
     ],
     "konusma_tam_tutanak_arsivi": {
       "_aciklama": "Tradia 1-10 kısım tarih bazlı tam tutanaklar (3.7 MB toplam, KVKK YOK, sadece sistem okur)",
@@ -679,7 +680,8 @@
       ],
       "toplam_mb": 3.8,
       "11_kisim_lokasyon": "konusmalar/11_tradia_kisim_tam.md (klasör dışında, ayrı dosya)"
-    }
+    },
+    "snapshot_s14_url": "https://e-misara.github.io/misara-vezir/vezir/snapshot_s14.md"
   },
   "v46_celiski_durum": "AÇIK",
   "12_kisim_durumu": {
@@ -699,5 +701,57 @@
     "verbatim_durum": "Dosya 1 (Pages tam kopya, 1.1 MB / 12.735 satır) PUBLIC'E YÜKLENMEDİ — S14 standing kural + KVKK SERT korundu. Ham kopya iç memory'de (Hafıza data/).",
     "kvkk_islem": "Tek 'Anastasiya' referansı → '[2. başvuru sahibi]' maskelendi (CİMER 2. başvuru sahibi bağlamı).",
     "kanal_test": "Pages + Raw + jsDelivr — 3/3 200 (8029 bytes)"
+  },
+  "s14_pano_guncelleme": {
+    "_baslik": "S14 PURGE Sprinti + Yeni Disiplinler + Fesa İş-Kolu",
+    "_tarih": "2026-06-17",
+    "kanonik_url": "https://e-misara.github.io/misara-vezir/vezir/snapshot_s14.md",
+    "acilis_brief_url": "https://e-misara.github.io/misara-vezir/konusmalar/14_acilis_brief.md",
+    "ana_ciktilar": [
+      "ORTAKLIK PURGE kanonik (4 dosya temiz, S14 standing kural)",
+      "Fesa yeni iş-kolu (CC-Sosyal S141-S142, KHALIJDIA+IRADIA, 67 aday)",
+      "8+1 sinyal kanonik (9. aktör katmanı + DÜRÜSTLÜK 9. fark)",
+      "🔒 Dizin-kilidi disiplin kanona",
+      "Doygunluk → yeni-yol disiplin kanona"
+    ],
+    "yeni_disiplinler": {
+      "dizin_kilidi": "Kanonik tablolar dondurulmuş — override katmanda düzeltme, kilit bozulmaz",
+      "doygunluk_yeni_yol": "Pattern doyumu = DUR + yön değiştir (Sosyal 412 sabit → Fesa pivot)"
+    },
+    "fesa_is_kolu": {
+      "profil": "Muhafazakar/alkolsüz + sağlık-turizmi uyumlu yabancı yatırımcı",
+      "oncelik_1": "KHALIJDIA (GCC 6 ülke)",
+      "oncelik_2": "IRADIA (İran + Şii diaspora)",
+      "ikincil": [
+        "GERDIA DACH",
+        "Otel-yatırım fonları",
+        "Aile-ofisleri"
+      ],
+      "aday_tuzel_kanal": 67,
+      "kvkk_cerceve": "GDPR Art. 6(1)(f) B2B meşru menfaat + opt-out kati",
+      "patron_pending": "RevPAR + kapsam parametreleri + outreach yetki"
+    },
+    "pending_patron_kararlar_4": [
+      {
+        "no": 1,
+        "konu": "B125 cron",
+        "cc": "CC-Basın"
+      },
+      {
+        "no": 2,
+        "konu": "EPVYS export",
+        "cc": "CC-Tic/İhale"
+      },
+      {
+        "no": 3,
+        "konu": "Headless ROI (TTSG+EKAP gated)",
+        "cc": "CC-İhale/Site"
+      },
+      {
+        "no": 4,
+        "konu": "Fesa RevPAR + kapsam",
+        "cc": "CC-Sosyal"
+      }
+    ]
   }
 }
