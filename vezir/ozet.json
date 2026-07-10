@@ -1,6 +1,6 @@
 {
   "schema_version": "1.3",
-  "guncelleme": "2026-05-29T18:00:00+03:00",
+  "guncelleme": "2026-07-10T15:25:00+03:00",
   "tek_dogru_kaynak_disiplini": "Bu dosya tüm pano verisinin KAPSAYICI kanonik kaynağıdır (Vaka 44+45 dersi). status.json ve _nerede.json artık burada `vezir_durum_panosu` ve `detay_nerede_indeks` sub-key olarak gömülü — Claude tek dosya çeker, 404 nüksü engellenir. Eski dosyalar geriye uyumluluk için kalır ama deprecated işaretli.",
   "uyari": "Sadece RAKAM ve KAMUYA AÇIK BİLGİ. Müşteri isim/email/telefon/adres YOK (KVKK).",
   "kanonik_kaynak_kaydi": {
@@ -697,5 +697,122 @@
       "simsek_istisnasi": "Kamuya açık rol/yorumcu (Mehmet Şimşek, DEİK başkanı, basın yorumcuları) public referansta OK.",
       "uydurma_yasak": "Doğrulanmamış URL veya kişi adı ASLA raporlanmaz (İstihbarat Doktrini Madde 10)."
     }
+  },
+  "tradia_15_kapanis_ozet": {
+    "_meta": "CC-Hafıza Tradia-15 kapanış özet bloğu (2026-07-10) — Vezir raporundan derlenmiş özet, kanona bağlı",
+    "kapanis_tarih": "2026-07-10",
+    "sprint_araligi_hafiza": "S23-S38 + S38-DÜZEN",
+    "tt_ai_araligi": "TTA57-TTA66",
+    "basin_araligi": "S38-S46",
+    "sosyal_araligi": "S142-S159",
+    "cc_kitap_kurulus_sprint": "S37-EK → K1 (BİTTİ) → K2 (BİTTİ 2026-07-10)",
+    "standing_kurallar": {
+      "surum": "v1.7",
+      "kural_sayisi": 19,
+      "kural_listesi": [
+        "#1 iCloud/tmp koruma",
+        "#2 GitHub veri kalite protokolü",
+        "#3 API success ≠ üretim",
+        "#4 Guard şablon",
+        "#5 Re-check zorunlu",
+        "#6 KVKK tarihî-unvan istisna",
+        "#7 Köprü-yazım protokol",
+        "#8 İnsan-eli + parser",
+        "#9 Dizin kilidi",
+        "#10 TT-Hafıza soğuk arşiv",
+        "#11 Rsync doğrulama rejimi",
+        "#12 Rsync trailing-slash yasak",
+        "#13 Notify güvenilmez",
+        "#14 TT-Hafıza kök 5 bölüm sabit",
+        "#15 Yedek rutini",
+        "#16 Hafıza panosu",
+        "#17 Classifier spot-check ≥%80",
+        "#18 Mahalle üçlü-anahtar + ad-bazlı birleşme yasak",
+        "#19 Toplu-tarama düzeni 09:00/14:00/21:00"
+      ],
+      "kanonik_dosya": "~/tradia_konusmalar/00_KURUM_HAFIZASI/standing_kurallar_v1.md"
+    },
+    "anayasa_b_blogu": {
+      "surum": "v1.1",
+      "madde_sayisi": 10,
+      "maddeler": [
+        "B1 kesintisizlik",
+        "B2 bütünlük",
+        "B3 özet-arşiv",
+        "B4 adaletli skor",
+        "B5 söz-takip tarafsızlığı",
+        "B6 halk nabzı",
+        "B7 çok-CC adaleti",
+        "B8 tek toplama",
+        "B9 tek-yazar",
+        "B10 olacak-takvimi motoru"
+      ],
+      "kanonik_dosya": "~/tradia_konusmalar/00_KURUM_HAFIZASI/anayasa_b_blogu_v1.md"
+    },
+    "kanonik_envanter": {
+      "haber_semasi_v1.md": "v1.2 (gelecek_olay + çift-tier guvenilir_flag)",
+      "dagitim_duzeni_v1.md": "v1.1 (üretici↔dağıtım ayrımı + Sosyal çift-kopya)",
+      "olacak_takvimi_sistemi_v1.md": "v1 (B10 motoru)",
+      "tt_ai_faz1_esik_v1.md": "v1.2 (YAPISAL_TAMAM (C) yolu)",
+      "hafiza_panosu.md": "v1.5",
+      "cc_kitap_sinir_v1.md": "v1 (S37-EK, 6 kural CC-Kitap-Tradia sınırı)"
+    },
+    "mahalle_sayaçları_tta66_sonrası": {
+      "TAMAM": "22/139 (Vezir raporundan; TT-AI TTA67+ ile yeniden-say bekleniyor)",
+      "KISMI_THIN_ADAYI": 7,
+      "YAPISAL_TAMAM": "S38 canonize sonrası TT-AI TTA70+ ile hesaplanacak",
+      "faz1_esik": "%40 CKAN-rich · %15 walled · ~%25 birleşik (SABİT, YAPISAL_TAMAM eşiğe dahil)"
+    },
+    "sosyal_fabrika": {
+      "sprint_aktif": "S159 P2",
+      "p1_kapanis_sayı": "36/500",
+      "p2_devam_sayı": "54 (Vezir raporundan; kesintisiz sürüyor)",
+      "hedef": 500,
+      "iv_kisim_revize_tez": "cikti (P1)"
+    },
+    "motor_58_kanal_referansı": "Vezir raporunda 'motor 58 kanal' (Basın kaynak + İhale 6 yeşil kanal + EKAP bülten + belediye + …). Detay: dagitim_duzeni_v1.1.md bölüm 3 okuma matrisi + Basın kaynak-listesi. Basın aa_gundem düşürüldü (Patron S45 onayı).",
+    "cc_kitap_durum": {
+      "kurulus": "S37-EK (Patron kararı 2026-07-09)",
+      "cati": "Misara Group (Tradia'nın DIŞINDA)",
+      "kanon_dizini": "~/kitap_32gun/ (Tradia hafızasından AYRI)",
+      "sinir_kural": "cc_kitap_sinir_v1.md 6 kural — Tradia kanoniğine YAZMAZ (B9), Tradia'dan OKUR (B8)",
+      "K1_kapanis": "envanter HAZIR12/EDİT14/ZAYIF10 + mimari v1 (4 Kısım / 9 Bölüm) + kritik bulgu 36/36 'Tradia Dersi' strip planı",
+      "K2_kapanis_2026_07_10": "strip 46/46 (Tradia-Dersi + A04 → kaynakca_v1, rolling-araç) + I. Kısım taslağı + Patron vizyon büyüdü → TRADİA KÜTÜPHANESİ koleksiyonu (Cilt I = Ekrandaki Ülke) + ANLATI-TON DEVRİMİ (5-katman hikâye) + ton-mihenk-taşı 1999",
+      "patron_onayları": {
+        "ton": "popüler-ciddi",
+        "iv_kisim_omurga": "onaylı",
+        "isim": "ERTELENDİ (K4a bekliyor)"
+      }
+    },
+    "kanit_kaynak_dosyalar": {
+      "s38_karar_1_yapisal_tamam": "~/tradia_konusmalar/02_CC_STATE/hafiza_karar_yapisal_tamam_s38.json",
+      "s38_karar_2_standing_18": "~/tradia_konusmalar/02_CC_STATE/hafiza_karar_standing18_ucluanahtar.json",
+      "s38_karar_3_cift_tier": "~/tradia_konusmalar/02_CC_STATE/hafiza_karar_cift_tier_guvenilir_flag_s38.json",
+      "s38_bitti_kaydi": "~/tradia_konusmalar/02_CC_STATE/hafiza_bildirim_cchafiza_s38.json",
+      "standing_19_rapor": "~/tradia_konusmalar/02_CC_STATE/hafiza_rapor_s38_duzen_toplu_tarama.json",
+      "index_ana": "~/tradia_konusmalar/_INDEX.md (S23-S38 kayıtları)"
+    },
+    "tradia_16_devir_noktasi": {
+      "3_devir_prompt": [
+        "CC-Borsa S50 (S37 tetik yanıt zorunlu)",
+        "CC-Basın S50 (çift-tier ilk regres)",
+        "CC-TT-AI TTA70 (3-karar uygulama raporu)"
+      ],
+      "5_bekleyen_karar": [
+        "K2 Sosyal detay",
+        "K3 TT-AI auto kalite-gate v2",
+        "K4a CC-Kitap isim",
+        "K8 TRADİA KÜTÜPHANESİ koleksiyon mimarisi",
+        "K9 Basın çift-tier ilk regres eşiği"
+      ],
+      "patron_acık_eylemler": [
+        "P1 launchctl 14:00+21:00 plist",
+        "P2 EKAP Bülten manuel indir",
+        "P3 TT-Hafıza disk delta yedek",
+        "P4 Vezir 15 metnini md/txt olarak yolla",
+        "P5 CC-Kitap isim karar (K4a)"
+      ]
+    },
+    "disiplin_notu": "V37 master read-only · V16 dürüst · A04 uydurma-yok · KVKK SERT (kişisel veri YOK, firma/kurum düzeyi yalnız) · S14 ortaklık YASAK · CC-Kitap Tradia-DIŞI (izolasyon Standing #9 modeli) · Kanon Dokunulmaz."
   }
 }
