@@ -1,0 +1,583 @@
+{
+  "schema_version": "2.0",
+  "surum": "w35",
+  "guncelleme": "2026-08-27",
+  "onceki_kanonik": "w23 (Haziran 2026)",
+  "boslukdaki_hafta": "w24 → w34 (10 hafta)",
+  "kaynak": "Vezir BE-01 · Standing #38 · Üst Akıl direktifi",
+  "disiplin": "$0 · AI çağrısı YOK · KVKK #31 v1.1",
+  "kirmizi_serit": {
+    "aciklama": "Bloke eden şeyler — en üst şerit, kırmızı",
+    "bloke": [
+      {
+        "konu": "Sahibinden 30K LİSTE ekranı (detay değil)",
+        "etki": "70 il beslemesi bozuk · mahalle+ilan-no yok · besleme yöntemi DETAY sayfası olmalı",
+        "kim": "CC-Analiz + CC-Arşiv",
+        "cozum": "Detay sayfası kaydetme akışına geç",
+        "not_43": "2026-08-27 CC-Arşiv bulgusu · EN ÜST"
+      },
+      {
+        "konu": "GitHub PAT süresi doldu",
+        "etki": "tradia-beykoz push bekliyor (f9183cc)",
+        "kim": "Patron",
+        "cozum": "gh auth login"
+      },
+      {
+        "konu": "misara-arsiv PRIVATE repo yok",
+        "etki": "Standing #37 arşiv push edemiyor",
+        "kim": "Patron",
+        "cozum": "gh repo create --private"
+      },
+      {
+        "konu": "CC-Site S10 deploy 90+ gün",
+        "etki": "Site katmanı ayakta değil",
+        "kim": "Site + Patron",
+        "cozum": "Karar/kaynak belirsiz"
+      },
+      {
+        "konu": "primer-monitor rc=120",
+        "etki": "launchd kırık servis, teşhis edilmedi",
+        "kim": "Hafıza",
+        "cozum": "plist + log incele"
+      },
+      {
+        "konu": "Kural 13 (384/299)",
+        "etki": "🔒 karar-kilitli 90+ gün",
+        "kim": "Patron",
+        "cozum": "PROMOTE/RED"
+      }
+    ]
+  },
+  "portfoy_katmani": {
+    "aciklama": "10 proje tek satır — durum, sessizlik, sonraki iş",
+    "projeler": [
+      {
+        "ad": "Tradia",
+        "durum": "AKTIF",
+        "son_hareket": "2026-08-01",
+        "sessizlik_gun": 26,
+        "canli_url": "github.com/e-misara/tradia-beykoz",
+        "sahibi_cc": "Hafıza + 10+ CC",
+        "siradaki": "v3-uygulama teyidi"
+      },
+      {
+        "ad": "AraçDen",
+        "durum": "BEKLEMEDE",
+        "son_hareket": "BILINMIYOR",
+        "sessizlik_gun": null,
+        "canli_url": null,
+        "sahibi_cc": "yok",
+        "siradaki": "Oturum-izleri düştü (30 gün cleanup) ama proje ölü değil — Patron dönüş kararı bekliyor",
+        "not_43": "Standing #43 düzeltmesi: ÖLÜ değil BEKLEMEDE (dürüst-negatif, uydurma değil geri-alma)"
+      },
+      {
+        "ad": "KASA",
+        "durum": "BEKLEMEDE",
+        "son_hareket": "2026-07-13",
+        "sessizlik_gun": 45,
+        "canli_url": "BILINMIYOR",
+        "sahibi_cc": "CC-Kasa",
+        "siradaki": "S21+ tetik (Faz-2 kilit)"
+      },
+      {
+        "ad": "Tradia Kütüphanesi / Kitap",
+        "durum": "BEKLEMEDE",
+        "son_hareket": "2026-07-12",
+        "sessizlik_gun": 46,
+        "canli_url": null,
+        "sahibi_cc": "CC-Kitap",
+        "siradaki": "Patron okuma → K9"
+      },
+      {
+        "ad": "Misara Hospitality (E-Misafir/E-Tedarik/Pulse)",
+        "durum": "IZ_YOK_REPO_DISI",
+        "son_hareket": "BILINMIYOR",
+        "sessizlik_gun": null,
+        "canli_url": null,
+        "sahibi_cc": "BILINMIYOR",
+        "siradaki": "Bu repo/Vezir arşivinde iz yok. Başka kanalda (Patron/CC) izlenmiyor olabilir."
+      },
+      {
+        "ad": "Borsa Terminal",
+        "durum": "IZ_YOK_REPO_DISI",
+        "son_hareket": "BILINMIYOR",
+        "sessizlik_gun": null,
+        "canli_url": null,
+        "sahibi_cc": "BILINMIYOR",
+        "siradaki": "Bu repo/Vezir arşivinde iz yok. Başka kanalda (Patron/CC) izlenmiyor olabilir."
+      },
+      {
+        "ad": "Glass Chain",
+        "durum": "IZ_YOK_REPO_DISI",
+        "son_hareket": "BILINMIYOR",
+        "sessizlik_gun": null,
+        "canli_url": null,
+        "sahibi_cc": "BILINMIYOR",
+        "siradaki": "Bu repo/Vezir arşivinde iz yok. Başka kanalda (Patron/CC) izlenmiyor olabilir."
+      },
+      {
+        "ad": "Kök Çubuğu",
+        "durum": "IZ_YOK_REPO_DISI",
+        "son_hareket": "BILINMIYOR",
+        "sessizlik_gun": null,
+        "canli_url": null,
+        "sahibi_cc": "BILINMIYOR",
+        "siradaki": "Bu repo/Vezir arşivinde iz yok. Başka kanalda (Patron/CC) izlenmiyor olabilir."
+      },
+      {
+        "ad": "Aldemir Grup",
+        "durum": "AKTIF (Patron ayrı işleri)",
+        "son_hareket": "BILINMIYOR",
+        "sessizlik_gun": null,
+        "canli_url": "BILINMIYOR",
+        "sahibi_cc": "Patron",
+        "siradaki": "Tradia dışı"
+      },
+      {
+        "ad": "Vezir",
+        "durum": "AKTIF",
+        "son_hareket": "2026-08-27",
+        "sessizlik_gun": 0,
+        "canli_url": "github.com/e-misara/tradia-beykoz",
+        "sahibi_cc": "Vezir",
+        "siradaki": "BE-01 uygula, push"
+      }
+    ]
+  },
+  "cc_katmani": {
+    "aciklama": "16 CC ızgarası — sprint, teslim, sessizlik, bekleyen, bloke",
+    "cc_list": [
+      {
+        "cc": "Hafıza",
+        "sprint": "S51",
+        "son_teslim": "2026-08-01",
+        "sessizlik_gun": 26,
+        "bekleyen": "v3 STAGING → 02_ARSIV otomasyon",
+        "bloke": "Rsync güvenli-duruş",
+        "kirmizi": false
+      },
+      {
+        "cc": "Vezir",
+        "sprint": "BE-01",
+        "son_teslim": "2026-08-27",
+        "sessizlik_gun": 0,
+        "bekleyen": "Push auth",
+        "bloke": "GitHub PAT",
+        "kirmizi": false
+      },
+      {
+        "cc": "Basın",
+        "sprint": "S99+",
+        "son_teslim": "2026-08-01",
+        "sessizlik_gun": 26,
+        "bekleyen": "v3 adopsiyon teyit",
+        "bloke": "Belirsiz",
+        "kirmizi": false
+      },
+      {
+        "cc": "Analiz",
+        "sprint": "S57",
+        "son_teslim": "2026-07-31",
+        "sessizlik_gun": 27,
+        "bekleyen": "TÜİK Playwright",
+        "bloke": "Bilinmez",
+        "kirmizi": false
+      },
+      {
+        "cc": "Tic",
+        "sprint": "T130+",
+        "son_teslim": "2026-07-31",
+        "sessizlik_gun": 27,
+        "bekleyen": "RG 81 il",
+        "bloke": "TÜRKPATENT/MERSİS açılmadı",
+        "kirmizi": false
+      },
+      {
+        "cc": "Borsa",
+        "sprint": "S37 EVDS",
+        "son_teslim": "2026-07-31",
+        "sessizlik_gun": 27,
+        "bekleyen": "EVDS3 tam veri",
+        "bloke": "evds2→evds3 göç",
+        "kirmizi": false
+      },
+      {
+        "cc": "Sosyal",
+        "sprint": "S195+",
+        "son_teslim": "2026-07-31",
+        "sessizlik_gun": 27,
+        "bekleyen": "Whisper kuyruk tam-genişleme",
+        "bloke": "Belirsiz",
+        "kirmizi": false
+      },
+      {
+        "cc": "İhale",
+        "sprint": "İ58",
+        "son_teslim": "2026-07-27",
+        "sessizlik_gun": 31,
+        "bekleyen": "Uykuda (K1: NAS'a kadar)",
+        "bloke": "Uyandırma-devir",
+        "kirmizi": true
+      },
+      {
+        "cc": "TT-MAP",
+        "sprint": "MAP37",
+        "son_teslim": "2026-07-31",
+        "sessizlik_gun": 27,
+        "bekleyen": "STAGING_YENI/osm/",
+        "bloke": "Belirsiz",
+        "kirmizi": false
+      },
+      {
+        "cc": "TT-AI",
+        "sprint": "TTA100",
+        "son_teslim": "2026-07-27",
+        "sessizlik_gun": 31,
+        "bekleyen": "Tam-evren fabrika",
+        "bloke": "Bilinmez",
+        "kirmizi": true
+      },
+      {
+        "cc": "TT-Pazarlama",
+        "sprint": "(kurulum)",
+        "son_teslim": "2026-07-31",
+        "sessizlik_gun": 27,
+        "bekleyen": "GitHub datasets başlangıç",
+        "bloke": "İlk-batch yok",
+        "kirmizi": false
+      },
+      {
+        "cc": "Kitap",
+        "sprint": "K8",
+        "son_teslim": "2026-07-12",
+        "sessizlik_gun": 46,
+        "bekleyen": "K9 Patron okuma",
+        "bloke": "Patron aksiyonu",
+        "kirmizi": true
+      },
+      {
+        "cc": "Kasa",
+        "sprint": "S20",
+        "son_teslim": "2026-07-13",
+        "sessizlik_gun": 45,
+        "bekleyen": "S21+ tetik",
+        "bloke": "Faz-2 kilit",
+        "kirmizi": true
+      },
+      {
+        "cc": "Site",
+        "sprint": "S10",
+        "son_teslim": "2026-06-XX",
+        "sessizlik_gun": 90,
+        "bekleyen": "S10 deploy",
+        "bloke": "En eski açık borç",
+        "kirmizi": true,
+        "dirilis_sarti": {
+          "kural": "CC-Site 90 gün sessizlik açık borç. Diriliş şartı: yeni CC-Site sprint tetiği veya kapanış kararı",
+          "adim_1": "S10 deploy kararı ver (yap/vazgeç)",
+          "adim_2": "Yap seçilirse: yeni sprint no · Patron öncelik atama",
+          "adim_3": "Vazgeç seçilirse: CC-Site KURULUS'a 'DURDU' notu · SİLME-YOK"
+        }
+      },
+      {
+        "cc": "Signals",
+        "sprint": "SIG12",
+        "son_teslim": "2026-07-27",
+        "sessizlik_gun": 31,
+        "bekleyen": "Yeni sentez tetiği",
+        "bloke": "Tetik yok",
+        "kirmizi": true
+      },
+      {
+        "cc": "Finans",
+        "sprint": "F8+",
+        "son_teslim": "2026-07-31",
+        "sessizlik_gun": 27,
+        "bekleyen": "EVDS3 tam veri",
+        "bloke": "Borsa'yla bağlı",
+        "kirmizi": false
+      },
+      {
+        "cc": "ARŞİV",
+        "sprint": "ARS-1",
+        "son_teslim": "2026-08-27",
+        "sessizlik_gun": 0,
+        "bekleyen": "Push + PRIVATE repo",
+        "bloke": "PAT",
+        "kirmizi": false
+      }
+    ]
+  },
+  "vaat_takip": {
+    "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
+    "toplam": 12,
+    "kritik": [
+      {
+        "vaat": "🔴 Hafıza S43 raporu (9 kanonizasyon kalemi + 2 PROMOTE onayı + Standing #17 revizyonu bağlı)",
+        "kim": "Hafıza",
+        "verildi": "2026-07-12 (S43)",
+        "gecikti_gun": 46,
+        "gecerli": "AKTİF · EN ÜST (BE-01/H5)"
+      },
+      {
+        "vaat": "B125 cron (Basın)",
+        "kim": "Patron",
+        "verildi": "2026-06 (S14)",
+        "gecikti_gun": 70,
+        "gecerli": "pending"
+      },
+      {
+        "vaat": "EPVYS export",
+        "kim": "Tic/İhale",
+        "verildi": "2026-06 (S14)",
+        "gecikti_gun": 70,
+        "gecerli": "pending"
+      },
+      {
+        "vaat": "Headless ROI",
+        "kim": "İhale/Site",
+        "verildi": "2026-06 (S14)",
+        "gecikti_gun": 70,
+        "gecerli": "pending"
+      },
+      {
+        "vaat": "Fesa RevPAR + kapsam",
+        "kim": "Sosyal+Patron",
+        "verildi": "2026-06 (S14)",
+        "gecikti_gun": 70,
+        "gecerli": "pending"
+      },
+      {
+        "vaat": "Kural 13 karar (384/299)",
+        "kim": "Patron",
+        "verildi": "2026-06 (S12)",
+        "gecikti_gun": 90,
+        "gecerli": "kilitli-bekliyor"
+      },
+      {
+        "vaat": "CC-Site S10 deploy",
+        "kim": "CC-Site",
+        "verildi": "2026-05",
+        "gecikti_gun": 90,
+        "gecerli": "en eski açık"
+      },
+      {
+        "vaat": "primer-monitor rc=120 teşhis",
+        "kim": "Hafıza",
+        "verildi": "2026-07-31",
+        "gecikti_gun": 27,
+        "gecerli": "teşhis edilmedi"
+      },
+      {
+        "vaat": "Retro-taşıma SHA-verify+sil",
+        "kim": "Hafıza",
+        "verildi": "2026-07-31",
+        "gecikti_gun": 27,
+        "gecerli": "yarım"
+      }
+    ],
+    "aktif_bugun": [
+      "🔴 Sahibinden: LİSTE değil DETAY sayfası kaydet (CC-Arşiv bulgusu)",
+      "misara-arsiv PRIVATE repo aç",
+      "GitHub PAT yenile",
+      "Standing #37/#38 kanona geçir"
+    ]
+  },
+  "kanonik_rakamlar": {
+    "aciklama": "Doğrulanmış rakamlar + kaynak + tarih. Şüpheli olanlar KIRMIZI.",
+    "havuz_sorgu01": {
+      "deger": 990737,
+      "kaynak": "canlı sqlite",
+      "tarih": "2026-08-01",
+      "not": "26 gün güncellenmedi 🟡",
+      "bayrak": "sari"
+    },
+    "sahibinden_v24": {
+      "deger": 250193,
+      "kaynak": "Analiz S75/S78 V37",
+      "tarih": "2026-06",
+      "not": "🔒 SABİT READ-ONLY"
+    },
+    "musteri_havuzu": {
+      "deger": 412,
+      "kaynak": "Sosyal S141",
+      "tarih": "2026-05",
+      "not": "🔒 SABİT 14+ sprint"
+    },
+    "distressed": {
+      "deger": 1239,
+      "kaynak": "Tradia-14 kapanış",
+      "tarih": "2026-06",
+      "not": "🔒 SABİT"
+    },
+    "mahalle_v9": {
+      "deger": 31950,
+      "kaynak": "Analiz",
+      "tarih": "2026-06",
+      "not": "🔒"
+    },
+    "flagship": {
+      "deger": "196/27",
+      "kaynak": "Analiz S79",
+      "tarih": "2026-06",
+      "not": "🔒 kart"
+    },
+    "tic_firma_db": {
+      "deger": "527/262 yeşil",
+      "kaynak": "T115",
+      "tarih": "2026-07",
+      "not": "🔒 %100 LAUNCH-TEMİZ"
+    },
+    "ihale_toplam": {
+      "deger": 102174,
+      "kaynak": "İ58 kapanış",
+      "tarih": "2026-07-27",
+      "not": "1.120 gün / %98.3"
+    },
+    "ttmap_mahalle": {
+      "deger": 3661,
+      "kaynak": "MAP14 kapanış",
+      "tarih": "2026-07-18",
+      "not": "1.524 değişim metriği"
+    },
+    "ttai_confirmed": {
+      "deger": "2.944 (%9.12)",
+      "kaynak": "TTA90",
+      "tarih": "2026-07-18",
+      "not": "evren 32.290"
+    },
+    "kap_toplam": {
+      "deger": 64562,
+      "kaynak": "Borsa geçmiş",
+      "tarih": "2026-07-18",
+      "not": "113 kap_olaylar.json SHA-doğrulu"
+    },
+    "beykoz_mahalle": {
+      "deger": 45,
+      "kaynak": "Ansiklopedi TTA98",
+      "tarih": "2026-07-27"
+    },
+    "beykoz_toplam_kayit_yanlis": {
+      "deger": 363582,
+      "not": "🔴 Basın etiket bozuk, 38.396 mükerrer",
+      "bayrak": "kirmizi"
+    },
+    "beykoz_toplam_kayit_dogru": {
+      "deger": 325186,
+      "kaynak": "Basın v2r temiz",
+      "tarih": "2026-07-28"
+    },
+    "ulusal_alt_sinir_yanlis": {
+      "deger": "1.4M+",
+      "not": "🔴 Basın etiket bozuk",
+      "bayrak": "kirmizi"
+    },
+    "ulusal_alt_sinir_dogru": {
+      "deger": 1383177,
+      "kaynak": "Basın v2r temiz",
+      "tarih": "2026-07-28"
+    },
+    "kurulus_dosyalari": {
+      "deger": 18,
+      "kaynak": "tradia-beykoz/kurulus/",
+      "tarih": "2026-08-27"
+    },
+    "dagitim_notu": {
+      "deger": 17,
+      "kaynak": "dagitim/",
+      "tarih": "07-29→08-27"
+    },
+    "beykoz_vaka_dosya": {
+      "deger": 119,
+      "kaynak": "tradia-beykoz/beykoz_vaka/",
+      "tarih": "07-25→07-28"
+    },
+    "claude_code_oturum": {
+      "deger": 14,
+      "boyut_mb": 458,
+      "kaynak": "arsiv/oturum_envanteri",
+      "tarih": "2026-08-27",
+      "not": "1 KIRMIZI · 3 kayıp CC beyan"
+    },
+    "launchd_aktif": {
+      "deger": 21,
+      "detay": "16 rc=0, 3 rc=1, 1 rc=78, 1 rc=120 🔴",
+      "kaynak": "GENEL-KONTROL",
+      "tarih": "2026-07-31",
+      "not": "primer-monitor kırık"
+    },
+    "tt_hafiza": {
+      "deger": "931 GB · %35 dolu · 615 GB boş",
+      "kaynak": "df -h",
+      "tarih": "2026-07-31"
+    },
+    "mac_disk": {
+      "deger": "228 GB · %32-48 (retro etki)",
+      "kaynak": "df -h",
+      "tarih": "2026-07-31"
+    }
+  },
+  "canli_url_uc_kanal": {
+    "pages": "https://e-misara.github.io/misara-vezir/vezir/ozet-w35.json",
+    "raw": "https://raw.githubusercontent.com/e-misara/misara-vezir/main/vezir/ozet-w35.json",
+    "jsdelivr": "https://cdn.jsdelivr.net/gh/e-misara/misara-vezir@main/vezir/ozet-w35.json"
+  },
+  "be_01_h_ek": {
+    "H1_giris_kapisi": "BASLA.md üretildi",
+    "H2_adlandirma": "kanon/dosya_adlandirma_v1.md",
+    "H3_master_indeks": "kanon/INDEKS.md — 213 MD",
+    "H4_celiski": "kanon/celiskiler_v1.md — 7 vaka",
+    "H5_hafiza_s43_en_ust": "Vaat-takip listesinde EN ÜST"
+  },
+  "kapsam_bosluğu": {
+    "aciklama": "Bu pano'nun neyi gösteremediği · Standing #43 dürüst-negatif alanı",
+    "bosluklar": [
+      {
+        "konu": "GitHub Pages tradia-beykoz repo'sunda kapalı",
+        "etki": "Kanal 1 (Pages) 404 · sadece Raw + jsDelivr canlı",
+        "cozum": "Repo Settings → Pages → Source: main branch"
+      },
+      {
+        "konu": "4 proje (Hospitality/Borsa Terminal/Glass Chain/Kök Çubuğu) Vezir arşivinde iz yok",
+        "etki": "Portföy 6/10 dolu · 4/10 IZ_YOK_REPO_DISI",
+        "cozum": "Patron başka kanaldan besleme yapabilir veya bu projeler Tradia-DIŞI kabul edilir"
+      },
+      {
+        "konu": "26 gün Vezir sessizliği (08-01→08-26)",
+        "etki": "SORGU-01 havuz sayacı eski · CC durum bilgileri 27 gün eski",
+        "cozum": "Bir sonraki turda Vezir CC-DURUM-TARAMA canlı ölçüm turu"
+      },
+      {
+        "konu": "Tutanak sayısı 27 (direktif) vs 24 (8+16 gerçek)",
+        "etki": "3 tutanak hakem-beklenen",
+        "cozum": "Üst Akıl '27' kaynağını netleştirsin"
+      },
+      {
+        "konu": "Ham .jsonl içerikleri okunmadı",
+        "etki": "Vaat-takip listesi kısmi (arsiv_cek.py ayrı iş)",
+        "cozum": "Standing #37 arsiv/tam/ push edilince FTS5 arama"
+      }
+    ],
+    "sayilar": {
+      "portfoy_dolu": 6,
+      "portfoy_iz_yok": 4,
+      "toplam": 10,
+      "cc_canli": 12,
+      "cc_kirmizi_bayrak": 6,
+      "toplam_cc": 17,
+      "kanal_canli": 2,
+      "kanal_kapali": 1,
+      "toplam_kanal": 3
+    }
+  },
+  "standing_43_uygulama": {
+    "tarih": "2026-08-27",
+    "duzeltmeler": [
+      "AraçDen: ÖLÜ → BEKLEMEDE (oturum kaybı ≠ proje ölümü)",
+      "4 proje BILINMIYOR → IZ_YOK_REPO_DISI (dürüst kategorileme)",
+      "CC-Site diriliş şartı 3 adımlı çerçeve",
+      "kapsam_boslugu alanı: 5 bilinen boşluk + sayılar"
+    ]
+  },
+  "ek_43_ars_bulgu": "Sahibinden besleme yöntemi düzeltmesi · CC-Arşiv 2026-08-27"
+}
