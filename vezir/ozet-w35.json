@@ -10,23 +10,17 @@
     "aciklama": "Bloke eden şeyler — en üst şerit, kırmızı",
     "bloke": [
       {
+        "konu": "Mac disk %88 dolu — kritik",
+        "etki": "TT-HAFIZA staging var ama Mac tarafı yer daralıyor, hasat cron riskli",
+        "kim": "Hafıza + Patron",
+        "cozum": "Retro-taşıma SHA-verify + Mac silme (arsiv, ham, log)"
+      },
+      {
         "konu": "Sahibinden 30K LİSTE ekranı (detay değil)",
         "etki": "70 il beslemesi bozuk · mahalle+ilan-no yok · besleme yöntemi DETAY sayfası olmalı",
         "kim": "CC-Analiz + CC-Arşiv",
         "cozum": "Detay sayfası kaydetme akışına geç",
         "not_43": "2026-08-27 CC-Arşiv bulgusu · EN ÜST"
-      },
-      {
-        "konu": "GitHub PAT süresi doldu",
-        "etki": "tradia-beykoz push bekliyor (f9183cc)",
-        "kim": "Patron",
-        "cozum": "gh auth login"
-      },
-      {
-        "konu": "misara-arsiv PRIVATE repo yok",
-        "etki": "Standing #37 arşiv push edemiyor",
-        "kim": "Patron",
-        "cozum": "gh repo create --private"
       },
       {
         "konu": "CC-Site S10 deploy 90+ gün",
@@ -310,7 +304,7 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 12,
+    "toplam": 13,
     "kritik": [
       {
         "vaat": "🔴 Hafıza S43 raporu (9 kanonizasyon kalemi + 2 PROMOTE onayı + Standing #17 revizyonu bağlı)",
@@ -318,6 +312,13 @@
         "verildi": "2026-07-12 (S43)",
         "gecikti_gun": 46,
         "gecerli": "AKTİF · EN ÜST (BE-01/H5)"
+      },
+      {
+        "vaat": "✅ Yusuf Kaya SON.html teslim",
+        "kim": "Patron",
+        "verildi": "2026-08 (yatırımcı hattı)",
+        "gecikti_gun": 0,
+        "gecerli": "TESLİM EDİLDİ 2026-08-27 · yanıt bekleniyor"
       },
       {
         "vaat": "B125 cron (Basın)",
@@ -386,11 +387,12 @@
   "kanonik_rakamlar": {
     "aciklama": "Doğrulanmış rakamlar + kaynak + tarih. Şüpheli olanlar KIRMIZI.",
     "havuz_sorgu01": {
-      "deger": 990737,
-      "kaynak": "canlı sqlite",
-      "tarih": "2026-08-01",
-      "not": "26 gün güncellenmedi 🟡",
-      "bayrak": "sari"
+      "deger": 1424676,
+      "kanonik_alt_sinir": 1386205,
+      "kaynak": "canlı sqlite (DURUM.json Hafıza push)",
+      "tarih": "2026-08-27",
+      "not": "1.42M ham · 1.39M kanonik alt-sınır",
+      "bayrak": "yesil"
     },
     "sahibinden_v24": {
       "deger": 250193,
@@ -500,11 +502,9 @@
       "not": "1 KIRMIZI · 3 kayıp CC beyan"
     },
     "launchd_aktif": {
-      "deger": 21,
-      "detay": "16 rc=0, 3 rc=1, 1 rc=78, 1 rc=120 🔴",
-      "kaynak": "GENEL-KONTROL",
-      "tarih": "2026-07-31",
-      "not": "primer-monitor kırık"
+      "deger": 34,
+      "kaynak": "launchctl list",
+      "tarih": "2026-08-27"
     },
     "tt_hafiza": {
       "deger": "931 GB · %35 dolu · 615 GB boş",
@@ -512,9 +512,52 @@
       "tarih": "2026-07-31"
     },
     "mac_disk": {
-      "deger": "228 GB · %32-48 (retro etki)",
+      "deger": "%88 dolu",
       "kaynak": "df -h",
-      "tarih": "2026-07-31"
+      "tarih": "2026-08-27",
+      "bayrak": "kirmizi"
+    },
+    "beykoz_ham": {
+      "deger": 365970,
+      "kaynak": "DURUM.json Hafıza",
+      "tarih": "2026-08-27"
+    },
+    "beykoz_kanonik": {
+      "deger": 327499,
+      "kaynak": "DURUM.json Hafıza (v2r temiz)",
+      "tarih": "2026-08-27"
+    },
+    "basin_html_toplam": {
+      "deger": 533426,
+      "kaynak": "DURUM.json",
+      "tarih": "2026-08-27"
+    },
+    "cografya_81_il": {
+      "deger": "dolu 11 · kısmi 6 · sıfır 64",
+      "kaynak": "DURUM.json",
+      "tarih": "2026-08-27"
+    },
+    "cografya_973_ilce": {
+      "deger": "dolu 63 · kısmi 77 · sıfır 833",
+      "kaynak": "DURUM.json",
+      "tarih": "2026-08-27"
+    },
+    "ozet_motoru": {
+      "a_katmani": 192,
+      "b_katmani": 3,
+      "b_yazilanlar": [
+        "İstanbul/Kartal",
+        "İstanbul/Beykoz",
+        "İstanbul/Sarıyer"
+      ],
+      "kaynak": "DM-02 döngü",
+      "tarih": "2026-08-27"
+    },
+    "db_boyut": {
+      "deger": "4.03 GB",
+      "sha": "dd6a96b6f99d742b",
+      "kaynak": "DURUM.json",
+      "tarih": "2026-08-27"
     }
   },
   "canli_url_uc_kanal": {
@@ -579,5 +622,21 @@
       "kapsam_boslugu alanı: 5 bilinen boşluk + sayılar"
     ]
   },
-  "ek_43_ars_bulgu": "Sahibinden besleme yöntemi düzeltmesi · CC-Arşiv 2026-08-27"
+  "ek_43_ars_bulgu": "Sahibinden besleme yöntemi düzeltmesi · CC-Arşiv 2026-08-27",
+  "ka_01_uygulama": {
+    "tarih": "2026-08-27",
+    "cikti": [
+      "kanon/KONUSMA_ENVANTERI.md (tam envanter + hakem karar)",
+      "konusmalar/SABLON_GENIS_OZET.md (kanon şablon)",
+      "27v24 hakem: 24 konuşma-tekili · 30 dosya-toplam · 16 public",
+      "Eksik listesi: 5 Öncelik-1 (T-13/14 geniş · yatırımcı 05-26 · Beykoz kapanış · T-17 kapanış)"
+    ],
+    "vaat_takip_ek": "Yusuf Kaya SON.html teslim (Patron 2026-08-27)"
+  },
+  "standing_47_aday_sablon": {
+    "kural": "Her kısım kapanışında SABLON_GENIS_OZET.md zorunlu",
+    "kaynak": "konusmalar/SABLON_GENIS_OZET.md (misara-vezir)",
+    "tarih": "2026-08-27"
+  },
+  "senkron_kaynak": "misara-app/veri/DURUM.json (Hafıza push · Standing #39+#40 · DM-02)"
 }
