@@ -99,14 +99,16 @@
       },
       {
         "ad": "Borsa Terminal",
-        "durum": "AKTIF (sabah sinyal fazı açılıyor)",
+        "durum": "AKTIF — sabah sinyal fazı, kendi konuşmasında",
         "son_hareket": "2026-09-25",
         "sessizlik_gun": 0,
         "canli_url": null,
         "sahibi_cc": "CC-Borsa (yeni: TT-Borsa 1 konuşma tespiti)",
-        "siradaki": "Günlük sabah sinyal fazı — GitHub Actions taşıma zorunlu (Mac-uyku cron ölümü kısıtı)",
+        "siradaki": "S35 haber-öncesi anomali → S36 düşüş riski → intraday+dashboard",
         "kisit": "🔴 Mac-uyku cron ölümü: GitHub Actions taşınmadan güvenilir DEĞİL (TT-Borsa 1 tespiti, ertelenmişti)",
-        "not_25eylul": "Cloud çapraz-teyit sonrası tespit edildi (Üst Akıl 2026-09-25)"
+        "not_25eylul": "Cloud çapraz-teyit sonrası tespit edildi (Üst Akıl 2026-09-25)",
+        "son_tamam": "S34 Sabah Radarı BİTTİ (yön skoru + şeffaf bileşen + SINYAL≠TAVSİYE)",
+        "not_25eylul_v2": "Hat kendi kendine dirildi 2026-09-25 · DIRILIS_TT-BORSA paketi geride kaldı (referans-arşiv)"
       },
       {
         "ad": "Glass Chain",
@@ -312,7 +314,7 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 23,
+    "toplam": 25,
     "kritik": [
       {
         "vaat": "🔴 Hafıza S43 raporu (9 kanonizasyon kalemi + 2 PROMOTE onayı + Standing #17 revizyonu bağlı)",
@@ -320,6 +322,20 @@
         "verildi": "2026-07-12 (S43)",
         "gecikti_gun": 46,
         "gecerli": "AKTİF · EN ÜST (BE-01/H5)"
+      },
+      {
+        "vaat": "🔴 Radar otomasyonu · Mac-uyku sorunu (GitHub Actions vs launchd karar)",
+        "kim": "CC-Borsa",
+        "verildi": "2026-09-25 (Borsa hattı S35 öncesi)",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · Borsa konuşmasında karar verilecek · Standing #38 (launchd) vs Actions çevik"
+      },
+      {
+        "vaat": "🟡 Sprint sayaç çelişkisi: S40-46 (Temmuz) vs S33-34 (bugün)",
+        "kim": "CC-Borsa",
+        "verildi": "2026-09-25 (Cloud teyit sonrası tespit)",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · Borsa hattı netleştirecek · numaralandırma sıfırlanmış olabilir veya iki hat paralel"
       },
       {
         "vaat": "🔴 cleanupPeriodDays ayarı",
@@ -750,5 +766,24 @@
       "kaynak": "Vezir 2026-09-25 · Üst Akıl bulgusu",
       "aksiyon": "Hafıza DURUM.json üretim scripti TR-etiketi UTC'den türetsin (TZ+3 sabit)"
     }
-  ]
+  ],
+  "do_01_paket_durumu": {
+    "tarih": "2026-09-25",
+    "acilan": [
+      {
+        "paket": "DIRILIS_TT-BORSA.md",
+        "durum": "GERİDE KALDI (referans-arşiv)",
+        "neden": "Hat kendi kendine dirildi · S34 Sabah Radarı tamamlandı"
+      },
+      {
+        "paket": "DIRILIS_TT-HAFIZA.md",
+        "durum": "AKTİF",
+        "neden": "Hafıza diriliş bekliyor · M2 portföy taşıma · beklenen_sonraki_kosu_tr borcu"
+      }
+    ],
+    "kalan_paketler": {
+      "B_oncelik": "sonraki tur",
+      "C_oncelik": "sonraki tur"
+    }
+  }
 }
