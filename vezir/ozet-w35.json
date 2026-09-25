@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "surum": "w35",
-  "guncelleme": "2026-09-25",
+  "guncelleme": "2026-09-26",
   "onceki_kanonik": "w23 (Haziran 2026)",
   "boslukdaki_hafta": "w24 → w34 (10 hafta)",
   "kaynak": "Vezir BE-01 · Standing #38 · Üst Akıl direktifi",
@@ -145,6 +145,17 @@
         "canli_url": "github.com/e-misara/tradia-beykoz",
         "sahibi_cc": "Vezir",
         "siradaki": "BE-01 uygula, push"
+      },
+      {
+        "ad": "TT-Tic",
+        "durum": "AKTIF (Patron öne aldı · 2026-09-26)",
+        "son_hareket": "2026-09-26",
+        "sessizlik_gun": 0,
+        "canli_url": "dirilis/DIRILIS_TT-TIC.md",
+        "sahibi_cc": "CC-Tic",
+        "siradaki": "PARSEL-01 · RİZE Vakası (dosya sahibi rolü)",
+        "kisit": "🟡 17 B2B mail tetiği PARKTA (Patron ayrı karar)",
+        "not_26eylul": "DO-02 diriliş paketi + PARSEL-01 vaka açılışı"
       }
     ]
   },
@@ -314,7 +325,7 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 25,
+    "toplam": 27,
     "kritik": [
       {
         "vaat": "🔴 Hafıza S43 raporu (9 kanonizasyon kalemi + 2 PROMOTE onayı + Standing #17 revizyonu bağlı)",
@@ -322,6 +333,20 @@
         "verildi": "2026-07-12 (S43)",
         "gecikti_gun": 46,
         "gecerli": "AKTİF · EN ÜST (BE-01/H5)"
+      },
+      {
+        "vaat": "Basın boşluk-kapama raporu",
+        "kim": "CC-Basın",
+        "verildi": "2026-09-26 (Patron istedi)",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · basin_html %100 url-NULL/%94 tarihsiz sorununun (SIG14 tespit) durumu"
+      },
+      {
+        "vaat": "Sosyal Whisper durum raporu",
+        "kim": "CC-Sosyal",
+        "verildi": "2026-09-26 (Patron istedi)",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · Whisper kuyruk son ölçüm 08-01 (sosyal_transkript 2.034), 2 ay sessizlik"
       },
       {
         "vaat": "🔴 Radar otomasyonu · Mac-uyku sorunu (GitHub Actions vs launchd karar)",
@@ -451,6 +476,7 @@
       }
     ],
     "aktif_bugun": [
+      "PARSEL-01 · RİZE Vakası açıldı — Tic dosya sahibi, Map+Basın katman",
       "🔴 KRİTİK: cleanupPeriodDays ayarı BUGÜN yapılmalı (27 Ağu oturumları 26 Eylül'de ölüyor · 1 gün kaldı)",
       "🔴 Sahibinden: LİSTE değil DETAY sayfası kaydet (CC-Arşiv bulgusu · 59 gün gecikti)",
       "misara-arsiv kalan 14 oturum push (Ş2 tek oturum test edildi, Patron göz-teyit geçti)",
@@ -785,5 +811,30 @@
       "B_oncelik": "sonraki tur",
       "C_oncelik": "sonraki tur"
     }
+  },
+  "vakalar": {
+    "aciklama": "Aktif vaka kayıtları",
+    "aktif": [
+      {
+        "kod": "PARSEL-01",
+        "ad": "RİZE Parsel Vakası",
+        "acilis": "2026-09-26",
+        "dosya_sahibi": "CC-Tic (dirildi · Patron öne aldı)",
+        "katmanlar": [
+          "CC-TT-MAP",
+          "CC-Basın"
+        ],
+        "klasor": "parsel_01_rize/",
+        "durum": "🟢 AKTİF",
+        "not": "Beykoz vakası emsali (beykoz_vaka/ · SIG12) — bu 2. mahalle-vaka"
+      }
+    ]
+  },
+  "tic_dirilisi": {
+    "tarih": "2026-09-26",
+    "karar": "Patron dirilişi öne aldı",
+    "durum": "AKTİF · PARSEL-01 · RİZE vakası dosya sahibi",
+    "17_mail_tetigi": "PARKTA · ayrı Patron kararı (dirilişten bağımsız)",
+    "paket": "dirilis/DIRILIS_TT-TIC.md (26 Eyl NOTU eklenecek)"
   }
 }
