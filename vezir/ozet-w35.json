@@ -325,7 +325,8 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 27,
+    "toplam": 34,
+    "guncelleme_notu_20260926": "27→34 · 2 kapatıldı (Basın boşluk KAPANDI, Sosyal Whisper S196 ONAYLI, EK-C KAPANDI) + 7 yeni (İkizdere denetim, GNDT, KOS-6, Emlakjet+Endeksa, rakip-cron, RG-CB-Kararları)",
     "kritik": [
       {
         "vaat": "🔴 Hafıza S43 raporu (9 kanonizasyon kalemi + 2 PROMOTE onayı + Standing #17 revizyonu bağlı)",
@@ -339,14 +340,68 @@
         "kim": "CC-Basın",
         "verildi": "2026-09-26 (Patron istedi)",
         "gecikti_gun": 0,
-        "gecerli": "AKTİF · basin_html %100 url-NULL/%94 tarihsiz sorununun (SIG14 tespit) durumu"
+        "gecerli": "✅ KAPANDI 2026-09-26 · boşluk yok, +25K/40g doğrulandı (basın hattı canlı akıyor)",
+        "not": "Vaat verildiği turda kapandı — hızlı-teslim örneği"
       },
       {
         "vaat": "Sosyal Whisper durum raporu",
         "kim": "CC-Sosyal",
         "verildi": "2026-09-26 (Patron istedi)",
         "gecikti_gun": 0,
-        "gecerli": "AKTİF · Whisper kuyruk son ölçüm 08-01 (sosyal_transkript 2.034), 2 ay sessizlik"
+        "gecerli": "✅ S196 ONAYLI 2026-09-26 · alt-vakalar: (a) GNDT 50 gün kayıp vakası (yeni vaka) · (b) KOS-6 retry borcu (yeni borç, vaat-takipte ayrı satır)"
+      },
+      {
+        "vaat": "🔴 Hafıza İkizdere düzeltmesi uygulama denetimi",
+        "kim": "Hafıza",
+        "verildi": "2026-09-26 (kanon ihlali emsal defteri Vaka #01)",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF 🔴 · KIRMIZI · Finans DURUM.json'da hâlâ İkizdere gördü — uygulanana dek her turda sorulacak",
+        "not": "DURUM.json'da 'Derepazarı' güncellendi + 'onceki_yanlis_atama' korundu; ancak CC-Finans oturumundaki okuma eski konumla; teyit gerekli"
+      },
+      {
+        "vaat": "GNDT 50 gün kayıp vakası (Sosyal S196 alt-vaka)",
+        "kim": "CC-Sosyal",
+        "verildi": "2026-09-26",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · yeni vaka açıldı, kök-neden araştırması Sosyal'de"
+      },
+      {
+        "vaat": "KOS-6 retry borcu",
+        "kim": "CC-Sosyal",
+        "verildi": "2026-09-26",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · Whisper retry mekanizması eksikliği (KOS-6 kaynak-onboarding kural"
+      },
+      {
+        "vaat": "Yatırımcı metni güncellemesi — Emlakjet↔Endeksa birleşme etkisi",
+        "kim": "CC-TT-Pazarlama + Patron",
+        "verildi": "2026-09-26 (rakip manşeti)",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · rekabet konumlanma değişti — yatırımcı metnine yansıtılacak",
+        "not": "Emlakjet + Endeksa birleşmesi ilan+veri katmanı birleşimi; TT-Pazarlama envanterinde 'Farkımız' iddiaları güncellenmeli"
+      },
+      {
+        "vaat": "Rakip-cron haber katmanı borcu",
+        "kim": "CC-TT-Pazarlama",
+        "verildi": "2026-09-26",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · rakip haber tetiği cron katmanı eksik (Emlakjet↔Endeksa birleşmesi manuel yakalandı)",
+        "not": "Emlakjet/Endeksa/Zingat/Sahibinden/Hepsiemlak vb. otomatik haber tetiği"
+      },
+      {
+        "vaat": "RG-CB-Kararları alt-kanalı entegrasyonu",
+        "kim": "CC-İhale",
+        "verildi": "2026-09-26 (Vezir onayı)",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · Resmî Gazete Cumhurbaşkanlığı Kararları alt-kanalı İhale hattına eklenecek",
+        "not": "PARSEL-01 katmanında İhale ✓ atandı, alt-kanal genişlemesi ayrı iş"
+      },
+      {
+        "vaat": "✅ EK-C sahiplik borcu (KURULUS_CC-FINANS)",
+        "kim": "CC-Finans",
+        "verildi": "F-serisi · KURULUS EK-C",
+        "gecikti_gun": 0,
+        "gecerli": "✅ KAPANDI 2026-09-26 · Standing #37 (toplayıcı≠kullanıcı) ile örtüşen sahiplik iddiası — Standing #37 kanonikleşince EK-C 'Finans sahipliği' kutulu-geçersiz oldu; SİLME-YOK korundu"
       },
       {
         "vaat": "🔴 Radar otomasyonu · Mac-uyku sorunu (GitHub Actions vs launchd karar)",
@@ -476,7 +531,14 @@
       }
     ],
     "aktif_bugun": [
-      "PARSEL-01 · RİZE Vakası açıldı — Tic dosya sahibi, Map+Basın katman",
+      "PARSEL-01 · Derepazarı vakası 9-CC katman genişledi — Tic sahip · İhale/Aİ/Analiz/Sinyal-iskelet/Finans ✓ · Basın probe · Map bekliyor · Arşiv KRİTİK YOL (E1 künye)",
+      "🔴 Hafıza İkizdere uydurma vakası (#01 emsal defterinde) — Finans hâlâ eski konum gördü, düzeltme uygulanma denetimi bekleniyor",
+      "✅ Basın boşluk-kapama KAPANDI (+25K/40g)",
+      "✅ Sosyal Whisper S196 ONAYLI (alt-vakalar: GNDT 50-gün kayıp + KOS-6 retry borcu)",
+      "Emlakjet↔Endeksa birleşmesi — yatırımcı metni güncellenecek + rakip-cron haber katmanı borcu",
+      "RG-CB-Kararları alt-kanalı İhale hattına eklenecek",
+      "✅ EK-C sahiplik borcu Standing #37 ile kapandı",
+      "Arşiv EK-2 yeni oturumla gelecek (Vezir bekliyor, karışmayacak)",
       "🔴 KRİTİK: cleanupPeriodDays ayarı BUGÜN yapılmalı (27 Ağu oturumları 26 Eylül'de ölüyor · 1 gün kaldı)",
       "🔴 Sahibinden: LİSTE değil DETAY sayfası kaydet (CC-Arşiv bulgusu · 59 gün gecikti)",
       "misara-arsiv kalan 14 oturum push (Ş2 tek oturum test edildi, Patron göz-teyit geçti)",
@@ -817,16 +879,31 @@
     "aktif": [
       {
         "kod": "PARSEL-01",
-        "ad": "RİZE Parsel Vakası",
+        "ad": "Derepazarı Parsel Vakası",
+        "konum": "Rize / DEREPAZARI (ada 128 · parsel 2-8)",
         "acilis": "2026-09-26",
         "dosya_sahibi": "CC-Tic (dirildi · Patron öne aldı)",
-        "katmanlar": [
-          "CC-TT-MAP",
-          "CC-Basın"
-        ],
+        "katman_durumu": {
+          "aciklama": "9 CC · durum işareti · kritik yol E1 künye = Arşiv yeni oturum",
+          "Tic": "✓ sahip (birleştirici DOSYA.md)",
+          "Ihale": "✓ eklendi (RG-CB-Kararları alt-kanalı onaylandı, ayrı vaat)",
+          "TT-AI": "✓ katman verildi",
+          "Analiz": "✓ katman verildi",
+          "Sinyal": "✓ iskelet (sinyal üretilmedi, eşik-önce disiplini)",
+          "Finans": "✓ katman verildi (Madde 52 meyilden kat yok + Madde 63 iskân dışı ticari = kır kahvesi/lokanta, otel yok; alan statüsü 16× belirleyici)",
+          "Basın": "probe (araştırma sürüyor)",
+          "TT-MAP": "bekliyor",
+          "Arşiv": "🔴 KRİTİK YOL · E1 künye = Arşiv yeni oturum",
+          "Hafıza": "destek (DURUM.json kaynak-iskelet, uydurma vakası #01 emsale girdi)"
+        },
+        "mahalle_celiskisi": {
+          "kayit": "3 kaynak Eriklimanı Mahallesi diyor; TKGM künyesi Bürücek köyü olabilir",
+          "disiplin": "Çelişki-korundu (SİLME-YOK) · final kaynak = TKGM künyesi",
+          "kanonik_kaynak": "TKGM (Standing #37 kanonik — toplayıcı Hafıza; kullanıcı Tic)"
+        },
         "klasor": "parsel_01_rize/",
         "durum": "🟢 AKTİF",
-        "not": "Beykoz vakası emsali (beykoz_vaka/ · SIG12) — bu 2. mahalle-vaka"
+        "not": "Beykoz vakası emsali (beykoz_vaka/ · SIG12) — bu 2. mahalle-vaka. Konum İkizdere değil DEREPAZARI (Hafıza uydurma vakası #01 kanon_ihlali_emsal_defteri.md)."
       }
     ]
   },
