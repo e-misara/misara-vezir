@@ -333,7 +333,7 @@
         "kim": "Hafıza + Vezir",
         "verildi": "DM-02 2026-08-27",
         "gecikti_gun": 0,
-        "gecerli": "AKTİF · son bitti 09-24, sonraki 09-27 (0 gecikme)"
+        "gecerli": "✅ GEÇTİ 2026-09-25 · döngü kanıtlandı · sonraki 09-27"
       },
       {
         "vaat": "M2 proje portföyü dönüşü",
@@ -717,5 +717,38 @@
       "YouTube fikri",
       "2 adsız"
     ]
-  }
+  },
+  "dongu_kaniti": {
+    "tarih": "2026-09-25",
+    "sinav": "3-haftalık kontrol (BE-01/DM-02)",
+    "sonuc": "🟢 GEÇTİ · döngü kanıtlandı",
+    "son_kosu": {
+      "basladi_utc": "2026-09-23T17:11:02Z",
+      "bitti_utc": "2026-09-24T00:07:33Z",
+      "exit_kodu_cografya": 0,
+      "exit_kodu_ozet_uret": 0,
+      "gecikme_gun": 0,
+      "durum": "BİTTİ (kayıpsız)"
+    },
+    "sonraki_kosu_beklenen_utc": "2026-09-27T00:07:33Z",
+    "kaynak": "misara-app/veri/DURUM.json .dongu_saglik",
+    "not": "StartCalendarInterval + script-içi 3-gün kontrolü kombinasyonu Mac-uyku sorununu ÇÖZDÜ (StartInterval sayaç kaybediyordu)."
+  },
+  "redaksiyon_15_oruntu": {
+    "tarih": "2026-09-25",
+    "eklenen": [
+      "E2 · TCMB EVDS anahtarı (key=93lLgxqTVB)",
+      "E2 · genel URL query desen (key=<alfanumerik>)"
+    ],
+    "test_sonuc": "✅ 15/15 TEMİZ (arsiv/redaksiyon_testi.py)",
+    "not": "Patron settings.json'da düz metin duruyor; lokalde sorun değil ama arşive giren hiçbir dosyada görünmeyecek."
+  },
+  "hafiza_dirilis_paketi_borclar": [
+    {
+      "borc": "DURUM.json dongu_saglik.beklenen_sonraki_kosu_tr etiketi bayat",
+      "tespit": "'2026-09-04 20:11 +03' gösteriyor · UTC alanı ('2026-09-27T00:07:33Z') doğru",
+      "kaynak": "Vezir 2026-09-25 · Üst Akıl bulgusu",
+      "aksiyon": "Hafıza DURUM.json üretim scripti TR-etiketi UTC'den türetsin (TZ+3 sabit)"
+    }
+  ]
 }
