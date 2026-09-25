@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "surum": "w35",
-  "guncelleme": "2026-08-27",
+  "guncelleme": "2026-09-25",
   "onceki_kanonik": "w23 (Haziran 2026)",
   "boslukdaki_hafta": "w24 → w34 (10 hafta)",
   "kaynak": "Vezir BE-01 · Standing #38 · Üst Akıl direktifi",
@@ -9,6 +9,12 @@
   "kirmizi_serit": {
     "aciklama": "Bloke eden şeyler — en üst şerit, kırmızı",
     "bloke": [
+      {
+        "konu": "🔴 KRİTİK BUGÜN: cleanupPeriodDays ayarı",
+        "etki": "27 Ağu Claude Code oturumları 26 Eylül'de ölüyor · 1 gün kaldı",
+        "kim": "Patron",
+        "cozum": "settings.json cleanupPeriodDays: 90+ (varsayılan 30)"
+      },
       {
         "konu": "Mac disk %88 dolu — kritik",
         "etki": "TT-HAFIZA staging var ama Mac tarafı yer daralıyor, hasat cron riskli",
@@ -93,12 +99,14 @@
       },
       {
         "ad": "Borsa Terminal",
-        "durum": "IZ_YOK_REPO_DISI",
-        "son_hareket": "BILINMIYOR",
-        "sessizlik_gun": null,
+        "durum": "AKTIF (sabah sinyal fazı açılıyor)",
+        "son_hareket": "2026-09-25",
+        "sessizlik_gun": 0,
         "canli_url": null,
-        "sahibi_cc": "BILINMIYOR",
-        "siradaki": "Bu repo/Vezir arşivinde iz yok. Başka kanalda (Patron/CC) izlenmiyor olabilir."
+        "sahibi_cc": "CC-Borsa (yeni: TT-Borsa 1 konuşma tespiti)",
+        "siradaki": "Günlük sabah sinyal fazı — GitHub Actions taşıma zorunlu (Mac-uyku cron ölümü kısıtı)",
+        "kisit": "🔴 Mac-uyku cron ölümü: GitHub Actions taşınmadan güvenilir DEĞİL (TT-Borsa 1 tespiti, ertelenmişti)",
+        "not_25eylul": "Cloud çapraz-teyit sonrası tespit edildi (Üst Akıl 2026-09-25)"
       },
       {
         "ad": "Glass Chain",
@@ -304,7 +312,7 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 13,
+    "toplam": 23,
     "kritik": [
       {
         "vaat": "🔴 Hafıza S43 raporu (9 kanonizasyon kalemi + 2 PROMOTE onayı + Standing #17 revizyonu bağlı)",
@@ -312,6 +320,55 @@
         "verildi": "2026-07-12 (S43)",
         "gecikti_gun": 46,
         "gecerli": "AKTİF · EN ÜST (BE-01/H5)"
+      },
+      {
+        "vaat": "🔴 cleanupPeriodDays ayarı",
+        "kim": "Patron",
+        "verildi": "Standing #37 · 2026-08-27",
+        "gecikti_gun": 29,
+        "gecerli": "AKTİF 🔴 · 27 Ağu oturumları 26 Eylül'de ölüyor · BUGÜN yapılmalı"
+      },
+      {
+        "vaat": "dongu_saglik 3 haftalık kontrol",
+        "kim": "Hafıza + Vezir",
+        "verildi": "DM-02 2026-08-27",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · son bitti 09-24, sonraki 09-27 (0 gecikme)"
+      },
+      {
+        "vaat": "M2 proje portföyü dönüşü",
+        "kim": "Vezir + Patron",
+        "verildi": "BE-01 2026-08-27",
+        "gecikti_gun": 29,
+        "gecerli": "BEKLİYOR · MU-02 M1 SVG polygon bitti, M2 sıra"
+      },
+      {
+        "vaat": "TT-Arşiv commit+yedek zinciri",
+        "kim": "TT-Arşiv (yeni CC)",
+        "verildi": "ARS-02 2026-08-27",
+        "gecikti_gun": 29,
+        "gecerli": "AKTİF · retro-taşıma SHA-verify+sil bekliyor"
+      },
+      {
+        "vaat": "misara-arsiv kalan 14 oturum push",
+        "kim": "Vezir",
+        "verildi": "KA-01 2026-08-27",
+        "gecikti_gun": 29,
+        "gecerli": "Ş2 göz-teyit GEÇTİ, kalan 14 sürebilir"
+      },
+      {
+        "vaat": "Bölüm 11",
+        "kim": "Patron",
+        "verildi": "?",
+        "gecikti_gun": null,
+        "gecerli": "Patron'da (detay bilinmiyor)"
+      },
+      {
+        "vaat": "🔴 Öncelik-1 Tutanaklar (5 madde)",
+        "kim": "Vezir + Patron",
+        "verildi": "KA-01 2026-08-27",
+        "gecikti_gun": 29,
+        "gecerli": "AKTİF · T-13 geniş · T-14 geniş · Yatırımcı pivot 05-26 · Beykoz kapanış konuşma · T-17 kapanış"
       },
       {
         "vaat": "✅ Yusuf Kaya SON.html teslim",
@@ -378,10 +435,12 @@
       }
     ],
     "aktif_bugun": [
-      "🔴 Sahibinden: LİSTE değil DETAY sayfası kaydet (CC-Arşiv bulgusu)",
-      "misara-arsiv PRIVATE repo aç",
-      "GitHub PAT yenile",
-      "Standing #37/#38 kanona geçir"
+      "🔴 KRİTİK: cleanupPeriodDays ayarı BUGÜN yapılmalı (27 Ağu oturumları 26 Eylül'de ölüyor · 1 gün kaldı)",
+      "🔴 Sahibinden: LİSTE değil DETAY sayfası kaydet (CC-Arşiv bulgusu · 59 gün gecikti)",
+      "misara-arsiv kalan 14 oturum push (Ş2 tek oturum test edildi, Patron göz-teyit geçti)",
+      "TT-Arşiv commit+yedek zinciri (retro-taşıma SHA-verify+sil bekliyor)",
+      "Bölüm 11 (Patron'da)",
+      "Öncelik-1 tutanaklar (T-13/14 geniş · yatırımcı 05-26 · Beykoz kapanış konuşma · T-17 kapanış)"
     ]
   },
   "kanonik_rakamlar": {
@@ -638,5 +697,25 @@
     "kaynak": "konusmalar/SABLON_GENIS_OZET.md (misara-vezir)",
     "tarih": "2026-08-27"
   },
-  "senkron_kaynak": "misara-app/veri/DURUM.json (Hafıza push · Standing #39+#40 · DM-02)"
+  "senkron_kaynak": "misara-app/veri/DURUM.json (Hafıza push · Standing #39+#40 · DM-02)",
+  "cloud_capraz_teyit": {
+    "tarih": "2026-09-25",
+    "kaynak": "Üst Akıl taraması",
+    "sonuc": "KA-01 envanteri UYUMLU · cloud'da Vezir'in bilmediği konuşma YOK",
+    "yeni_bulgular": [
+      "T18-20 cloud'da izler var (KA-01 'YOK' → düzeltildi)",
+      "T20 3 Eylül'de ek girişi",
+      "T21 = bu aktif konuşma",
+      "T17 cloud erişim-kısıtlı → 'erişilemez' damgası",
+      "3 Eylül'den bugüne 22 gün cloud sessizliği (kayıpsız)",
+      "TT-Borsa 1 · Aldemir cloud'da bulundu (KA-01 'YOK'tu)"
+    ],
+    "kucuk_turlar_atlandi": [
+      "Fesa PDF",
+      "gstack",
+      "logo kılavuzu",
+      "YouTube fikri",
+      "2 adsız"
+    ]
+  }
 }
