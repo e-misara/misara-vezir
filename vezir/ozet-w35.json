@@ -22,6 +22,13 @@
         "cozum": "Retro-taşıma SHA-verify + Mac silme (arsiv, ham, log)"
       },
       {
+        "konu": "🔴 TT-HAFIZA fiziki takılı DEĞİL — 'takıldı' beyanı fiziki teyitle uyuşmadı",
+        "etki": "diskutil external BOŞ · macOS diski görmüyor · kablo/port/donanım şüphesi · Bloke: B8 · katman_basin devri · S60 v25 · harici yedek · E22 ikinci teyit",
+        "kim": "Patron (tanıma zinciri deniyor) + Basın + Analiz (dürüst-fark raporları kayda)",
+        "cozum": "Patron donanım tanıma zincirini bitirene dek retro-taşıma+B8 alternatif sorgular ERTELENDİ",
+        "kanon_ek_madde": "tt_hafiza_takili_kalir_v1 ek madde önerisi: 'takıldı beyanı yetmez — diskutil external çıktısıyla TEYİT; CC'ler mount'u körlemesine varsaymaz, kontrol eder' (bugün iki CC tam bunu yaptı)"
+      },
+      {
         "konu": "Sahibinden 30K LİSTE ekranı (detay değil)",
         "etki": "70 il beslemesi bozuk · mahalle+ilan-no yok · besleme yöntemi DETAY sayfası olmalı",
         "kim": "CC-Analiz + CC-Arşiv",
@@ -325,8 +332,8 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 41,
-    "guncelleme_notu_20260926": "27→41 · 6 kapatıldı (Basın boşluk, Sosyal Whisper S196, EK-C, E1 künye, Parsel-veri kanonu, Köşe sayısı düzeltmesi) + 14 yeni (İkizdere denetim, GNDT, KOS-6, Emlakjet+Endeksa, rakip-cron, RG-CB-Kararları, İnşaat Hattı, Standing #48, E1 künye ✅, harici yedek disk, kanon ONAYLI ✅, MAP42, köşe düzeltme ✅)",
+    "toplam": 51,
+    "guncelleme_notu_20260926": "27→51 · 12 kapatıldı (Basın boşluk, Whisper S196 [ilk+kesin], EK-C, E1 künye, Parsel-veri kanonu, Köşe, tt_hafiza_takili_kalir_v1 STANDING, KTB toplayıcı, MAP42 A4+C14, Tic C10-C12, Standing #48 iskelet, Standing #37 iskelet) + 24 yeni (İkizdere denetim, GNDT, KOS-6, Emlakjet+Endeksa, rakip-cron, RG-CB, İnşaat Hattı, Standing #48, E1✅, harici yedek, kanon v1✅, MAP42, köşe✅, kamulaştırma söylem, dere 65/93m, Patron-saha E3+çay, KTB✅, S196✅, Sosyal-standing✅, MAP42-kısmi✅, Tic-C10✅, Std48-iskelet✅, Std37-iskelet✅) — 26 Eyl gece dalgası dahil",
     "kritik": [
       {
         "vaat": "🔴 Hafıza S43 raporu (9 kanonizasyon kalemi + 2 PROMOTE onayı + Standing #17 revizyonu bağlı)",
@@ -387,6 +394,77 @@
         "gecikti_gun": 0,
         "gecerli": "AKTİF · rakip haber tetiği cron katmanı eksik (Emlakjet↔Endeksa birleşmesi manuel yakalandı)",
         "not": "Emlakjet/Endeksa/Zingat/Sahibinden/Hepsiemlak vb. otomatik haber tetiği"
+      },
+      {
+        "vaat": "✅ Sosyal S196 · Whisper retry watchdog",
+        "kim": "CC-Sosyal",
+        "verildi": "2026-09-26 (S196 ONAYLI turu)",
+        "gecikti_gun": 0,
+        "gecerli": "✅ KAPANDI 2026-09-26 · retry watchdog kanıtlı · 62 video · DB 4.761"
+      },
+      {
+        "vaat": "✅ tt_hafiza_takili_kalir_v1 STANDING onayı",
+        "kim": "CC-Sosyal (kanon üreticisi) · tüm CC'ye yayılım",
+        "verildi": "2026-09-26",
+        "gecikti_gun": 0,
+        "gecerli": "✅ STANDING ONAYLI 2026-09-26 · 3. emsal Basın bloke vakası · EK MADDE önerisi: 'takıldı beyanı yetmez — diskutil external çıktısıyla teyit'"
+      },
+      {
+        "vaat": "KTB toplayıcı kararı",
+        "kim": "CC-Borsa (Üst Akıl onayı 2026-09-26)",
+        "verildi": "2026-09-26 (Analiz adaylığı vs Borsa karar turu)",
+        "gecikti_gun": 0,
+        "gecerli": "✅ KARAR VERİLDİ 2026-09-26 · CC-Borsa · yıllık ritim · S35-36 sonrası · Analiz adaylığı kapandı · Standing #37 kanonik tablosuna eklendi"
+      },
+      {
+        "vaat": "Kamulaştırma iddiası (PARSEL-01 Basın probe)",
+        "kim": "CC-Basın",
+        "verildi": "2026-09-26 (Basın probe)",
+        "gecikti_gun": 0,
+        "gecerli": "🟡 ARA-DAMGA: 'SÖYLEM, belge yok' · GNews 0 + yerel 0 + havuz 0 + EKAP/RG 0 · B8 alternatif sorguları mount sonrası (TT-HAFIZA takılı DEĞİL blokesi)"
+      },
+      {
+        "vaat": "MAP42 A4 + C14 kısmi teslim",
+        "kim": "CC-TT-MAP",
+        "verildi": "2026-09-26 (kritik yol devri sonrası)",
+        "gecikti_gun": 0,
+        "gecerli": "✅ KISMİ KABUL: A4 (10 yıl örtü stabil · kazı/heyelan yok) + C14 hüküm (1.705m) · A1 yol düzeltmesiyle koşuyor"
+      },
+      {
+        "vaat": "Dere 65/93m mini-çelişki hükmü",
+        "kim": "CC-TT-MAP",
+        "verildi": "2026-09-26",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · defter kaydı yapıldı · hüküm Map'te"
+      },
+      {
+        "vaat": "✅ Tic C10-C12 teslim (2018/97 yerleşik alan kararı)",
+        "kim": "CC-Tic",
+        "verildi": "2026-09-26",
+        "gecikti_gun": 0,
+        "gecerli": "✅ TESLİM 2026-09-26 · 2018/97 yerleşik alan kararı bulundu · vaka 8/8 katman kapanışına götürdü"
+      },
+      {
+        "vaat": "🔴 PARSEL-01 kilit E3 (Patron-saha)",
+        "kim": "Patron",
+        "verildi": "2026-09-26 (vakanın tek kilidi)",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF 🔴 · vakanın son sorusu: yerleşik alan sınırı içinde mi (2018/97 kararı) · Görev: WebTapu + muhtar 1/2000 + İl Özel İdare İmar · + çay kapsamı hangi parseller (çay fiilen var, ölçüsü belirsiz)",
+        "kanon": "parsel_veri_kanonu_v1 Ek not (2026-09-26 Patron-mülk-sorgusu istisnası)"
+      },
+      {
+        "vaat": "✅ Standing #48 etki listesi iskeleti",
+        "kim": "Vezir",
+        "verildi": "2026-09-26 (borç)",
+        "gecikti_gun": 0,
+        "gecerli": "✅ İSKELET HAZIR 2026-09-26 · kanon/standing_48_etki_listesi_v1.md · 6 rename kaydı (R1-R6) · Standing #48 metni Patron onayından geçince formalize edilir"
+      },
+      {
+        "vaat": "✅ Standing #37 kalan denetimler iskeleti",
+        "kim": "Vezir",
+        "verildi": "2026-09-26 (borç)",
+        "gecikti_gun": 0,
+        "gecerli": "✅ İSKELET HAZIR 2026-09-26 · kanon/standing_37_kalan_denetimler_v1.md · KTB+RG-CB tabloya eklendi · §2.1 kod grep + §2.2 KURULUS EK-C + §2.3 KAYNAK-ENVANTER-01 karşılaştırma bekliyor (ayrı turlar)"
       },
       {
         "vaat": "✅ E1 künye zinciri (Arşiv yeni oturum)",
@@ -587,6 +665,15 @@
       "✅ Parsel-veri kanonu v1 ONAYLI · public repo'da ada/parsel/koordinat/künye YASAK · retro-redaksiyon pano+DURUM.json uygulandı",
       "🔴 Harici yedek disk BEKLENIYOR (retro-taşıma + TT-Arşiv zincirini bloke ediyor)",
       "Köşe sayısı düzeltmesi kaydı (rakam lokal · public'te tutulmaz)",
+      "🔴 TT-HAFIZA fiziki takılı DEĞİL — diskutil external BOŞ, macOS görmüyor · Patron donanım tanıma zinciri deniyor · B8+katman_basin+S60+E22+harici-yedek BLOKE",
+      "PARSEL-01 · 8/8 katman TAMAM · kilit E3 · çay TEYİTLİ · Patron-saha bekleniyor (WebTapu+muhtar+İl Özel İdare)",
+      "MAP42 kısmi teslim: A4 örtü stabil + C14 hüküm 1.705m + A1 yol düzeltmesi",
+      "Tic C10-C12 teslim: 2018/97 yerleşik alan kararı bulundu",
+      "Basın probe: kamulaştırma iddiası SÖYLEM (belge yok · GNews/yerel/havuz/EKAP/RG hepsi 0)",
+      "KTB toplayıcı: CC-Borsa (yıllık ritim · S35-36 sonrası) · Analiz adaylığı kapandı",
+      "Sosyal S196 KAPANDI · retry watchdog kanıtlı · 62 video · DB 4.761",
+      "tt_hafiza_takili_kalir_v1 STANDING ONAYLI · EK MADDE: 'takıldı beyanı yetmez — diskutil external teyit'",
+      "İki borç KAPANDI (iskelet düzeyi): Standing #48 etki listesi + Standing #37 kalan denetimler",
       "🔴 Hafıza İkizdere uydurma vakası (#01 emsal defterinde) — Finans hâlâ eski konum gördü, düzeltme uygulanma denetimi bekleniyor",
       "✅ Basın boşluk-kapama KAPANDI (+25K/40g)",
       "✅ Sosyal Whisper S196 ONAYLI (alt-vakalar: GNDT 50-gün kayıp + KOS-6 retry borcu)",
@@ -939,26 +1026,37 @@
         "acilis": "2026-09-26",
         "dosya_sahibi": "CC-Tic (dirildi · Patron öne aldı)",
         "katman_durumu": {
-          "aciklama": "9 CC · durum işareti · kritik yol E1 künye = Arşiv yeni oturum",
-          "Tic": "✓ sahip (birleştirici DOSYA.md)",
+          "aciklama": "9 CC · 8/8 katman TAMAM · kilit E3 · çay teyitli · kritik yol devri Arşiv → TT-MAP → E3 (Patron-saha)",
+          "Tic": "✓ sahip · C10-C12 teslim (2018/97 yerleşik alan kararı bulundu)",
           "Ihale": "✓ eklendi (RG-CB-Kararları alt-kanalı onaylandı, ayrı vaat)",
           "TT-AI": "✓ katman verildi",
           "Analiz": "✓ katman verildi",
           "Sinyal": "✓ iskelet (sinyal üretilmedi, eşik-önce disiplini)",
           "Finans": "✓ katman verildi (Madde 52 meyilden kat yok + Madde 63 iskân dışı ticari = kır kahvesi/lokanta, otel yok; alan statüsü 16× belirleyici)",
-          "Basın": "probe (araştırma sürüyor)",
-          "TT-MAP": "bekliyor",
+          "Basın": "✓ probe raporu · kamulaştırma iddiası SÖYLEM (belge yok · GNews 0 + yerel 0 + havuz 0 + EKAP/RG 0) · B8 alternatif sorguları mount sonrası",
+          "TT-MAP": "✓ kısmi teslim: A4 (10 yıl örtü stabil · kazı/heyelan izi yok) + C14 hüküm (1.705m) · A1 yol düzeltmesiyle koşuyor · MAP42",
           "Arşiv": "✅ E1 künye ZİNCİRİ TAMAM 2026-09-26 (commit 7ee2480 · 21 ham + SHA + tkgm_kunye + DOSYA.md §1.1; 3 bekleyen dosya künye bilinçli dışarıda)",
           "Hafıza": "destek (DURUM.json kaynak-iskelet, uydurma vakası #01 emsale girdi)"
         },
-        "mahalle_celiskisi": {
-          "kayit": "3 kaynak Eriklimanı Mahallesi diyor; TKGM künyesi Bürücek köyü olabilir",
-          "disiplin": "Çelişki-korundu (SİLME-YOK) · final kaynak = TKGM künyesi",
-          "kanonik_kaynak": "TKGM (Standing #37 kanonik — toplayıcı Hafıza; kullanıcı Tic)"
+        "vaka_durum_satiri": "8/8 katman TAMAM · kilit E3 (yerleşik alan sınırı içinde mi — 2018/97 kararı) · çay TEYİTLİ · Patron-saha bekleniyor",
+        "patron_saha_kalemi": {
+          "aciklama": "CC işi DEĞİL · Patron-mülk-sorgusu istisnası (kanon: parsel_veri_kanonu_v1 Ek not 2026-09-26)",
+          "gorevler": {
+            "E3_teyidi": "WebTapu beyanlar + muhtar 1/2000 pafta + İl Özel İdare İmar Müdürlüğü",
+            "cay_kapsami": "hangi parseller çay ile örtülü — Patron saha teyidi (fiili çay var, kapsamı belirsiz)"
+          }
+        },
+        "mini_celiskiler": {
+          "dere_65_93m": "Dere mesafesi 65m vs 93m çelişkisi · hüküm TT-MAP'te",
+          "mahalle": {
+            "kayit": "3 kaynak Eriklimanı Mahallesi diyor; TKGM künyesi Bürücek köyü olabilir",
+            "disiplin": "Çelişki-korundu (SİLME-YOK) · final kaynak = TKGM künyesi",
+            "kanonik_kaynak": "TKGM (Standing #37 kanonik — toplayıcı Hafıza; kullanıcı Tic)"
+          }
         },
         "klasor": "parsel_01_rize/",
         "durum": "🟢 AKTİF",
-        "not": "Beykoz vakası emsali (beykoz_vaka/ · SIG12) — bu 2. mahalle-vaka. Konum İkizdere değil DEREPAZARI (Hafıza uydurma vakası #01 kanon_ihlali_emsal_defteri.md).",
+        "not": "Beykoz vakası emsali (beykoz_vaka/ · SIG12) — bu 2. mahalle-vaka. Konum İkizdere değil DEREPAZARI (Hafıza uydurma vakası #01 kanon_ihlali_emsal_defteri.md). 'Durduran' adayı ağırlaştı — çay fiilen var (Patron saha beyan 2026-09-26).",
         "insaat_hatti": {
           "aciklama": "PARSEL-01 ikinci faz · İnşaat Hattı paketi",
           "paket": "INSAAT_PAKETI.md",
