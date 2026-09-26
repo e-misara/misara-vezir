@@ -325,8 +325,8 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 34,
-    "guncelleme_notu_20260926": "27→34 · 2 kapatıldı (Basın boşluk KAPANDI, Sosyal Whisper S196 ONAYLI, EK-C KAPANDI) + 7 yeni (İkizdere denetim, GNDT, KOS-6, Emlakjet+Endeksa, rakip-cron, RG-CB-Kararları)",
+    "toplam": 36,
+    "guncelleme_notu_20260926": "27→36 · 3 kapatıldı (Basın boşluk KAPANDI, Sosyal Whisper S196 ONAYLI, EK-C KAPANDI) + 9 yeni (İkizdere denetim, GNDT, KOS-6, Emlakjet+Endeksa, rakip-cron, RG-CB-Kararları, İnşaat Hattı 28-madde, Standing #48 etki listesi)",
     "kritik": [
       {
         "vaat": "🔴 Hafıza S43 raporu (9 kanonizasyon kalemi + 2 PROMOTE onayı + Standing #17 revizyonu bağlı)",
@@ -387,6 +387,20 @@
         "gecikti_gun": 0,
         "gecerli": "AKTİF · rakip haber tetiği cron katmanı eksik (Emlakjet↔Endeksa birleşmesi manuel yakalandı)",
         "not": "Emlakjet/Endeksa/Zingat/Sahibinden/Hepsiemlak vb. otomatik haber tetiği"
+      },
+      {
+        "vaat": "PARSEL-01 İnşaat Hattı (INSAAT_PAKETI.md · 28 madde · 7 CC)",
+        "kim": "CC-Tic (sahip) + 6 CC (Map/Basın/İhale/Aİ/Analiz/Finans)",
+        "verildi": "2026-09-26 (Vezir kaydı)",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · madde-blok tablosu A-G · kritik yol Arşiv yeni oturum künye yazımı"
+      },
+      {
+        "vaat": "Standing #48 etki listesi",
+        "kim": "Vezir",
+        "verildi": "2026-09-26",
+        "gecikti_gun": 0,
+        "gecerli": "🟡 BEKLENIYOR · İnşaat Hattı paketi bağlamında"
       },
       {
         "vaat": "RG-CB-Kararları alt-kanalı entegrasyonu",
@@ -532,6 +546,7 @@
     ],
     "aktif_bugun": [
       "PARSEL-01 · Derepazarı vakası 9-CC katman genişledi — Tic sahip · İhale/Aİ/Analiz/Sinyal-iskelet/Finans ✓ · Basın probe · Map bekliyor · Arşiv KRİTİK YOL (E1 künye)",
+      "PARSEL-01 · İnşaat Hattı 2. faz açıldı — INSAAT_PAKETI.md · 28 madde · 7 CC (Tic sahip · A-G blok tablosu) · Standing #48 etki listesi bekleniyor",
       "🔴 Hafıza İkizdere uydurma vakası (#01 emsal defterinde) — Finans hâlâ eski konum gördü, düzeltme uygulanma denetimi bekleniyor",
       "✅ Basın boşluk-kapama KAPANDI (+25K/40g)",
       "✅ Sosyal Whisper S196 ONAYLI (alt-vakalar: GNDT 50-gün kayıp + KOS-6 retry borcu)",
@@ -903,7 +918,25 @@
         },
         "klasor": "parsel_01_rize/",
         "durum": "🟢 AKTİF",
-        "not": "Beykoz vakası emsali (beykoz_vaka/ · SIG12) — bu 2. mahalle-vaka. Konum İkizdere değil DEREPAZARI (Hafıza uydurma vakası #01 kanon_ihlali_emsal_defteri.md)."
+        "not": "Beykoz vakası emsali (beykoz_vaka/ · SIG12) — bu 2. mahalle-vaka. Konum İkizdere değil DEREPAZARI (Hafıza uydurma vakası #01 kanon_ihlali_emsal_defteri.md).",
+        "insaat_hatti": {
+          "aciklama": "PARSEL-01 ikinci faz · İnşaat Hattı paketi",
+          "paket": "INSAAT_PAKETI.md",
+          "sahip": "CC-Tic",
+          "madde_sayisi": 28,
+          "dagitilan_cc": 7,
+          "kritik_yol": "Arşiv yeni oturum künye yazımı (birinci fazla aynı, değişmedi)",
+          "madde_blok_tablosu": {
+            "A": ["CC-TT-MAP (Arşiv ön koşul)"],
+            "B": ["CC-TT-MAP", "CC-Basın"],
+            "C": ["CC-Tic", "CC-TT-MAP", "CC-İhale"],
+            "D": ["CC-TT-AI", "CC-Tic"],
+            "E": ["CC-TT-AI", "CC-Analiz", "CC-TT-MAP"],
+            "F": ["CC-Finans"],
+            "G": ["herkes"]
+          },
+          "standing_48_etki_listesi": "🟡 BEKLENIYOR · Vezir Standing #48 etki listesi ayrı iş"
+        }
       }
     ]
   },
