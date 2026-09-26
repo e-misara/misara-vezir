@@ -325,8 +325,8 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 36,
-    "guncelleme_notu_20260926": "27→36 · 3 kapatıldı (Basın boşluk KAPANDI, Sosyal Whisper S196 ONAYLI, EK-C KAPANDI) + 9 yeni (İkizdere denetim, GNDT, KOS-6, Emlakjet+Endeksa, rakip-cron, RG-CB-Kararları, İnşaat Hattı 28-madde, Standing #48 etki listesi)",
+    "toplam": 41,
+    "guncelleme_notu_20260926": "27→41 · 6 kapatıldı (Basın boşluk, Sosyal Whisper S196, EK-C, E1 künye, Parsel-veri kanonu, Köşe sayısı düzeltmesi) + 14 yeni (İkizdere denetim, GNDT, KOS-6, Emlakjet+Endeksa, rakip-cron, RG-CB-Kararları, İnşaat Hattı, Standing #48, E1 künye ✅, harici yedek disk, kanon ONAYLI ✅, MAP42, köşe düzeltme ✅)",
     "kritik": [
       {
         "vaat": "🔴 Hafıza S43 raporu (9 kanonizasyon kalemi + 2 PROMOTE onayı + Standing #17 revizyonu bağlı)",
@@ -387,6 +387,41 @@
         "gecikti_gun": 0,
         "gecerli": "AKTİF · rakip haber tetiği cron katmanı eksik (Emlakjet↔Endeksa birleşmesi manuel yakalandı)",
         "not": "Emlakjet/Endeksa/Zingat/Sahibinden/Hepsiemlak vb. otomatik haber tetiği"
+      },
+      {
+        "vaat": "✅ E1 künye zinciri (Arşiv yeni oturum)",
+        "kim": "CC-Arşiv",
+        "verildi": "2026-09-26 (kritik yol · birinci faz)",
+        "gecikti_gun": 0,
+        "gecerli": "✅ TAMAM 2026-09-26 · commit 7ee2480 · 21 ham + SHA + tkgm_kunye + DOSYA.md §1.1 · 3 bekleyen dosya künye dışarıda (bilinçli)"
+      },
+      {
+        "vaat": "🔴 Harici yedek diski",
+        "kim": "Patron",
+        "verildi": "önceki turlar (S55 sonrası)",
+        "gecikti_gun": null,
+        "gecerli": "AÇIK 🔴 · disk bekleniyor · retro-taşıma ve TT-Arşiv zincirini bloke ediyor"
+      },
+      {
+        "vaat": "✅ Parsel-veri kanonu v1 (kanon aday → ONAYLI)",
+        "kim": "Patron+Vezir",
+        "verildi": "2026-09-26",
+        "gecikti_gun": 0,
+        "gecerli": "✅ ONAYLI 2026-09-26 · kanon/parsel_veri_kanonu_v1.md · PARSEL-01 emsal · retro-redaksiyon pano+DURUM.json (git history'de eski hâl korundu, SİLME-YOK)"
+      },
+      {
+        "vaat": "MAP42 · PARSEL-01 katman koşusu",
+        "kim": "CC-TT-MAP",
+        "verildi": "2026-09-26 (kritik yol devri)",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · kritik yol Arşiv'den Map'e geçti · MAP42 koşuyor"
+      },
+      {
+        "vaat": "Köşe sayısı düzeltmesi kaydı (rakam lokal · kanon: parsel_veri_kanonu_v1)",
+        "kim": "CC-Tic (defter tutucu)",
+        "verildi": "2026-09-26 (Vezir kaydı)",
+        "gecikti_gun": 0,
+        "gecerli": "KAPANDI · eski oturum köşe-sayısı beyanı düzeltildi; yeni değerler lokal Tic dosyasında (public'te tutulmaz)"
       },
       {
         "vaat": "PARSEL-01 İnşaat Hattı (INSAAT_PAKETI.md · 28 madde · 7 CC)",
@@ -547,6 +582,11 @@
     "aktif_bugun": [
       "PARSEL-01 · Derepazarı vakası 9-CC katman genişledi — Tic sahip · İhale/Aİ/Analiz/Sinyal-iskelet/Finans ✓ · Basın probe · Map bekliyor · Arşiv KRİTİK YOL (E1 künye)",
       "PARSEL-01 · İnşaat Hattı 2. faz açıldı — INSAAT_PAKETI.md · 28 madde · 7 CC (Tic sahip · A-G blok tablosu) · Standing #48 etki listesi bekleniyor",
+      "✅ E1 künye zinciri TAMAM (commit 7ee2480 · 21 ham + SHA + tkgm_kunye + DOSYA.md §1.1)",
+      "🔄 Kritik yol Arşiv → TT-MAP · MAP42 koşuyor",
+      "✅ Parsel-veri kanonu v1 ONAYLI · public repo'da ada/parsel/koordinat/künye YASAK · retro-redaksiyon pano+DURUM.json uygulandı",
+      "🔴 Harici yedek disk BEKLENIYOR (retro-taşıma + TT-Arşiv zincirini bloke ediyor)",
+      "Köşe sayısı düzeltmesi kaydı (rakam lokal · public'te tutulmaz)",
       "🔴 Hafıza İkizdere uydurma vakası (#01 emsal defterinde) — Finans hâlâ eski konum gördü, düzeltme uygulanma denetimi bekleniyor",
       "✅ Basın boşluk-kapama KAPANDI (+25K/40g)",
       "✅ Sosyal Whisper S196 ONAYLI (alt-vakalar: GNDT 50-gün kayıp + KOS-6 retry borcu)",
@@ -895,7 +935,7 @@
       {
         "kod": "PARSEL-01",
         "ad": "Derepazarı Parsel Vakası",
-        "konum": "Rize / DEREPAZARI (ada 128 · parsel 2-8)",
+        "konum": "Rize / DEREPAZARI (parsel-veri lokal · kanon: parsel_veri_kanonu_v1)",
         "acilis": "2026-09-26",
         "dosya_sahibi": "CC-Tic (dirildi · Patron öne aldı)",
         "katman_durumu": {
@@ -908,7 +948,7 @@
           "Finans": "✓ katman verildi (Madde 52 meyilden kat yok + Madde 63 iskân dışı ticari = kır kahvesi/lokanta, otel yok; alan statüsü 16× belirleyici)",
           "Basın": "probe (araştırma sürüyor)",
           "TT-MAP": "bekliyor",
-          "Arşiv": "🔴 KRİTİK YOL · E1 künye = Arşiv yeni oturum",
+          "Arşiv": "✅ E1 künye ZİNCİRİ TAMAM 2026-09-26 (commit 7ee2480 · 21 ham + SHA + tkgm_kunye + DOSYA.md §1.1; 3 bekleyen dosya künye bilinçli dışarıda)",
           "Hafıza": "destek (DURUM.json kaynak-iskelet, uydurma vakası #01 emsale girdi)"
         },
         "mahalle_celiskisi": {
@@ -925,7 +965,7 @@
           "sahip": "CC-Tic",
           "madde_sayisi": 28,
           "dagitilan_cc": 7,
-          "kritik_yol": "Arşiv yeni oturum künye yazımı (birinci fazla aynı, değişmedi)",
+          "kritik_yol": "🔄 KAYDI 2026-09-26: Arşiv → TT-MAP (MAP42 koşuyor). E1 künye tamamlandı, kritik-yol şimdi Map'te.",
           "madde_blok_tablosu": {
             "A": ["CC-TT-MAP (Arşiv ön koşul)"],
             "B": ["CC-TT-MAP", "CC-Basın"],
