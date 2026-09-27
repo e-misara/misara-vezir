@@ -22,11 +22,11 @@
         "cozum": "Retro-taşıma SHA-verify + Mac silme (arsiv, ham, log)"
       },
       {
-        "konu": "🔴 TT-HAFIZA fiziki takılı DEĞİL — 'takıldı' beyanı fiziki teyitle uyuşmadı",
-        "etki": "diskutil external BOŞ · macOS diski görmüyor · kablo/port/donanım şüphesi · Bloke: B8 · katman_basin devri · S60 v25 · harici yedek · E22 ikinci teyit",
-        "kim": "Patron (tanıma zinciri deniyor) + Basın + Analiz (dürüst-fark raporları kayda)",
-        "cozum": "Patron donanım tanıma zincirini bitirene dek retro-taşıma+B8 alternatif sorgular ERTELENDİ",
-        "kanon_ek_madde": "tt_hafiza_takili_kalir_v1 ek madde önerisi: 'takıldı beyanı yetmez — diskutil external çıktısıyla TEYİT; CC'ler mount'u körlemesine varsaymaz, kontrol eder' (bugün iki CC tam bunu yaptı)"
+        "konu": "✅ TT-HAFIZA MOUNT TEYİTLİ 2026-09-27",
+        "etki": "Bloke listesi AÇILDI: B8 · katman_basin devri · S60 v25 · retro-taşıma · E22 ikinci teyit — çalışmalar başlayabilir",
+        "kim": "Patron (donanım tanıma çözüldü)",
+        "teyit": "diskutil: /dev/disk4s1 external · exFAT · 931Gi (556 dolu / 375 boş) · /Volumes/TT-HAFIZA · 5 kök klasör (00_OFIS/01_YEDEK/02_ARSIV/03_SAHSI/04_GECICI) + INDEX.md + STAGING_YENI yerinde",
+        "kanon_uygulandi": "tt_hafiza_takili_kalir_v1 EK MADDE (diskutil external teyit) — Vezir 26 Eyl beyanı körlemesine kabul etmedi, teyit reddetti · 27 Eyl beyanı teyit onayladı"
       },
       {
         "konu": "Sahibinden 30K LİSTE ekranı (detay değil)",
@@ -332,7 +332,7 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 51,
+    "toplam": 53,
     "guncelleme_notu_20260926": "27→51 · 12 kapatıldı (Basın boşluk, Whisper S196 [ilk+kesin], EK-C, E1 künye, Parsel-veri kanonu, Köşe, tt_hafiza_takili_kalir_v1 STANDING, KTB toplayıcı, MAP42 A4+C14, Tic C10-C12, Standing #48 iskelet, Standing #37 iskelet) + 24 yeni (İkizdere denetim, GNDT, KOS-6, Emlakjet+Endeksa, rakip-cron, RG-CB, İnşaat Hattı, Standing #48, E1✅, harici yedek, kanon v1✅, MAP42, köşe✅, kamulaştırma söylem, dere 65/93m, Patron-saha E3+çay, KTB✅, S196✅, Sosyal-standing✅, MAP42-kısmi✅, Tic-C10✅, Std48-iskelet✅, Std37-iskelet✅) — 26 Eyl gece dalgası dahil",
     "kritik": [
       {
@@ -474,11 +474,25 @@
         "gecerli": "✅ TAMAM 2026-09-26 · commit 7ee2480 · 21 ham + SHA + tkgm_kunye + DOSYA.md §1.1 · 3 bekleyen dosya künye dışarıda (bilinçli)"
       },
       {
-        "vaat": "🔴 Harici yedek diski",
+        "vaat": "✅ Harici yedek diski (TT-HAFIZA mount)",
         "kim": "Patron",
         "verildi": "önceki turlar (S55 sonrası)",
         "gecikti_gun": null,
-        "gecerli": "AÇIK 🔴 · disk bekleniyor · retro-taşıma ve TT-Arşiv zincirini bloke ediyor"
+        "gecerli": "✅ MOUNT TEYİTLİ 2026-09-27 · /dev/disk4s1 exFAT 931Gi (556/375) · retro-taşıma+TT-Arşiv zinciri ARTIK BAŞLAYABİLİR (iş henüz yapılmadı, ayrı vaat)"
+      },
+      {
+        "vaat": "Retro-taşıma SHA-verify+sil çalıştırılması (TT-HAFIZA mount sonrası)",
+        "kim": "Hafıza + TT-Arşiv",
+        "verildi": "2026-09-27 (mount açıldı)",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · disk açıldı, ritüel çalışabilir · Mac disk %88 acil"
+      },
+      {
+        "vaat": "B8 alternatif sorguları (kamulaştırma iddiası derin arama)",
+        "kim": "CC-Basın",
+        "verildi": "2026-09-26 (mount blokesi ertelenmişti)",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · mount açıldı, sorgular başlayabilir"
       },
       {
         "vaat": "✅ Parsel-veri kanonu v1 (kanon aday → ONAYLI)",
@@ -665,7 +679,7 @@
       "✅ Parsel-veri kanonu v1 ONAYLI · public repo'da ada/parsel/koordinat/künye YASAK · retro-redaksiyon pano+DURUM.json uygulandı",
       "🔴 Harici yedek disk BEKLENIYOR (retro-taşıma + TT-Arşiv zincirini bloke ediyor)",
       "Köşe sayısı düzeltmesi kaydı (rakam lokal · public'te tutulmaz)",
-      "🔴 TT-HAFIZA fiziki takılı DEĞİL — diskutil external BOŞ, macOS görmüyor · Patron donanım tanıma zinciri deniyor · B8+katman_basin+S60+E22+harici-yedek BLOKE",
+      "✅ TT-HAFIZA MOUNT TEYİTLİ 2026-09-27 · /dev/disk4s1 exFAT 931Gi (556/375) · Bloke listesi AÇILDI (B8+katman_basin+S60+E22+retro-taşıma başlayabilir) · Kanon uygulandı: 26 Eyl beyan reddi + 27 Eyl teyit onayı",
       "PARSEL-01 · 8/8 katman TAMAM · kilit E3 · çay TEYİTLİ · Patron-saha bekleniyor (WebTapu+muhtar+İl Özel İdare)",
       "MAP42 kısmi teslim: A4 örtü stabil + C14 hüküm 1.705m + A1 yol düzeltmesi",
       "Tic C10-C12 teslim: 2018/97 yerleşik alan kararı bulundu",
