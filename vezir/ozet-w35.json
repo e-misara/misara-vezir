@@ -332,8 +332,8 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 53,
-    "guncelleme_notu_20260926": "27→51 · 12 kapatıldı (Basın boşluk, Whisper S196 [ilk+kesin], EK-C, E1 künye, Parsel-veri kanonu, Köşe, tt_hafiza_takili_kalir_v1 STANDING, KTB toplayıcı, MAP42 A4+C14, Tic C10-C12, Standing #48 iskelet, Standing #37 iskelet) + 24 yeni (İkizdere denetim, GNDT, KOS-6, Emlakjet+Endeksa, rakip-cron, RG-CB, İnşaat Hattı, Standing #48, E1✅, harici yedek, kanon v1✅, MAP42, köşe✅, kamulaştırma söylem, dere 65/93m, Patron-saha E3+çay, KTB✅, S196✅, Sosyal-standing✅, MAP42-kısmi✅, Tic-C10✅, Std48-iskelet✅, Std37-iskelet✅) — 26 Eyl gece dalgası dahil",
+    "toplam": 58,
+    "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "kritik": [
       {
         "vaat": "🔴 Hafıza S43 raporu (9 kanonizasyon kalemi + 2 PROMOTE onayı + Standing #17 revizyonu bağlı)",
@@ -431,11 +431,39 @@
         "gecerli": "✅ KISMİ KABUL: A4 (10 yıl örtü stabil · kazı/heyelan yok) + C14 hüküm (1.705m) · A1 yol düzeltmesiyle koşuyor"
       },
       {
-        "vaat": "Dere 65/93m mini-çelişki hükmü",
+        "vaat": "✅ Dere mini-çelişki hükmü",
         "kim": "CC-TT-MAP",
         "verildi": "2026-09-26",
         "gecikti_gun": 0,
-        "gecerli": "AKTİF · defter kaydı yapıldı · hüküm Map'te"
+        "gecerli": "✅ ÇÖZÜLDÜ 2026-09-27 · Map hüküm verdi (kesin değer lokal · kanon: parsel_veri_kanonu_v1)"
+      },
+      {
+        "vaat": "✅ Parsel-kesin eğim düzeltmesi",
+        "kim": "CC-TT-MAP",
+        "verildi": "2026-09-27",
+        "gecikti_gun": 0,
+        "gecerli": "✅ DÜZELTİLDİ 2026-09-27 · proxy değer yüksek çıkmış, kesin ölçüm daha düşük · kesin değer lokal"
+      },
+      {
+        "vaat": "✅ Basın 7/7 tamamlandı",
+        "kim": "CC-Basın",
+        "verildi": "2026-09-26",
+        "gecikti_gun": 0,
+        "gecerli": "✅ TAMAM 2026-09-27 · 7/7 · kamulaştırma iddiası SÖYLEM (belge yok · 5 kaynak sıfır)"
+      },
+      {
+        "vaat": "✅ DEVIR_INSAAT_KONUSMASI.md teslim (PARSEL-01 dış-devir ilk ürünü)",
+        "kim": "CC-Tic (birleştirici) + 7 CC (katman)",
+        "verildi": "2026-09-27",
+        "gecikti_gun": 0,
+        "gecerli": "✅ TESLİM 2026-09-27 · 7 bölüm · 4 etiket · MEMORY.md linkler tamam · içerik lokal (parsel-veri kanonu uygun)"
+      },
+      {
+        "vaat": "RG köy listesi (İhale)",
+        "kim": "CC-İhale",
+        "verildi": "2026-09-27",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · İhale'de üretiliyor · RG-CB-Kararları alt-kanalıyla birlikte"
       },
       {
         "vaat": "✅ Tic C10-C12 teslim (2018/97 yerleşik alan kararı)",
@@ -1042,17 +1070,25 @@
         "katman_durumu": {
           "aciklama": "9 CC · 8/8 katman TAMAM · kilit E3 · çay teyitli · kritik yol devri Arşiv → TT-MAP → E3 (Patron-saha)",
           "Tic": "✓ sahip · C10-C12 teslim (2018/97 yerleşik alan kararı bulundu)",
-          "Ihale": "✓ eklendi (RG-CB-Kararları alt-kanalı onaylandı, ayrı vaat)",
+          "Ihale": "✓ eklendi (RG-CB-Kararları alt-kanalı onaylandı) · RG köy listesi İhale'de",
           "TT-AI": "✓ katman verildi",
           "Analiz": "✓ katman verildi",
           "Sinyal": "✓ iskelet (sinyal üretilmedi, eşik-önce disiplini)",
           "Finans": "✓ katman verildi (Madde 52 meyilden kat yok + Madde 63 iskân dışı ticari = kır kahvesi/lokanta, otel yok; alan statüsü 16× belirleyici)",
-          "Basın": "✓ probe raporu · kamulaştırma iddiası SÖYLEM (belge yok · GNews 0 + yerel 0 + havuz 0 + EKAP/RG 0) · B8 alternatif sorguları mount sonrası",
-          "TT-MAP": "✓ kısmi teslim: A4 (10 yıl örtü stabil · kazı/heyelan izi yok) + C14 hüküm (1.705m) · A1 yol düzeltmesiyle koşuyor · MAP42",
+          "Basın": "✓ 7/7 TAMAM (probe raporu + kamulaştırma iddiası SÖYLEM · belge yok · GNews/yerel/havuz/EKAP/RG hepsi 0)",
+          "TT-MAP": "✓ TAM teslim: A4 (10y örtü stabil) + C14 hüküm + dere mesafesi hüküm (kesin değer lokal) + parsel-kesin eğim hüküm (proxy düzeltmesi, kesin değer lokal) · MAP42",
           "Arşiv": "✅ E1 künye ZİNCİRİ TAMAM 2026-09-26 (commit 7ee2480 · 21 ham + SHA + tkgm_kunye + DOSYA.md §1.1; 3 bekleyen dosya künye bilinçli dışarıda)",
           "Hafıza": "destek (DURUM.json kaynak-iskelet, uydurma vakası #01 emsale girdi)"
         },
-        "vaka_durum_satiri": "8/8 katman TAMAM · kilit E3 (yerleşik alan sınırı içinde mi — 2018/97 kararı) · çay TEYİTLİ · Patron-saha bekleniyor",
+        "vaka_durum_satiri": "PARSEL-01: paket dış-devirde · kilit E3 + çay · RG köy listesi İhale'de",
+        "onceki_vaka_durum": "8/8 katman TAMAM · kilit E3 (yerleşik alan sınırı içinde mi — 2018/97 kararı) · çay TEYİTLİ · Patron-saha bekleniyor (2026-09-26)",
+        "dis_devir_paketi": {
+          "dosya": "DEVIR_INSAAT_KONUSMASI.md",
+          "teslim_tarih": "2026-09-27",
+          "bolum_sayisi": 7,
+          "etiket_sayisi": 4,
+          "not": "PARSEL-01 dış-devir ilk ürünü · MEMORY.md linkler tamam · parsel-kesin eğim değeri (proxy düzeltildi) + dere hüküm dahil · içerik lokal (kanon: parsel_veri_kanonu_v1)"
+        },
         "patron_saha_kalemi": {
           "aciklama": "CC işi DEĞİL · Patron-mülk-sorgusu istisnası (kanon: parsel_veri_kanonu_v1 Ek not 2026-09-26)",
           "gorevler": {
@@ -1061,7 +1097,8 @@
           }
         },
         "mini_celiskiler": {
-          "dere_65_93m": "Dere mesafesi 65m vs 93m çelişkisi · hüküm TT-MAP'te",
+          "dere_mesafesi": "✅ ÇÖZÜLDÜ 2026-09-27 · dere mesafesi çelişkisi Map'te hüküm edildi (kesin değer lokal · kanon: parsel_veri_kanonu_v1)",
+          "egim": "✅ DÜZELTİLDİ 2026-09-27 · proxy değer (yüksek) yerine parsel-kesin ölçüm hüküm (Map · kesin değer lokal)",
           "mahalle": {
             "kayit": "3 kaynak Eriklimanı Mahallesi diyor; TKGM künyesi Bürücek köyü olabilir",
             "disiplin": "Çelişki-korundu (SİLME-YOK) · final kaynak = TKGM künyesi",
