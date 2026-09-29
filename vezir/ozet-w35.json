@@ -332,7 +332,7 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 58,
+    "toplam": 61,
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "kritik": [
       {
@@ -457,6 +457,27 @@
         "verildi": "2026-09-27",
         "gecikti_gun": 0,
         "gecerli": "✅ TESLİM 2026-09-27 · 7 bölüm · 4 etiket · MEMORY.md linkler tamam · içerik lokal (parsel-veri kanonu uygun)"
+      },
+      {
+        "vaat": "PARSEL-01 SUNUM_PAKETI (3. faz · 3 seçenek A/B/C · 8 blok · 7 CC)",
+        "kim": "CC-Tic (sahip) + 6 CC (Basın/Map/İhale/Aİ/Analiz/Finans blok tablosu)",
+        "verildi": "2026-09-29 (Vezir kaydı)",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · 3. faz açıldı · seçenek-bazlı karar mimarisi"
+      },
+      {
+        "vaat": "🔴 18 Eylül Derepazarı seli → afete-maruz-bölge kararı",
+        "kim": "CC-Basın + CC-İhale",
+        "verildi": "2026-09-29 (yeni kritik soru)",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF 🔴 · vaka sahası afete-maruz-bölge kapsamında mı? · Basın (haber+belge) + İhale (RG/Bakanlar Kurulu kararı)"
+      },
+      {
+        "vaat": "🔴 Tic · 2018/97 karar metni sınır tarifi araması",
+        "kim": "CC-Tic",
+        "verildi": "2026-09-29",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF 🔴 · bulunursa E3 SAHASIZ kapanabilir (Patron-saha atlanır) · vakanın en yüksek getirili görevi"
       },
       {
         "vaat": "RG köy listesi (İhale)",
@@ -702,6 +723,7 @@
     "aktif_bugun": [
       "PARSEL-01 · Derepazarı vakası 9-CC katman genişledi — Tic sahip · İhale/Aİ/Analiz/Sinyal-iskelet/Finans ✓ · Basın probe · Map bekliyor · Arşiv KRİTİK YOL (E1 künye)",
       "PARSEL-01 · İnşaat Hattı 2. faz açıldı — INSAAT_PAKETI.md · 28 madde · 7 CC (Tic sahip · A-G blok tablosu) · Standing #48 etki listesi bekleniyor",
+      "PARSEL-01 · 3. faz SUNUM_PAKETI açıldı 2026-09-29 · 3 seçenek A/B/C · 8 blok · 7 CC · yeni kritik soru: 18 Eyl Derepazarı seli afete-maruz-bölge? · Tic 2018/97 karar-metni bulursa E3 sahasız kapanır",
       "✅ E1 künye zinciri TAMAM (commit 7ee2480 · 21 ham + SHA + tkgm_kunye + DOSYA.md §1.1)",
       "🔄 Kritik yol Arşiv → TT-MAP · MAP42 koşuyor",
       "✅ Parsel-veri kanonu v1 ONAYLI · public repo'da ada/parsel/koordinat/künye YASAK · retro-redaksiyon pano+DURUM.json uygulandı",
@@ -1080,8 +1102,30 @@
           "Arşiv": "✅ E1 künye ZİNCİRİ TAMAM 2026-09-26 (commit 7ee2480 · 21 ham + SHA + tkgm_kunye + DOSYA.md §1.1; 3 bekleyen dosya künye bilinçli dışarıda)",
           "Hafıza": "destek (DURUM.json kaynak-iskelet, uydurma vakası #01 emsale girdi)"
         },
-        "vaka_durum_satiri": "PARSEL-01: paket dış-devirde · kilit E3 + çay · RG köy listesi İhale'de",
-        "onceki_vaka_durum": "8/8 katman TAMAM · kilit E3 (yerleşik alan sınırı içinde mi — 2018/97 kararı) · çay TEYİTLİ · Patron-saha bekleniyor (2026-09-26)",
+        "vaka_durum_satiri": "PARSEL-01: 3. faz SUNUM_PAKETI (3 seçenek A/B/C · 8 blok · 7 CC) · kilit E3 (Tic 2018/97 karar-metni araması sürüyor → bulunursa sahasız kapanabilir) · yeni soru: 18 Eyl Derepazarı seli → afete-maruz-bölge kararı",
+        "onceki_vaka_durumlari": [
+          "8/8 katman TAMAM · kilit E3 · çay TEYİTLİ · Patron-saha bekleniyor (2026-09-26)",
+          "PARSEL-01: paket dış-devirde · kilit E3 + çay · RG köy listesi İhale'de (2026-09-27)"
+        ],
+        "sunum_paketi": {
+          "aciklama": "PARSEL-01 üçüncü faz · sunum paketi (3 seçenek)",
+          "acilis": "2026-09-29",
+          "sahip": "CC-Tic",
+          "seçenek_sayisi": 3,
+          "seçenekler": ["A", "B", "C"],
+          "blok_sayisi": 8,
+          "atanan_cc": 7,
+          "yeni_kritik_soru": {
+            "olay": "18 Eylül 2026 Derepazarı seli",
+            "soru": "Vaka sahası afete-maruz-bölge kararı kapsamında mı?",
+            "atanan_cc": ["CC-Basın", "CC-İhale"]
+          },
+          "e3_alt_gorev": {
+            "kim": "CC-Tic",
+            "gorev": "2018/97 karar metni sınır tarifi araması",
+            "etki": "Bulunursa E3 SAHASIZ kapanabilir (Patron-saha atlanır)"
+          }
+        },
         "dis_devir_paketi": {
           "dosya": "DEVIR_INSAAT_KONUSMASI.md",
           "teslim_tarih": "2026-09-27",
