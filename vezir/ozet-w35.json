@@ -332,7 +332,7 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 69,
+    "toplam": 73,
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "kritik": [
       {
@@ -457,6 +457,34 @@
         "verildi": "2026-09-27",
         "gecikti_gun": 0,
         "gecerli": "✅ TESLİM 2026-09-27 · 7 bölüm · 4 etiket · MEMORY.md linkler tamam · içerik lokal (parsel-veri kanonu uygun)"
+      },
+      {
+        "vaat": "🏛️ PARSEL-01 BESLEME FAZI · 5 kalemlik canlı abonelik (Tradia'nın ilk iç-müşterisi)",
+        "kim": "CC-Tic (besleme dosyası) + CC-İhale (afet-RG) + CC-Hafıza (kurum duyuru) + CC-Analiz (KT oranları) + CC-Finans (teşvik mevzuatı) + CC-Basın (yerel basın)",
+        "verildi": "2026-09-30 (tarihi satır)",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · TRADIA_BESLEME_INSAAT_v2.md yayında · 5 aboneliğin canlı akışı denetlenecek"
+      },
+      {
+        "vaat": "🏛️ GERİ-AKIŞ vaadi · İnşaat gerçek maliyet+karar → Tradia tabanı",
+        "kim": "İnşaat (dış müşteri) → CC-Tic → SORGU-01",
+        "verildi": "2026-09-30",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · Tradia'nın ilk saha-doğrulama verisi olacak · veri mimarisi tasarımı bekliyor"
+      },
+      {
+        "vaat": "🔴 Plan-durum belirsizliği çözümü: e-Plan vs İÖİ pafta",
+        "kim": "Patron (foto) + CC-Tic (yorumlama)",
+        "verildi": "2026-09-30",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF 🔴 · Patron İÖİ paftasının fotoğrafı bekleniyor · celiski_referans_kanonu_v1 Tür B hipotezi (e-Plan online vs İÖİ pafta fiziksel senkronizasyon eksikliği?)"
+      },
+      {
+        "vaat": "Vezir DENETİM-2 gündemi (Rize sonrası)",
+        "kim": "Vezir",
+        "verildi": "2026-09-30 (mühürlü)",
+        "gecikti_gun": 0,
+        "gecerli": "🔒 MÜHÜRLÜ · Rize İnşaat konuşması bittikten sonra açılacak · DENETİM-1'in devamı"
       },
       {
         "vaat": "PARSEL-01 SUNUM_PAKETI (3. faz · 3 seçenek A/B/C · 8 blok · 7 CC)",
@@ -775,6 +803,7 @@
       "PARSEL-01 · 3. faz SUNUM_PAKETI açıldı 2026-09-29 · 3 seçenek A/B/C · 8 blok · 7 CC · yeni kritik soru: 18 Eyl Derepazarı seli afete-maruz-bölge? · Tic 2018/97 karar-metni bulursa E3 sahasız kapanır",
       "PARSEL-01 · 30 Eyl dalgası: İhale DOKUNMUYOR (RG 9000, D-riski KAPANDI) · Map radar-hakem sel-izi YOK · Tic yasal zarf 3-senaryo · Finans Rize 3.bölge/EK-5/6M · Arşiv 3/3 GERÇEK · Bürücek=köy KESİN · Sinyal B=(0) · kanon celiski_referans_kanonu_v1 açıldı",
       "🔴 DONDURMA: 4 borç HÂLÂ bekliyor (Patron-saha E3+çay, İnşaat Hattı, RG köy listesi, retro-taşıma) — dalga bitince ilk iş",
+      "🏛️ TARİHİ SATIR 2026-09-30: Rize İnşaat = Tradia'nın İLK İÇ MÜŞTERİSİ · BESLEME FAZI açıldı · 5 kalemlik canlı abonelik · GERİ-AKIŞ vaadi (ilk saha-doğrulama verisi) · plan-durum BELİRSİZ (e-Plan vs İÖİ pafta) · DENETİM-2 gündemi mühürlü",
       "✅ E1 künye zinciri TAMAM (commit 7ee2480 · 21 ham + SHA + tkgm_kunye + DOSYA.md §1.1)",
       "🔄 Kritik yol Arşiv → TT-MAP · MAP42 koşuyor",
       "✅ Parsel-veri kanonu v1 ONAYLI · public repo'da ada/parsel/koordinat/künye YASAK · retro-redaksiyon pano+DURUM.json uygulandı",
@@ -1131,6 +1160,15 @@
       "C_oncelik": "sonraki tur"
     }
   },
+  "ilk_ic_musteri": {
+    "aciklama": "🏛️ TARİHİ SATIR · Tradia'nın İLK İÇ MÜŞTERİSİ",
+    "tarih": "2026-09-30",
+    "musteri": "Rize İnşaat konuşması (PARSEL-01 devamı)",
+    "not": "Tradia veri tabanı ilk kez dış-müşteri niyetiyle üretilen bir işi besliyor · GERİ-AKIŞ mimarisi kurulmuş: İnşaat'ın gerçek maliyet ve karar verileri Tradia'ya döner (ilk saha-doğrulama verisi)",
+    "yol": "PARSEL-01 → SUNUM → BESLEME → GERİ-AKIŞ",
+    "kanon_önemi": "Tradia'nın 'ürün-piyasa uyumu' (product-market fit) ilk kanıtı; kendi verisini kendisi tüketip doğruluğunu ölçebilecek ilk vaka",
+    "denetim_2": "Rize sonrası Vezir DENETİM-2 gündemi mühürlü"
+  },
   "vakalar": {
     "aciklama": "Aktif vaka kayıtları",
     "aktif": [
@@ -1153,12 +1191,32 @@
           "Arşiv": "✅ E1 künye ZİNCİRİ TAMAM 2026-09-26 (commit 7ee2480) · ✅ 3/3 GERÇEK 2026-09-30 (commit 97704f0) · üç-kopya vaadi KAPANDI",
           "Hafıza": "destek (DURUM.json kaynak-iskelet, uydurma vakası #01 emsale girdi)"
         },
-        "vaka_durum_satiri": "PARSEL-01: SUNUM olgunlaştı · İhale DOKUNMUYOR · Map sel-izi YOK · Tic yasal-zarf 3-senaryo · Finans Rize 3.bölge/EK-5/6M teşvik · Arşiv 3/3 GERÇEK · Bürücek=köy KESİN · Sinyal B=(0) · kilit E3 hâlâ Patron-saha (Tic 2018/97 metin araması sürüyor) · afet-kararı haftalık izleme",
+        "vaka_durum_satiri": "PARSEL-01 → BESLEME FAZI (Tradia'nın ilk iç-müşterisi) · plan-durum BELİRSİZ (e-Plan vs İÖİ pafta çelişkisi · Patron foto bekleniyor) · 5 kalemlik canlı abonelik açıldı · GERİ-AKIŞ vaadi aktif",
         "onceki_vaka_durumlari": [
           "8/8 katman TAMAM · kilit E3 · çay TEYİTLİ · Patron-saha bekleniyor (2026-09-26)",
           "PARSEL-01: paket dış-devirde · kilit E3 + çay · RG köy listesi İhale'de (2026-09-27)",
-          "3. faz SUNUM_PAKETI · 3 seçenek A/B/C · 8 blok · 7 CC · yeni soru sel-afet (2026-09-29)"
+          "3. faz SUNUM_PAKETI · 3 seçenek A/B/C · 8 blok · 7 CC · yeni soru sel-afet (2026-09-29)",
+          "SUNUM olgunlaştı · İhale DOKUNMUYOR · Map sel-izi YOK · Tic yasal-zarf 3-senaryo · Finans Rize 3.bölge · Arşiv 3/3 · Bürücek=köy KESİN · Sinyal B=(0) (2026-09-30)"
         ],
+        "besleme_fazi": {
+          "aciklama": "🏛️ 4. faz · PARSEL-01 BESLEME FAZI · Tradia'nın ilk iç-müşterisi",
+          "acilis": "2026-09-30",
+          "besleme_dosyasi": "TRADIA_BESLEME_INSAAT_v2.md (Tic üretiyor)",
+          "canli_abonelik_kalemleri": [
+            "afet-RG (Resmi Gazete afet kararları)",
+            "kurum duyuru (kaymakamlık/İÖİ/valilik)",
+            "KT (Kültür-Turizm) oranları",
+            "teşvik mevzuatı (BKK/9903 vd.)",
+            "yerel basın (Rize-Derepazarı)"
+          ],
+          "abonelik_sayisi": 5,
+          "geri_akis_vaadi": "İnşaat'ın gerçek maliyet + karar verileri Tradia tabanına dönecek · ilk saha-doğrulama verisi",
+          "plan_durum_belirsizligi": {
+            "cikis": "e-Plan sistemi vs İÖİ pafta çelişkisi",
+            "cozum_bekleniyor": "Patron foto (İÖİ paftasının fiziksel görüntüsü)",
+            "kanon": "celiski_referans_kanonu_v1 · Tür B (farklı referans) hipotezi öncelikli — e-Plan online kayıt, İÖİ pafta fiziksel plan, iki farklı sistemin senkronizasyon eksikliği olabilir"
+          }
+        },
         "sunum_paketi": {
           "aciklama": "PARSEL-01 üçüncü faz · sunum paketi (3 seçenek)",
           "acilis": "2026-09-29",
