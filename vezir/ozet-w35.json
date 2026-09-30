@@ -332,8 +332,12 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 73,
+    "toplam": 70,
+    "acik": 41,
+    "kapali": 29,
+    "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
+    "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
       {
         "vaat": "🔴 Hafıza S43 raporu (9 kanonizasyon kalemi + 2 PROMOTE onayı + Standing #17 revizyonu bağlı)",
@@ -457,6 +461,41 @@
         "verildi": "2026-09-27",
         "gecikti_gun": 0,
         "gecerli": "✅ TESLİM 2026-09-27 · 7 bölüm · 4 etiket · MEMORY.md linkler tamam · içerik lokal (parsel-veri kanonu uygun)"
+      },
+      {
+        "vaat": "✅ BESLEME v2 TESLİM (10 bölüm · 4 etiket)",
+        "kim": "CC-Tic",
+        "verildi": "2026-09-30",
+        "gecikti_gun": 0,
+        "gecerli": "✅ TESLİM 2026-09-30 · DEVIR v1 GEÇERSİZ damgalı (SİLME-YOK)"
+      },
+      {
+        "vaat": "✅ E7 KAPANDI (15.000 m² kaynağı: ÇDP 6.9.7.4 ekoturizm)",
+        "kim": "CC-Finans + CC-Tic",
+        "verildi": "2026-09-30",
+        "gecikti_gun": 0,
+        "gecerli": "✅ KAPANDI 2026-09-30 · üç-katman doğrulama zinciri (söylem→emsal→plan hükmü) tamamlandı · konaklama gerçek kapısı 6.2.4 (köyde turizm=plan zorunlu, E:0,50)"
+      },
+      {
+        "vaat": "✅ Üç-katman doğrulama zinciri (metodoloji emsali)",
+        "kim": "Vezir + CC-Tic",
+        "verildi": "2026-09-30",
+        "gecikti_gun": 0,
+        "gecerli": "✅ EMSAL kanon_ihlali_emsal_defteri Vaka #03 açıldı · Vezir kanonuna aday: her mevzuat iddiası için söylem→emsal→plan hükmü zorunlu"
+      },
+      {
+        "vaat": "🟡 Karıştırma riski · farklı-parsel planı E:1,00/12,50 (lejantsız pafta)",
+        "kim": "CC-Tic (ön-model testi)",
+        "verildi": "2026-09-30",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF 🟡 · Vaka #04 emsal defteri · Patron pafta lejantlı foto veya İÖİ telefonu ile netleştirir"
+      },
+      {
+        "vaat": "🔴 Patron 2-iş · (a) besleme dosyası → İnşaat sohbeti · (b) pafta 3-foto veya İÖİ telefonu",
+        "kim": "Patron",
+        "verildi": "2026-09-30",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF 🔴 · vakanın Patron-eli iki kalemi (besleme aktarımı + karıştırma riski çözümü)"
       },
       {
         "vaat": "🏛️ PARSEL-01 BESLEME FAZI · 5 kalemlik canlı abonelik (Tradia'nın ilk iç-müşterisi)",
@@ -804,6 +843,11 @@
       "PARSEL-01 · 30 Eyl dalgası: İhale DOKUNMUYOR (RG 9000, D-riski KAPANDI) · Map radar-hakem sel-izi YOK · Tic yasal zarf 3-senaryo · Finans Rize 3.bölge/EK-5/6M · Arşiv 3/3 GERÇEK · Bürücek=köy KESİN · Sinyal B=(0) · kanon celiski_referans_kanonu_v1 açıldı",
       "🔴 DONDURMA: 4 borç HÂLÂ bekliyor (Patron-saha E3+çay, İnşaat Hattı, RG köy listesi, retro-taşıma) — dalga bitince ilk iş",
       "🏛️ TARİHİ SATIR 2026-09-30: Rize İnşaat = Tradia'nın İLK İÇ MÜŞTERİSİ · BESLEME FAZI açıldı · 5 kalemlik canlı abonelik · GERİ-AKIŞ vaadi (ilk saha-doğrulama verisi) · plan-durum BELİRSİZ (e-Plan vs İÖİ pafta) · DENETİM-2 gündemi mühürlü",
+      "✅ BESLEME v2 TESLİM 2026-09-30 (10 bölüm/4-etiket, v1 GEÇERSİZ damgalı · SİLME-YOK)",
+      "✅ E7 KAPANDI: 15.000 m² = ÇDP 6.9.7.4 (ekoturizm) · konaklama gerçek kapısı 6.2.4 (köyde turizm=plan zorunlu, E:0,50) · üç-katman doğrulama zinciri (söylem→emsal→plan) emsal defteri Vaka #03",
+      "🟡 Karıştırma riski · farklı-parsel E:1,00/12,50 lejantsız pafta (Vaka #04) · Tic ön-model testi bu ayrıma bağlı",
+      "🔴 Patron 2-iş: (a) besleme dosyası → İnşaat sohbeti (b) pafta 3-foto veya İÖİ telefonu",
+      "📊 SAYAÇ DÜZELTMESİ: İLERLEME.md açıldı · üç-sütun format zorunlu (açılan/kapanan/net·toplam-aktif) · bu tur: +5 / −3 / net +2 · toplam-aktif 41",
       "✅ E1 künye zinciri TAMAM (commit 7ee2480 · 21 ham + SHA + tkgm_kunye + DOSYA.md §1.1)",
       "🔄 Kritik yol Arşiv → TT-MAP · MAP42 koşuyor",
       "✅ Parsel-veri kanonu v1 ONAYLI · public repo'da ada/parsel/koordinat/künye YASAK · retro-redaksiyon pano+DURUM.json uygulandı",
@@ -1180,18 +1224,18 @@
         "dosya_sahibi": "CC-Tic (dirildi · Patron öne aldı)",
         "katman_durumu": {
           "aciklama": "9 CC · 8/8 katman TAMAM · kilit E3 · çay teyitli · kritik yol devri Arşiv → TT-MAP → E3 (Patron-saha)",
-          "Tic": "✓ sahip · C10-C12 teslim (2018/97 yerleşik alan kararı bulundu) · ✅ YASAL ZARF 2026-09-30: (1) plansız rejimde konaklama YOK (2) mevzi-plan yolu (İÖİ 2025 × 10 emsal) (3) E3-KISMİ üçüncü senaryo (3194 sayılı İmar Kanunu m.27)",
+          "Tic": "✓ sahip · C10-C12 · YASAL ZARF 3-senaryo · 🟡 KARIŞTIRMA RİSKİ 2026-09-30: farklı-parsel planı E:1,00/12,50 var ama lejantsız pafta fotoğrafı vakalık parsele atfedilemez (emsal defteri Vaka #04) · Tic ön-model testi bu ayrıma bağlı",
           "Ihale": "✅ DOKUNMUYOR hükmü 2026-09-30 · RG 9000 teyitli · D-riski KAPANDI · afet-kararı haftalık izlemede (RG-CB-Kararları alt-kanalı) · RG köy listesi İhale'de",
           "TT-AI": "✓ katman verildi",
           "Analiz": "✓ katman verildi",
           "Sinyal": "✓ iskelet + ✅ 5. tur 2026-09-30: B=(0) parsel-kesin eğim ölçümüyle · çelişki-referans dersi KANON ADAYI (celiski_referans_kanonu_v1.md)",
-          "Finans": "✓ katman verildi (Madde 52 meyilden kat yok + Madde 63 iskân dışı ticari) · ✅ DÜZELTME 2026-09-30: Rize 3. bölge (9903 sayılı BKK) · Derepazarı EK-5 · 6M TL teşvik alt-eşiği",
+          "Finans": "✓ katman + ✅ DÜZELTME: Rize 3. bölge (9903 BKK) · Derepazarı EK-5 · 6M TL teşvik · ✅ E7 KAPANDI 2026-09-30: 15.000 m² kaynağı = ÇDP 6.9.7.4 (ekoturizm); konaklama gerçek kapısı 6.2.4 (köyde turizm=plan zorunlu, E:0,50)",
           "Basın": "✓ 7/7 TAMAM (probe raporu + kamulaştırma iddiası SÖYLEM · belge yok · GNews/yerel/havuz/EKAP/RG hepsi 0)",
           "TT-MAP": "✓ TAM teslim: A4 (10y örtü stabil) + C14 hüküm + dere mesafesi hüküm (kesin değer lokal) + parsel-kesin eğim hüküm (proxy düzeltmesi, kesin değer lokal) + ✅ radar-hakem 2026-09-30: 18 Eyl selinin parselde izi YOK · MAP42",
           "Arşiv": "✅ E1 künye ZİNCİRİ TAMAM 2026-09-26 (commit 7ee2480) · ✅ 3/3 GERÇEK 2026-09-30 (commit 97704f0) · üç-kopya vaadi KAPANDI",
           "Hafıza": "destek (DURUM.json kaynak-iskelet, uydurma vakası #01 emsale girdi)"
         },
-        "vaka_durum_satiri": "PARSEL-01 → BESLEME FAZI (Tradia'nın ilk iç-müşterisi) · plan-durum BELİRSİZ (e-Plan vs İÖİ pafta çelişkisi · Patron foto bekleniyor) · 5 kalemlik canlı abonelik açıldı · GERİ-AKIŞ vaadi aktif",
+        "vaka_durum_satiri": "PARSEL-01 · BESLEME v2 TESLİM (10 bölüm/4-etiket, v1 GEÇERSİZ damgalı) · E7 KAPANDI (ÇDP 6.9.7.4 ekoturizm) · konaklama gerçek kapısı 6.2.4 (köyde turizm=plan zorunlu, E:0,50) · karıştırma riski (farklı-parsel E:1,00/12,50, lejantsız) · Patron 2-iş: besleme→sohbet + pafta 3-foto/İÖİ tel",
         "onceki_vaka_durumlari": [
           "8/8 katman TAMAM · kilit E3 · çay TEYİTLİ · Patron-saha bekleniyor (2026-09-26)",
           "PARSEL-01: paket dış-devirde · kilit E3 + çay · RG köy listesi İhale'de (2026-09-27)",
@@ -1202,6 +1246,12 @@
           "aciklama": "🏛️ 4. faz · PARSEL-01 BESLEME FAZI · Tradia'nın ilk iç-müşterisi",
           "acilis": "2026-09-30",
           "besleme_dosyasi": "TRADIA_BESLEME_INSAAT_v2.md (Tic üretiyor)",
+          "besleme_v2_teslim": {
+            "tarih": "2026-09-30",
+            "bolum_sayisi": 10,
+            "etiket_sayisi": 4,
+            "devir_v1_damga": "GEÇERSİZ (SİLME-YOK · git history'de kalır · v2 yayında)"
+          },
           "canli_abonelik_kalemleri": [
             "afet-RG (Resmi Gazete afet kararları)",
             "kurum duyuru (kaymakamlık/İÖİ/valilik)",
