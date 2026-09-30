@@ -332,7 +332,7 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 61,
+    "toplam": 69,
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "kritik": [
       {
@@ -466,11 +466,60 @@
         "gecerli": "AKTİF · 3. faz açıldı · seçenek-bazlı karar mimarisi"
       },
       {
-        "vaat": "🔴 18 Eylül Derepazarı seli → afete-maruz-bölge kararı",
+        "vaat": "✅ 18 Eylül Derepazarı seli → afete-maruz-bölge kararı",
         "kim": "CC-Basın + CC-İhale",
-        "verildi": "2026-09-29 (yeni kritik soru)",
+        "verildi": "2026-09-29",
         "gecikti_gun": 0,
-        "gecerli": "AKTİF 🔴 · vaka sahası afete-maruz-bölge kapsamında mı? · Basın (haber+belge) + İhale (RG/Bakanlar Kurulu kararı)"
+        "gecerli": "✅ CEVAPLANDI 2026-09-30 · İhale: RG 9000 teyitli, DOKUNMUYOR hükmü, D-riski KAPANDI · Map: radar-hakem parselde sel-izi YOK · haftalık afet-kararı izleme sürüyor (kalıcı vaat değil, izleme)"
+      },
+      {
+        "vaat": "✅ İhale DOKUNMUYOR hükmü (RG 9000)",
+        "kim": "CC-İhale",
+        "verildi": "2026-09-30",
+        "gecikti_gun": 0,
+        "gecerli": "✅ HÜKÜM 2026-09-30 · RG 9000 teyitli · D-riski KAPANDI · afet-kararı haftalık izleme (RG-CB alt-kanalı)"
+      },
+      {
+        "vaat": "✅ Map radar-hakem: 18 Eyl seli parselde izi YOK",
+        "kim": "CC-TT-MAP",
+        "verildi": "2026-09-30",
+        "gecikti_gun": 0,
+        "gecerli": "✅ TESLİM 2026-09-30 · uydu radar hakemi parsel içinde sel-izi bulmadı"
+      },
+      {
+        "vaat": "✅ Tic yasal zarf (3 senaryo)",
+        "kim": "CC-Tic",
+        "verildi": "2026-09-30",
+        "gecikti_gun": 0,
+        "gecerli": "✅ TESLİM 2026-09-30 · (1) plansız rejimde konaklama YOK (2) mevzi-plan yolu (İÖİ 2025 × 10 emsal) (3) E3-KISMİ üçüncü senaryo (3194 İmar Kanunu m.27) — 3 seçenek A/B/C ile eşleşiyor"
+      },
+      {
+        "vaat": "✅ Finans düzeltmesi (Rize 3. bölge · Derepazarı EK-5 · 6M teşvik)",
+        "kim": "CC-Finans",
+        "verildi": "2026-09-30",
+        "gecikti_gun": 0,
+        "gecerli": "✅ DÜZELTME 2026-09-30 · 9903 sayılı BKK: Rize 3. bölge · Derepazarı EK-5 listesinde · 6M TL teşvik alt-eşiği"
+      },
+      {
+        "vaat": "✅ Arşiv 3/3 GERÇEK (üç-kopya vaadi)",
+        "kim": "CC-Arşiv",
+        "verildi": "2026-09-30",
+        "gecikti_gun": 0,
+        "gecerli": "✅ KAPANDI 2026-09-30 · commit 97704f0 · üç-kopya vaadi tamamlandı (SİLME-YOK ile üç bağımsız konum)"
+      },
+      {
+        "vaat": "✅ E1 kimlik kesin: Bürücek = köy",
+        "kim": "Hafıza + Tic (kaymakamlık idari-ad otoritesi)",
+        "verildi": "2026-09-30",
+        "gecikti_gun": 0,
+        "gecerli": "✅ KESİN 2026-09-30 · kaymakamlık idari birim listesi · Eriklimanı Mahallesi vs Bürücek köyü çelişkisi çözüldü (çelişki_referans_kanonu_v1 örneği) · idari-ad otoritesine işlendi"
+      },
+      {
+        "vaat": "✅ Sinyal 5. tur: B=(0) parsel-kesin eğim + çelişki-referans dersi KANON ADAYI",
+        "kim": "CC-Signals",
+        "verildi": "2026-09-30",
+        "gecikti_gun": 0,
+        "gecerli": "✅ TESLİM 2026-09-30 · B sinyali 0 (yasak-sinyal yok) · kanon celiski_referans_kanonu_v1.md açıldı"
       },
       {
         "vaat": "🔴 Tic · 2018/97 karar metni sınır tarifi araması",
@@ -724,6 +773,8 @@
       "PARSEL-01 · Derepazarı vakası 9-CC katman genişledi — Tic sahip · İhale/Aİ/Analiz/Sinyal-iskelet/Finans ✓ · Basın probe · Map bekliyor · Arşiv KRİTİK YOL (E1 künye)",
       "PARSEL-01 · İnşaat Hattı 2. faz açıldı — INSAAT_PAKETI.md · 28 madde · 7 CC (Tic sahip · A-G blok tablosu) · Standing #48 etki listesi bekleniyor",
       "PARSEL-01 · 3. faz SUNUM_PAKETI açıldı 2026-09-29 · 3 seçenek A/B/C · 8 blok · 7 CC · yeni kritik soru: 18 Eyl Derepazarı seli afete-maruz-bölge? · Tic 2018/97 karar-metni bulursa E3 sahasız kapanır",
+      "PARSEL-01 · 30 Eyl dalgası: İhale DOKUNMUYOR (RG 9000, D-riski KAPANDI) · Map radar-hakem sel-izi YOK · Tic yasal zarf 3-senaryo · Finans Rize 3.bölge/EK-5/6M · Arşiv 3/3 GERÇEK · Bürücek=köy KESİN · Sinyal B=(0) · kanon celiski_referans_kanonu_v1 açıldı",
+      "🔴 DONDURMA: 4 borç HÂLÂ bekliyor (Patron-saha E3+çay, İnşaat Hattı, RG köy listesi, retro-taşıma) — dalga bitince ilk iş",
       "✅ E1 künye zinciri TAMAM (commit 7ee2480 · 21 ham + SHA + tkgm_kunye + DOSYA.md §1.1)",
       "🔄 Kritik yol Arşiv → TT-MAP · MAP42 koşuyor",
       "✅ Parsel-veri kanonu v1 ONAYLI · public repo'da ada/parsel/koordinat/künye YASAK · retro-redaksiyon pano+DURUM.json uygulandı",
@@ -1091,21 +1142,22 @@
         "dosya_sahibi": "CC-Tic (dirildi · Patron öne aldı)",
         "katman_durumu": {
           "aciklama": "9 CC · 8/8 katman TAMAM · kilit E3 · çay teyitli · kritik yol devri Arşiv → TT-MAP → E3 (Patron-saha)",
-          "Tic": "✓ sahip · C10-C12 teslim (2018/97 yerleşik alan kararı bulundu)",
-          "Ihale": "✓ eklendi (RG-CB-Kararları alt-kanalı onaylandı) · RG köy listesi İhale'de",
+          "Tic": "✓ sahip · C10-C12 teslim (2018/97 yerleşik alan kararı bulundu) · ✅ YASAL ZARF 2026-09-30: (1) plansız rejimde konaklama YOK (2) mevzi-plan yolu (İÖİ 2025 × 10 emsal) (3) E3-KISMİ üçüncü senaryo (3194 sayılı İmar Kanunu m.27)",
+          "Ihale": "✅ DOKUNMUYOR hükmü 2026-09-30 · RG 9000 teyitli · D-riski KAPANDI · afet-kararı haftalık izlemede (RG-CB-Kararları alt-kanalı) · RG köy listesi İhale'de",
           "TT-AI": "✓ katman verildi",
           "Analiz": "✓ katman verildi",
-          "Sinyal": "✓ iskelet (sinyal üretilmedi, eşik-önce disiplini)",
-          "Finans": "✓ katman verildi (Madde 52 meyilden kat yok + Madde 63 iskân dışı ticari = kır kahvesi/lokanta, otel yok; alan statüsü 16× belirleyici)",
+          "Sinyal": "✓ iskelet + ✅ 5. tur 2026-09-30: B=(0) parsel-kesin eğim ölçümüyle · çelişki-referans dersi KANON ADAYI (celiski_referans_kanonu_v1.md)",
+          "Finans": "✓ katman verildi (Madde 52 meyilden kat yok + Madde 63 iskân dışı ticari) · ✅ DÜZELTME 2026-09-30: Rize 3. bölge (9903 sayılı BKK) · Derepazarı EK-5 · 6M TL teşvik alt-eşiği",
           "Basın": "✓ 7/7 TAMAM (probe raporu + kamulaştırma iddiası SÖYLEM · belge yok · GNews/yerel/havuz/EKAP/RG hepsi 0)",
-          "TT-MAP": "✓ TAM teslim: A4 (10y örtü stabil) + C14 hüküm + dere mesafesi hüküm (kesin değer lokal) + parsel-kesin eğim hüküm (proxy düzeltmesi, kesin değer lokal) · MAP42",
-          "Arşiv": "✅ E1 künye ZİNCİRİ TAMAM 2026-09-26 (commit 7ee2480 · 21 ham + SHA + tkgm_kunye + DOSYA.md §1.1; 3 bekleyen dosya künye bilinçli dışarıda)",
+          "TT-MAP": "✓ TAM teslim: A4 (10y örtü stabil) + C14 hüküm + dere mesafesi hüküm (kesin değer lokal) + parsel-kesin eğim hüküm (proxy düzeltmesi, kesin değer lokal) + ✅ radar-hakem 2026-09-30: 18 Eyl selinin parselde izi YOK · MAP42",
+          "Arşiv": "✅ E1 künye ZİNCİRİ TAMAM 2026-09-26 (commit 7ee2480) · ✅ 3/3 GERÇEK 2026-09-30 (commit 97704f0) · üç-kopya vaadi KAPANDI",
           "Hafıza": "destek (DURUM.json kaynak-iskelet, uydurma vakası #01 emsale girdi)"
         },
-        "vaka_durum_satiri": "PARSEL-01: 3. faz SUNUM_PAKETI (3 seçenek A/B/C · 8 blok · 7 CC) · kilit E3 (Tic 2018/97 karar-metni araması sürüyor → bulunursa sahasız kapanabilir) · yeni soru: 18 Eyl Derepazarı seli → afete-maruz-bölge kararı",
+        "vaka_durum_satiri": "PARSEL-01: SUNUM olgunlaştı · İhale DOKUNMUYOR · Map sel-izi YOK · Tic yasal-zarf 3-senaryo · Finans Rize 3.bölge/EK-5/6M teşvik · Arşiv 3/3 GERÇEK · Bürücek=köy KESİN · Sinyal B=(0) · kilit E3 hâlâ Patron-saha (Tic 2018/97 metin araması sürüyor) · afet-kararı haftalık izleme",
         "onceki_vaka_durumlari": [
           "8/8 katman TAMAM · kilit E3 · çay TEYİTLİ · Patron-saha bekleniyor (2026-09-26)",
-          "PARSEL-01: paket dış-devirde · kilit E3 + çay · RG köy listesi İhale'de (2026-09-27)"
+          "PARSEL-01: paket dış-devirde · kilit E3 + çay · RG köy listesi İhale'de (2026-09-27)",
+          "3. faz SUNUM_PAKETI · 3 seçenek A/B/C · 8 blok · 7 CC · yeni soru sel-afet (2026-09-29)"
         ],
         "sunum_paketi": {
           "aciklama": "PARSEL-01 üçüncü faz · sunum paketi (3 seçenek)",
@@ -1144,9 +1196,9 @@
           "dere_mesafesi": "✅ ÇÖZÜLDÜ 2026-09-27 · dere mesafesi çelişkisi Map'te hüküm edildi (kesin değer lokal · kanon: parsel_veri_kanonu_v1)",
           "egim": "✅ DÜZELTİLDİ 2026-09-27 · proxy değer (yüksek) yerine parsel-kesin ölçüm hüküm (Map · kesin değer lokal)",
           "mahalle": {
-            "kayit": "3 kaynak Eriklimanı Mahallesi diyor; TKGM künyesi Bürücek köyü olabilir",
-            "disiplin": "Çelişki-korundu (SİLME-YOK) · final kaynak = TKGM künyesi",
-            "kanonik_kaynak": "TKGM (Standing #37 kanonik — toplayıcı Hafıza; kullanıcı Tic)"
+            "kayit": "3 kaynak Eriklimanı Mahallesi demişti; TKGM künyesi Bürücek köyü işaret etmişti",
+            "cozum": "✅ ÇÖZÜLDÜ 2026-09-30 · Bürücek = KÖY (kaymakamlık idari birim listesi kanıtı) · Eriklimanı ayrı bir idari birim; iki kaynak farklı birimleri işaret etmiş — çelişki değil, referans netlik eksikliği (çelişki_referans_kanonu_v1 örneği)",
+            "kanonik_kaynak": "Kaymakamlık idari-ad otoritesi (Standing #37 kanonik toplayıcı için idari birim ekleniyor)"
           }
         },
         "klasor": "parsel_01_rize/",
