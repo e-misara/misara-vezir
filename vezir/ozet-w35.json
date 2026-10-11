@@ -332,9 +332,9 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 70,
-    "acik": 41,
-    "kapali": 29,
+    "toplam": 76,
+    "acik": 43,
+    "kapali": 33,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
@@ -461,6 +461,48 @@
         "verildi": "2026-09-27",
         "gecikti_gun": 0,
         "gecerli": "✅ TESLİM 2026-09-27 · 7 bölüm · 4 etiket · MEMORY.md linkler tamam · içerik lokal (parsel-veri kanonu uygun)"
+      },
+      {
+        "vaat": "✅ Vezir Borç #1 · pano_yayinla.sh rev-list kuralı",
+        "kim": "Vezir",
+        "verildi": "önceki turlar (Patron 2026-09-26 onayı)",
+        "gecikti_gun": 15,
+        "gecerli": "✅ UYGULANDI 2026-10-11 · scripts/pano_yayinla.sh güncellendi · `git rev-list --count origin/main..HEAD` kontrolüyle HEAD öndeyse mutlaka push (working-tree diff'e ek)"
+      },
+      {
+        "vaat": "✅ Vezir Borç #2 · Standing #48 etki listesi formalize",
+        "kim": "Vezir",
+        "verildi": "2026-09-26 (iskelet)",
+        "gecikti_gun": 15,
+        "gecerli": "✅ FORMALİZE 2026-10-11 · kanon/standing_48_etki_listesi_v1.md iskeletten çıktı · Patron metni gelirse SİLME-YOK ile güncellenir"
+      },
+      {
+        "vaat": "✅ Vezir Borç #3 · misara-arsiv 14 oturum push",
+        "kim": "Vezir",
+        "verildi": "2026-08-27 (KA-01)",
+        "gecikti_gun": 45,
+        "gecerli": "✅ KAPANDI 2026-10-11 · misara-arsiv HEAD=origin/main=3c66522 · 14 oturum zaten push edilmiş (commit 68c4af8) · üç-kopya vaadi 97704f0'da + sayaç betiği 3c66522'de"
+      },
+      {
+        "vaat": "✅ Vezir Borç #4 · KURULUS listesi güncelleme",
+        "kim": "Vezir",
+        "verildi": "KURULUŞ-01 (2026-07-29) · stale INDEX",
+        "gecikti_gun": 74,
+        "gecerli": "✅ GÜNCEL 2026-10-11 · kurulus/KURULUS_INDEX.md 17 kuruluş dosyası listelendi (1→17) · adlandırma uyumsuzluğu notu düşüldü (CC-FINANS vs cc_analiz vs CC_SOSYAL biçimleri)"
+      },
+      {
+        "vaat": "🏗️ BÖLGE MOTORU · KUYRUK (Vezir sahipliği)",
+        "kim": "Vezir",
+        "verildi": "2026-10-11 (Patron direktifi)",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · motor/SEMA.md + motor/KUYRUK.json açıldı · ARZ (kök→CC) eşlemesi Patron'dan bekleniyor · hücreler ARZ geldikten sonra açılacak"
+      },
+      {
+        "vaat": "ARZ eşlemesi · ORUMCEK_SORU_SETI_v1 §2 (kök K1-K16 → CC)",
+        "kim": "Patron",
+        "verildi": "2026-10-11",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · KUYRUK hücrelerinin açılması bu eşlemeye bağlı"
       },
       {
         "vaat": "✅ BESLEME v2 TESLİM (10 bölüm · 4 etiket)",
@@ -848,6 +890,8 @@
       "🟡 Karıştırma riski · farklı-parsel E:1,00/12,50 lejantsız pafta (Vaka #04) · Tic ön-model testi bu ayrıma bağlı",
       "🔴 Patron 2-iş: (a) besleme dosyası → İnşaat sohbeti (b) pafta 3-foto veya İÖİ telefonu",
       "📊 SAYAÇ DÜZELTMESİ: İLERLEME.md açıldı · üç-sütun format zorunlu (açılan/kapanan/net·toplam-aktif) · bu tur: +5 / −3 / net +2 · toplam-aktif 41",
+      "🏗️ 11 Eki: Vezir BÖLGE MOTORU KUYRUK sahibi · motor/SEMA.md + motor/KUYRUK.json açıldı · ARZ eşlemesi Patron'dan bekleniyor",
+      "✅ 11 Eki: 4 DONDURMA borcu KAPANDI commit no'yla (rev-list script güncelleme + Standing #48 formalize + 14 oturum zaten push + KURULUS INDEX 17 dosya güncelleme)",
       "✅ E1 künye zinciri TAMAM (commit 7ee2480 · 21 ham + SHA + tkgm_kunye + DOSYA.md §1.1)",
       "🔄 Kritik yol Arşiv → TT-MAP · MAP42 koşuyor",
       "✅ Parsel-veri kanonu v1 ONAYLI · public repo'da ada/parsel/koordinat/künye YASAK · retro-redaksiyon pano+DURUM.json uygulandı",
@@ -1203,6 +1247,21 @@
       "B_oncelik": "sonraki tur",
       "C_oncelik": "sonraki tur"
     }
+  },
+  "bolge_motoru_kuyruk": {
+    "aciklama": "🏗️ BÖLGE MOTORU · KUYRUK · Vezir sahipliği (Patron direktifi 2026-10-11)",
+    "acilis": "2026-10-11",
+    "sema": "motor/SEMA.md",
+    "kuyruk": "motor/KUYRUK.json",
+    "sahibi": "Vezir",
+    "statu": "🟡 BAŞLATILDI · ARZ (kök→CC) eşlemesi Patron'dan bekleniyor · hücreler açılmadan ilk sayım yapılamıyor",
+    "oncelik_1_bolgeler": [
+      "İstanbul/Beykoz (45 mh · 7 CC vaka)",
+      "İstanbul/Kartal (15 mh · pilot)",
+      "Rize/Derepazarı (PARSEL-01 · 9 CC/katman)"
+    ],
+    "cc_rolu": "Her CC cron'u KUYRUK'tan iş çeker → KOSUYOR yazar → bitince DOLU/ERISILEMEDI/BOS",
+    "vezir_rolu": "Günlük sağlık raporu: koşmayan CC + 3+ gün KOSUYOR'da takılı iş = 🔴 pano şerit"
   },
   "ilk_ic_musteri": {
     "aciklama": "🏛️ TARİHİ SATIR · Tradia'nın İLK İÇ MÜŞTERİSİ",
