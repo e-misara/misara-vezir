@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "surum": "w35",
-  "guncelleme": "2026-10-13",
+  "guncelleme": "2026-10-14",
   "onceki_kanonik": "w23 (Haziran 2026)",
   "boslukdaki_hafta": "w24 → w34 (10 hafta)",
   "kaynak": "Vezir BE-01 · Standing #38 · Üst Akıl direktifi",
@@ -334,13 +334,55 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 80,
-    "acik": 44,
-    "kapali": 36,
+    "toplam": 86,
+    "acik": 48,
+    "kapali": 38,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "✅ SÜREKLİLİK ölçüsü (30 gün, CC başına)",
+        "kim": "Vezir",
+        "verildi": "2026-10-14 (Patron)",
+        "gecikti_gun": 0,
+        "gecerli": "✅ TESLİM 2026-10-14 · motor/surekli_olc.py + motor/SUREKLILIK.json + pano.sureklilik_seridi · 44 işin 9'u ölçülebildi (dürüst sınır)"
+      },
+      {
+        "vaat": "✅ Kapsam büyüme ölçüsü (haftalık yeni ilçe/kaynak/kayıt)",
+        "kim": "Vezir",
+        "verildi": "2026-10-14 (Patron)",
+        "gecikti_gun": 0,
+        "gecerli": "✅ TESLİM 2026-10-14 · SORGU-01 ingest_ts'ten son 4 hafta · yalnız havuza giren veri ölçülür"
+      },
+      {
+        "vaat": "HEDEF_HAVUZU · 16 CC hedef kartı",
+        "kim": "16 CC (yazar) · Vezir (derler)",
+        "verildi": "2026-10-14 (Patron)",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · Vezir taslağı yazıldı (HEDEF_HAVUZU.md) · diskte CC kartı YOK → 02_CC_STATE/vezir_istek_hedef_karti.json · hedefi olan tek CC Basın (973/12 ay)"
+      },
+      {
+        "vaat": "Koşu-damgası standardı (her launchd işi BAŞLA/BİTTİ damgası)",
+        "kim": "launchd sahibi tüm CC'ler",
+        "verildi": "2026-10-14 (Vezir önerisi)",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · kanon adayı · 35/44 iş bugün ölçülemiyor"
+      },
+      {
+        "vaat": "🔴 73 gündür sessiz launchd işleri teşhisi (gunluk-ozet, primer-monitor, haber-akis, sorgu.nefes, sorgu.nobetci) + yüklü olmayan haber/tuik-tcmb",
+        "kim": "CC-Hafıza",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF 🔴 · hipotez: 1 Ağu Standing #38 düzeltmesi + ~/Desktop TCC + bin/python3.9 bağlantısı FDA mirasını kırıyor · Vezir launchd'ye dokunmadı"
+      },
+      {
+        "vaat": "🔴 Basın hedef eğrisi: 973 ilçe/12 ay — gerekli 18,7 ilçe/hafta",
+        "kim": "CC-Basın",
+        "verildi": "2026-10-14 (Patron)",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF 🔴 · bugün 3 ilçe (bölge motoru) · uzaklık 970 · havuz 30 Eyl–6 Eki haftası 0 kayıt"
+      },
       {
         "vaat": "🔴 Hafıza S43 raporu (9 kanonizasyon kalemi + 2 PROMOTE onayı + Standing #17 revizyonu bağlı)",
         "kim": "Hafıza",
@@ -909,6 +951,7 @@
       }
     ],
     "aktif_bugun": [
+      "📏 14 Eki SÜREKLİLİK: Basın 🟢%93 · Pazarlama 🟡%83 · Sosyal 🟡%83 · Arşiv 🟢 · Hafıza 🔴%3 · İhale 🔴%10 · Tic 🔴%0 (disk-ABORT) · 9 CC ölçülmedi · güvenli-duruş 21/30 gün · 44 işin 9'u ölçülebildi",
       "PARSEL-01 · Derepazarı vakası 9-CC katman genişledi — Tic sahip · İhale/Aİ/Analiz/Sinyal-iskelet/Finans ✓ · Basın probe · Map bekliyor · Arşiv KRİTİK YOL (E1 künye)",
       "PARSEL-01 · İnşaat Hattı 2. faz açıldı — INSAAT_PAKETI.md · 28 madde · 7 CC (Tic sahip · A-G blok tablosu) · Standing #48 etki listesi bekleniyor",
       "PARSEL-01 · 3. faz SUNUM_PAKETI açıldı 2026-09-29 · 3 seçenek A/B/C · 8 blok · 7 CC · yeni kritik soru: 18 Eyl Derepazarı seli afete-maruz-bölge? · Tic 2018/97 karar-metni bulursa E3 sahasız kapanır",
@@ -1466,5 +1509,137 @@
     "durum": "AKTİF · PARSEL-01 · RİZE vakası dosya sahibi",
     "17_mail_tetigi": "PARKTA · ayrı Patron kararı (dirilişten bağımsız)",
     "paket": "dirilis/DIRILIS_TT-TIC.md (26 Eyl NOTU eklenecek)"
+  },
+  "sureklilik_seridi": {
+    "aciklama": "Günlük süreklilik (30 gün) · yeşil ≥%90 · sarı %60–90 · kırmızı <%60 · ölçülemeyen = ölçülmedi",
+    "kesit": "2026-10-14T01:50:37",
+    "pencere": "2026-09-14..2026-10-13 (30 gün)",
+    "kaynak": "motor/SUREKLILIK.json (motor/surekli_olc.py)",
+    "cc": {
+      "Hafıza": {
+        "renk": "kırmızı",
+        "yuzde": 3,
+        "olculen_is": "2/15",
+        "sessiz": 6,
+        "disk_abort": 0
+      },
+      "Analiz": {
+        "renk": "ölçülmedi",
+        "yuzde": null,
+        "olculen_is": "0/1",
+        "sessiz": 0,
+        "disk_abort": 0
+      },
+      "Basın": {
+        "renk": "yeşil",
+        "yuzde": 93,
+        "olculen_is": "1/6",
+        "sessiz": 1,
+        "disk_abort": 1
+      },
+      "Sosyal": {
+        "renk": "sarı",
+        "yuzde": 83,
+        "olculen_is": "1/3",
+        "sessiz": 0,
+        "disk_abort": 2
+      },
+      "Tic": {
+        "renk": "kırmızı",
+        "yuzde": 0,
+        "olculen_is": "1/1",
+        "sessiz": 0,
+        "disk_abort": 1
+      },
+      "İhale": {
+        "renk": "kırmızı",
+        "yuzde": 10,
+        "olculen_is": "1/5",
+        "sessiz": 0,
+        "disk_abort": 0
+      },
+      "Borsa": {
+        "renk": "ölçülmedi",
+        "yuzde": null,
+        "olculen_is": "0/1",
+        "sessiz": 0,
+        "disk_abort": 0
+      },
+      "Kitap": {
+        "renk": "ölçülmedi",
+        "yuzde": null,
+        "olculen_is": "0/0",
+        "sessiz": 0,
+        "disk_abort": 0
+      },
+      "TT-MAP": {
+        "renk": "ölçülmedi",
+        "yuzde": null,
+        "olculen_is": "0/2",
+        "sessiz": 0,
+        "disk_abort": 0
+      },
+      "TT-AI": {
+        "renk": "ölçülmedi",
+        "yuzde": null,
+        "olculen_is": "0/3",
+        "sessiz": 0,
+        "disk_abort": 0
+      },
+      "Pazarlama": {
+        "renk": "sarı",
+        "yuzde": 83,
+        "olculen_is": "2/2",
+        "sessiz": 0,
+        "disk_abort": 0
+      },
+      "Kasa": {
+        "renk": "ölçülmedi",
+        "yuzde": null,
+        "olculen_is": "0/0",
+        "sessiz": 0,
+        "disk_abort": 0
+      },
+      "Finans": {
+        "renk": "ölçülmedi",
+        "yuzde": null,
+        "olculen_is": "0/3",
+        "sessiz": 0,
+        "disk_abort": 0
+      },
+      "Signals": {
+        "renk": "ölçülmedi",
+        "yuzde": null,
+        "olculen_is": "0/0",
+        "sessiz": 0,
+        "disk_abort": 0
+      },
+      "Site": {
+        "renk": "ölçülmedi",
+        "yuzde": null,
+        "olculen_is": "0/0",
+        "sessiz": 0,
+        "disk_abort": 0
+      },
+      "Arşiv": {
+        "renk": "yeşil",
+        "yuzde": 100,
+        "olculen_is": "1/2",
+        "sessiz": 0,
+        "disk_abort": 0
+      }
+    },
+    "sistem": {
+      "guvenli_durus_gunu": "21/30",
+      "mac_uyanik_ort_yuzde": 56
+    },
+    "olcum_siniri": "44 launchd işinin 9'u ölçülebildi; 35 iş log basmıyor ya da koşu satırı tarihsiz → koşu-damgası standardı önerildi (HEDEF_HAVUZU §3)",
+    "kapsam_4_hafta": "SORGU-01: yalnız 3 kaynak büyüdü (basin_html, sosyal_transkript, finans_belge) · yeni ilçe 0 · yeni kaynak 0 · basin_html 30 Eyl–6 Eki haftası 0 kayıt",
+    "basin_hedef_egrisi": {
+      "hedef": "973 ilçe / 12 ay (2027-10-14)",
+      "gerekli_hiz": "18,7 ilçe/hafta",
+      "bugun": "3 ilçe (bölge motoru)",
+      "uzaklik": "970 ilçe"
+    }
   }
 }
