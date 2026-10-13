@@ -10,10 +10,10 @@
     "aciklama": "Bloke eden şeyler — en üst şerit, kırmızı",
     "bloke": [
       {
-        "konu": "🔴 PARSEL-VERİ SIZINTISI · public git geçmişinde (commit 4bebfde)",
-        "etki": "Hafıza'nın yerel commit'i Vezir'in rev-list push'uyla public'e gitti; DURUM.json + cografya.json 7 satır parsel-düzeyi veri. HEAD temizlendi, GEÇMİŞTE duruyor.",
-        "kim": "Patron (karar) · Vezir (sorumlu, Vaka #06) · Hafıza (türetme süzgeci)",
-        "cozum": "Geçmişi temizlemek = history rewrite + force-push (geri dönülmez) → Patron onayı gerekli. Önlem alındı: pano_yayinla.sh sızıntı kapısı."
+        "konu": "🟠 PARSEL-VERİ SIZINTISI #06 · geçmiş TEMİZLENDİ, GitHub önbelleği AÇIK",
+        "etki": "filter-repo ile 7 dizgi tüm geçmişten çıktı (70 commit korundu, HEAD ağacı aynı, 3 SHA yeniden yazıldı). Ancak GitHub yetim commit'leri doğrudan SHA ile hâlâ sunuyor.",
+        "kim": "Patron (GitHub Support başvurusu)",
+        "cozum": "GitHub Support 'sensitive data removal' — SHA listesi private misara-arsiv'de"
       },
       {
         "konu": "🔴 KRİTİK BUGÜN: cleanupPeriodDays ayarı",
@@ -340,19 +340,68 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 89,
-    "acik": 50,
-    "kapali": 39,
+    "toplam": 96,
+    "acik": 53,
+    "kapali": 43,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
       {
-        "vaat": "🔴 PATRON KARARI: public git geçmişinden parsel-veri temizliği (4bebfde)",
+        "vaat": "✅ Süreklilik ölçüsü ÜRETİM birimine çevrildi",
+        "kim": "Vezir",
+        "verildi": "2026-10-14 (Patron düzeltmesi)",
+        "gecikti_gun": 0,
+        "gecerli": "✅ UYGULANDI · o gün yeni çıktı/kayıt var mı · Basın %93 (koşu) → 6/30 (üretim) · TT-AI 28 (koşu) → 1 (üretim) · 18.053 alarm dosyası üretimden dışlandı"
+      },
+      {
+        "vaat": "✅ KANON: ham veri depolama (küçük Mac-birincil + disk ayna · büyük ham disk → NAS)",
+        "kim": "Patron (karar) · Vezir (kayıt)",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "✅ kanon/ham_veri_depolama_kanonu_v1.md · KOS-6 ↔ v3-uygula çelişkisi KAPANDI (08-07'den beri açıktı) · uyumsuz 3 CC: Tic, İhale, Sosyal"
+      },
+      {
+        "vaat": "Tic/İhale/Sosyal: küçük veriyi Mac-birincil yap (ham veri kanonu)",
+        "kim": "CC-Tic · CC-İhale · CC-Sosyal",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · kanon uyum listesi §'te · üçünün de kartında öneri zaten var"
+      },
+      {
+        "vaat": "Hafıza alarm şişmesi: 30 günde 18.053 alarm dosyası (15.128 rsync_target_yok)",
+        "kim": "CC-Hafıza",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · bayrak 02_CC_STATE/vezir_bayrak_hafiza_alarm_sismesi.json · tek dosya + sayaç önerisi"
+      },
+      {
+        "vaat": "Borsa hedef kartı (bulut hattı)",
         "kim": "Patron",
         "verildi": "2026-10-14",
         "gecikti_gun": 0,
-        "gecerli": "AKTİF 🔴 · seçenek: (a) history rewrite + force-push (geri dönülmez, misara-vezir aynası da) (b) olduğu gibi bırak, HEAD temiz · Vezir kararsız işlem yapmadı"
+        "gecerli": "AKTİF · Patron getirecek"
+      },
+      {
+        "vaat": "Vaka #02/#05 eski sızıntıları geçmişte (Vezir'in kendi) — temizlik kararı",
+        "kim": "Patron",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · temizlemek ~25 commit SHA'sını değiştirir, doküman atıfları kırılır · Vezir önermiyor ama karar Patron'un"
+      },
+      {
+        "vaat": "🔴 GitHub Support: yetim commit'lerin önbellekten silinmesi",
+        "kim": "Patron",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF 🔴 · eski SHA'lar doğrudan link ile web+API 200 dönüyor · SHA listesi + başvuru metni private misara-arsiv/yedek/VAKA06_github_support.md"
+      },
+      {
+        "vaat": "✅ Public git geçmişinden parsel-veri temizliği (Vaka #06)",
+        "kim": "Patron",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "✅ UYGULANDI 2026-10-14 · Patron kararı (a) · bundle yedek private'ta · filter-repo 7 dizgi · force-with-lease push · yerel eşitlendi · 3 SHA değişti"
       },
       {
         "vaat": "✅ Sızıntı kapısı pano_yayinla.sh'a (rev-list push öncesi tarama)",
@@ -373,7 +422,7 @@
         "kim": "Vezir",
         "verildi": "2026-10-14 (Patron)",
         "gecikti_gun": 0,
-        "gecerli": "✅ TESLİM 2026-10-14 · motor/surekli_olc.py + motor/SUREKLILIK.json + pano.sureklilik_seridi · 44 işin 9'u ölçülebildi (dürüst sınır)"
+        "gecerli": "✅ TESLİM 2026-10-14 · motor/surekli_olc.py + motor/SUREKLILIK.json + pano.sureklilik_seridi · 44 işin 9'u ölçülebildi (dürüst sınır) · ⚠ 14 Eki DÜZELTİLDİ: ilk birim (koşu) yanlıştı → üretim birimi"
       },
       {
         "vaat": "✅ Kapsam büyüme ölçüsü (haftalık yeni ilçe/kaynak/kayıt)",
@@ -387,7 +436,7 @@
         "kim": "16 CC (yazar) · Vezir (derler)",
         "verildi": "2026-10-14 (Patron)",
         "gecikti_gun": 0,
-        "gecerli": "AKTİF · Vezir taslağı yazıldı (HEDEF_HAVUZU.md) · diskte CC kartı YOK → 02_CC_STATE/vezir_istek_hedef_karti.json · hedefi olan tek CC Basın (973/12 ay)"
+        "gecerli": "✅ DERLENDİ 2026-10-14 · 13 kart (CC'lerin kendi) → HEDEF_HAVUZU.md v2 · kart↔Vezir sapma tablosu · Borsa kartı bulutta (Patron) · Kasa/Site PARK"
       },
       {
         "vaat": "Koşu-damgası standardı (her launchd işi BAŞLA/BİTTİ damgası)",
@@ -978,8 +1027,8 @@
       }
     ],
     "aktif_bugun": [
-      "🔴 14 Eki: Vezir'in rev-list push'u Hafıza'nın incelenmemiş commit'ini public'e itti → 7 satır parsel-veri · HEAD temiz · geçmiş temizliği PATRON KARARI · sızıntı kapısı eklendi (Vaka #06)",
-      "📏 14 Eki SÜREKLİLİK: Basın 🟢%93 · Pazarlama 🟡%83 · Sosyal 🟡%83 · Arşiv 🟢 · Hafıza 🔴%3 · İhale 🔴%10 · Tic 🔴%0 (disk-ABORT) · 9 CC ölçülmedi · güvenli-duruş 21/30 gün · 44 işin 9'u ölçülebildi",
+      "📏 14 Eki ÜRETİM sürekliliği (yeni birim): Finans 🟡23* · Hafıza 🟡21 · Pazarlama 🟡21 · Sosyal 🔴8 · Basın 🔴6 · Map 🔴6 · Tic/Signals/Kitap/Arşiv/Borsa 🔴3 · İhale/TT-AI/Analiz 🔴1 (/30) · *Finans ingest gecikmeli, gerçek 9–16 · darboğaz para değil: 7/24 makine + depolama + güç + tetik",
+      "🟠 14 Eki Vaka #06: geçmiş temizlendi (filter-repo · 7 dizgi · 3 SHA) · GitHub yetim commit önbelleği AÇIK → Patron GitHub Support",
       "PARSEL-01 · Derepazarı vakası 9-CC katman genişledi — Tic sahip · İhale/Aİ/Analiz/Sinyal-iskelet/Finans ✓ · Basın probe · Map bekliyor · Arşiv KRİTİK YOL (E1 künye)",
       "PARSEL-01 · İnşaat Hattı 2. faz açıldı — INSAAT_PAKETI.md · 28 madde · 7 CC (Tic sahip · A-G blok tablosu) · Standing #48 etki listesi bekleniyor",
       "PARSEL-01 · 3. faz SUNUM_PAKETI açıldı 2026-09-29 · 3 seçenek A/B/C · 8 blok · 7 CC · yeni kritik soru: 18 Eyl Derepazarı seli afete-maruz-bölge? · Tic 2018/97 karar-metni bulursa E3 sahasız kapanır",
@@ -1539,135 +1588,96 @@
     "paket": "dirilis/DIRILIS_TT-TIC.md (26 Eyl NOTU eklenecek)"
   },
   "sureklilik_seridi": {
-    "aciklama": "Günlük süreklilik (30 gün) · yeşil ≥%90 · sarı %60–90 · kırmızı <%60 · ölçülemeyen = ölçülmedi",
-    "kesit": "2026-10-14T01:50:37",
+    "aciklama": "ÜRETİM sürekliliği (30 gün) · birim: o gün yeni çıktı/kayıt var mı (exit 0 ≠ üretim · Patron 14 Eki) · yeşil ≥%90 · sarı %60–90 · kırmızı <%60",
+    "kesit": "2026-10-14T02:13:45",
     "pencere": "2026-09-14..2026-10-13 (30 gün)",
     "kaynak": "motor/SUREKLILIK.json (motor/surekli_olc.py)",
     "cc": {
-      "Hafıza": {
-        "renk": "kırmızı",
-        "yuzde": 3,
-        "olculen_is": "2/15",
-        "sessiz": 6,
-        "disk_abort": 0
-      },
-      "Analiz": {
-        "renk": "ölçülmedi",
-        "yuzde": null,
-        "olculen_is": "0/1",
-        "sessiz": 0,
-        "disk_abort": 0
-      },
-      "Basın": {
-        "renk": "yeşil",
-        "yuzde": 93,
-        "olculen_is": "1/6",
-        "sessiz": 1,
-        "disk_abort": 1
-      },
-      "Sosyal": {
+      "Finans": {
         "renk": "sarı",
-        "yuzde": 83,
-        "olculen_is": "1/3",
-        "sessiz": 0,
-        "disk_abort": 2
+        "uretim_gunu": "23/30",
+        "yuzde": 77
       },
-      "Tic": {
-        "renk": "kırmızı",
-        "yuzde": 0,
-        "olculen_is": "1/1",
-        "sessiz": 0,
-        "disk_abort": 1
-      },
-      "İhale": {
-        "renk": "kırmızı",
-        "yuzde": 10,
-        "olculen_is": "1/5",
-        "sessiz": 0,
-        "disk_abort": 0
-      },
-      "Borsa": {
-        "renk": "ölçülmedi",
-        "yuzde": null,
-        "olculen_is": "0/1",
-        "sessiz": 0,
-        "disk_abort": 0
-      },
-      "Kitap": {
-        "renk": "ölçülmedi",
-        "yuzde": null,
-        "olculen_is": "0/0",
-        "sessiz": 0,
-        "disk_abort": 0
-      },
-      "TT-MAP": {
-        "renk": "ölçülmedi",
-        "yuzde": null,
-        "olculen_is": "0/2",
-        "sessiz": 0,
-        "disk_abort": 0
-      },
-      "TT-AI": {
-        "renk": "ölçülmedi",
-        "yuzde": null,
-        "olculen_is": "0/3",
-        "sessiz": 0,
-        "disk_abort": 0
+      "Hafıza": {
+        "renk": "sarı",
+        "uretim_gunu": "21/30",
+        "yuzde": 70
       },
       "Pazarlama": {
         "renk": "sarı",
-        "yuzde": 83,
-        "olculen_is": "2/2",
-        "sessiz": 0,
-        "disk_abort": 0
+        "uretim_gunu": "21/30",
+        "yuzde": 70
       },
-      "Kasa": {
-        "renk": "ölçülmedi",
-        "yuzde": null,
-        "olculen_is": "0/0",
-        "sessiz": 0,
-        "disk_abort": 0
+      "Sosyal": {
+        "renk": "kırmızı",
+        "uretim_gunu": "8/30",
+        "yuzde": 27
       },
-      "Finans": {
-        "renk": "ölçülmedi",
-        "yuzde": null,
-        "olculen_is": "0/3",
-        "sessiz": 0,
-        "disk_abort": 0
+      "Basın": {
+        "renk": "kırmızı",
+        "uretim_gunu": "6/30",
+        "yuzde": 20
+      },
+      "TT-MAP": {
+        "renk": "kırmızı",
+        "uretim_gunu": "6/30",
+        "yuzde": 20
+      },
+      "Tic": {
+        "renk": "kırmızı",
+        "uretim_gunu": "3/30",
+        "yuzde": 10
       },
       "Signals": {
-        "renk": "ölçülmedi",
-        "yuzde": null,
-        "olculen_is": "0/0",
-        "sessiz": 0,
-        "disk_abort": 0
+        "renk": "kırmızı",
+        "uretim_gunu": "3/30",
+        "yuzde": 10
       },
-      "Site": {
-        "renk": "ölçülmedi",
-        "yuzde": null,
-        "olculen_is": "0/0",
-        "sessiz": 0,
-        "disk_abort": 0
+      "Kitap": {
+        "renk": "kırmızı",
+        "uretim_gunu": "3/30",
+        "yuzde": 10
       },
       "Arşiv": {
-        "renk": "yeşil",
-        "yuzde": 100,
-        "olculen_is": "1/2",
-        "sessiz": 0,
-        "disk_abort": 0
+        "renk": "kırmızı",
+        "uretim_gunu": "3/30",
+        "yuzde": 10
+      },
+      "Borsa": {
+        "renk": "kırmızı",
+        "uretim_gunu": "3/30",
+        "yuzde": 10
+      },
+      "İhale": {
+        "renk": "kırmızı",
+        "uretim_gunu": "1/30",
+        "yuzde": 3
+      },
+      "TT-AI": {
+        "renk": "kırmızı",
+        "uretim_gunu": "1/30",
+        "yuzde": 3
+      },
+      "Analiz": {
+        "renk": "kırmızı",
+        "uretim_gunu": "1/30",
+        "yuzde": 3
       }
     },
     "sistem": {
       "guvenli_durus_gunu": "21/30",
       "mac_uyanik_ort_yuzde": 56
     },
-    "olcum_siniri": "44 launchd işinin 9'u ölçülebildi; 35 iş log basmıyor ya da koşu satırı tarihsiz → koşu-damgası standardı önerildi (HEDEF_HAVUZU §3)",
+    "olcum_siniri": "kart ↔ Vezir sapma tablosu HEDEF_HAVUZU.md §2",
     "kapsam_4_hafta": "SORGU-01: yalnız 3 kaynak büyüdü (basin_html, sosyal_transkript, finans_belge) · yeni ilçe 0 · yeni kaynak 0 · basin_html 30 Eyl–6 Eki haftası 0 kayıt",
+    "sinir": "dosya mtime yalnız son yazımı gösterir → alt sınır · SORGU-01 ingest günü Hafıza builder'ının alım günüdür, CC'nin üretim günü değil (Finans sapması)",
+    "kosu_olcusu_ikincil": "koşu (launchd tetiklendi mi) artık yalnız tanı: SUREKLILIK.json cc_ozet_KOSU_ikincil",
     "basin_hedef_egrisi": {
       "hedef": "973 ilçe / 12 ay (2027-10-14)",
       "gerekli_hiz": "18,7 ilçe/hafta",
-      "bugun": "3 ilçe (bölge motoru)",
-      "uzaklik": "970 ilçe"
+      "bugun": "3 ilçe",
+      "uzaklik": "970 ilçe",
+      "uretim": "6/30 gün"
     }
   }
 }
