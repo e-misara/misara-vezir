@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "surum": "w35",
-  "guncelleme": "2026-09-26",
+  "guncelleme": "2026-10-13",
   "onceki_kanonik": "w23 (Haziran 2026)",
   "boslukdaki_hafta": "w24 → w34 (10 hafta)",
   "kaynak": "Vezir BE-01 · Standing #38 · Üst Akıl direktifi",
@@ -22,8 +22,9 @@
         "cozum": "Retro-taşıma SHA-verify + Mac silme (arsiv, ham, log)"
       },
       {
-        "konu": "✅ TT-HAFIZA MOUNT TEYİTLİ 2026-09-27",
-        "etki": "Bloke listesi AÇILDI: B8 · katman_basin devri · S60 v25 · retro-taşıma · E22 ikinci teyit — çalışmalar başlayabilir",
+        "konu": "🔴 TT-HAFIZA YİNE TAKILI DEĞİL (2026-10-13 diskutil external BOŞ · 11 Eki Analiz de aynısını ölçtü)",
+        "etki": "BM-K8 Beykoz+Kartal ERİŞİLEMEDİ (v24/v25b external'da) · İhale EKAP rescan ertelendi · retro-taşıma durdu · 27 Eyl mount teyidi geçmiş kayıt olarak aşağıda",
+        "onceki_durum": "✅ 2026-09-27 mount teyitliydi (/dev/disk4s1 exFAT 931Gi)",
         "kim": "Patron (donanım tanıma çözüldü)",
         "teyit": "diskutil: /dev/disk4s1 external · exFAT · 931Gi (556 dolu / 375 boş) · /Volumes/TT-HAFIZA · 5 kök klasör (00_OFIS/01_YEDEK/02_ARSIV/03_SAHSI/04_GECICI) + INDEX.md + STAGING_YENI yerinde",
         "kanon_uygulandi": "tt_hafiza_takili_kalir_v1 EK MADDE (diskutil external teyit) — Vezir 26 Eyl beyanı körlemesine kabul etmedi, teyit reddetti · 27 Eyl beyanı teyit onayladı"
@@ -106,12 +107,13 @@
       },
       {
         "ad": "Borsa Terminal",
-        "durum": "AKTIF — sabah sinyal fazı, kendi konuşmasında",
-        "son_hareket": "2026-09-25",
-        "sessizlik_gun": 0,
+        "durum": "AKTIF — sabah sinyal fazı, kendi konuşmasında (bulut)",
+        "son_hareket": "2026-10-12",
+        "sessizlik_gun": 1,
         "canli_url": null,
-        "sahibi_cc": "CC-Borsa (yeni: TT-Borsa 1 konuşma tespiti)",
-        "siradaki": "S35 haber-öncesi anomali → S36 düşüş riski → intraday+dashboard",
+        "sahibi_cc": "CC-Borsa (TT-Borsa 1. Kısım · bulut · misara-arsiv INDEKS 'Bulut oturumları' bölümünde kayıtlı)",
+        "sayac_kanonik": "S51 / S52 (2026-10-13 defter düzeltmesi · eski S33–S36 = bulut hattının yerel numarası)",
+        "siradaki": "S52: cron 08-11 dondurmasından açıldı, veri tazelendi · Actions ERTELE · EVDS3 anahtarı Patron'da · KTB toplayıcı yıllık ritim",
         "kisit": "🔴 Mac-uyku cron ölümü: GitHub Actions taşınmadan güvenilir DEĞİL (TT-Borsa 1 tespiti, ertelenmişti)",
         "not_25eylul": "Cloud çapraz-teyit sonrası tespit edildi (Üst Akıl 2026-09-25)",
         "son_tamam": "S34 Sabah Radarı BİTTİ (yön skoru + şeffaf bileşen + SINYAL≠TAVSİYE)",
@@ -332,9 +334,9 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 76,
-    "acik": 43,
-    "kapali": 33,
+    "toplam": 80,
+    "acik": 44,
+    "kapali": 36,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
@@ -432,7 +434,7 @@
         "kim": "CC-TT-MAP",
         "verildi": "2026-09-26 (kritik yol devri sonrası)",
         "gecikti_gun": 0,
-        "gecerli": "✅ KISMİ KABUL: A4 (10 yıl örtü stabil · kazı/heyelan yok) + C14 hüküm (1.705m) · A1 yol düzeltmesiyle koşuyor"
+        "gecerli": "✅ KISMİ KABUL: A4 (10 yıl örtü stabil · kazı/heyelan yok) + C14 kıyı-mesafe hüküm (kesin değer lokal) · A1 yol düzeltmesiyle koşuyor"
       },
       {
         "vaat": "✅ Dere mini-çelişki hükmü",
@@ -502,7 +504,35 @@
         "kim": "Patron",
         "verildi": "2026-10-11",
         "gecikti_gun": 0,
-        "gecerli": "AKTİF · KUYRUK hücrelerinin açılması bu eşlemeye bağlı"
+        "gecerli": "✅ KAPANDI 2026-10-12 · Patron ORUMCEK_SORU_SETI_v1 verdi · §2 ARZ sütunu → BM-K1..K16 hücre sahipliği KUYRUK.json'a işlendi"
+      },
+      {
+        "vaat": "✅ BÖLGE MOTORU tek kaynak + ilk sayım (öncelik-1 · 3 bölge × 16 kök)",
+        "kim": "Vezir",
+        "verildi": "2026-10-12 (Patron direktifi)",
+        "gecikti_gun": 1,
+        "gecerli": "✅ TESLİM 2026-10-13 · kanonik = motor/KUYRUK.json v2 · Basın KUYRUK'u ALT-görünüm (silinmedi, bağlandı) · 9 CC bolge dosyası derlendi · 48 hücre: 41 DOLU / 3 ERİŞİLEMEDİ / 4 BOŞ (betikle sayıldı)"
+      },
+      {
+        "vaat": "dm02 27 Eyl–11 Eki boşluğu sebep beyanı + TR etiket düzeltmesi",
+        "kim": "CC-Hafıza",
+        "verildi": "2026-10-13 (Vezir sorusu)",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · 02_CC_STATE/vezir_soru_hafiza_dm02_gecikme.json · döngü 11 Eki'de toparlandı (gecikme 0) ama boşluk sebebi + koşu geçmişi yok"
+      },
+      {
+        "vaat": "SIG32 ↔ BM-K sapma satırları",
+        "kim": "CC-Signals (yazar) · Vezir (kaydeder)",
+        "verildi": "2026-10-13",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · motor/SIG32_BMK_YANYANA.md · 3 BM kökünün SIG32 karşılığı yok (K1/K6/K11) + BM-K14↔SIG32-K14 ad çakışması + SIG32-K02 yeri"
+      },
+      {
+        "vaat": "BM-K boş hücreler: Beykoz+Kartal BM-K6 (Aİ altyapı) · BM-K14 (benzerlik motoru)",
+        "kim": "CC-TT-AI + Hafıza",
+        "verildi": "2026-10-13 (ilk sayım)",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · KUYRUKTA · K14 DENETİM-2'ye bağlı"
       },
       {
         "vaat": "✅ BESLEME v2 TESLİM (10 bölüm · 4 etiket)",
@@ -763,7 +793,7 @@
         "kim": "CC-Borsa",
         "verildi": "2026-09-25 (Cloud teyit sonrası tespit)",
         "gecikti_gun": 0,
-        "gecerli": "AKTİF · Borsa hattı netleştirecek · numaralandırma sıfırlanmış olabilir veya iki hat paralel"
+        "gecerli": "✅ KAPANDI 2026-10-13 · Borsa kanonik sayacı S51/S52 · eski S33–S36 bulut hattının yerel numarasıydı (Standing #33) · misara-arsiv INDEKS + pano Borsa satırı düzeltildi"
       },
       {
         "vaat": "🔴 cleanupPeriodDays ayarı",
@@ -899,7 +929,7 @@
       "Köşe sayısı düzeltmesi kaydı (rakam lokal · public'te tutulmaz)",
       "✅ TT-HAFIZA MOUNT TEYİTLİ 2026-09-27 · /dev/disk4s1 exFAT 931Gi (556/375) · Bloke listesi AÇILDI (B8+katman_basin+S60+E22+retro-taşıma başlayabilir) · Kanon uygulandı: 26 Eyl beyan reddi + 27 Eyl teyit onayı",
       "PARSEL-01 · 8/8 katman TAMAM · kilit E3 · çay TEYİTLİ · Patron-saha bekleniyor (WebTapu+muhtar+İl Özel İdare)",
-      "MAP42 kısmi teslim: A4 örtü stabil + C14 hüküm 1.705m + A1 yol düzeltmesi",
+      "MAP42 kısmi teslim: A4 örtü stabil + C14 kıyı-mesafe hüküm (değer lokal) + A1 yol düzeltmesi",
       "Tic C10-C12 teslim: 2018/97 yerleşik alan kararı bulundu",
       "Basın probe: kamulaştırma iddiası SÖYLEM (belge yok · GNews/yerel/havuz/EKAP/RG hepsi 0)",
       "KTB toplayıcı: CC-Borsa (yıllık ritim · S35-36 sonrası) · Analiz adaylığı kapandı",
@@ -1254,7 +1284,18 @@
     "sema": "motor/SEMA.md",
     "kuyruk": "motor/KUYRUK.json",
     "sahibi": "Vezir",
-    "statu": "🟡 BAŞLATILDI · ARZ (kök→CC) eşlemesi Patron'dan bekleniyor · hücreler açılmadan ilk sayım yapılamıyor",
+    "statu": "🟢 İLK SAYIM 2026-10-13 · 3 bölge × 16 BM-kök = 48 hücre · 41 DOLU / 3 ERİŞİLEMEDİ / 4 BOŞ · tek kaynak: motor/KUYRUK.json (Basın'ınki alt-görünüm) · CC'ler 02_CC_STATE/bolge_<cc>.json yazar, Vezir derler, Hafıza orumcek.json'u türetir",
+    "ilk_sayim": {
+      "İstanbul/Beykoz": "13 DOLU / 1 ERİŞİLEMEDİ (K8) / 2 BOŞ (K6, K14)",
+      "İstanbul/Kartal": "13 DOLU / 1 ERİŞİLEMEDİ (K8) / 2 BOŞ (K6, K14)",
+      "Rize/Derepazarı": "15 DOLU / 1 ERİŞİLEMEDİ (K9) / 0 BOŞ",
+      "olcek_notu": "kök-düzeyi özet · PARSEL-01 160-hücre tam sayımı Tic+Hafıza'dan (örümcek §5)"
+    },
+    "kirmizi": [
+      "TT-HAFIZA disk yine takılı değil (13 Eki diskutil BOŞ) → BM-K8 Beykoz+Kartal ERİŞİLEMEDİ",
+      "Aİ .gov.tr kurum-duyuru fetch-BLOKE (HTTP 500 anti-bot)"
+    ],
+    "kosuyor_takili": "YOK",
     "oncelik_1_bolgeler": [
       "İstanbul/Beykoz (45 mh · 7 CC vaka)",
       "İstanbul/Kartal (15 mh · pilot)",
@@ -1331,13 +1372,20 @@
           "acilis": "2026-09-29",
           "sahip": "CC-Tic",
           "seçenek_sayisi": 3,
-          "seçenekler": ["A", "B", "C"],
+          "seçenekler": [
+            "A",
+            "B",
+            "C"
+          ],
           "blok_sayisi": 8,
           "atanan_cc": 7,
           "yeni_kritik_soru": {
             "olay": "18 Eylül 2026 Derepazarı seli",
             "soru": "Vaka sahası afete-maruz-bölge kararı kapsamında mı?",
-            "atanan_cc": ["CC-Basın", "CC-İhale"]
+            "atanan_cc": [
+              "CC-Basın",
+              "CC-İhale"
+            ]
           },
           "e3_alt_gorev": {
             "kim": "CC-Tic",
@@ -1379,13 +1427,33 @@
           "dagitilan_cc": 7,
           "kritik_yol": "🔄 KAYDI 2026-09-26: Arşiv → TT-MAP (MAP42 koşuyor). E1 künye tamamlandı, kritik-yol şimdi Map'te.",
           "madde_blok_tablosu": {
-            "A": ["CC-TT-MAP (Arşiv ön koşul)"],
-            "B": ["CC-TT-MAP", "CC-Basın"],
-            "C": ["CC-Tic", "CC-TT-MAP", "CC-İhale"],
-            "D": ["CC-TT-AI", "CC-Tic"],
-            "E": ["CC-TT-AI", "CC-Analiz", "CC-TT-MAP"],
-            "F": ["CC-Finans"],
-            "G": ["herkes"]
+            "A": [
+              "CC-TT-MAP (Arşiv ön koşul)"
+            ],
+            "B": [
+              "CC-TT-MAP",
+              "CC-Basın"
+            ],
+            "C": [
+              "CC-Tic",
+              "CC-TT-MAP",
+              "CC-İhale"
+            ],
+            "D": [
+              "CC-TT-AI",
+              "CC-Tic"
+            ],
+            "E": [
+              "CC-TT-AI",
+              "CC-Analiz",
+              "CC-TT-MAP"
+            ],
+            "F": [
+              "CC-Finans"
+            ],
+            "G": [
+              "herkes"
+            ]
           },
           "standing_48_etki_listesi": "🟡 BEKLENIYOR · Vezir Standing #48 etki listesi ayrı iş"
         }
