@@ -10,6 +10,12 @@
     "aciklama": "Bloke eden şeyler — en üst şerit, kırmızı",
     "bloke": [
       {
+        "konu": "🔴 PARSEL-VERİ SIZINTISI · public git geçmişinde (commit 4bebfde)",
+        "etki": "Hafıza'nın yerel commit'i Vezir'in rev-list push'uyla public'e gitti; DURUM.json + cografya.json 7 satır parsel-düzeyi veri. HEAD temizlendi, GEÇMİŞTE duruyor.",
+        "kim": "Patron (karar) · Vezir (sorumlu, Vaka #06) · Hafıza (türetme süzgeci)",
+        "cozum": "Geçmişi temizlemek = history rewrite + force-push (geri dönülmez) → Patron onayı gerekli. Önlem alındı: pano_yayinla.sh sızıntı kapısı."
+      },
+      {
         "konu": "🔴 KRİTİK BUGÜN: cleanupPeriodDays ayarı",
         "etki": "27 Ağu Claude Code oturumları 26 Eylül'de ölüyor · 1 gün kaldı",
         "kim": "Patron",
@@ -334,13 +340,34 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 86,
-    "acik": 48,
-    "kapali": 38,
+    "toplam": 89,
+    "acik": 50,
+    "kapali": 39,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "🔴 PATRON KARARI: public git geçmişinden parsel-veri temizliği (4bebfde)",
+        "kim": "Patron",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF 🔴 · seçenek: (a) history rewrite + force-push (geri dönülmez, misara-vezir aynası da) (b) olduğu gibi bırak, HEAD temiz · Vezir kararsız işlem yapmadı"
+      },
+      {
+        "vaat": "✅ Sızıntı kapısı pano_yayinla.sh'a (rev-list push öncesi tarama)",
+        "kim": "Vezir",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "✅ UYGULANDI 2026-10-14 · sınıf-bazlı desen · sızan commit'te 5 eşleşme yakaladı, Vezir commit'lerinde 0 yanlış alarm"
+      },
+      {
+        "vaat": "Hafıza türetme betiklerine parsel_veri süzgeci (DURUM.json + cografya.json + orumcek.json)",
+        "kim": "CC-Hafıza",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · bayrak 02_CC_STATE/vezir_bayrak_hafiza_misaraapp_parsel_sizinti.json · DM-02 sonraki koşusu redaksiyonu ezebilir"
+      },
       {
         "vaat": "✅ SÜREKLİLİK ölçüsü (30 gün, CC başına)",
         "kim": "Vezir",
@@ -951,6 +978,7 @@
       }
     ],
     "aktif_bugun": [
+      "🔴 14 Eki: Vezir'in rev-list push'u Hafıza'nın incelenmemiş commit'ini public'e itti → 7 satır parsel-veri · HEAD temiz · geçmiş temizliği PATRON KARARI · sızıntı kapısı eklendi (Vaka #06)",
       "📏 14 Eki SÜREKLİLİK: Basın 🟢%93 · Pazarlama 🟡%83 · Sosyal 🟡%83 · Arşiv 🟢 · Hafıza 🔴%3 · İhale 🔴%10 · Tic 🔴%0 (disk-ABORT) · 9 CC ölçülmedi · güvenli-duruş 21/30 gün · 44 işin 9'u ölçülebildi",
       "PARSEL-01 · Derepazarı vakası 9-CC katman genişledi — Tic sahip · İhale/Aİ/Analiz/Sinyal-iskelet/Finans ✓ · Basın probe · Map bekliyor · Arşiv KRİTİK YOL (E1 künye)",
       "PARSEL-01 · İnşaat Hattı 2. faz açıldı — INSAAT_PAKETI.md · 28 madde · 7 CC (Tic sahip · A-G blok tablosu) · Standing #48 etki listesi bekleniyor",
