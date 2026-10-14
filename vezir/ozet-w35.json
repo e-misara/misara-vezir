@@ -346,13 +346,111 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 104,
-    "acik": 59,
-    "kapali": 45,
+    "toplam": 118,
+    "acik": 66,
+    "kapali": 52,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "✅ KANON: CC dizin sınırı ('başka CC'nin dosyasına dokunulmaz; bildirim; silme sahibinin')",
+        "kim": "Patron (karar) · Vezir (kayıt)",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "✅ kanon/cc_sinir_kanonu_v1.md · emsal: Pazarlama Borsa'nın .evds_key'ini sildi · Vezir öz-denetimi: 4 geçmiş dokunuş listelendi"
+      },
+      {
+        "vaat": "PATRON KARARI: acil sızıntı istisnası (public'te canlı sır/parsel-veri → yalnız redaksiyon?)",
+        "kim": "Patron",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · Vezir önerisi cc_sinir_kanonu_v1 'Açık soru' · onaya kadar istisna YOK"
+      },
+      {
+        "vaat": "✅ SEMA: eşleşme sınaması (eslesmeyen>0 → KIRIK; alan yoksa uyumsuz)",
+        "kim": "Vezir",
+        "verildi": "2026-10-14 (Patron)",
+        "gecikti_gun": 0,
+        "gecerli": "✅ motor/SEMA.md + SUREKLILIK.json deger_sinamasi · emsal Pazarlama 2025-5↔2025-05 (1–9. aylar sessiz atlandı)"
+      },
+      {
+        "vaat": "10 CC: bolge_<cc>.json'a 'eslesme' beyanı (ai, analiz, basin, borsa, finans, ihale, map, pazarlama, sosyal, tic)",
+        "kim": "10 CC",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF ❌ · ilk tarama 10/10 'eslesme alanı yok' · bildirim 02_CC_STATE/vezir_bildirim_10cc_eslesme_ve_dizin_siniri.json"
+      },
+      {
+        "vaat": "TUIK_API_KEY (TÜİK SDMX) → ~/landgold-agents/.env",
+        "kim": "Patron",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF ⏳ · Patron kovasında · anahtar kanonu v1.2'de kayıtlı · redaksiyon etiketi [REDACTED-APIKEY-TUIK] hazır · kapı .env'den otomatik tanır"
+      },
+      {
+        "vaat": "✅ ANAYASA B11: 'Bir koruma, koruduğunu sandığı şeyi koruyor mu diye ayrıca test edilir'",
+        "kim": "Patron (karar) · Vezir (kayıt)",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "✅ 00_KURUM_HAFIZASI/anayasa_b_blogu_v1.md B11 · ilk uygulama 5 koruma: sızıntı kapısı ✅ (sınır: doğrudan git push'u korumaz) · evds_saglik ❌→✅ · Standing #38 ⚠ KALDI · redaksiyon ❌→✅ · Pazarlama sınaması ✅"
+      },
+      {
+        "vaat": "✅ Üretim ölçüsüne DEĞER SINAMASI (satır var ≠ değer doğru)",
+        "kim": "Vezir",
+        "verildi": "2026-10-14 (Vaka #08)",
+        "gecikti_gun": 0,
+        "gecerli": "✅ SUREKLILIK.json deger_sinamasi · yabancı≤toplam (95 il-ay, ihlaller CC-işaretli) · EVDS haftalık etiket 1004/1004 İHLAL · Basın beyan alanı İHLAL"
+      },
+      {
+        "vaat": "🔴 VAKA #08: EVDS haftalık 1.004 seri değer yerine yıl-hafta etiketi — yeniden çek",
+        "kim": "CC-Borsa",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF 🔴 · ortak istemciyle"
+      },
+      {
+        "vaat": "Vaka #08: SORGU-01'de 1.004 bozuk haftalık kayıt işaretlensin / 'veri var' sayımından düşsün",
+        "kim": "CC-Hafıza",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF"
+      },
+      {
+        "vaat": "Vaka #08: Pazarlama 5 il (4 VERİ_HATALI + 1 ÇOKLU_DEĞER) yeniden çekim",
+        "kim": "CC-Pazarlama",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · 16:04Z Pazarlama 10 ilin 10'unu DOGRULANMADI_ANALIZ_DUZELTMESI_BEKLENIYOR yaptı · tarih biçimi (2025-5↔2025-05) düzeltildi · Vezir bağımsız sınaması: 'veri doğru' iddiası taşıyan ihlalli il 0"
+      },
+      {
+        "vaat": "UYUMSUZLUK: .evds_key (yeni anahtar kopyası · sahibi Borsa)",
+        "kim": "CC-Pazarlama",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "✅ KAPANDI · dosya diskte yok · Pazarlama .env + evds_ortak okuyor · ⚠ silmeyi sahibi değil Pazarlama yaptı → cc_sinir_kanonu_v1 emsali (vaka değil)"
+      },
+      {
+        "vaat": "UYUMSUZLUK: Hafıza evds_saglik.json'u okumuyor (teyit edildi)",
+        "kim": "CC-Hafıza",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF ❌ · hafiza_tarama.sh + orumcek_derle.py durum alanını okumuyor"
+      },
+      {
+        "vaat": "UYUMSUZLUK: Basın 'bm_k_sayi_uyarisi yazdım' — alan 23 dosyada YOK (SIG36 + Vezir)",
+        "kim": "CC-Basın",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "✅ KAPANDI 14 Eki gece · alan 02_CC_STATE/bolge_basin.json'da (Vezir değer sınaması: GEÇTİ)"
+      },
+      {
+        "vaat": "Standing #38 metnine ek-ders (Python.app bundle doğrudan) — B11 testinde KALDI",
+        "kim": "CC-Hafıza",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF ⚠ · 3 sessiz iş teşhisiyle birlikte"
+      },
       {
         "vaat": "✅ Yeni EVDS anahtarı tek dosyaya (~/landgold-agents/.env) + canlı test",
         "kim": "Vezir",
@@ -361,18 +459,18 @@
         "gecerli": "✅ evds3/igmevdsms-dis HTTP 200, 14 kayıt (15:38Z) · .env izni 644→600 · eski değer TCMB_API_KEY_ESKI (redaksiyon tanısın diye)"
       },
       {
-        "vaat": "🔴 Borsa: EVDS istemcisini evds3/igmevdsms-dis + header 'key' yoluna çevir (seri 17 Tem'den beri durmuş)",
+        "vaat": "🔴 Borsa: tek EVDS istemcisi ~/landgold-agents/evds_ortak.py (kanon kural 5) + ayrı launchd (evds_gunluk) kaldır",
         "kim": "CC-Borsa",
         "verildi": "2026-10-14 (Vaka #07 kök neden)",
         "gecikti_gun": 0,
-        "gecerli": "AKTİF 🔴 · evds2 yolu 200+HTML (sessiz boş) · anahtar sorunu değil"
+        "gecerli": "AKTİF 🔴 · evds_ortak.py bugün Desktop/cc_borsa'da · 4 CC'de 8 dosya doğrudan EVDS çağırıyor"
       },
       {
         "vaat": "🔴 PATRON: ESKİ EVDS anahtarını TCMB'de iptal et (hâlâ geçerli + public)",
         "kim": "Patron",
         "verildi": "2026-10-14 (Vaka #07)",
         "gecikti_gun": 0,
-        "gecerli": "AKTİF 🔴 · yeni anahtar 14 Eki .env'ye yazıldı ve test edildi (evds3 200, 14 kayıt) · eski anahtar da 200 veriyor → iptal edilmeden public sızıntı canlı"
+        "gecerli": "AKTİF 🔴 · yeni anahtar 14 Eki .env'ye yazıldı ve test edildi (evds3 200, 14 kayıt) · eski anahtar da 200 veriyor → iptal edilmeden public sızıntı canlı · 14 Eki Patron'a aktarıldı (GitHub Support dönüşüyle birlikte)"
       },
       {
         "vaat": "PATRON: misara-vezir + tradia-beykoz geçmiş temizliği (EVDS)",
@@ -386,7 +484,7 @@
         "kim": "Patron",
         "verildi": "2026-10-14",
         "gecikti_gun": 0,
-        "gecerli": "AKTİF · kanon kural 1"
+        "gecerli": "AKTİF · settings.json ✅ TEMİZ (Analiz, grep 0) · settings.local.json ❌ 1 satır ESKİ anahtar duruyor"
       },
       {
         "vaat": "Finans: ~/finans/.env ikinci kopyası kaldırılsın · TT-MAP: ~/ttmap/.env(.tmp) tek dosyaya",
@@ -400,7 +498,7 @@
         "kim": "CC-Analiz",
         "verildi": "2026-10-14",
         "gecikti_gun": 0,
-        "gecerli": "AKTİF · rapor diskte yok (15:30) · gelince emsal defterine işlenecek"
+        "gecerli": "✅ GELDİ 18:44 · H1 doğrulandı · H4 elendi · ek kök: tradia_aylik_makro_cek.py .env yüklemiyordu · Tür A çelişki kaydı (Analiz /chart-data ↔ Vezir/Borsa/Pazarlama series yolu 200) · Analiz'e gönderildi"
       },
       {
         "vaat": "✅ Vaka #07 açıldı + anahtar yönetimi kanonu + HEAD redaksiyonu (3 repo) + sızıntı kapısı .env eşleşmesi",
@@ -1089,6 +1187,8 @@
       }
     ],
     "aktif_bugun": [
+      "🧱 14 Eki gece: CC dizin sınırı kanonu · SEMA eşleşme sınaması (10/10 CC'de alan yok → bildirim) · Basın bm_k alanı ✅ · .evds_key kapandı (sınır emsali) · TUIK_API_KEY bekleniyor · EVDS koruma testi UYUMLU",
+      "🔴 14 Eki akşam: Vaka #07 KISMEN KAPALI (kök neden: uç nokta + .env yüklenmiyordu) · Vaka #08 açıldı (EVDS haftalık 1004/1004 etiket · yabancı satış 5/10 il hatalı) · Anayasa B11 'koruma testi' · Pazarlama .evds_key yeni anahtar kopyası",
       "🔴 14 Eki Vaka #07: kök neden UÇ NOKTA (evds2 200+HTML), anahtar değil · iki anahtar da evds3'te çalışıyor · ESKİ anahtar public ve GEÇERLİ → Patron TCMB'de iptal · Borsa istemciyi çevirsin",
       "📏 14 Eki ÜRETİM sürekliliği (yeni birim): Finans 🟡23* · Hafıza 🟡21 · Pazarlama 🟡21 · Sosyal 🔴8 · Basın 🔴6 · Map 🔴6 · Tic/Signals/Kitap/Arşiv/Borsa 🔴3 · İhale/TT-AI/Analiz 🔴1 (/30) · *Finans ingest gecikmeli, gerçek 9–16 · darboğaz para değil: 7/24 makine + depolama + güç + tetik",
       "🟠 14 Eki Vaka #06: geçmiş temizlendi (filter-repo · 7 dizgi · 3 SHA) · GitHub yetim commit önbelleği AÇIK → Patron GitHub Support",
@@ -1828,7 +1928,75 @@
           "renk": "yeşil"
         }
       ],
-      "hukum": "🔴 EVDS: kaynak CANLI (JSON veri akıyor) ama havuz 74 gün bayat → kopukluk bizim istemcide (evds2 yolu) · 🔴 KAP + Yahoo havuz 69 gün bayat (veri yolu imzası ölçülmedi) · RG/Basın/Finans/YouTube yeşil"
-    }
+      "hukum": "🔴 EVDS: kaynak CANLI (JSON veri akıyor) ama havuz 74 gün bayat → kopukluk bizim istemcide (evds2 yolu) · 🔴 KAP + Yahoo havuz 69 gün bayat (veri yolu imzası ölçülmedi) · RG/Basın/Finans/YouTube yeşil",
+      "evds_koruma_testi_B11": "UYUMLU · resmî SAGLAM (2026-10-14T15:57:33Z) · Vezir veri-yolu JSON items=11"
+    },
+    "deger_sinamasi": [
+      {
+        "sinama": "yabancıya satış ≤ toplam satış (il × ay)",
+        "sahibi": "Pazarlama",
+        "sonuc": "İHLAL — hiçbiri CC tarafından \"veri doğru\" (VAR…) iddiasıyla sunulmuyor (CC işareti bağımsız teyitli)"
+      },
+      {
+        "sinama": "EVDS haftalık: son_deger ölçüm mü, dönem etiketi mi (SORGU-01 evds_ham)",
+        "sahibi": "Borsa",
+        "sonuc": "İHLAL"
+      },
+      {
+        "sinama": "beyan edilen alan dosyada var mı: bm_k_sayi_uyarisi (Basın beyanı · SIG36)",
+        "sahibi": "Basın",
+        "sonuc": "GEÇTİ"
+      },
+      {
+        "sinama": "eşleşme beyanı · bolge_ai.json",
+        "sahibi": "ai",
+        "sonuc": "UYUMSUZ — eslesme alanı yok"
+      },
+      {
+        "sinama": "eşleşme beyanı · bolge_analiz.json",
+        "sahibi": "analiz",
+        "sonuc": "UYUMSUZ — eslesme alanı yok"
+      },
+      {
+        "sinama": "eşleşme beyanı · bolge_basin.json",
+        "sahibi": "basin",
+        "sonuc": "UYUMSUZ — eslesme alanı yok"
+      },
+      {
+        "sinama": "eşleşme beyanı · bolge_borsa.json",
+        "sahibi": "borsa",
+        "sonuc": "UYUMSUZ — eslesme alanı yok"
+      },
+      {
+        "sinama": "eşleşme beyanı · bolge_finans.json",
+        "sahibi": "finans",
+        "sonuc": "UYUMSUZ — eslesme alanı yok"
+      },
+      {
+        "sinama": "eşleşme beyanı · bolge_ihale.json",
+        "sahibi": "ihale",
+        "sonuc": "UYUMSUZ — eslesme alanı yok"
+      },
+      {
+        "sinama": "eşleşme beyanı · bolge_map.json",
+        "sahibi": "map",
+        "sonuc": "UYUMSUZ — eslesme alanı yok"
+      },
+      {
+        "sinama": "eşleşme beyanı · bolge_pazarlama.json",
+        "sahibi": "pazarlama",
+        "sonuc": "UYUMSUZ — eslesme alanı yok"
+      },
+      {
+        "sinama": "eşleşme beyanı · bolge_sosyal.json",
+        "sahibi": "sosyal",
+        "sonuc": "UYUMSUZ — eslesme alanı yok"
+      },
+      {
+        "sinama": "eşleşme beyanı · bolge_tic.json",
+        "sahibi": "tic",
+        "sonuc": "UYUMSUZ — eslesme alanı yok"
+      }
+    ]
   }
 }
