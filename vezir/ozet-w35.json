@@ -346,13 +346,62 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 121,
-    "acik": 67,
-    "kapali": 54,
+    "toplam": 128,
+    "acik": 71,
+    "kapali": 57,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "✅ KANON: kaynak tarama şeması v1 (12 alanlı satır · otomatik ret kuralları · çakışma = Tür A)",
+        "kim": "Patron (karar) · Vezir (kayıt)",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "✅ kanon/kaynak_tarama_semasi_v1.md · birleştirme betiği motor/kaynak_evreni_birlestir.py kuru testte 7/7 sahte satırı doğru sınıfladı · ACIK kaynaklar süreklilik ölçüsüne otomatik girer"
+      },
+      {
+        "vaat": "⏰ 9 CC kaynak_tarama_<cc>.json → 16 Eki 19:26 birleştirme → kanon/kaynak_evreni_v2.md + Patron kovası + CC başına satır",
+        "kim": "9 CC (yazar) · Vezir (birleştirir)",
+        "verildi": "2026-10-14 19:26",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · son tarih 2026-10-16 19:26 · şu an 0/9 dosya · bildirim 02_CC_STATE/vezir_bildirim_kaynak_tarama_semasi.json"
+      },
+      {
+        "vaat": "✅ TÜİK toplu indirme ham/tuik/2026-10-14'e taşındı + SHA256SUMS + ENVANTER",
+        "kim": "Vezir (Patron direktifi)",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "✅ 326 dosya · 274 SDMX seti · 1,54 GB · 326/326 SHA OK · il 24 / il+ilçe 5 / NUTS 11 / TR 246 · yapı ruhsatı seti YOK"
+      },
+      {
+        "vaat": "✅ KANON v1.4 kural 6: TÜİK tek istemci tuik_ortak.py + anahtar .env + token bellekte + günlük dataflow sağlığı",
+        "kim": "Patron (karar) · Vezir (kayıt)",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "✅ kanon/anahtar_yonetimi_kanonu_v1.md · B11: ilk sayım deseni canlı kaynakta 0 sayıyordu → önek-bağımsız (508 dataflow)"
+      },
+      {
+        "vaat": "Pazarlama: DF_YABANCILARA_SATILAR_ILILCE_V3'ten 2026-06/07/08 81 il satırı + SDMX çapraz sınama",
+        "kim": "CC-Pazarlama",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · Vezir teyidi: Σ il = TR (3 ayda fark 0) → eksik iller (Hakkari dahil) kanıtlı 0 · ilçe sütunu YOK"
+      },
+      {
+        "vaat": "CC'ler: TÜİK toplu indirme kök eşleşme önerisini teyit/ret et (97 set Hafıza'ya)",
+        "kim": "10 CC + Hafıza",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · 02_CC_STATE/vezir_bildirim_tuik_toplu_kok_eslesme.json"
+      },
+      {
+        "vaat": "Pazarlama dataflow envanteri (docs/tuik_dataflow_envanteri_v1.tsv) → kaynak evrenine kaydet + Finans/Sinyal/Aİ/İhale'ye kök sorusu",
+        "kim": "Vezir (Pazarlama dosyası bekleniyor)",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF ⏳ · tsv diskte YOK (14 Eki gece) · canlı dataflow sayısı 508"
+      },
       {
         "vaat": "✅ TÜİK toplu indirme analizi (3 SDMX seti)",
         "kim": "Vezir",
@@ -361,11 +410,11 @@
         "gecerli": "✅ 02_CC_STATE/vezir_tuik_toplu_indirme_analizi_20261014.md · yabancı nüfus (TR, 2023–25) · Ar-Ge (TR) · su/atıksu (81 il) · tüm iç-tutarlılık sınamaları GEÇTİ · ⚠ ADNKS'de 'Toplam' satırı ülke boyutunda (körlemesine toplam 2×) · 27 kombinasyon eksik"
       },
       {
-        "vaat": "TÜİK 3 seti SORGU-01'e al (künye: SDMX kodu+sürüm+tarih) · su/atıksu → BM-K6 il-PROXY",
+        "vaat": "TÜİK toplu indirme (274 SDMX seti) SORGU-01'e al — künye: SDMX kodu+sürüm+tarih+SHA",
         "kim": "CC-Borsa + CC-Analiz (TÜİK toplayıcıları)",
         "verildi": "2026-10-14",
         "gecikti_gun": 0,
-        "gecerli": "AKTİF · Vezir ingest etmedi (Standing #37 + cc_sinir) · dosyalar ~/Downloads"
+        "gecerli": "AKTİF · toplayıcı Borsa+Analiz · ham ~/Desktop/TT-Tüm CC/ham/tuik/2026-10-14/ (SHA256SUMS + ENVANTER.tsv) · Vezir ingest etmedi"
       },
       {
         "vaat": "TÜİK veri portalı: ilk sağlık satırı (uç nokta + HTTP + içerik imzası) — kanon kural 2+3",
@@ -1208,6 +1257,7 @@
       }
     ],
     "aktif_bugun": [
+      "🗂 14 Eki gece: TÜİK toplu indirme 274 set ham/tuik/2026-10-14 (SHA ✓) · yabancılara satış il tablosu VAR (Σil=TR) → Pazarlama'ya · TÜİK tek istemci tuik_ortak + günlük dataflow sağlığı (508)",
       "📊 14 Eki gece: TÜİK API anahtarı .env'de (kopya yok) · Patron'un 3 TÜİK seti analiz edildi: hepsi tutarlı · Rize atıksu arıtma %75,8 (44/81), su 354 L/kişi/gün · yabancı nüfus 2025: 1.519.515",
       "🧱 14 Eki gece: CC dizin sınırı kanonu · SEMA eşleşme sınaması (10/10 CC'de alan yok → bildirim) · Basın bm_k alanı ✅ · .evds_key kapandı (sınır emsali) · TUIK_API_KEY bekleniyor · EVDS koruma testi UYUMLU",
       "🔴 14 Eki akşam: Vaka #07 KISMEN KAPALI (kök neden: uç nokta + .env yüklenmiyordu) · Vaka #08 açıldı (EVDS haftalık 1004/1004 etiket · yabancı satış 5/10 il hatalı) · Anayasa B11 'koruma testi' · Pazarlama .evds_key yeni anahtar kopyası",
