@@ -10,6 +10,12 @@
     "aciklama": "Bloke eden şeyler — en üst şerit, kırmızı",
     "bloke": [
       {
+        "konu": "🔴 MAKİNE YÜKÜ: 8 GB RAM · yük 13.73 · swap 2967/4096 MB · launchd exit≠0 6",
+        "etki": "Kopya taraması 3 sa 20 dk sürdü · M4 bir kez SIGKILL (-9) · Basın hasat 300 kez boşa yeniden başladı",
+        "kim": "Patron (7/24 makine) · CC'ler (≤8 oturum kuralı)",
+        "cozum": "kanon/makine_kaynak_kanonu_v1.md"
+      },
+      {
         "konu": "🔴 VAKA #07 · EVDS anahtarı public repolarda (misara-vezir 11 Haz'dan, tradia-beykoz 25 Eyl'den)",
         "etki": "Kök neden UÇ NOKTA: evds2 yolu 200+HTML döndürüyor (veri yok), evds3/igmevdsms-dis header'la çalışıyor. ESKİ anahtar HÂLÂ GEÇERLİ ve public → TCMB'de iptal acil. Yeni anahtar .env'de (test 200 + 14 kayıt).",
         "kim": "Patron (anahtar değişimi + geçmiş temizliği + settings.json) · Finans (ikinci .env)",
@@ -346,13 +352,90 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 131,
-    "acik": 71,
-    "kapali": 60,
+    "toplam": 142,
+    "acik": 78,
+    "kapali": 64,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "✅ KANON: adres anahtarı TR-<il>-<ilçe>-<mahalle> (TÜİK ilçe kodu 973/973) + SEMA zorunlu alan",
+        "kim": "Patron (karar) · Vezir (kayıt)",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "✅ kanon/adres_anahtari_kanonu_v1.md · kod kaynağı TÜİK DF_ADNKS_T38 · mahalle kodu YOK (geçici M:<slug>)"
+      },
+      {
+        "vaat": "✅ Basın ulusal kuyruğu: 973 ilçe KUYRUK.json'da (öncelik 51/519/403 · önce kaynak envanteri)",
+        "kim": "Vezir",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "✅ basin_ulusal · 3 DOLU / 970 KUYRUKTA"
+      },
+      {
+        "vaat": "✅ Geriye dönük adres denetimi (6.770 kayıt)",
+        "kim": "Vezir",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "✅ geçmiş kayıtlarda kodlu ≤257/5.701 (üst sınır) · belirsiz 200 · Vezir'in 48 kodsuz hücresi düzeltildi · rapor yerel 02_CC_STATE"
+      },
+      {
+        "vaat": "✅ KANON: makine kaynak (≤8 oturum · ağır iş 1 · 02–07 bandı · KeepAlive döngü · Desktop log yasağı) + makine ölçümü",
+        "kim": "Patron (karar) · Vezir (kayıt)",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "✅ kanon/makine_kaynak_kanonu_v1.md · 23:15: yük 13.73 · swap 2967/4096 MB · launchd exit≠0 6 · M4 DİNLİYOR"
+      },
+      {
+        "vaat": "🔴 Basın: hasat_v4 KeepAlive döngüsü (300 yeniden başlatma) + primer-monitor/haber-akis exit 78 (Desktop log)",
+        "kim": "CC-Basın",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF 🔴 · bildirim vezir_bildirim_makine_denetimi_20261014.json"
+      },
+      {
+        "vaat": "Hafıza: sorgu.duzen mount kontrolü · M4 port testi sağlığa · misara.pano -9 çökme kaydı · gunluk-ozet sahibi",
+        "kim": "CC-Hafıza",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · M4 23:15 DİNLİYOR (launchd KeepAlive kurulmuş)"
+      },
+      {
+        "vaat": "Borsa: EVDS çekimi (463/8.730) sabah bitiş tahmini",
+        "kim": "CC-Borsa",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · 02_CC_STATE/borsa_cekim_tahmini.json bekleniyor · ağır iş kilidi kuralı"
+      },
+      {
+        "vaat": "Pazarlama: yatırımcı metni §3.1 'Bugün neredeyiz' makine satırı",
+        "kim": "CC-Pazarlama (metin sahibi)",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · satır bildirimde · Vezir yatırımcı dosyasına dokunmadı (S14 + dizin sınırı)"
+      },
+      {
+        "vaat": "Aİ: adres anahtarını evren ağacına işle + NVİ/UAVT mahalle kodu kaynağı",
+        "kim": "CC-TT-AI",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · 958/973 eşleşti · 15 Merkez + 37 çift slug"
+      },
+      {
+        "vaat": "Tüm CC: kodsuz yer adı kayıtlarını kodla (adres denetimi)",
+        "kim": "İhale · Hafıza · Signals · Analiz · Tic · Basın · diğerleri",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · Vezir yeniden koşup kapatır"
+      },
+      {
+        "vaat": "Aİ/Hafıza: 30 büyükşehirde 'il merkezi' ilçe(ler)i (Basın öncelik 1)",
+        "kim": "CC-TT-AI + CC-Hafıza",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF"
+      },
       {
         "vaat": "✅ TÜİK JSON turu: taşındı (json_tur2) + SHA + envanter + CSV çapraz sınaması",
         "kim": "Vezir (Patron direktifi)",
@@ -1278,6 +1361,7 @@
       }
     ],
     "aktif_bugun": [
+      "🧭 14 Eki gece: adres anahtarı kanonu (TÜİK 973 ilçe kodu) · Basın ulusal kuyruk 973 · geçmiş kayıtlarda kodlu ≤%5 · makine kanonu (yük 13,7, swap 3/4 GB) · TT-HAFIZA takılı DEĞİL (teyit)",
       "🔴 14 Eki gece: TÜİK CSV dışa aktarımı 500.000 satırda uyarısız kesiyor (4 set) — JSON turu tam · JSON↔CSV 263/267 eşit · 57 yeni set",
       "🗂 14 Eki gece: TÜİK toplu indirme 274 set ham/tuik/2026-10-14 (SHA ✓) · yabancılara satış il tablosu VAR (Σil=TR) → Pazarlama'ya · TÜİK tek istemci tuik_ortak + günlük dataflow sağlığı (508)",
       "📊 14 Eki gece: TÜİK API anahtarı .env'de (kopya yok) · Patron'un 3 TÜİK seti analiz edildi: hepsi tutarlı · Rize atıksu arıtma %75,8 (44/81), su 354 L/kişi/gün · yabancı nüfus 2025: 1.519.515",
@@ -2091,6 +2175,20 @@
         "sahibi": "tic",
         "sonuc": "UYUMSUZ — eslesme alanı yok"
       }
-    ]
+    ],
+    "makine": {
+      "olcum_ani": "2026-10-14T23:15:32",
+      "ram_gb": 8,
+      "bos_gb": 0.09,
+      "swap_kullanim_mb": 2967.12,
+      "yuk_1_5_15": [
+        13.73,
+        6.07,
+        3.73
+      ],
+      "claude_oturum_sureci": 15,
+      "launchd_exit_sifir_degil": 6,
+      "m4_port_8789": "DİNLİYOR"
+    }
   }
 }
