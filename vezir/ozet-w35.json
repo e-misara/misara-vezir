@@ -346,13 +346,34 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 118,
-    "acik": 66,
-    "kapali": 52,
+    "toplam": 121,
+    "acik": 67,
+    "kapali": 54,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "✅ TÜİK toplu indirme analizi (3 SDMX seti)",
+        "kim": "Vezir",
+        "verildi": "2026-10-14 (Patron)",
+        "gecikti_gun": 0,
+        "gecerli": "✅ 02_CC_STATE/vezir_tuik_toplu_indirme_analizi_20261014.md · yabancı nüfus (TR, 2023–25) · Ar-Ge (TR) · su/atıksu (81 il) · tüm iç-tutarlılık sınamaları GEÇTİ · ⚠ ADNKS'de 'Toplam' satırı ülke boyutunda (körlemesine toplam 2×) · 27 kombinasyon eksik"
+      },
+      {
+        "vaat": "TÜİK 3 seti SORGU-01'e al (künye: SDMX kodu+sürüm+tarih) · su/atıksu → BM-K6 il-PROXY",
+        "kim": "CC-Borsa + CC-Analiz (TÜİK toplayıcıları)",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · Vezir ingest etmedi (Standing #37 + cc_sinir) · dosyalar ~/Downloads"
+      },
+      {
+        "vaat": "TÜİK veri portalı: ilk sağlık satırı (uç nokta + HTTP + içerik imzası) — kanon kural 2+3",
+        "kim": "CC-Borsa + CC-Analiz (TÜİK toplayıcıları)",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · anahtar .env'de hazır · istemci evds_ortak deseninde tek olsun"
+      },
       {
         "vaat": "✅ KANON: CC dizin sınırı ('başka CC'nin dosyasına dokunulmaz; bildirim; silme sahibinin')",
         "kim": "Patron (karar) · Vezir (kayıt)",
@@ -386,7 +407,7 @@
         "kim": "Patron",
         "verildi": "2026-10-14",
         "gecikti_gun": 0,
-        "gecerli": "AKTİF ⏳ · Patron kovasında · anahtar kanonu v1.2'de kayıtlı · redaksiyon etiketi [REDACTED-APIKEY-TUIK] hazır · kapı .env'den otomatik tanır"
+        "gecerli": "✅ KAYDEDİLDİ 14 Eki · yalnız ~/landgold-agents/.env (izin 600) · redaksiyon + sızıntı kapısı tanıyor (test) · değer hiçbir yerde yazılmadı"
       },
       {
         "vaat": "✅ ANAYASA B11: 'Bir koruma, koruduğunu sandığı şeyi koruyor mu diye ayrıca test edilir'",
@@ -1187,6 +1208,7 @@
       }
     ],
     "aktif_bugun": [
+      "📊 14 Eki gece: TÜİK API anahtarı .env'de (kopya yok) · Patron'un 3 TÜİK seti analiz edildi: hepsi tutarlı · Rize atıksu arıtma %75,8 (44/81), su 354 L/kişi/gün · yabancı nüfus 2025: 1.519.515",
       "🧱 14 Eki gece: CC dizin sınırı kanonu · SEMA eşleşme sınaması (10/10 CC'de alan yok → bildirim) · Basın bm_k alanı ✅ · .evds_key kapandı (sınır emsali) · TUIK_API_KEY bekleniyor · EVDS koruma testi UYUMLU",
       "🔴 14 Eki akşam: Vaka #07 KISMEN KAPALI (kök neden: uç nokta + .env yüklenmiyordu) · Vaka #08 açıldı (EVDS haftalık 1004/1004 etiket · yabancı satış 5/10 il hatalı) · Anayasa B11 'koruma testi' · Pazarlama .evds_key yeni anahtar kopyası",
       "🔴 14 Eki Vaka #07: kök neden UÇ NOKTA (evds2 200+HTML), anahtar değil · iki anahtar da evds3'te çalışıyor · ESKİ anahtar public ve GEÇERLİ → Patron TCMB'de iptal · Borsa istemciyi çevirsin",
