@@ -11,7 +11,7 @@
     "bloke": [
       {
         "konu": "🔴 VAKA #09 iCloud: Masaüstü senkronlu + 'optimize' açık → 14,9 GiB çalışma dosyası bulutta (18.466 dosya), parsel verisi dahil",
-        "etki": "'15 GiB bilmecesi' çözüldü · boşaltılmış dosyayı okuyan iş sessiz indirir (gece G/Ç) · parsel_veri_kanonu ihlali (üçüncü-taraf bulut) · taşıma 12 GiB boşlukla disk doldurur",
+        "etki": "'15 GiB bilmecesi' çözüldü · boşaltılmış dosyayı okuyan iş sessiz indirir (gece G/Ç) · parsel_veri_kanonu ihlali (üçüncü-taraf bulut) · taşıma 12 GiB boşlukla disk doldurur · KARAR 00:55: iCloud kopyası silinir, A1 SHA-verify sonrası",
         "kim": "Hafıza (taşıma, rsync sonrası) · Patron (iCloud'daki kopya kararı)",
         "cozum": "A0 kod/çalışma → ~/tradia_calisma + symlink · A1 ham parti parti TT-HAFIZA · bkz. 02_CC_STATE/vezir_bildirim_hafiza_vaka09_tasima.json"
       },
@@ -364,13 +364,27 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 166,
+    "toplam": 168,
     "acik": 91,
-    "kapali": 75,
+    "kapali": 77,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "PATRON ADIMI (taşıma bitince): iCloud 'Son Silinenler'i boşalt — parsel dosyası bulutta 30 gün kalmasın",
+        "kim": "Patron",
+        "verildi": "2026-10-15 00:55",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · Hafıza A1 bitişini bildirince"
+      },
+      {
+        "vaat": "⚠ Kilit ihlali (01:00 ölçümü): Borsa külliyat yeniden koşuyor (00:07 duraklatılmıştı) · Hafıza builder sıra 6 iken başladı · duzen ×2",
+        "kim": "Borsa · Hafıza",
+        "verildi": "2026-10-15 01:00",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · Vezir yeniden durdurmadı (karar yok) · gece raporuna girer · Borsa'ya Patron kanalı"
+      },
       {
         "vaat": "Sinyal: Rize kredi sıçraması SİNYAL ADAYI (Finans BDDK FinTürk · 2,65× · reel +%24 · inşaat 7,8×) — vaka DEĞİL",
         "kim": "CC-Signals (karar) · CC-Finans (kaynak)",
@@ -421,18 +435,18 @@
         "gecerli": "AKTİF 🔴 · ön koşul: boşaltılmış 14,9 GiB indirilmez (disk 12 GiB) · kilit sıra 2 · Standing #48 R-kaydı"
       },
       {
-        "vaat": "PATRON: iCloud'daki kopya (Desktop/tradia, TT-Tüm CC) taşıma sonrası silinsin mi",
+        "vaat": "✅ PATRON KARARI: iCloud kopyası SİLİNİR (A1 SHA-verify sonrası Masaüstü'nden çıkar)",
         "kim": "Patron",
         "verildi": "2026-10-15",
         "gecikti_gun": 0,
-        "gecerli": "AKTİF · Patron ayara dokunmayacak (karar) · bulut silme Patron eylemi"
+        "gecerli": "✅ 00:55 · A0/A1 onaylı · Hafıza duzen flock + launchd 10 dk örneği kilit varken çıkar"
       },
       {
-        "vaat": "kanon/zincirler_v1.md (Z1–Z7) — İSKELET, tanım yok",
+        "vaat": "✅ KANON: zincirler_v1 (Z1–Z7) — Patron metni kanonik",
         "kim": "Patron (metin) · Vezir (kayıt)",
         "verildi": "2026-10-15",
         "gecikti_gun": 0,
-        "gecerli": "AKTİF · TASLAK_v1 bulunamadı · Borsa ve Tic de 'tanımsız' yazmış · 16 Eki birleştirmede zincir sütunu TANIMSIZ"
+        "gecerli": "✅ 7 zincir · tetik→halkalar→sonuç · sahipler Aİ/İhale/İhale/Analiz/Tic/Borsa/Analiz · doluluk sütunu 16 Eki birleştirmesinde · tüm CC bildirimi · Tic 14 'BİLİNMİYOR' → Z no"
       },
       {
         "vaat": "✅ Borsa-Patron aktarım kanalı: agir_is_kilidi.json + gece raporu bölümü (Borsa bulutta, 02_CC_STATE'i görmüyor)",
@@ -446,7 +460,7 @@
         "kim": "Vezir → Borsa · Hafıza",
         "verildi": "2026-10-15 00:07",
         "gecikti_gun": 0,
-        "gecerli": "✅ kap_kulliyat.py C pkill 450/4459 · bildirimler yazıldı · ⚠ EVDS tam çekim Borsa tarafından rsync bitmeden YENİDEN BAŞLATILMIŞ (ihlal, Vezir ikinci kez durdurmadı)"
+        "gecerli": "✅ kap_kulliyat.py C pkill 450/4459 · bildirimler yazıldı · EVDS tam çekim rsync ile eşzamanlı: ÜST AKIL ONAYLI (00:10) — 23:36 duraklatma + ihlal kaydı GERİ ÇEKİLDİ · ⚠ külliyat 00:07 duraklatıldıktan sonra YENİDEN koşuyor (Borsa) + Hafıza builder sıra dışı başladı → ihlal sayımında"
       },
       {
         "vaat": "🔴 Analiz: evds_saglik.sh 08:00'den önce düzelt (/usr/bin/python3 shim + doğrudan curl)",
