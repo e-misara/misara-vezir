@@ -358,13 +358,48 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 143,
-    "acik": 79,
-    "kapali": 64,
+    "toplam": 148,
+    "acik": 81,
+    "kapali": 67,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "✅ PROMPT DEFTERİ 2026-10-14 + kalıcı düzen (donus_<cc>_<tarih>.md → 23:00 launchd birleştirme)",
+        "kim": "Vezir",
+        "verildi": "2026-10-14 (Patron)",
+        "gecikti_gun": 0,
+        "gecerli": "✅ arsiv/prompt_defteri_2026-10-14.md: 53 prompt · 35 BİTTİ · 7 KISMEN · 2 BEKLİYOR · 9 ÇIKTI YOK · kanon/prompt_defteri_kanonu_v1.md · launchd com.tradia.vezir.prompt_defteri kickstart: runs 1, exit 0"
+      },
+      {
+        "vaat": "✅ KANON: kapsam (varsayılan 81 il / 973 ilçe; örnek ≠ kapsam) + kapsam oranı ölçüsü + defter sütunu",
+        "kim": "Patron (karar) · Vezir (kayıt)",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "✅ kanon/kapsam_kanonu_v1.md · bildirim 02_CC_STATE/vezir_bildirim_tum_cc_kapsam_kanonu.json · bugün: Pazarlama 81/81, Borsa 34, Map 11, Aİ 10, Finans 9, Basın 8, Analiz/Sosyal/İhale/Tic 2"
+      },
+      {
+        "vaat": "Tüm CC: ACIK kaynakları 81 il TAM hasat (il × ay matrisi) — ağır iş sırasıyla, 02–07 bandı",
+        "kim": "Tüm CC",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · kapsam oranı her ölçümde"
+      },
+      {
+        "vaat": "Hafıza: disk şemasına ham/<kaynak>/<il_kodu>/",
+        "kim": "CC-Hafıza",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF"
+      },
+      {
+        "vaat": "9 ÇIKTI YOK prompt (defter): Analiz motorlu/Hal/DFE · Pazarlama bülten, başlık eşleme, kaynak tarama · Finans/Kitap/Arşiv kaynak tarama · Basın tüm Türkiye A/B/C · Aİ evren export+ad_cozumle",
+        "kim": "ilgili CC'ler",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · prompt defteri"
+      },
       {
         "vaat": "🔴 Ağır iş kilidi ihlali: disk gelince 4 ağır iş eşzamanlı (Basın hasat · Hafıza rsync 34 GB · Hafıza builder · Borsa EVDS tam)",
         "kim": "Basın · Hafıza · Borsa (sıra kararı Patron)",
@@ -517,7 +552,7 @@
         "kim": "Vezir (Pazarlama dosyası bekleniyor)",
         "verildi": "2026-10-14",
         "gecikti_gun": 0,
-        "gecerli": "AKTİF ⏳ · tsv diskte YOK (14 Eki gece) · canlı dataflow sayısı 508"
+        "gecerli": "✅ GELDİ 508 dataflow (= canlı ölçüm) · kaynak evreni v2 birleştirmesine kayıt · 4 CC'ye kök sorusu 02_CC_STATE/vezir_soru_tuik_dataflow_kok_eslesme.json"
       },
       {
         "vaat": "✅ TÜİK toplu indirme analizi (3 SDMX seti)",
@@ -1374,6 +1409,7 @@
       }
     ],
     "aktif_bugun": [
+      "📒 14 Eki 23:50: prompt defteri 53 prompt (35/7/2/9) · 23:00 launchd kuruldu (exit 0) · kapsam kanonu: varsayılan 81 il — bugün yalnız Pazarlama 81/81",
       "🧭 14 Eki gece: adres anahtarı kanonu (TÜİK 973 ilçe kodu) · Basın ulusal kuyruk 973 · geçmiş kayıtlarda kodlu ≤%5 · makine kanonu (yük 13,7, swap 3/4 GB) · TT-HAFIZA takılı DEĞİL (teyit)",
       "🔴 14 Eki gece: TÜİK CSV dışa aktarımı 500.000 satırda uyarısız kesiyor (4 set) — JSON turu tam · JSON↔CSV 263/267 eşit · 57 yeni set",
       "🗂 14 Eki gece: TÜİK toplu indirme 274 set ham/tuik/2026-10-14 (SHA ✓) · yabancılara satış il tablosu VAR (Σil=TR) → Pazarlama'ya · TÜİK tek istemci tuik_ortak + günlük dataflow sağlığı (508)",
@@ -2202,6 +2238,18 @@
       "claude_oturum_sureci": 15,
       "launchd_exit_sifir_degil": 6,
       "m4_port_8789": "DİNLİYOR"
+    },
+    "kapsam_orani": {
+      "analiz": "2/81",
+      "borsa": "34/81",
+      "pazarlama": "81/81",
+      "finans": "9/81",
+      "basin": "8/81",
+      "ai": "10/81",
+      "sosyal": "2/81",
+      "ihale": "2/81",
+      "map": "11/81",
+      "tic": "2/81"
     }
   }
 }
