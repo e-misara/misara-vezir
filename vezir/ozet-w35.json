@@ -358,13 +358,48 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 148,
-    "acik": 81,
-    "kapali": 67,
+    "toplam": 153,
+    "acik": 82,
+    "kapali": 71,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "✅ TÜİK JSON devri → Pazarlama (ayrıştırma + dağıtım)",
+        "kim": "Vezir → Pazarlama",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "✅ json_tur2 481 dosya SHA OK · bildirim vezir_bildirim_pazarlama_tuik_json_devir.json"
+      },
+      {
+        "vaat": "Pazarlama: TÜİK JSON ayrıştırma + CC'lere dağıtım",
+        "kim": "CC-Pazarlama",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · 02_CC_STATE/tuik_dagitim_<cc>.json"
+      },
+      {
+        "vaat": "✅ 15 dk makine ölçümü + kilit ihlali (launchd com.tradia.vezir.makine_olc)",
+        "kim": "Vezir",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "✅ runs 1 exit 0 · makine_gecmis (96 kayıt halkası)"
+      },
+      {
+        "vaat": "✅ CDN teyidi: teyit modu + TEYİTSİZ damgası + 08:30 launchd",
+        "kim": "Vezir",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "✅ motor/YAYIN_TEYIT.json · 957dbf5 TEYİTLİ"
+      },
+      {
+        "vaat": "16 ÇIKTI YOK/KISMEN kalemi: sahipler yarın 12:00'ye kadar dosya ya da 'BAŞLANMADI-neden'",
+        "kim": "Analiz · Pazarlama · Finans · Basın · Aİ · Kitap · Arşiv · Borsa · Sosyal · Hafıza",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · son tarih 2026-10-15 12:00 · Analiz sağlık betiği /usr/bin/python3 shim (Standing #38)"
+      },
       {
         "vaat": "✅ PROMPT DEFTERİ 2026-10-14 + kalıcı düzen (donus_<cc>_<tarih>.md → 23:00 launchd birleştirme)",
         "kim": "Vezir",
@@ -405,7 +440,7 @@
         "kim": "Basın · Hafıza · Borsa (sıra kararı Patron)",
         "verildi": "2026-10-14 23:40",
         "gecikti_gun": 0,
-        "gecerli": "AKTİF 🔴 · yük 8,5 · swap 4,3 GB · Vezir süreç durdurmadı · kilit + sıra önerisi 02_CC_STATE/agir_is_kilidi.json"
+        "gecerli": "✅ PATRON KARARI UYGULANDI 23:36 · Hafıza rsync tutuyor · Borsa EVDS pkill (devam komutu kilitte) · Basın hasat bootout · kalan ihlal: Borsa kap_kulliyat, Hafıza duzen ×3 (bildirim)"
       },
       {
         "vaat": "✅ KANON: adres anahtarı TR-<il>-<ilçe>-<mahalle> (TÜİK ilçe kodu 973/973) + SEMA zorunlu alan",
