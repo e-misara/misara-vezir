@@ -10,6 +10,12 @@
     "aciklama": "Bloke eden şeyler — en üst şerit, kırmızı",
     "bloke": [
       {
+        "konu": "🔴 DİSK GELİNCE YIĞILMA: 4 ağır iş eşzamanlı (kanon: en fazla 1)",
+        "etki": "yük 8,5 · swap 4,3 GB (4 GB'ı aştı)",
+        "kim": "Basın · Hafıza · Borsa · Patron (sıra)",
+        "cozum": "02_CC_STATE/agir_is_kilidi.json sıra önerisi"
+      },
+      {
         "konu": "🔴 MAKİNE YÜKÜ: 8 GB RAM · yük 13.73 · swap 2967/4096 MB · launchd exit≠0 6",
         "etki": "Kopya taraması 3 sa 20 dk sürdü · M4 bir kez SIGKILL (-9) · Basın hasat 300 kez boşa yeniden başladı",
         "kim": "Patron (7/24 makine) · CC'ler (≤8 oturum kuralı)",
@@ -40,8 +46,8 @@
         "cozum": "Retro-taşıma SHA-verify + Mac silme (arsiv, ham, log)"
       },
       {
-        "konu": "🔴 TT-HAFIZA YİNE TAKILI DEĞİL (2026-10-13 diskutil external BOŞ · 11 Eki Analiz de aynısını ölçtü)",
-        "etki": "BM-K8 Beykoz+Kartal ERİŞİLEMEDİ (v24/v25b external'da) · İhale EKAP rescan ertelendi · retro-taşıma durdu · 27 Eyl mount teyidi geçmiş kayıt olarak aşağıda",
+        "konu": "✅ TT-HAFIZA TAKILI (teyit 14 Eki ~23:35 · diskutil disk4s1 · 572/931 GB)",
+        "etki": "BM-K8 Beykoz+Kartal ölçümü, İhale EKAP rescan, retro-taşıma artık çalışabilir",
         "onceki_durum": "✅ 2026-09-27 mount teyitliydi (/dev/disk4s1 exFAT 931Gi)",
         "kim": "Patron (donanım tanıma çözüldü)",
         "teyit": "diskutil: /dev/disk4s1 external · exFAT · 931Gi (556 dolu / 375 boş) · /Volumes/TT-HAFIZA · 5 kök klasör (00_OFIS/01_YEDEK/02_ARSIV/03_SAHSI/04_GECICI) + INDEX.md + STAGING_YENI yerinde",
@@ -352,13 +358,20 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 142,
-    "acik": 78,
+    "toplam": 143,
+    "acik": 79,
     "kapali": 64,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "🔴 Ağır iş kilidi ihlali: disk gelince 4 ağır iş eşzamanlı (Basın hasat · Hafıza rsync 34 GB · Hafıza builder · Borsa EVDS tam)",
+        "kim": "Basın · Hafıza · Borsa (sıra kararı Patron)",
+        "verildi": "2026-10-14 23:40",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF 🔴 · yük 8,5 · swap 4,3 GB · Vezir süreç durdurmadı · kilit + sıra önerisi 02_CC_STATE/agir_is_kilidi.json"
+      },
       {
         "vaat": "✅ KANON: adres anahtarı TR-<il>-<ilçe>-<mahalle> (TÜİK ilçe kodu 973/973) + SEMA zorunlu alan",
         "kim": "Patron (karar) · Vezir (kayıt)",
