@@ -346,13 +346,20 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 128,
-    "acik": 71,
-    "kapali": 57,
+    "toplam": 129,
+    "acik": 70,
+    "kapali": 59,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "✅ KANON: PATRON ADIMI süzgeci (yalnız üyelik/anahtar/SMS/ödeme; menü/JS/alan adı CC işi)",
+        "kim": "Patron (karar) · Vezir (kayıt+betik)",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "✅ kaynak_tarama_semasi_v1 §2b + birleştirme betiğinde süzgeç · sahte testte 5/5 doğru · emsal: Aİ 2 satır (düzeltme gönderildi)"
+      },
       {
         "vaat": "✅ KANON: kaynak tarama şeması v1 (12 alanlı satır · otomatik ret kuralları · çakışma = Tür A)",
         "kim": "Patron (karar) · Vezir (kayıt)",
@@ -421,7 +428,7 @@
         "kim": "CC-Borsa + CC-Analiz (TÜİK toplayıcıları)",
         "verildi": "2026-10-14",
         "gecikti_gun": 0,
-        "gecerli": "AKTİF · anahtar .env'de hazır · istemci evds_ortak deseninde tek olsun"
+        "gecerli": "✅ İLK ÖLÇÜM 14 Eki · tuik_ortak.get /dataflow → HTTP 200 · dataflow=508 · yeşil (Vezir süreklilik satırı, kanon kural 6)"
       },
       {
         "vaat": "✅ KANON: CC dizin sınırı ('başka CC'nin dosyasına dokunulmaz; bildirim; silme sahibinin')",
@@ -1955,13 +1962,13 @@
           "renk": "kırmızı"
         },
         {
-          "kaynak": "TÜİK veri portalı",
-          "sahibi": "Pazarlama/Analiz",
+          "kaynak": "TÜİK SDMX (dataflow · tuik_ortak)",
+          "sahibi": "istemci Pazarlama · toplayıcı Borsa+Analiz",
           "http": 200,
-          "imza": "ölçülmedi (kök adres; veri yolu değil — 200 ≠ veri akıyor)",
-          "son_alim": "ölçülmedi (SORGU-01'e girmiyor)",
+          "imza": "dataflow=508",
+          "son_alim": "ölçülmedi (TÜİK henüz SORGU-01'e girmiyor)",
           "yas_gun": null,
-          "renk": "ölçülmedi"
+          "renk": "yeşil"
         },
         {
           "kaynak": "Yahoo Finance",
@@ -1986,8 +1993,8 @@
           "sahibi": "Finans",
           "http": null,
           "imza": "—",
-          "son_alim": "2026-10-13",
-          "yas_gun": 1,
+          "son_alim": "2026-10-14",
+          "yas_gun": 0,
           "renk": "yeşil"
         },
         {
@@ -1995,8 +2002,8 @@
           "sahibi": "Sosyal",
           "http": 200,
           "imza": "ölçülmedi (kök adres; veri yolu değil — 200 ≠ veri akıyor)",
-          "son_alim": "2026-10-13",
-          "yas_gun": 1,
+          "son_alim": "2026-10-14",
+          "yas_gun": 0,
           "renk": "yeşil"
         }
       ],
