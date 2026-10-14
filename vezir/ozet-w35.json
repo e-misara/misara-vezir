@@ -346,13 +346,27 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 129,
-    "acik": 70,
-    "kapali": 59,
+    "toplam": 131,
+    "acik": 71,
+    "kapali": 60,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "✅ TÜİK JSON turu: taşındı (json_tur2) + SHA + envanter + CSV çapraz sınaması",
+        "kim": "Vezir (Patron direktifi)",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "✅ 481 dosya · 329 set (57 yeni) · ortak 267 setin 263'ü gözlem sayısında eşit · 3 bilinen değer birebir · 🔴 4 CSV 500.000 satırda kesik (JSON tam)"
+      },
+      {
+        "vaat": "🔴 Toplayıcı: 4 kesik CSV setinde yalnız JSON kullan · 500.000 satırlık CSV = kesik kuralı",
+        "kim": "CC-Borsa + CC-Analiz",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF 🔴 · bildirim 02_CC_STATE/vezir_bildirim_tuik_json_turu.json · Vaka #08 deseni (satır var ≠ veri tam)"
+      },
       {
         "vaat": "✅ KANON: PATRON ADIMI süzgeci (yalnız üyelik/anahtar/SMS/ödeme; menü/JS/alan adı CC işi)",
         "kim": "Patron (karar) · Vezir (kayıt+betik)",
@@ -1264,6 +1278,7 @@
       }
     ],
     "aktif_bugun": [
+      "🔴 14 Eki gece: TÜİK CSV dışa aktarımı 500.000 satırda uyarısız kesiyor (4 set) — JSON turu tam · JSON↔CSV 263/267 eşit · 57 yeni set",
       "🗂 14 Eki gece: TÜİK toplu indirme 274 set ham/tuik/2026-10-14 (SHA ✓) · yabancılara satış il tablosu VAR (Σil=TR) → Pazarlama'ya · TÜİK tek istemci tuik_ortak + günlük dataflow sağlığı (508)",
       "📊 14 Eki gece: TÜİK API anahtarı .env'de (kopya yok) · Patron'un 3 TÜİK seti analiz edildi: hepsi tutarlı · Rize atıksu arıtma %75,8 (44/81), su 354 L/kişi/gün · yabancı nüfus 2025: 1.519.515",
       "🧱 14 Eki gece: CC dizin sınırı kanonu · SEMA eşleşme sınaması (10/10 CC'de alan yok → bildirim) · Basın bm_k alanı ✅ · .evds_key kapandı (sınır emsali) · TUIK_API_KEY bekleniyor · EVDS koruma testi UYUMLU",
