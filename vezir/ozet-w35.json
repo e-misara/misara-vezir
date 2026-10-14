@@ -379,11 +379,11 @@
         "gecerli": "AKTİF · Hafıza A1 bitişini bildirince"
       },
       {
-        "vaat": "⚠ Kilit ihlali (01:00 ölçümü): Borsa külliyat yeniden koşuyor (00:07 duraklatılmıştı) · Hafıza builder sıra 6 iken başladı · duzen ×2",
+        "vaat": "⚠ Kilit ihlali (01:00): Hafıza builder sıra 6 iken başladı (29 dk) · duzen ×2 — DÜZELTME: külliyat ihlal DEĞİL (sarmalayıcı 'BEKLE: kilit Hafıza işinde', kilit-uyumlu)",
         "kim": "Borsa · Hafıza",
         "verildi": "2026-10-15 01:00",
         "gecikti_gun": 0,
-        "gecerli": "AKTİF · Vezir yeniden durdurmadı (karar yok) · gece raporuna girer · Borsa'ya Patron kanalı"
+        "gecerli": "AKTİF · Vezir 01:00'de külliyatı yanlış 'koşuyor' saydı (bekleyen sarmalayıcı) → geri çekildi, ölçüme BEKLE istisnası eklendi (B11) · builder ihlali duruyor"
       },
       {
         "vaat": "Sinyal: Rize kredi sıçraması SİNYAL ADAYI (Finans BDDK FinTürk · 2,65× · reel +%24 · inşaat 7,8×) — vaka DEĞİL",
@@ -460,7 +460,7 @@
         "kim": "Vezir → Borsa · Hafıza",
         "verildi": "2026-10-15 00:07",
         "gecikti_gun": 0,
-        "gecerli": "✅ kap_kulliyat.py C pkill 450/4459 · bildirimler yazıldı · EVDS tam çekim rsync ile eşzamanlı: ÜST AKIL ONAYLI (00:10) — 23:36 duraklatma + ihlal kaydı GERİ ÇEKİLDİ · ⚠ külliyat 00:07 duraklatıldıktan sonra YENİDEN koşuyor (Borsa) + Hafıza builder sıra dışı başladı → ihlal sayımında"
+        "gecerli": "✅ kap_kulliyat.py C pkill 450/4459 · bildirimler yazıldı · EVDS tam çekim rsync ile eşzamanlı: ÜST AKIL ONAYLI (00:10) — 23:36 duraklatma + ihlal kaydı GERİ ÇEKİLDİ · külliyat kilidi bekliyor (kilit-uyumlu) · Hafıza builder sıra dışı başladı → ihlal"
       },
       {
         "vaat": "🔴 Analiz: evds_saglik.sh 08:00'den önce düzelt (/usr/bin/python3 shim + doğrudan curl)",
