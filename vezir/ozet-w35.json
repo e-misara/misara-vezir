@@ -364,13 +364,55 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 168,
-    "acik": 91,
-    "kapali": 77,
+    "toplam": 174,
+    "acik": 94,
+    "kapali": 80,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "✅ Finans 81 il tam hasat (BDDK/EPDK/DHMİ) + Z1 haritası — ilk kapsam_kanonu uygulaması",
+        "kim": "CC-Finans",
+        "verildi": "2026-10-14 (kapsam kanonu)",
+        "gecikti_gun": 0,
+        "gecerli": "✅ 81/81 · Σ kanıtlı · DASK 02:00 bandında (Finans sekmesi açık kalmalı — Patron notu)"
+      },
+      {
+        "vaat": "Sinyal: Z1 ULUSAL SİNYAL ADAYI — inşaat kredisi reel yoy ilk 10 il (Düzce +87,6 · Rize +68,8 · Elazığ +68,0 …)",
+        "kim": "CC-Signals",
+        "verildi": "2026-10-15",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · K≥2 ikinci eksen (TTSG/EKAP/SGK) · Rize satırıyla tek kayıt"
+      },
+      {
+        "vaat": "Aİ: havalimanı tablosu evren ağacına (ana_il + paylasilan_iller; yolcu tek ile yazılmaz) · Finans 5 eşleme teyidi: ana il 5/5 uyumlu, paylaşılan iller eksik",
+        "kim": "CC-TT-AI · CC-Finans",
+        "verildi": "2026-10-15",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · adres_anahtari_kanonu v1.1 havalimanı eki"
+      },
+      {
+        "vaat": "✅ Basın kuyruğu: Z1 ilk 10 ilin merkez ilçeleri öncelik 0 (Düzce, Elazığ hiç bakılmamıştı)",
+        "kim": "Vezir",
+        "verildi": "2026-10-15",
+        "gecikti_gun": 0,
+        "gecerli": "✅ KUYRUK.json basin_ulusal · BŞ merkez ilçe varsayımı Aİ/Hafıza teyidine"
+      },
+      {
+        "vaat": "PATRON NOTU: Finans sekmesi açık kalsın (DASK gece bandı Chromium; oturum kapanırsa koşmaz)",
+        "kim": "Patron",
+        "verildi": "2026-10-15",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · gece raporuna girer"
+      },
+      {
+        "vaat": "✅ Şema v1.2: KAPALI için 3 damgalı deneme istisnası (TCİP emsali) + KARAR_PATRON lisans sınıfı (BDDK çelişen iki metin)",
+        "kim": "Vezir",
+        "verildi": "2026-10-15",
+        "gecikti_gun": 0,
+        "gecerli": "✅ betik güncellendi"
+      },
       {
         "vaat": "PATRON ADIMI (taşıma bitince): iCloud 'Son Silinenler'i boşalt — parsel dosyası bulutta 30 gün kalmasın",
         "kim": "Patron",
