@@ -10,6 +10,12 @@
     "aciklama": "Bloke eden şeyler — en üst şerit, kırmızı",
     "bloke": [
       {
+        "konu": "🔴 VAKA #07 · EVDS anahtarı public repolarda (misara-vezir 11 Haz'dan, tradia-beykoz 25 Eyl'den)",
+        "etki": "Kök neden UÇ NOKTA: evds2 yolu 200+HTML döndürüyor (veri yok), evds3/igmevdsms-dis header'la çalışıyor. ESKİ anahtar HÂLÂ GEÇERLİ ve public → TCMB'de iptal acil. Yeni anahtar .env'de (test 200 + 14 kayıt).",
+        "kim": "Patron (anahtar değişimi + geçmiş temizliği + settings.json) · Finans (ikinci .env)",
+        "cozum": "Patron: eski anahtarı TCMB'de iptal · Borsa: istemciyi evds3/igmevdsms-dis + header key'e çevir · Finans: ~/finans/.env kaldır"
+      },
+      {
         "konu": "🟠 PARSEL-VERİ SIZINTISI #06 · geçmiş TEMİZLENDİ, GitHub önbelleği AÇIK",
         "etki": "filter-repo ile 7 dizgi tüm geçmişten çıktı (70 commit korundu, HEAD ağacı aynı, 3 SHA yeniden yazıldı). Ancak GitHub yetim commit'leri doğrudan SHA ile hâlâ sunuyor.",
         "kim": "Patron (GitHub Support başvurusu)",
@@ -340,13 +346,69 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 96,
-    "acik": 53,
-    "kapali": 43,
+    "toplam": 104,
+    "acik": 59,
+    "kapali": 45,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "✅ Yeni EVDS anahtarı tek dosyaya (~/landgold-agents/.env) + canlı test",
+        "kim": "Vezir",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "✅ evds3/igmevdsms-dis HTTP 200, 14 kayıt (15:38Z) · .env izni 644→600 · eski değer TCMB_API_KEY_ESKI (redaksiyon tanısın diye)"
+      },
+      {
+        "vaat": "🔴 Borsa: EVDS istemcisini evds3/igmevdsms-dis + header 'key' yoluna çevir (seri 17 Tem'den beri durmuş)",
+        "kim": "CC-Borsa",
+        "verildi": "2026-10-14 (Vaka #07 kök neden)",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF 🔴 · evds2 yolu 200+HTML (sessiz boş) · anahtar sorunu değil"
+      },
+      {
+        "vaat": "🔴 PATRON: ESKİ EVDS anahtarını TCMB'de iptal et (hâlâ geçerli + public)",
+        "kim": "Patron",
+        "verildi": "2026-10-14 (Vaka #07)",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF 🔴 · yeni anahtar 14 Eki .env'ye yazıldı ve test edildi (evds3 200, 14 kayıt) · eski anahtar da 200 veriyor → iptal edilmeden public sızıntı canlı"
+      },
+      {
+        "vaat": "PATRON: misara-vezir + tradia-beykoz geçmiş temizliği (EVDS)",
+        "kim": "Patron",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · SHA listesi private misara-arsiv/yedek/VAKA07_anahtar_tarama.md · değişim yapılırsa aciliyet düşer"
+      },
+      {
+        "vaat": "PATRON: settings.json (9) + settings.local.json (1) izin satırlarından anahtar çıkar",
+        "kim": "Patron",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · kanon kural 1"
+      },
+      {
+        "vaat": "Finans: ~/finans/.env ikinci kopyası kaldırılsın · TT-MAP: ~/ttmap/.env(.tmp) tek dosyaya",
+        "kim": "CC-Finans · CC-TT-MAP",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · kanon kural 1"
+      },
+      {
+        "vaat": "Vaka #07 kök neden: Analiz raporu arsiv/evds3_kok_neden_2026-10-14.md",
+        "kim": "CC-Analiz",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · rapor diskte yok (15:30) · gelince emsal defterine işlenecek"
+      },
+      {
+        "vaat": "✅ Vaka #07 açıldı + anahtar yönetimi kanonu + HEAD redaksiyonu (3 repo) + sızıntı kapısı .env eşleşmesi",
+        "kim": "Vezir",
+        "verildi": "2026-10-14",
+        "gecikti_gun": 0,
+        "gecerli": "✅ TESLİM · arsiv_cek.py anahtarı koddan çıkardı (test 16/16) · kapı eski sızıntıyı yakaladı · süreklilikte dış kaynak sağlığı satırı"
+      },
       {
         "vaat": "✅ Süreklilik ölçüsü ÜRETİM birimine çevrildi",
         "kim": "Vezir",
@@ -1027,6 +1089,7 @@
       }
     ],
     "aktif_bugun": [
+      "🔴 14 Eki Vaka #07: kök neden UÇ NOKTA (evds2 200+HTML), anahtar değil · iki anahtar da evds3'te çalışıyor · ESKİ anahtar public ve GEÇERLİ → Patron TCMB'de iptal · Borsa istemciyi çevirsin",
       "📏 14 Eki ÜRETİM sürekliliği (yeni birim): Finans 🟡23* · Hafıza 🟡21 · Pazarlama 🟡21 · Sosyal 🔴8 · Basın 🔴6 · Map 🔴6 · Tic/Signals/Kitap/Arşiv/Borsa 🔴3 · İhale/TT-AI/Analiz 🔴1 (/30) · *Finans ingest gecikmeli, gerçek 9–16 · darboğaz para değil: 7/24 makine + depolama + güç + tetik",
       "🟠 14 Eki Vaka #06: geçmiş temizlendi (filter-repo · 7 dizgi · 3 SHA) · GitHub yetim commit önbelleği AÇIK → Patron GitHub Support",
       "PARSEL-01 · Derepazarı vakası 9-CC katman genişledi — Tic sahip · İhale/Aİ/Analiz/Sinyal-iskelet/Finans ✓ · Basın probe · Map bekliyor · Arşiv KRİTİK YOL (E1 künye)",
@@ -1369,7 +1432,8 @@
       "E2 · genel URL query desen (key=<alfanumerik>)"
     ],
     "test_sonuc": "✅ 15/15 TEMİZ (arsiv/redaksiyon_testi.py)",
-    "not": "Patron settings.json'da düz metin duruyor; lokalde sorun değil ama arşive giren hiçbir dosyada görünmeyecek."
+    "not": "Patron settings.json'da düz metin duruyor; lokalde sorun değil ama arşive giren hiçbir dosyada görünmeyecek.",
+    "vaka07_notu": "E2 deseni anahtarın kendisini içeriyordu (public); 14 Eki'den beri değerler .env'den çalışma anında okunuyor"
   },
   "hafiza_dirilis_paketi_borclar": [
     {
@@ -1678,6 +1742,93 @@
       "bugun": "3 ilçe",
       "uzaklik": "970 ilçe",
       "uretim": "6/30 gün"
+    },
+    "dis_kaynak_sagligi": {
+      "kanon": "anahtar_yonetimi_kanonu_v1 kural 2 · HTTP kodu + ölçüm anı + içerik imzası + havuz son alım",
+      "satirlar": [
+        {
+          "kaynak": "TCMB EVDS (veri yolu)",
+          "sahibi": "Borsa",
+          "http": 200,
+          "imza": "JSON items=11",
+          "son_alim": "2026-08-01",
+          "yas_gun": 74,
+          "renk": "kırmızı"
+        },
+        {
+          "kaynak": "Resmî Gazete",
+          "sahibi": "İhale",
+          "http": 200,
+          "imza": "ölçülmedi (kök adres; veri yolu değil — 200 ≠ veri akıyor)",
+          "son_alim": "2026-10-13",
+          "yas_gun": 1,
+          "renk": "yeşil"
+        },
+        {
+          "kaynak": "EKAP",
+          "sahibi": "İhale",
+          "http": 200,
+          "imza": "ölçülmedi (kök adres; veri yolu değil — 200 ≠ veri akıyor)",
+          "son_alim": "ölçülmedi (SORGU-01'e girmiyor)",
+          "yas_gun": null,
+          "renk": "ölçülmedi"
+        },
+        {
+          "kaynak": "KAP",
+          "sahibi": "Borsa",
+          "http": 308,
+          "imza": "ölçülmedi (kök adres; veri yolu değil)",
+          "son_alim": "2026-08-06",
+          "yas_gun": 69,
+          "renk": "kırmızı"
+        },
+        {
+          "kaynak": "TÜİK veri portalı",
+          "sahibi": "Pazarlama/Analiz",
+          "http": 200,
+          "imza": "ölçülmedi (kök adres; veri yolu değil — 200 ≠ veri akıyor)",
+          "son_alim": "ölçülmedi (SORGU-01'e girmiyor)",
+          "yas_gun": null,
+          "renk": "ölçülmedi"
+        },
+        {
+          "kaynak": "Yahoo Finance",
+          "sahibi": "Borsa",
+          "http": 404,
+          "imza": "ölçülmedi (kök adres; veri yolu değil)",
+          "son_alim": "2026-08-06",
+          "yas_gun": 69,
+          "renk": "kırmızı"
+        },
+        {
+          "kaynak": "Basın (yerel host'lar)",
+          "sahibi": "Basın",
+          "http": null,
+          "imza": "—",
+          "son_alim": "2026-10-12",
+          "yas_gun": 2,
+          "renk": "yeşil"
+        },
+        {
+          "kaynak": "ÇED / Finans belgeleri",
+          "sahibi": "Finans",
+          "http": null,
+          "imza": "—",
+          "son_alim": "2026-10-13",
+          "yas_gun": 1,
+          "renk": "yeşil"
+        },
+        {
+          "kaynak": "YouTube (Sosyal)",
+          "sahibi": "Sosyal",
+          "http": 200,
+          "imza": "ölçülmedi (kök adres; veri yolu değil — 200 ≠ veri akıyor)",
+          "son_alim": "2026-10-13",
+          "yas_gun": 1,
+          "renk": "yeşil"
+        }
+      ],
+      "hukum": "🔴 EVDS: kaynak CANLI (JSON veri akıyor) ama havuz 74 gün bayat → kopukluk bizim istemcide (evds2 yolu) · 🔴 KAP + Yahoo havuz 69 gün bayat (veri yolu imzası ölçülmedi) · RG/Basın/Finans/YouTube yeşil"
     }
   }
 }
