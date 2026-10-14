@@ -10,6 +10,12 @@
     "aciklama": "Bloke eden şeyler — en üst şerit, kırmızı",
     "bloke": [
       {
+        "konu": "🔴 VAKA #09 iCloud: Masaüstü senkronlu + 'optimize' açık → 14,9 GiB çalışma dosyası bulutta (18.466 dosya), parsel verisi dahil",
+        "etki": "'15 GiB bilmecesi' çözüldü · boşaltılmış dosyayı okuyan iş sessiz indirir (gece G/Ç) · parsel_veri_kanonu ihlali (üçüncü-taraf bulut) · taşıma 12 GiB boşlukla disk doldurur",
+        "kim": "Hafıza (taşıma, rsync sonrası) · Patron (iCloud'daki kopya kararı)",
+        "cozum": "A0 kod/çalışma → ~/tradia_calisma + symlink · A1 ham parti parti TT-HAFIZA · bkz. 02_CC_STATE/vezir_bildirim_hafiza_vaka09_tasima.json"
+      },
+      {
         "konu": "🔴 DİSK GELİNCE YIĞILMA: 4 ağır iş eşzamanlı (kanon: en fazla 1)",
         "etki": "yük 8,5 · swap 4,3 GB (4 GB'ı aştı)",
         "kim": "Basın · Hafıza · Borsa · Patron (sıra)",
@@ -358,13 +364,104 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 153,
-    "acik": 82,
-    "kapali": 71,
+    "toplam": 166,
+    "acik": 91,
+    "kapali": 75,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "Sinyal: Rize kredi sıçraması SİNYAL ADAYI (Finans BDDK FinTürk · 2,65× · reel +%24 · inşaat 7,8×) — vaka DEĞİL",
+        "kim": "CC-Signals (karar) · CC-Finans (kaynak)",
+        "verildi": "2026-10-15 (Patron)",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · eşik önce + K≥2 (tek kaynak BDDK; ikinci eksen gerekli) · il-düzeyi PROXY, PARSEL-01'e doğrudan girmez"
+      },
+      {
+        "vaat": "✅ Kaynak tarama şeması v1.1: lisans alanı (IC_KULLANIM/KAYNAK_GOSTER/YAZILI_IZIN/YASAK + dayanak) · lisanssız ACIK sayılmaz",
+        "kim": "Patron (karar) · Vezir (kayıt+betik)",
+        "verildi": "2026-10-15",
+        "gecikti_gun": 0,
+        "gecerli": "✅ kanon/kaynak_tarama_semasi_v1.md §2a · birleştirme betiği: lisanssız ACIK → geçersiz; YAZILI_IZIN → Patron kovası"
+      },
+      {
+        "vaat": "PATRON (isteğe bağlı): EPİAŞ Şeffaflık üyeliği",
+        "kim": "Patron",
+        "verildi": "2026-10-15",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · kova ön kayıt · 16 Eki birleştirmede görünür"
+      },
+      {
+        "vaat": "PATRON (ürüne girecekse): BDDK yazılı kullanım izni",
+        "kim": "Patron",
+        "verildi": "2026-10-15",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · kova ön kayıt · lisans sınıfı YAZILI_IZIN"
+      },
+      {
+        "vaat": "9 CC: kaynak_tarama satırlarına lisans alanı (16 Eki 19:26'ya kadar)",
+        "kim": "9 CC",
+        "verildi": "2026-10-15",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · bildirim güncellenecek · eksik → ACIK sayılmaz"
+      },
+      {
+        "vaat": "✅ VAKA #09 açıldı (iCloud) + ölçüm + etki listesi + parsel kanonu v1.1 (senkron klasör yasağı)",
+        "kim": "Vezir",
+        "verildi": "2026-10-15 00:15",
+        "gecikti_gun": 0,
+        "gecerli": "✅ dataless 18.109+357 dosya / 14,9 GiB · etki: 5 plist · 5 crontab · 140 kod dosyası (269 yol) · 169 belge"
+      },
+      {
+        "vaat": "🔴 Hafıza: Vaka #09 taşıma (A0 kod/çalışma → ~/tradia_calisma + symlink · A1 ham → TT-HAFIZA parti parti) · kırık bağlantı 0 kanıtı",
+        "kim": "CC-Hafıza",
+        "verildi": "2026-10-15",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF 🔴 · ön koşul: boşaltılmış 14,9 GiB indirilmez (disk 12 GiB) · kilit sıra 2 · Standing #48 R-kaydı"
+      },
+      {
+        "vaat": "PATRON: iCloud'daki kopya (Desktop/tradia, TT-Tüm CC) taşıma sonrası silinsin mi",
+        "kim": "Patron",
+        "verildi": "2026-10-15",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · Patron ayara dokunmayacak (karar) · bulut silme Patron eylemi"
+      },
+      {
+        "vaat": "kanon/zincirler_v1.md (Z1–Z7) — İSKELET, tanım yok",
+        "kim": "Patron (metin) · Vezir (kayıt)",
+        "verildi": "2026-10-15",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF · TASLAK_v1 bulunamadı · Borsa ve Tic de 'tanımsız' yazmış · 16 Eki birleştirmede zincir sütunu TANIMSIZ"
+      },
+      {
+        "vaat": "✅ Borsa-Patron aktarım kanalı: agir_is_kilidi.json + gece raporu bölümü (Borsa bulutta, 02_CC_STATE'i görmüyor)",
+        "kim": "Vezir",
+        "verildi": "2026-10-15",
+        "gecikti_gun": 0,
+        "gecerli": "✅ 7 madde · gece raporunda 'Borsa'ya Patron aracılığıyla' bölümü"
+      },
+      {
+        "vaat": "✅ Kilit kararı 2 uygulandı: külliyat duraklatıldı (checkpoint var) · duzen yeni paralel yok (Hafıza) · sıra rsync→EVDS→külliyat→havuz→Basın",
+        "kim": "Vezir → Borsa · Hafıza",
+        "verildi": "2026-10-15 00:07",
+        "gecikti_gun": 0,
+        "gecerli": "✅ kap_kulliyat.py C pkill 450/4459 · bildirimler yazıldı · ⚠ EVDS tam çekim Borsa tarafından rsync bitmeden YENİDEN BAŞLATILMIŞ (ihlal, Vezir ikinci kez durdurmadı)"
+      },
+      {
+        "vaat": "🔴 Analiz: evds_saglik.sh 08:00'den önce düzelt (/usr/bin/python3 shim + doğrudan curl)",
+        "kim": "CC-Analiz",
+        "verildi": "2026-10-15 00:10",
+        "gecikti_gun": 0,
+        "gecerli": "AKTİF 🔴 · düzelmezse ilk koşum Vezir ölçüsünde TEYİTSİZ (betik denetimi ölçüme eklendi)"
+      },
+      {
+        "vaat": "✅ Gece raporu üreticisi (08:40 launchd) → arsiv/gece_raporu_<tarih>.md",
+        "kim": "Vezir",
+        "verildi": "2026-10-15",
+        "gecikti_gun": 0,
+        "gecerli": "✅ motor/gece_raporu.py · CDN 08:30 + sağlık 08:00 + yük/swap maks + kilit ihlali + rsync bitiş + EVDS kaldığı seri · taslak koştu"
+      },
       {
         "vaat": "✅ TÜİK JSON devri → Pazarlama (ayrıştırma + dağıtım)",
         "kim": "Vezir → Pazarlama",
@@ -380,11 +477,11 @@
         "gecerli": "AKTİF · 02_CC_STATE/tuik_dagitim_<cc>.json"
       },
       {
-        "vaat": "✅ 15 dk makine ölçümü + kilit ihlali (launchd com.tradia.vezir.makine_olc)",
+        "vaat": "⚠ 15 dk makine ölçümü + kilit ihlali (launchd com.tradia.vezir.makine_olc)",
         "kim": "Vezir",
         "verildi": "2026-10-14",
         "gecikti_gun": 0,
-        "gecerli": "✅ runs 1 exit 0 · makine_gecmis (96 kayıt halkası)"
+        "gecerli": "KISMEN · launchd koşuyor (exit 0) AMA geçmiş kaydı 23:3x–00:1x arası YAZILMAMIŞ: ekleme anchor kayması yüzünden sessiz boşa gitmiş, Vezir 'runs 1 exit 0'a bakıp '96 kayıt halkası' yazdı → doğrulanmamış iddia (B11). 00:15'te düzeltildi, ilk kayıt yazıldı; gece raporu bu boşluğu belirtir"
       },
       {
         "vaat": "✅ CDN teyidi: teyit modu + TEYİTSİZ damgası + 08:30 launchd",
@@ -429,7 +526,7 @@
         "gecerli": "AKTİF"
       },
       {
-        "vaat": "9 ÇIKTI YOK prompt (defter): Analiz motorlu/Hal/DFE · Pazarlama bülten, başlık eşleme, kaynak tarama · Finans/Kitap/Arşiv kaynak tarama · Basın tüm Türkiye A/B/C · Aİ evren export+ad_cozumle",
+        "vaat": "8 ÇIKTI YOK prompt (defter · Finans kaynak tarama 23:25'te geldi, düzeltildi)",
         "kim": "ilgili CC'ler",
         "verildi": "2026-10-14",
         "gecikti_gun": 0,
@@ -1444,6 +1541,7 @@
       }
     ],
     "aktif_bugun": [
+      "🔴 15 Eki 00:30: Vaka #09 iCloud — 14,9 GiB buluta boşaltılmış (='15 GiB'), parsel verisi dahil · taşıma ön koşulu disk · külliyat duraklatıldı · EVDS Borsa'ca yeniden başlatılmış (ihlal) · gece raporu 08:40 kuruldu",
       "📒 14 Eki 23:50: prompt defteri 53 prompt (35/7/2/9) · 23:00 launchd kuruldu (exit 0) · kapsam kanonu: varsayılan 81 il — bugün yalnız Pazarlama 81/81",
       "🧭 14 Eki gece: adres anahtarı kanonu (TÜİK 973 ilçe kodu) · Basın ulusal kuyruk 973 · geçmiş kayıtlarda kodlu ≤%5 · makine kanonu (yük 13,7, swap 3/4 GB) · TT-HAFIZA takılı DEĞİL (teyit)",
       "🔴 14 Eki gece: TÜİK CSV dışa aktarımı 500.000 satırda uyarısız kesiyor (4 set) — JSON turu tam · JSON↔CSV 263/267 eşit · 57 yeni set",
