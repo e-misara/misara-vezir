@@ -2022,7 +2022,7 @@ Tamam, **üç prompt paralel başlatılacak, Bursa odaklı + 81 il Türkiye**. S
 Faz 1 Raporu — DUR
 Rapor: ~/Desktop/tuik_tcmb_faz1_rapor.md (5 KB)
 En kritik bulgular
-TCMB EVDS2 artık çalışmıyor — evds2 → evds3 redirect, evds3 React SPA. Mevcut tcmb_tuik_cek.py ölü kod. Eski API key (93lLgxqTVB) hâlâ geçerli olabilir ama yeni endpoint dokümanı yok.
+TCMB EVDS2 artık çalışmıyor — evds2 → evds3 redirect, evds3 React SPA. Mevcut tcmb_tuik_cek.py ölü kod. Eski API key ([REDACTED-APIKEY-EVDS]) hâlâ geçerli olabilir ama yeni endpoint dokümanı yok.
 TÜİK data.tuik.gov.tr da SPA — Bulten/Index?p=... URL'i sadece 3 KB index.html veriyor. JavaScript çalıştırılmadan veri çekilemez.
 İlçe verisi yok — Hem TÜİK hem TCMB serbest yayında sadece il-seviye. Bursa ilçe detayı için Bilgi Edinme başvurusu (1-15 iş günü) gerekiyor.
 4 alternatif strateji
@@ -2553,7 +2553,7 @@ TÜİK/TCMB Faz 1 — Karar
    - Bursa odaklı, sonra 81 il genişler
 
 2. EVDS3 YENI KEY: EVET, başvur (paralel)
-   - Eski key (93lLgxqTVB) test et, çalışıyorsa kullan
+   - Eski key ([REDACTED-APIKEY-EVDS]) test et, çalışıyorsa kullan
    - Çalışmıyorsa yeni başvuru — 1+ gün gerekirse beklesin, 
      ama altyapıya yatırım yap
 

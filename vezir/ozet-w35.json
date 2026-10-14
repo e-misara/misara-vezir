@@ -1365,7 +1365,7 @@
   "redaksiyon_15_oruntu": {
     "tarih": "2026-09-25",
     "eklenen": [
-      "E2 · TCMB EVDS anahtarı (key=93lLgxqTVB)",
+      "E2 · TCMB EVDS anahtarı (key=[REDACTED-APIKEY-EVDS])",
       "E2 · genel URL query desen (key=<alfanumerik>)"
     ],
     "test_sonuc": "✅ 15/15 TEMİZ (arsiv/redaksiyon_testi.py)",

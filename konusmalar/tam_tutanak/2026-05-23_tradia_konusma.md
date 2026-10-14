@@ -2111,7 +2111,7 @@ tüm konuşmayı kopyala ilk attığım konuşmayı da ayrı bir md olarak ver
 - Kullanıcı önce mevcut key kontrolü istedi (`grep -i "tcmb" ...`)
 - Sonra "baştan alalım" diyerek site üzerinden kayıt
 
-**~16:30** — TCMB Key alındı: `93lLgxqTVB` (10 karakter)
+**~16:30** — TCMB Key alındı: `[REDACTED-APIKEY-EVDS]` (10 karakter)
 - `.env`'e kaydedildi: `~/landgold-agents/.env`
 - `.gitignore`'a `.env` eklendi (güvenlik)
 
@@ -2185,7 +2185,7 @@ tüm konuşmayı kopyala ilk attığım konuşmayı da ayrı bir md olarak ver
 
 ### **TEKNİK KARARLAR**
 
-1. **TCMB API** — Key alındı (93lLgxqTVB), `.env`'de güvenli, endpoint sorunu CC-Analiz'e yarın delegate
+1. **TCMB API** — Key alındı ([REDACTED-APIKEY-EVDS]), `.env`'de güvenli, endpoint sorunu CC-Analiz'e yarın delegate
 2. **EVDS2 → EVDS3 geçişi** — Yeni endpoint base keşfedildi
 3. **LocalClassifier v2.2** — Sözlük 400 → 750 keyword, $0 maliyet, production
 4. **launchd cron** — Gece scrape otomatik (rate limit reset sonrası)
@@ -2235,7 +2235,7 @@ tüm konuşmayı kopyala ilk attığım konuşmayı da ayrı bir md olarak ver
 - `~/landgold-agents/services/turkiye_bolge_map.py` — 7 bölge
 - `~/landgold-agents/services/news_classifier_local.py` v2.2 — LocalClassifier production
 - `~/landgold-agents/services/tcmb_scraper.py` — TCMB EVDS3 (endpoint pending)
-- `~/landgold-agents/.env` — TCMB_API_KEY="93lLgxqTVB" + Anthropic key
+- `~/landgold-agents/.env` — TCMB_API_KEY="[REDACTED-APIKEY-EVDS]" + Anthropic key
 
 ### **Görsel Arşiv**
 
