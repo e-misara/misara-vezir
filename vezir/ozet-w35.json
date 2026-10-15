@@ -364,13 +364,18 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 189,
-    "acik": 99,
-    "kapali": 90,
+    "toplam": 190,
+    "acik": 98,
+    "kapali": 92,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "🔴 VAKA #10 'İstanbul'u sel götürdü, sistem sabah bilmiyordu' (14–15.10): Basın bölge motoru 06:11'de 9 sel başlığı tutuyordu (Beykoz 4 · Kartal 5), 08:40 gece raporunda 0 satır. Kök: arşiv modu, canlı alarm tanımsız, raporda OLAY bölümü yok",
+        "gecerli": "✅ kanon/olay_alarmi_kanonu_v1.md · gece raporuna zorunlu 'SON 24 SAAT OLAYLAR' (Basın hattı olay_alarmi_son24.json 08:20; yoksa 🔴 TARANMADI + Vezir ikincil BM-K5) · deneme: 9 başlık listelendi · tecrübe kaydı tohumu 10 TASLAK satır → Basın 20'ye · Sosyal resmî hesap hattı · SIG39 olay katmanı KABUL",
+        "sahip": "Basın · Sosyal · Signals"
+      },
       {
         "vaat": "BEYKOZ GÜNCELLEME TURU (Patron 20:30, son 16.10 14:00): 2 kanon taslağı (tecrübe kaydı · kıyas noktaları) yazıldı+dağıtıldı · tur konusu 14.10 yağış/sel, 10 CC bakış listesi · derleme betiği + launchd 16.10 14:10 (zip+OZET+UST_AKIL_BEKLEYEN .sha256) · ilk teslim: Signals sig39 · ⚠ ~/Desktop/TT-Tüm CC 18:50'de Desktop/tradia altına taşınmış, symlink yoktu → Vezir kurdu",
         "gecerli": "AKTİF · 1/10 teslim · oturum 15 > 8 kanon",
@@ -403,7 +408,7 @@
       },
       {
         "vaat": "Basın A aşaması BİTTİ (Patron): envanter 1.933 satır / 1.791 site / 81 il · wayback VAR 626 · <2015 407 · belirsiz kodlama 672 → geriye dönük denetim · U-02 'yazıcı tek, sütun koruma' uyumsuzluk kaydı",
-        "gecerli": "🟡 Patron sayıları 651/615/412 dosyadan TÜRETİLEMEDİ · basin_envanter_ozet_81il.csv YOK · donus_basin yok → Basın bildirimi",
+        "gecerli": "✅ özet CSV geldi (18:38, UST_AKIL_BEKLEYEN): yer teyitli 666 · wayback 628 · 2015 öncesi 420 (Patron 651/615/412 = önceki saat kesiti; saatlik envanter yürüyor) · donus_basin hâlâ yok",
         "sahip": "Basın"
       },
       {
