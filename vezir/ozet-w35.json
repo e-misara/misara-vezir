@@ -364,13 +364,23 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 183,
-    "acik": 98,
-    "kapali": 85,
+    "toplam": 185,
+    "acik": 99,
+    "kapali": 86,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "Aİ tam Türkiye BİTTİ (dosya teyit: SGK/TOBB/İŞKUR/Teşvik 81/81 · teşvik 57.369 firma, 2019-04→2023-09 KESİN-TAVAN) · şema v1.3: erisim=TAVAN damgası (bütçeyle açılmaz) + WAF taze-oturum teknik notu · disk düşme sayacı: 14 Eki 2 · 15 Eki 1 (14:58→16:18) = toplam 3",
+        "gecerli": "✅ kaynak_tarama_ai_tam_turkiye.json · 🔴 donus_ai YOK · evren ağacı ÇIKTI YOK (son tarih 16 Eki 12:00)",
+        "sahip": "Aİ"
+      },
+      {
+        "vaat": "🔴 Hafıza Aşama-1 taşıma kilidi 16:4x ADAPTÖRSÜZ alındı (pil %62→17:47 %35, 1:17 kalan) — kural 8 başlangıç ihlali; devam eşiği %25'e yaklaşıyor",
+        "gecerli": "AKTİF · ihlal kaydı + bildirim (vezir_bildirim_hafiza_kural8_ihlal.json) · Vezir süreci durdurmaz · Patron adımı: ADAPTÖR",
+        "sahip": "Hafıza · Patron"
+      },
       {
         "vaat": "Basın A aşaması BİTTİ (Patron): envanter 1.933 satır / 1.791 site / 81 il · wayback VAR 626 · <2015 407 · belirsiz kodlama 672 → geriye dönük denetim · U-02 'yazıcı tek, sütun koruma' uyumsuzluk kaydı",
         "gecerli": "🟡 Patron sayıları 651/615/412 dosyadan TÜRETİLEMEDİ · basin_envanter_ozet_81il.csv YOK · donus_basin yok → Basın bildirimi",
