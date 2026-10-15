@@ -364,13 +364,23 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 174,
+    "toplam": 176,
     "acik": 94,
-    "kapali": 80,
+    "kapali": 82,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "🔴 Mac PİLDE çalışıyor (Hafıza 04:30: %36 discharging, adaptörsüz) · swap ≈5 GB · pil biterse açık tüm süreçler ölür",
+        "gecerli": "AKTİF · Vezir ölçmez-yalnız okur (pmset) · Patron adımı: adaptör",
+        "sahip": "Patron"
+      },
+      {
+        "vaat": "🔴 TT-HAFIZA USB'den DÜŞTÜ (Hafıza beyanı 04:30 + Vezir ölçümü 04:27: mount yok, rsync süreci 0) · nefes rsync 0 dosya aktardı · kilit sıra 1 (Hafıza rsync) 3 saattir ÖLÜ tutuyordu → külliyat BEKLE'de boşa bekledi",
+        "gecerli": "AKTİF · kilit 04:3x Vezir'ce DÜŞTÜ olarak boşaltıldı (kanıt: pid yok · rsync yok · mount yok) · Patron adımı: Mac adaptöre, disk doğrudan porta",
+        "sahip": "Hafıza · Patron"
+      },
       {
         "vaat": "✅ Finans 81 il tam hasat (BDDK/EPDK/DHMİ) + Z1 haritası — ilk kapsam_kanonu uygulaması",
         "kim": "CC-Finans",
@@ -460,7 +470,7 @@
         "kim": "9 CC",
         "verildi": "2026-10-15",
         "gecikti_gun": 0,
-        "gecerli": "AKTİF · bildirim güncellenecek · eksik → ACIK sayılmaz"
+        "gecerli": "AKTİF · 15 Eki sabah: yalnız Finans + Sosyal doldurdu · 8 CC'ye bildirim (vezir_bildirim_8cc_lisans_eksik.json)"
       },
       {
         "vaat": "✅ VAKA #09 açıldı (iCloud) + ölçüm + etki listesi + parsel kanonu v1.1 (senkron klasör yasağı)",
@@ -505,11 +515,11 @@
         "gecerli": "✅ kap_kulliyat.py C pkill 450/4459 · bildirimler yazıldı · EVDS tam çekim rsync ile eşzamanlı: ÜST AKIL ONAYLI (00:10) — 23:36 duraklatma + ihlal kaydı GERİ ÇEKİLDİ · külliyat kilidi bekliyor (kilit-uyumlu) · Hafıza builder sıra dışı başladı → ihlal"
       },
       {
-        "vaat": "🔴 Analiz: evds_saglik.sh 08:00'den önce düzelt (/usr/bin/python3 shim + doğrudan curl)",
+        "vaat": "✅ Analiz: evds_saglik.sh düzeltildi (shim + doğrudan curl → 0, mtime 00:06)",
         "kim": "CC-Analiz",
         "verildi": "2026-10-15 00:10",
         "gecikti_gun": 0,
-        "gecerli": "AKTİF 🔴 · düzelmezse ilk koşum Vezir ölçüsünde TEYİTSİZ (betik denetimi ölçüme eklendi)"
+        "gecerli": "✅ Vezir betik denetimi 0 kusur · 08:00 koşumu TEYİTSİZ riski kalktı · ilk gerçek launchd koşumu kanıtı 08:00'de"
       },
       {
         "vaat": "✅ Gece raporu üreticisi (08:40 launchd) → arsiv/gece_raporu_<tarih>.md",
@@ -582,7 +592,7 @@
         "gecerli": "AKTİF"
       },
       {
-        "vaat": "8 ÇIKTI YOK prompt (defter · Finans kaynak tarama 23:25'te geldi, düzeltildi)",
+        "vaat": "7 ÇIKTI YOK prompt (defter · Finans + Pazarlama kaynak taramaları sonra geldi, düzeltildi)",
         "kim": "ilgili CC'ler",
         "verildi": "2026-10-14",
         "gecikti_gun": 0,
@@ -638,11 +648,11 @@
         "gecerli": "AKTİF · M4 23:15 DİNLİYOR (launchd KeepAlive kurulmuş)"
       },
       {
-        "vaat": "Borsa: EVDS çekimi (463/8.730) sabah bitiş tahmini",
+        "vaat": "✅ Borsa EVDS tam çekim BİTTİ 02:43 (8730/8730 seri · 128.908 satır · 3 erişilemeyen · SAĞLIKLI)",
         "kim": "CC-Borsa",
         "verildi": "2026-10-14",
         "gecikti_gun": 0,
-        "gecerli": "AKTİF · 02_CC_STATE/borsa_cekim_tahmini.json bekleniyor · ağır iş kilidi kuralı"
+        "gecerli": "✅ tahmin dosyası yazılmadan bitti · kilit sırası 3 kapandı"
       },
       {
         "vaat": "Pazarlama: yatırımcı metni §3.1 'Bugün neredeyiz' makine satırı",
