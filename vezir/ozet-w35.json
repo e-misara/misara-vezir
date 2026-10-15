@@ -364,13 +364,18 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 188,
+    "toplam": 189,
     "acik": 99,
-    "kapali": 89,
+    "kapali": 90,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "BEYKOZ GÜNCELLEME TURU (Patron 20:30, son 16.10 14:00): 2 kanon taslağı (tecrübe kaydı · kıyas noktaları) yazıldı+dağıtıldı · tur konusu 14.10 yağış/sel, 10 CC bakış listesi · derleme betiği + launchd 16.10 14:10 (zip+OZET+UST_AKIL_BEKLEYEN .sha256) · ilk teslim: Signals sig39 · ⚠ ~/Desktop/TT-Tüm CC 18:50'de Desktop/tradia altına taşınmış, symlink yoktu → Vezir kurdu",
+        "gecerli": "AKTİF · 1/10 teslim · oturum 15 > 8 kanon",
+        "sahip": "10 CC · Vezir"
+      },
       {
         "vaat": "Evren ağacı v1 GELDİ (Aİ 17:47: 81/973/50.528 · ad_cozumle) → adres anahtarı kanonu v1.2 YÜRÜRLÜKTE · ilçe eşleme 973/973 (TÜİK↔evren) · Beykoz anahtar tablosu v2 (45) · ad_cozumle denetimi: Basın 672 → kesin 249 / belirsiz 423 (soyad tuzağı ad_cozumle ile çözülmez) · Z1 'medyan gecikme 1 ay' sunum yasağı",
         "gecerli": "✅ · 🔴 Vezir hatası düzeltildi: havalimanı ana_il_dogrula 3/58 (58/58 yazmıştım) · Sosyal U-04 Kartal ilk emsal · U-05 bekçi DNS=taze",
@@ -392,8 +397,8 @@
         "sahip": "Aİ"
       },
       {
-        "vaat": "🔴 Hafıza Aşama-1 taşıma kilidi 16:4x ADAPTÖRSÜZ alındı (pil %62→17:47 %35, 1:17 kalan) — kural 8 başlangıç ihlali; devam eşiği %25'e yaklaşıyor",
-        "gecerli": "AKTİF · ihlal kaydı + bildirim (vezir_bildirim_hafiza_kural8_ihlal.json) · Vezir süreci durdurmaz · Patron adımı: ADAPTÖR",
+        "vaat": "GERİ ÇEKİLDİ: 'Hafıza adaptörsüz kilit = kural 8 ihlali' — Patron kararı 13:15Z (Hafıza logu) adaptörsüz başlangıç; %25'te DURDU (devam kuralı işledi; A1-A3,B1,B2 TAMAM, C cc_borsa 0)",
+        "gecerli": "✅ Vezir hatası düzeltildi (log okunmadan kayıt) · kilit + bildirim güncellendi",
         "sahip": "Hafıza · Patron"
       },
       {
