@@ -364,13 +364,18 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 179,
+    "toplam": 180,
     "acik": 96,
-    "kapali": 83,
+    "kapali": 84,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "Beş iş (Patron 15 Eki 14:3x) 5/5: kuyruk DİSK BEKLİYOR kuralı (Borsa istemci + nabız + kanon kural 11) · basin_html gelecek tarih analizi (543 kayıt, 539 Beykoz; metin yılı tarih sanılmış; tarih NULL %85) → Basın + Signals uyarı · ihale_rg havuz 77 gün → Hafıza; havuz_gecikme ölçüsü (24 dosya: >7 gün 3, DOSYA YOK 8) · evds_ham → Borsa madde 10 · ÇIKTI YOK 6 → SON_TARIH.json + 5 CC ikinci bildirim + 23:00 defterine 'SON TARİH GEÇTİ' bölümü (16 Eki 12:00 geçerse KIRMIZI)",
+        "gecerli": "✅ dosyaya bakılarak · TR İ tuzağı yakalandı: 'Aİ'.lower()='ai̇' → bildirim adı/ara defter düzeltildi",
+        "sahip": "Vezir"
+      },
       {
         "vaat": "🟡 kaynak_bosluk ilk ölçüm: basin_html'de GELECEK tarihli kayıtlar (2027–2097, 15.580 'eksik gün' sahte) · ihale_rg SORGU-01'de son 2026-07-30 (77 gün; İhale'nin RG onarımı Mac'te, havuza alınmamış → builder sıra 5) · evds_ham 18 kayıt 'DD-MM-YYYY' · rg_haftalik 5 boşluk · sosyal_transkript 7 boşluk",
         "gecerli": "AKTİF · Hafıza + Basın + Borsa'ya bildirim",
