@@ -364,13 +364,28 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 185,
+    "toplam": 188,
     "acik": 99,
-    "kapali": 86,
+    "kapali": 89,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "Evren ağacı v1 GELDİ (Aİ 17:47: 81/973/50.528 · ad_cozumle) → adres anahtarı kanonu v1.2 YÜRÜRLÜKTE · ilçe eşleme 973/973 (TÜİK↔evren) · Beykoz anahtar tablosu v2 (45) · ad_cozumle denetimi: Basın 672 → kesin 249 / belirsiz 423 (soyad tuzağı ad_cozumle ile çözülmez) · Z1 'medyan gecikme 1 ay' sunum yasağı",
+        "gecerli": "✅ · 🔴 Vezir hatası düzeltildi: havalimanı ana_il_dogrula 3/58 (58/58 yazmıştım) · Sosyal U-04 Kartal ilk emsal · U-05 bekçi DNS=taze",
+        "sahip": "Aİ · Signals K00 · Sosyal"
+      },
+      {
+        "vaat": "KANON Üst Akıl teslim: ~/Desktop/UST_AKIL_BEKLEYEN/ + BEKLEYEN.md (dosya|kimden|tarih|SHA) · redaksiyon kopyadan önce · defter sütunu 'Üst Akıl'a teslim' (klasöre bakılır) · Hafıza açar/tutar",
+        "gecerli": "✅ kanon/ust_akil_teslim_kanonu_v1.md · birleştirici sütun eklendi · Hafıza bildirimi",
+        "sahip": "Hafıza"
+      },
+      {
+        "vaat": "🔴 DİSK ÇIKARILIYOR (Patron 18:4x): 10 launchd bootout (sosyal×3 · ttmap×2 · ttarsiv×2 · ihale.arsiv · kitap.nobet · analiz.seo) · lsof 0 · yazan süreç 0 · mount 0 → ÇIKARABİLİRSİN · ayna_borcu.json ilk hâl ~57,6 GiB bilinen (Basın 34,1 · Hafıza A1 14,9 · Borsa 7,93) · kanon: diske yalnız Hafıza kilitle yazar, tampon 2 GB/CC · 8 GB toplam · Mac boş <5 GiB dur",
+        "gecerli": "✅ Vezir ölçtü · yeniden yükleme: Mac-geçici hedef + Vezir teyidi",
+        "sahip": "Patron (eject) · Hafıza (ayna sırası)"
+      },
       {
         "vaat": "Aİ tam Türkiye BİTTİ (dosya teyit: SGK/TOBB/İŞKUR/Teşvik 81/81 · teşvik 57.369 firma, 2019-04→2023-09 KESİN-TAVAN) · şema v1.3: erisim=TAVAN damgası (bütçeyle açılmaz) + WAF taze-oturum teknik notu · disk düşme sayacı: 14 Eki 2 · 15 Eki 1 (14:58→16:18) = toplam 3",
         "gecerli": "✅ kaynak_tarama_ai_tam_turkiye.json · 🔴 donus_ai YOK · evren ağacı ÇIKTI YOK (son tarih 16 Eki 12:00)",
