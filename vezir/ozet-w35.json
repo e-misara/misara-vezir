@@ -372,13 +372,13 @@
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
       {
-        "vaat": "🔴 Mac PİLDE çalışıyor (Hafıza 04:30: %36 discharging, adaptörsüz) · swap ≈5 GB · pil biterse açık tüm süreçler ölür",
+        "vaat": "🔴 Mac PİLDE: 04:40 %33 → 04:55 %29 discharging, adaptörsüz · swap ≈5 GB · pil biterse açık tüm süreçler ölür",
         "gecerli": "AKTİF · Vezir ölçmez-yalnız okur (pmset) · Patron adımı: adaptör",
         "sahip": "Patron"
       },
       {
         "vaat": "🔴 TT-HAFIZA USB'den DÜŞTÜ (Hafıza beyanı 04:30 + Vezir ölçümü 04:27: mount yok, rsync süreci 0) · nefes rsync 0 dosya aktardı · kilit sıra 1 (Hafıza rsync) 3 saattir ÖLÜ tutuyordu → külliyat BEKLE'de boşa bekledi",
-        "gecerli": "AKTİF · kilit 04:3x Vezir'ce DÜŞTÜ olarak boşaltıldı (kanıt: pid yok · rsync yok · mount yok) · Patron adımı: Mac adaptöre, disk doğrudan porta",
+        "gecerli": "AKTİF · Patron 04:50: kilit PİL BEKLEME (pil<%40/adaptörsüz ağır iş yok, kanon kural 8) · ölü kilit → UYUMSUZLUK (vaka değil) + kural 9 pid+heartbeat, Vezir nabzı 5 dk (launchd kilit_nabiz, ilk koşum 04:53) · yeni sıra: rsync → külliyat → PDF → A0 → havuz → Basın · kök neden hub'da disk+şarj → kural 10 'hub yok' · ölçü disk_bagli_dakika_gun",
         "sahip": "Hafıza · Patron"
       },
       {
@@ -652,7 +652,7 @@
         "kim": "CC-Borsa",
         "verildi": "2026-10-14",
         "gecikti_gun": 0,
-        "gecerli": "✅ tahmin dosyası yazılmadan bitti · kilit sırası 3 kapandı"
+        "gecerli": "✅ final tablo Borsa'ya (vezir_bildirim_borsa_evds_final.json: 8730/8730 · 128.908 satır · 3 erişilemeyen · 63 HTTP 400 seri → Borsa hükmü) · Finans'a 'seriler taze, yenileme hafif iş' bildirimi"
       },
       {
         "vaat": "Pazarlama: yatırımcı metni §3.1 'Bugün neredeyiz' makine satırı",
