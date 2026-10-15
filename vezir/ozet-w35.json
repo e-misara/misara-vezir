@@ -364,13 +364,18 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 180,
-    "acik": 96,
+    "toplam": 181,
+    "acik": 97,
     "kapali": 84,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "BEYKOZ GÜNCEL TARAMA (Patron 15 Eki, kesit 2026-10-16): 10 CC bölge motorunu Beykoz'da yeniden koşar → ~/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/<cc>/ · adres anahtarı TR-34-1185-M:<slug> (45 slug tablosu) · OZET.md Vezir · son tarih 2026-10-17 17:07",
+        "gecerli": "AKTİF · bildirim vezir_bildirim_10cc_beykoz_guncel.json · Map 3D kilit sıra 7 · SON_TARIH 10 kayıt · 0/10 dosya",
+        "sahip": "10 CC · Vezir"
+      },
       {
         "vaat": "Beş iş (Patron 15 Eki 14:3x) 5/5: kuyruk DİSK BEKLİYOR kuralı (Borsa istemci + nabız + kanon kural 11) · basin_html gelecek tarih analizi (543 kayıt, 539 Beykoz; metin yılı tarih sanılmış; tarih NULL %85) → Basın + Signals uyarı · ihale_rg havuz 77 gün → Hafıza; havuz_gecikme ölçüsü (24 dosya: >7 gün 3, DOSYA YOK 8) · evds_ham → Borsa madde 10 · ÇIKTI YOK 6 → SON_TARIH.json + 5 CC ikinci bildirim + 23:00 defterine 'SON TARİH GEÇTİ' bölümü (16 Eki 12:00 geçerse KIRMIZI)",
         "gecerli": "✅ dosyaya bakılarak · TR İ tuzağı yakalandı: 'Aİ'.lower()='ai̇' → bildirim adı/ara defter düzeltildi",
