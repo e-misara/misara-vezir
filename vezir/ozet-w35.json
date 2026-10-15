@@ -364,13 +364,28 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 176,
-    "acik": 94,
-    "kapali": 82,
+    "toplam": 179,
+    "acik": 96,
+    "kapali": 83,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "🟡 kaynak_bosluk ilk ölçüm: basin_html'de GELECEK tarihli kayıtlar (2027–2097, 15.580 'eksik gün' sahte) · ihale_rg SORGU-01'de son 2026-07-30 (77 gün; İhale'nin RG onarımı Mac'te, havuza alınmamış → builder sıra 5) · evds_ham 18 kayıt 'DD-MM-YYYY' · rg_haftalik 5 boşluk · sosyal_transkript 7 boşluk",
+        "gecerli": "AKTİF · Hafıza + Basın + Borsa'ya bildirim",
+        "sahip": "Hafıza · Basın · Borsa · İhale"
+      },
+      {
+        "vaat": "🟡 Kilit 07:18–14:03 BOŞTU, hiçbir ağır iş koşmadı: sıra 1 rsync disk bekledi (disk 14:03'te geldi), adaptör ~14:00'te çıktı → PİL BEKLEME (pil %100 ama adaptör YOK, eşik 'adaptör + ≥%50')",
+        "gecerli": "AKTİF · Patron adımı: adaptörü tak → nabız 5 dk'da açar → Hafıza rsync'i pid+heartbeat ile alır (bildirildi)",
+        "sahip": "Patron · Hafıza"
+      },
+      {
+        "vaat": "Gün başı kararları (Patron 15 Eki) 6/6 uygulandı: pil eşiği TEK 50/25 (02_CC_STATE/pil_esigi.py + Borsa istemci + nabız) · STAGING durum dosyaları kanonu + kaynak_bosluk ölçüsü · Analiz motorlu taşıt KISMEN/kapsam ihlali · Basın global bildirimi + ham_basin şeması KANON · Kitap/Signals MEMORY index (ölçü: 4 satır >300) · disk düşme sayacı (14 Eki 2 · 15 Eki 0) · ara defter 12:30 launchd (ilk: 0/6 kapandı)",
+        "gecerli": "✅ dosyaya bakılarak · ayrıntı donus_vezir_2026-10-15.md",
+        "sahip": "Vezir"
+      },
       {
         "vaat": "🔴 Mac PİLDE: 04:40 %33 → 04:55 %29 discharging, adaptörsüz · swap ≈5 GB · pil biterse açık tüm süreçler ölür",
         "gecerli": "AKTİF · Vezir ölçmez-yalnız okur (pmset) · Patron adımı: adaptör",
