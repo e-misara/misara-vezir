@@ -364,13 +364,23 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 181,
-    "acik": 97,
-    "kapali": 84,
+    "toplam": 183,
+    "acik": 98,
+    "kapali": 85,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "Basın A aşaması BİTTİ (Patron): envanter 1.933 satır / 1.791 site / 81 il · wayback VAR 626 · <2015 407 · belirsiz kodlama 672 → geriye dönük denetim · U-02 'yazıcı tek, sütun koruma' uyumsuzluk kaydı",
+        "gecerli": "🟡 Patron sayıları 651/615/412 dosyadan TÜRETİLEMEDİ · basin_envanter_ozet_81il.csv YOK · donus_basin yok → Basın bildirimi",
+        "sahip": "Basın"
+      },
+      {
+        "vaat": "ÖNGÖRÜ KONTROLÜ v1 (SU Kısım 2 omurgası): Temmuz'un 20 öngörü/tetiği Ekim'de — TUTTU 4 · KISMİ 1 · TUTMADI-henüz 1 · SÜRE DOLMADI 12 · ÖLÇÜLEMEDİ 9 · ★KONTROL YAPILMADI 10 (15 kontrol tarihinin 13'ü geçti, kayıt 0) · 2B RG 17.09.2026 CB-11787 BELGE TUTTU · fark tablosu 9 ölçü (44↔45↔47 mahalle: neden ölçülmedi)",
+        "gecerli": "✅ arsiv/beykoz_ongoru_kontrolu_2026-10.md · v2 17 Eki tarama sonrası · Hafıza paketi B_beykoz_ekim",
+        "sahip": "Vezir · Signals (13 kontrol kapanışı)"
+      },
       {
         "vaat": "BEYKOZ GÜNCEL TARAMA (Patron 15 Eki, kesit 2026-10-16): 10 CC bölge motorunu Beykoz'da yeniden koşar → ~/Desktop/TT-Tüm CC/beykoz_guncel_2026-10/<cc>/ · adres anahtarı TR-34-1185-M:<slug> (45 slug tablosu) · OZET.md Vezir · son tarih 2026-10-17 17:07",
         "gecerli": "AKTİF · bildirim vezir_bildirim_10cc_beykoz_guncel.json · Map 3D kilit sıra 7 · SON_TARIH 10 kayıt · 0/10 dosya",
