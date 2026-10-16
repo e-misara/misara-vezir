@@ -364,13 +364,18 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 191,
+    "toplam": 192,
     "acik": 98,
-    "kapali": 93,
+    "kapali": 94,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "16.10 16:20 ÜÇ DÜZELTME: U-09 (kickstart + zamanlı iş bekçisi: 22 iş eşik dışı, 4'ü aylardır ölü) · Basın canlı akış kickstart → gece raporu OLAY DOLU (Beykoz KIRMIZI 40 haber) · iCloud çıkışı kademeli: TT-Tüm CC 1,62 GiB iniyor → tradia_calisma (otomatik); 18,6 GiB Patron SİL sonrası (boş ≈1 GiB kalırdı) · defter v1.1 formatı 13 hedef kartına · OZET_VEZIR 10×5 satır, zip 10/10",
+        "gecerli": "✅ arsiv/durum_16-10_16-00.md EK · UST_AKIL yenilendi",
+        "sahip": "Vezir · Patron (SİL kararı)"
+      },
       {
         "vaat": "16.10 16:10 DURUM (Patron 5 soru): gece raporu 08:40 KOŞMADI (launchd sabah geri yüklendi) → elle; Basın olay hattı YOK → 🔴; Beykoz teslim 9/10 (Analiz klasörde 0; Aİ bölge tanım v2 yok; SIG39 güncellenmemiş; Basın 10:00 teslimi yok) · zip 16:02+16:10 · oturum 3 ≤8 ✓ · külliyat C BİTTİ · disk takılı değil, ayna borcu 15 kalem/aynalanan 0 · iCloud dataless 21,1 GiB (arttı) · kıyas v1.1 (Finans 5/5) · U-06/07/08 · defter 15: yazan 1/15 (format borcu Vezir dahil)",
         "gecerli": "✅ arsiv/durum_16-10_16-00.md → UST_AKIL_BEKLEYEN (.sha256)",
