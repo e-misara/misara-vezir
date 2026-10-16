@@ -364,13 +364,18 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 194,
-    "acik": 99,
+    "toplam": 195,
+    "acik": 100,
     "kapali": 95,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "OTURUM 15 > 8 (kanon kural 1): 15 VS Code claude oturumu, 10'u 16:09–16:47'den beri BOŞTA (Kitap · TT-MAP · Pazarlama · Analiz · Borsa · Sosyal-2 · İhale · Basın · Hafıza · ?) → ÖNERİ: 02:00'de boşta 10'u kapat (resume ile döner; sabah nöbetleri launchd'de) · kanıt sınıfı TEK TANIM v1.3 (A resmî · B ≥2 ulusal · C yerel · D tek kaynak; HESAP ayrı eksen) · uygulama etiketi com.tradia.trabasin.app (Hafıza)",
+        "gecerli": "AKTİF · liste oturum_envanteri_20261016.json · kapatma Patron eli",
+        "sahip": "Patron"
+      },
       {
         "vaat": "TRA-BASIN ortak yayın (Patron 21:4x): VEZİR KÖŞESİ vezir_kose_<tarih>.json 08:43 launchd (5 satır gece özeti · KIRMIZI · Patron adımları · 15 birim dün/bugün/durum · bilgilendirme) — deneme 16.10 yazıldı · gazete.json'a mansetler[3] + makaleler[] (kanıt A–D) · uygulama birincil, PDF arşiv · bekçi tra_basin_app (launchd son koşu)",
         "gecerli": "✅ kanon v1.2 · Basın bildirimi · ilk gerçek koşum 17.10 08:43",
