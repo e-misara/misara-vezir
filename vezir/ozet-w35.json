@@ -372,7 +372,7 @@
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
       {
-        "vaat": "TRADİA GÜNLÜK ürün (Patron 16.10 21:31, Basın yayıncı): gazete_kanonu_v1 (8 bölüm, boş='tarandı, yok', sayı disiplini, KVKK, telif ≤1 cümle, parsel yok) · defter v1.2 '## GAZETEYE GİREN SATIR' zorunlu (13 hedef kartı) · zincir 08:40 gece raporu → 08:50 gazete → 09:00 Patron (Hafıza kopya) → 09:05 Vezir bekçi (SUREKLILIK 'gazete' satırı; yoksa KIRMIZI) · Kısım 3.13 · ⚠ Basın gazete_plan_v1.md diskte YOK → kanon Patron maddelerinden",
+        "vaat": "TRA-BASIN ürün (Patron 16.10 21:31, Basın yayıncı): gazete_kanonu v1.1 (AD TRA-BASIN · iki katman: veri md+json / okur HTML+PDF A4 8–12 s · bekçi md VE pdf · plan 23:00 yoksa Üst Akıl şablonu) (8 bölüm, boş='tarandı, yok', sayı disiplini, KVKK, telif ≤1 cümle, parsel yok) · defter v1.2 '## GAZETEYE GİREN SATIR' zorunlu (13 hedef kartı) · zincir 08:40 gece raporu → 08:50 gazete → 09:00 Patron (Hafıza kopya) → 09:05 Vezir bekçi (SUREKLILIK 'tra_basin' satırı; yoksa KIRMIZI) · Kısım 3.13 · ⚠ Basın gazete_plan_v1.md diskte YOK → kanon Patron maddelerinden",
         "gecerli": "AKTİF · ilk sayı 17.10 08:50 → Patron'a haber · bekçi denemesi: 16.10 KIRMIZI (dosya yok, beklenen)",
         "sahip": "Basın · Hafıza · Vezir"
       },
