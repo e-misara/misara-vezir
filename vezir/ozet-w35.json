@@ -373,7 +373,7 @@
     "kritik": [
       {
         "vaat": "SOSYAL ORKESTRASI (Patron 18.10 02:1x): 11 CC 24 saatte sosyal talep kartı → 02_CC_STATE/sosyal/talep/<cc>.json · şema = Sosyal JSON Schema (02:21, kanon kopyası; Vezir'in aynı dakikadaki taslağı GEÇERSİZ) + enum'a analiz/signals · Finans 'ogrenme' etiketi · Kitap arşiv eksik bölüm listesi · kart yoksa 'CC onayı yok' · son 2026-10-19 02:21",
-        "gecerli": "AKTİF · SON_TARIH 11 kayıt · 2/11 geldi (map, tic — şemaya uygun)",
+        "gecerli": "AKTİF · 2/11: Tic UYGUN · Map Vezir'in GEÇERSİZ taslağıyla yazılmış (U-13 Vezir çift şema) → eşleme tablosu Map'e, alias sorusu Sosyal'e · pil 02:25 %5 ŞARJDA DEĞİL (Sosyal) → 02:40 %5 charging",
         "sahip": "11 CC · Sosyal"
       },
       {
