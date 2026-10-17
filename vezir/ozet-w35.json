@@ -364,13 +364,18 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 196,
-    "acik": 100,
+    "toplam": 197,
+    "acik": 101,
     "kapali": 96,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "17.10: TRA-BASIN SAYI 1 ÇIKTI (20:37, Basın; md/json/html/pdf 12 s + UST_AKIL kopya) ama 08:50'de DEĞİL — Mac 07:04–13:18 uykuda, Vezir launchd işleri runs=0 (gece raporu/köşe/bekçi hiç koşmadı) → U-09 ilk gün: zincir 20:37 elle · bekçi KIRMIZI: köşe TARANMADI (köşe gazeteden 31 sn sonra), 29 boş bölüm, kanıt A4/B2/D9, kaynak_turu 10/15 · trabasin.app hiç koşmadı · Vaka #11 kaydı (Temmuz→Ekim fark GEÇERSİZ) · ⚠ beykoz_guncel_2026-10 klasörü 14:22'de BOŞALTILMIŞ (içerik aranıyor)",
+        "gecerli": "AKTİF · Patron'a haber",
+        "sahip": "Basın · Hafıza · Vezir"
+      },
       {
         "vaat": "TRA-BASIN v2 (Üst Akıl 22:25): kanıt sınıfı NİHAİ = Vezir tanımı (A belge/ölçüm · B ≥2 bağımsız · C tek · D türetim/başlık) + kaynak_turu yerel|ulusal|resmî · sayı 1 ADSIZ, sonra gorevli_listesi.json (ilk 4) · şablon kanon/tra_basin_sablon_v1.html (22 yuva) · künye 'TRA-BASIN · Tradia · Türkiye Konum İstihbaratı · sayı N · tarih · Yayın: Ahmet Çolak' · launchd ccbasin.trabasin (trabasin kaldırılır) · tecrübe 20 satır 17.10 14:00",
         "gecerli": "✅ kanon v1.4 · 22:00 kanıt bildirimi HÜKÜMSÜZ işaretlendi",
