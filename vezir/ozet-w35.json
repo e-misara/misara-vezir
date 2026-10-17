@@ -364,13 +364,18 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 198,
-    "acik": 102,
+    "toplam": 199,
+    "acik": 103,
     "kapali": 96,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "SOSYAL ORKESTRASI (Patron 18.10 02:1x): 11 CC 24 saatte sosyal talep kartı → 02_CC_STATE/sosyal/talep/<cc>.json · şema kanon/sosyal_talep_karti_v1.json (Vezir yazdı; Sosyal örneği diskte yoktu) · Finans 'ogrenme' etiketi · Kitap arşiv eksik bölüm listesi · kart yoksa 'CC onayı yok' · son 2026-10-19 02:21",
+        "gecerli": "AKTİF · SON_TARIH 11 kayıt · 0/11",
+        "sahip": "11 CC · Sosyal"
+      },
       {
         "vaat": "Patron 17.10: SAYI 1 KABUL (geç çıkış makine kaynaklı) · Vaka #14 'uyuyan makinede launchd' → sabah bekçisi 08:25+09:20 kuruldu (kaçan işi sırayla kickstart, ≤150 sn bekleme), gazete köşeyi ≤3 dk bekler (Basın), pmset uyanma 08:10 (Patron) — YARIN 08:20 U-09 gerçek testi · U-12: beykoz_guncel boşalması Üst Akıl S2 listesi (Hafıza hatası değil; 'betik referanslı klasör taşınmaz') · Vaka #13 Basın arşiv kapsamı (28 yerel, ulusal yok) açıldı, bildirim bekleniyor — gözden geçirme 1. madde",
         "gecerli": "AKTİF · kanon makine_kaynak v1.5 kural 14",
