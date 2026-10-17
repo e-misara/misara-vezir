@@ -372,8 +372,8 @@
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
       {
-        "vaat": "SOSYAL ORKESTRASI (Patron 18.10 02:1x): 11 CC 24 saatte sosyal talep kartı → 02_CC_STATE/sosyal/talep/<cc>.json · şema kanon/sosyal_talep_karti_v1.json (Vezir yazdı; Sosyal örneği diskte yoktu) · Finans 'ogrenme' etiketi · Kitap arşiv eksik bölüm listesi · kart yoksa 'CC onayı yok' · son 2026-10-19 02:21",
-        "gecerli": "AKTİF · SON_TARIH 11 kayıt · 0/11",
+        "vaat": "SOSYAL ORKESTRASI (Patron 18.10 02:1x): 11 CC 24 saatte sosyal talep kartı → 02_CC_STATE/sosyal/talep/<cc>.json · şema = Sosyal JSON Schema (02:21, kanon kopyası; Vezir'in aynı dakikadaki taslağı GEÇERSİZ) + enum'a analiz/signals · Finans 'ogrenme' etiketi · Kitap arşiv eksik bölüm listesi · kart yoksa 'CC onayı yok' · son 2026-10-19 02:21",
+        "gecerli": "AKTİF · SON_TARIH 11 kayıt · 2/11 geldi (map, tic — şemaya uygun)",
         "sahip": "11 CC · Sosyal"
       },
       {
