@@ -364,13 +364,18 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 202,
+    "toplam": 203,
     "acik": 103,
-    "kapali": 99,
+    "kapali": 100,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "ÜST AKIL DENETİMİ 21.10 19:55 uygulandı: SON_TARIH 24 kayıt KAPANDI (son_tarih_kapat.py, köşe öncesi) → gazete §7 temizlenir · Vaka #17 iCloud Optimize dataless (sistemik: Finans kapısı, Borsa EX_CONFIG, Kitap, Tic, Vezir EDEADLK) + kural 'betik referanslı dosya Masaüstü/Belgeler'de durmaz' · Vaka #11 ek: Emlakjet ToS md.6.2/8.2 OKUNDU-kısıt (Pazarlama DURDU, Patron A/B/C/D), Kartal v25a BELİRSİZ · Signals kanonik ad 'signals' · 22.10 09:30: sayı 6 §3 CC satırları kontrolü",
+        "gecerli": "✅ defter/kanon/bildirimler · açık SON_TARIH 5 (Pazarlama 2, Kitap, Arşiv kaynak tarama, Vezir 22.10 kontrol)",
+        "sahip": "Vezir · Finans · Signals/Sosyal · Hafıza"
+      },
       {
         "vaat": "PATRON KARARLARI 21.10 uygulandı: (1) bellek pil ≥%50'de takılır (Hafıza bildirir); CloudKit 24 GB dokunulmaz, günlük ölçü eklendi; SİL (Borsa 9 + görsel 4,84 GiB) → Hafıza iCloud hattı, iki doğrulama, yetki 00:30 · (2) Borsa+Signals oturumu AÇILIR, promptlar UST_AKIL/vezir · (3) Vaka #12/#15/#16 tanımlandı → U-10/U-14/U-11 + iCloud bekçisi (kanon_uygulama_v1, gazete v1.5) · (4) kapatılabilir oturum 12 (6 launchd birimi + 3 Vezir kopyası + 2 sahipsiz + 1 ölü) → kalan 4 + Borsa/Signals ≤8 · (5) U-15 Vezir dönüş eksikliği",
         "gecerli": "✅ defter + kanon + 3 bildirim · nabız SSID/hotspot",
