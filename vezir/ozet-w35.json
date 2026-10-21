@@ -372,7 +372,7 @@
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
       {
-        "vaat": "SİSTEM DENETİMİ 21.10 (Patron 'boşta CC istemiyorum'): ÇALIŞIYOR 6 · OTURUMA BAĞLI 3 · BOŞTA 3 (Aİ-aday, Tic, Borsa) · KIRMIZI 7 (Hafıza app · Arşiv uckopya · Map gazete_kare/eplan · Finans launchd 3/3 ölü · Signals nöbet runs 0 · Pazarlama 2 iş · Borsa EX_CONFIG) · TRA-BASIN sayı 5, 20–21.10 zincir yeşil, 19.10 kayıt yok · gazete görselsiz (Map 18.10'dan) · CloudKit 24 GB · bellek takılı değil, 29 parça bekliyor · 3 Patron kararı",
+        "vaat": "SİSTEM DENETİMİ 21.10 (Patron 'boşta CC istemiyorum'): ÇALIŞIYOR 6 · OTURUMA BAĞLI 3 · BOŞTA 3 (Aİ-aday, Tic, Borsa) · KIRMIZI 6 (Hafıza app · Arşiv uckopya · Finans launchd 3/3 ölü · Signals nöbet runs 0 · Pazarlama 2 iş · Borsa EX_CONFIG) · TRA-BASIN sayı 5, 20–21.10 zincir yeşil, 19.10 kayıt yok · gazete görselsiz (Map girdisiz: Basın olay satırında adres anahtarı yok) · CloudKit 24 GB · bellek takılı değil, 29 parça bekliyor · 3 Patron kararı",
         "gecerli": "✅ UST_AKIL_BEKLEYEN/vezir/SISTEM_DENETIM_2026-10-21.md · iş ataması + 4 prompt · yanıt 22.10 12:00",
         "sahip": "Patron · 15 CC"
       },
