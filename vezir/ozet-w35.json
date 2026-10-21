@@ -364,13 +364,18 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 200,
+    "toplam": 201,
     "acik": 103,
-    "kapali": 97,
+    "kapali": 98,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "SİSTEM DENETİMİ 21.10 (Patron 'boşta CC istemiyorum'): ÇALIŞIYOR 6 · OTURUMA BAĞLI 3 · BOŞTA 3 (Aİ-aday, Tic, Borsa) · KIRMIZI 7 (Hafıza app · Arşiv uckopya · Map gazete_kare/eplan · Finans launchd 3/3 ölü · Signals nöbet runs 0 · Pazarlama 2 iş · Borsa EX_CONFIG) · TRA-BASIN sayı 5, 20–21.10 zincir yeşil, 19.10 kayıt yok · gazete görselsiz (Map 18.10'dan) · CloudKit 24 GB · bellek takılı değil, 29 parça bekliyor · 3 Patron kararı",
+        "gecerli": "✅ UST_AKIL_BEKLEYEN/vezir/SISTEM_DENETIM_2026-10-21.md · iş ataması + 4 prompt · yanıt 22.10 12:00",
+        "sahip": "Patron · 15 CC"
+      },
       {
         "vaat": "DURUM GÖZDEN GEÇİRME 18.10 (Patron): 15 birim tablosu (launchd 79 iş; koşan gün/30 yalnız 6 birimde ölçülü; 81 il = Pazarlama + Vezir kuyruğu) → yarın Vezir köşesi bununla açılır · Vaka #13 Basın bildirimiyle dolduruldu (28 yerel/0 ulusal; ulusal hasat 20.10) · #12/#15 numara ayrıldı (aday: kaynak evreni v2 geçerli 1/geçersiz 56) · kanon push: Sosyal 3 TASLAK + talep şeması · bölge standardı v1.2 (Aİ) · kaynak_evreni_v2 · tra_basin uygulaması/şablon v1.1/plan · Anayasa B12 'Liste tohumdur'",
         "gecerli": "✅ arsiv/durum_gozden_gecirme_2026-10-18.md → UST_AKIL · yarın 08:10–09:20 Vaka #14 testi",
