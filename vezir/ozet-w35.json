@@ -364,13 +364,18 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 203,
-    "acik": 103,
+    "toplam": 204,
+    "acik": 104,
     "kapali": 100,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "TÜRKİYE NABIZ DÜZENİ v1 (Üst Akıl 23.10 · Patron uyarısı 'Rize/Kartal/Beykoz'da sıkıştık'): kanon taslağı + Vezir ekleri · 13 CC'ye 7 günlük iş (Basın 81 il RSS 25.10/arşiv tablo 30.10 · Sosyal konum 26.10 · Borsa KAP+piyasa 25.10 · Finans 25.10 · İhale RG/EKAP 25.10 · Tic askı 28.10 · Pazarlama TÜİK 27.10 · Aİ adres 25.10 · Analiz 30.10 · Map tetikli uydu 26.10 · Hafıza akis/tablo şema 24.10 · Signals eşik sözlüğü 27.10) · 5 ölçü gece raporu+köşe (ilk 24.10 08:40; bugün 4/5 ölçülmedi — akis/tablo yok) · KUYRUK TETİKLİ · haftalık denetim Pzt 09:30",
+        "gecerli": "AKTİF · teslimler 24–30.10 · 'makineyi bekliyoruz' hafif ucu durdurmaz",
+        "sahip": "13 CC · Vezir"
+      },
       {
         "vaat": "ÜST AKIL DENETİMİ 21.10 19:55 uygulandı: SON_TARIH 24 kayıt KAPANDI (son_tarih_kapat.py, köşe öncesi) → gazete §7 temizlenir · Vaka #17 iCloud Optimize dataless (sistemik: Finans kapısı, Borsa EX_CONFIG, Kitap, Tic, Vezir EDEADLK) + kural 'betik referanslı dosya Masaüstü/Belgeler'de durmaz' · Vaka #11 ek: Emlakjet ToS md.6.2/8.2 OKUNDU-kısıt (Pazarlama DURDU, Patron A/B/C/D), Kartal v25a BELİRSİZ · Signals kanonik ad 'signals' · 22.10 09:30: sayı 6 §3 CC satırları kontrolü",
         "gecerli": "✅ defter/kanon/bildirimler · açık SON_TARIH 5 (Pazarlama 2, Kitap, Arşiv kaynak tarama, Vezir 22.10 kontrol)",
