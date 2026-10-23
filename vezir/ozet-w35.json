@@ -364,13 +364,18 @@
   },
   "vaat_takip": {
     "aciklama": "Verilmiş vaat / teslim edilmemiş — Patron'un en kritik görüşü",
-    "toplam": 204,
-    "acik": 104,
+    "toplam": 205,
+    "acik": 105,
     "kapali": 100,
     "sayac_format": "açılan / kapanan / net · toplam-aktif — İLERLEME.md 2026-09-30 zorunlu format",
     "guncelleme_notu_20260926_27": "27→58 · 17 kapandı + 27 yeni · 26 Eyl gece dalgası + 27 Eyl dış-devir teslim (detay: kritik/aktif_bugun listeleri)",
     "guncelleme_notu_20260930": "2026-09-30 tarihi satır dalgası + akşam BESLEME v2: açılan +5 (BESLEME v2, E7, üç-katman zinciri, karıştırma riski, Patron 2-iş) / kapanan −3 (aynı turda ✅: BESLEME v2, E7, üç-katman) / net-satır +2 · sayaç düzeltmesi: 'toplam' canlı yeniden sayıldı 73→70 (mükerrer satırlar temizlendi)",
     "kritik": [
+      {
+        "vaat": "NABIZ EK1 (Üst Akıl 23.10 21:00 · Patron 20:33 'ilçe sırası raya girsin, yanlış adres olmasın, canlı/geçmiş senkron'): mod RAY+TETİK · ILCE_RAYI.json 973 (K2 tamam 1/açık 3/bekleyen 969) · adres kanonu v1.3 (iki sinyal, çakışma sözlüğü, cozum_guven, il_kaynagi, günlük denetim → ölçü 4b ≥%97) · olay alarmı v2 (akis/son24 81 il; eski hat kapanır) · kilit sırası kural 15 · ölçü 6 ray · haftalık kapsam tablosu · 14 CC bildirimi · D1 kanon listesi (43) Hafıza'ya",
+        "gecerli": "AKTİF · teslimler 24–30.10 · bugün defter 53 satır/21 il (6/6 ölçü KIRMIZI: akis/tablo yeni)",
+        "sahip": "14 CC · Vezir"
+      },
       {
         "vaat": "TÜRKİYE NABIZ DÜZENİ v1 (Üst Akıl 23.10 · Patron uyarısı 'Rize/Kartal/Beykoz'da sıkıştık'): kanon taslağı + Vezir ekleri · 13 CC'ye 7 günlük iş (Basın 81 il RSS 25.10/arşiv tablo 30.10 · Sosyal konum 26.10 · Borsa KAP+piyasa 25.10 · Finans 25.10 · İhale RG/EKAP 25.10 · Tic askı 28.10 · Pazarlama TÜİK 27.10 · Aİ adres 25.10 · Analiz 30.10 · Map tetikli uydu 26.10 · Hafıza akis/tablo şema 24.10 · Signals eşik sözlüğü 27.10) · 5 ölçü gece raporu+köşe (ilk 24.10 08:40; bugün 4/5 ölçülmedi — akis/tablo yok) · KUYRUK TETİKLİ · haftalık denetim Pzt 09:30",
         "gecerli": "AKTİF · teslimler 24–30.10 · 'makineyi bekliyoruz' hafif ucu durdurmaz",
